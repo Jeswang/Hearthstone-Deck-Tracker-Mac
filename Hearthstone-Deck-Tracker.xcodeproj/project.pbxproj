@@ -16,6 +16,7 @@
 		51C72D7F1A6190B4004C374E /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7B1A6190B4004C374E /* Images */; };
 		51C72D801A6190B4004C374E /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7C1A6190B4004C374E /* Resources */; };
 		51C72D851A619118004C374E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D841A619118004C374E /* ViewController.m */; };
+		51C72D881A619218004C374E /* DeckManangerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D871A619218004C374E /* DeckManangerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		51C72D7C1A6190B4004C374E /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		51C72D831A619118004C374E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		51C72D841A619118004C374E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		51C72D861A619218004C374E /* DeckManangerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckManangerController.h; sourceTree = "<group>"; };
+		51C72D871A619218004C374E /* DeckManangerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckManangerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 			children = (
 				51C72D831A619118004C374E /* ViewController.h */,
 				51C72D841A619118004C374E /* ViewController.m */,
+				51C72D861A619218004C374E /* DeckManangerController.h */,
+				51C72D871A619218004C374E /* DeckManangerController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 				51C72D851A619118004C374E /* ViewController.m in Sources */,
 				5132FABD1A5FC10300A43A59 /* main.m in Sources */,
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
+				51C72D881A619218004C374E /* DeckManangerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
