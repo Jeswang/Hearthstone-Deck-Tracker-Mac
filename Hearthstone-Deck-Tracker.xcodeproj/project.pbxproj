@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABA1A5FC10300A43A59 /* AppDelegate.m */; };
+		5132FABD1A5FC10300A43A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABC1A5FC10300A43A59 /* main.m */; };
+		5132FAC01A5FC10300A43A59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABF1A5FC10300A43A59 /* ViewController.m */; };
+		5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC11A5FC10300A43A59 /* Images.xcassets */; };
+		5132FAC51A5FC10300A43A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC31A5FC10300A43A59 /* Main.storyboard */; };
+		5132FAD11A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5132FACB1A5FC10300A43A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5132FAAC1A5FC10200A43A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5132FAB31A5FC10200A43A59;
+			remoteInfo = "Hearthstone-Deck-Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5132FAB41A5FC10200A43A59 /* Hearthstone-Deck-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hearthstone-Deck-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5132FAB81A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5132FAB91A5FC10300A43A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5132FABA1A5FC10300A43A59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5132FABC1A5FC10300A43A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5132FABE1A5FC10300A43A59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5132FABF1A5FC10300A43A59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5132FAC11A5FC10300A43A59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5132FAC41A5FC10300A43A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5132FACA1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hearthstone-Deck-TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5132FACF1A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hearthstone_Deck_TrackerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5132FAB11A5FC10200A43A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5132FAC71A5FC10300A43A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5132FAAB1A5FC10200A43A59 = {
+			isa = PBXGroup;
+			children = (
+				5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */,
+				5132FACD1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests */,
+				5132FAB51A5FC10200A43A59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5132FAB51A5FC10200A43A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5132FAB41A5FC10200A43A59 /* Hearthstone-Deck-Tracker.app */,
+				5132FACA1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				5132FAB91A5FC10300A43A59 /* AppDelegate.h */,
+				5132FABA1A5FC10300A43A59 /* AppDelegate.m */,
+				5132FABE1A5FC10300A43A59 /* ViewController.h */,
+				5132FABF1A5FC10300A43A59 /* ViewController.m */,
+				5132FAC11A5FC10300A43A59 /* Images.xcassets */,
+				5132FAC31A5FC10300A43A59 /* Main.storyboard */,
+				5132FAB71A5FC10200A43A59 /* Supporting Files */,
+			);
+			path = "Hearthstone-Deck-Tracker";
+			sourceTree = "<group>";
+		};
+		5132FAB71A5FC10200A43A59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5132FAB81A5FC10300A43A59 /* Info.plist */,
+				5132FABC1A5FC10300A43A59 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5132FACD1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */,
+				5132FACE1A5FC10300A43A59 /* Supporting Files */,
+			);
+			path = "Hearthstone-Deck-TrackerTests";
+			sourceTree = "<group>";
+		};
+		5132FACE1A5FC10300A43A59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5132FACF1A5FC10300A43A59 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5132FAB31A5FC10200A43A59 /* Hearthstone-Deck-Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5132FAD41A5FC10300A43A59 /* Build configuration list for PBXNativeTarget "Hearthstone-Deck-Tracker" */;
+			buildPhases = (
+				5132FAB01A5FC10200A43A59 /* Sources */,
+				5132FAB11A5FC10200A43A59 /* Frameworks */,
+				5132FAB21A5FC10200A43A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hearthstone-Deck-Tracker";
+			productName = "Hearthstone-Deck-Tracker";
+			productReference = 5132FAB41A5FC10200A43A59 /* Hearthstone-Deck-Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5132FAC91A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5132FAD71A5FC10300A43A59 /* Build configuration list for PBXNativeTarget "Hearthstone-Deck-TrackerTests" */;
+			buildPhases = (
+				5132FAC61A5FC10300A43A59 /* Sources */,
+				5132FAC71A5FC10300A43A59 /* Frameworks */,
+				5132FAC81A5FC10300A43A59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5132FACC1A5FC10300A43A59 /* PBXTargetDependency */,
+			);
+			name = "Hearthstone-Deck-TrackerTests";
+			productName = "Hearthstone-Deck-TrackerTests";
+			productReference = 5132FACA1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5132FAAC1A5FC10200A43A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = rainy;
+				TargetAttributes = {
+					5132FAB31A5FC10200A43A59 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5132FAC91A5FC10300A43A59 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5132FAB31A5FC10200A43A59;
+					};
+				};
+			};
+			buildConfigurationList = 5132FAAF1A5FC10200A43A59 /* Build configuration list for PBXProject "Hearthstone-Deck-Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5132FAAB1A5FC10200A43A59;
+			productRefGroup = 5132FAB51A5FC10200A43A59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5132FAB31A5FC10200A43A59 /* Hearthstone-Deck-Tracker */,
+				5132FAC91A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5132FAB21A5FC10200A43A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */,
+				5132FAC51A5FC10300A43A59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5132FAC81A5FC10300A43A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5132FAB01A5FC10200A43A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5132FAC01A5FC10300A43A59 /* ViewController.m in Sources */,
+				5132FABD1A5FC10300A43A59 /* main.m in Sources */,
+				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5132FAC61A5FC10300A43A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5132FAD11A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5132FACC1A5FC10300A43A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5132FAB31A5FC10200A43A59 /* Hearthstone-Deck-Tracker */;
+			targetProxy = 5132FACB1A5FC10300A43A59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5132FAC31A5FC10300A43A59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5132FAC41A5FC10300A43A59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5132FAD21A5FC10300A43A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5132FAD31A5FC10300A43A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5132FAD51A5FC10300A43A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5132FAD61A5FC10300A43A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5132FAD81A5FC10300A43A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hearthstone-Deck-TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hearthstone-Deck-Tracker.app/Contents/MacOS/Hearthstone-Deck-Tracker";
+			};
+			name = Debug;
+		};
+		5132FAD91A5FC10300A43A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hearthstone-Deck-TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hearthstone-Deck-Tracker.app/Contents/MacOS/Hearthstone-Deck-Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5132FAAF1A5FC10200A43A59 /* Build configuration list for PBXProject "Hearthstone-Deck-Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5132FAD21A5FC10300A43A59 /* Debug */,
+				5132FAD31A5FC10300A43A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5132FAD41A5FC10300A43A59 /* Build configuration list for PBXNativeTarget "Hearthstone-Deck-Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5132FAD51A5FC10300A43A59 /* Debug */,
+				5132FAD61A5FC10300A43A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5132FAD71A5FC10300A43A59 /* Build configuration list for PBXNativeTarget "Hearthstone-Deck-TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5132FAD81A5FC10300A43A59 /* Debug */,
+				5132FAD91A5FC10300A43A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5132FAAC1A5FC10200A43A59 /* Project object */;
+}
