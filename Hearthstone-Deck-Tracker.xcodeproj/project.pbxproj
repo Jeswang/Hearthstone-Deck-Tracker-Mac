@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABA1A5FC10300A43A59 /* AppDelegate.m */; };
 		5132FABD1A5FC10300A43A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABC1A5FC10300A43A59 /* main.m */; };
-		5132FAC01A5FC10300A43A59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABF1A5FC10300A43A59 /* ViewController.m */; };
 		5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC11A5FC10300A43A59 /* Images.xcassets */; };
 		5132FAC51A5FC10300A43A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC31A5FC10300A43A59 /* Main.storyboard */; };
 		5132FAD11A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */; };
+		51C72D7E1A6190B4004C374E /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7A1A6190B4004C374E /* Files */; };
+		51C72D7F1A6190B4004C374E /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7B1A6190B4004C374E /* Images */; };
+		51C72D801A6190B4004C374E /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7C1A6190B4004C374E /* Resources */; };
+		51C72D851A619118004C374E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D841A619118004C374E /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,16 @@
 		5132FAB91A5FC10300A43A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5132FABA1A5FC10300A43A59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5132FABC1A5FC10300A43A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5132FABE1A5FC10300A43A59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5132FABF1A5FC10300A43A59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5132FAC11A5FC10300A43A59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5132FAC41A5FC10300A43A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5132FACA1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hearthstone-Deck-TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5132FACF1A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hearthstone_Deck_TrackerTests.m; sourceTree = "<group>"; };
+		51C72D7A1A6190B4004C374E /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Files; sourceTree = "<group>"; };
+		51C72D7B1A6190B4004C374E /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		51C72D7C1A6190B4004C374E /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		51C72D831A619118004C374E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		51C72D841A619118004C374E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +85,12 @@
 		5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				51C72D821A619118004C374E /* Controllers */,
+				51C72D7A1A6190B4004C374E /* Files */,
+				51C72D7B1A6190B4004C374E /* Images */,
+				51C72D7C1A6190B4004C374E /* Resources */,
 				5132FAB91A5FC10300A43A59 /* AppDelegate.h */,
 				5132FABA1A5FC10300A43A59 /* AppDelegate.m */,
-				5132FABE1A5FC10300A43A59 /* ViewController.h */,
-				5132FABF1A5FC10300A43A59 /* ViewController.m */,
 				5132FAC11A5FC10300A43A59 /* Images.xcassets */,
 				5132FAC31A5FC10300A43A59 /* Main.storyboard */,
 				5132FAB71A5FC10200A43A59 /* Supporting Files */,
@@ -114,6 +122,15 @@
 				5132FACF1A5FC10300A43A59 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51C72D821A619118004C374E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				51C72D831A619118004C374E /* ViewController.h */,
+				51C72D841A619118004C374E /* ViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C72D7F1A6190B4004C374E /* Images in Resources */,
+				51C72D7E1A6190B4004C374E /* Files in Resources */,
+				51C72D801A6190B4004C374E /* Resources in Resources */,
 				5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */,
 				5132FAC51A5FC10300A43A59 /* Main.storyboard in Resources */,
 			);
@@ -215,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5132FAC01A5FC10300A43A59 /* ViewController.m in Sources */,
+				51C72D851A619118004C374E /* ViewController.m in Sources */,
 				5132FABD1A5FC10300A43A59 /* main.m in Sources */,
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
 			);
