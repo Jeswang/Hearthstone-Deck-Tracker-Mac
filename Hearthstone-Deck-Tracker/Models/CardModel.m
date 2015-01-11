@@ -7,6 +7,8 @@
 //
 
 #import "CardModel.h"
+#import "SystemHelper.h"
+#import "RLMObject+Copying.h"
 
 @implementation StringObject
 @end
@@ -63,31 +65,51 @@
     return englishName;
 }
 
-+ (NSString*)absPath {
-    static NSString *absPath;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSBundle *appBundle = [NSBundle mainBundle];
-        absPath = [appBundle pathForResource:@"cards" ofType:@"realm" inDirectory:@"Files"];
-        NSLog(@"%@", absPath);
-    });
-    return absPath;
-}
-
 + (CardModel *)cardById:(NSString*)cardId ofCountry:(NSString*)country {
 
-    RLMRealm* realm = [RLMRealm realmWithPath:self.absPath];
+    RLMRealm* realm = [RLMRealm realmWithPath:[SystemHelper cardRealmPath]];
 
     RLMResults* cards;
+    
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"cardId = %@ AND lang = %@",
                          cardId, country];
     cards = [CardModel objectsInRealm:realm withPredicate:pred];
-    
-    return [cards objectAtIndex:0];
+
+    if ([cards count] > 0) {
+        CardModel *card = [[cards objectAtIndex:0] deepCopy];
+        return card;
+    }
+    else {
+        return NULL;
+    }
 }
 
++ (CardModel *)cardByEnglishName:(NSString*)name ofCountry:(NSString*)country {
+    
+    RLMRealm* realm = [RLMRealm realmWithPath:[SystemHelper cardRealmPath]];
+    
+    RLMResults* cards;
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"name = %@ AND lang = %@",
+                         name, @"enUS"];
+    cards = [CardModel objectsInRealm:realm withPredicate:pred];
+    
+    if ([cards count] > 1) {
+        NSPredicate *predValid = [NSPredicate predicateWithFormat:@"collectible = 1 AND cardType != 'Hero'"];
+        cards = [cards objectsWithPredicate:predValid];
+    }
+    
+    if ([cards count] > 0) {
+        CardModel *card = [cards objectAtIndex:0];
+        return [CardModel cardById:card.cardId ofCountry:country];
+    }
+    else {
+        return NULL;
+    }
+}
+
+
 + (NSArray *)actualCards {
-    RLMRealm* realm = [RLMRealm realmWithPath:self.absPath];
+    RLMRealm* realm = [RLMRealm realmWithPath:[SystemHelper cardRealmPath]];
     
     RLMResults* cards;
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"collectible = 1 AND cardType != 'Hero' AND lang = %@", @"zhCN"];
@@ -95,9 +117,17 @@
     
     NSMutableArray *result = [NSMutableArray new];
     for (CardModel* card in cards) {
-        [result addObject:card];
+        [result addObject:[card deepCopy]];
     }
     return result;
+}
+
+- (NSComparisonResult)compare:(CardModel *)otherObject {
+    return [@(self.cost) compare:@(otherObject.cost)];
+}
+
++ (NSArray*)sortCards:(NSMutableArray*)cards {
+    return [cards sortedArrayUsingSelector:@selector(compare:)];
 }
 
 // Specify properties to ignore (Realm won't persist these)

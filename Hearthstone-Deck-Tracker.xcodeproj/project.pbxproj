@@ -15,6 +15,9 @@
 		5166468C1A621F2900E36F26 /* CardCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468B1A621F2900E36F26 /* CardCellView.m */; };
 		5166468F1A621FF700E36F26 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468E1A621FF700E36F26 /* CardModel.m */; };
 		516646931A6228B700E36F26 /* RealmGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 516646921A6228B700E36F26 /* RealmGenerator.m */; };
+		5192D17C1A62A5B500B239C5 /* RLMObject+Copying.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */; };
+		5192D1801A62B09E00B239C5 /* NetEaseCardBuilderImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */; };
+		5192D1831A62B10800B239C5 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D1821A62B10800B239C5 /* SystemHelper.m */; };
 		51C72D7E1A6190B4004C374E /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7A1A6190B4004C374E /* Files */; };
 		51C72D7F1A6190B4004C374E /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7B1A6190B4004C374E /* Images */; };
 		51C72D801A6190B4004C374E /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7C1A6190B4004C374E /* Resources */; };
@@ -52,6 +55,12 @@
 		5166468E1A621FF700E36F26 /* CardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardModel.m; path = Models/CardModel.m; sourceTree = "<group>"; };
 		516646911A6228B700E36F26 /* RealmGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealmGenerator.h; path = Utility/RealmGenerator.h; sourceTree = "<group>"; };
 		516646921A6228B700E36F26 /* RealmGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealmGenerator.m; path = Utility/RealmGenerator.m; sourceTree = "<group>"; };
+		5192D17A1A62A5B500B239C5 /* RLMObject+Copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RLMObject+Copying.h"; path = "Utility/RLMObject+Copying.h"; sourceTree = "<group>"; };
+		5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RLMObject+Copying.m"; path = "Utility/RLMObject+Copying.m"; sourceTree = "<group>"; };
+		5192D17E1A62B09E00B239C5 /* NetEaseCardBuilderImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetEaseCardBuilderImporter.h; path = Importer/NetEaseCardBuilderImporter.h; sourceTree = "<group>"; };
+		5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetEaseCardBuilderImporter.m; path = Importer/NetEaseCardBuilderImporter.m; sourceTree = "<group>"; };
+		5192D1811A62B10800B239C5 /* SystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemHelper.h; path = Utility/SystemHelper.h; sourceTree = "<group>"; };
+		5192D1821A62B10800B239C5 /* SystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystemHelper.m; path = Utility/SystemHelper.m; sourceTree = "<group>"; };
 		51C72D7A1A6190B4004C374E /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Files; sourceTree = "<group>"; };
 		51C72D7B1A6190B4004C374E /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		51C72D7C1A6190B4004C374E /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
@@ -107,6 +116,7 @@
 		5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				5192D17D1A62B04C00B239C5 /* Importer */,
 				516646901A62287600E36F26 /* Utility */,
 				516646881A620C4200E36F26 /* Models */,
 				516646891A620C4A00E36F26 /* Views */,
@@ -170,10 +180,23 @@
 		516646901A62287600E36F26 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				5192D1811A62B10800B239C5 /* SystemHelper.h */,
+				5192D1821A62B10800B239C5 /* SystemHelper.m */,
 				516646911A6228B700E36F26 /* RealmGenerator.h */,
 				516646921A6228B700E36F26 /* RealmGenerator.m */,
+				5192D17A1A62A5B500B239C5 /* RLMObject+Copying.h */,
+				5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		5192D17D1A62B04C00B239C5 /* Importer */ = {
+			isa = PBXGroup;
+			children = (
+				5192D17E1A62B09E00B239C5 /* NetEaseCardBuilderImporter.h */,
+				5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */,
+			);
+			name = Importer;
 			sourceTree = "<group>";
 		};
 		51C72D821A619118004C374E /* Controllers */ = {
@@ -346,6 +369,9 @@
 				5166468F1A621FF700E36F26 /* CardModel.m in Sources */,
 				51C72D851A619118004C374E /* CardListViewController.m in Sources */,
 				5132FABD1A5FC10300A43A59 /* main.m in Sources */,
+				5192D1801A62B09E00B239C5 /* NetEaseCardBuilderImporter.m in Sources */,
+				5192D17C1A62A5B500B239C5 /* RLMObject+Copying.m in Sources */,
+				5192D1831A62B10800B239C5 /* SystemHelper.m in Sources */,
 				516646931A6228B700E36F26 /* RealmGenerator.m in Sources */,
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
 				51C72D881A619218004C374E /* DeckManangerController.m in Sources */,

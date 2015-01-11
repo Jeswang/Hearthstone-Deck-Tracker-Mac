@@ -6,3 +6,5 @@ inhibit_all_warnings!
 pod 'ReactiveCocoa'
 pod 'Realm'
 pod 'SBJson'
+pod "hpple"
+pod 'AFNetworking'

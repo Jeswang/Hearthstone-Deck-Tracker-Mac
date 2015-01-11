@@ -10,5 +10,9 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+- (void)updateWithCards:(NSArray *)cards;
+
+@property (nonatomic, strong) NSMutableArray *updateList;
+
 @end
 

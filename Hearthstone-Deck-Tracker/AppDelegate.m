@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "RealmGenerator.h"
 #import "CardModel.h"
+#import "CardListViewController.h"
+#import "RealmGenerator.h"
+#import "NetEaseCardBuilderImporter.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +20,17 @@
 
 @implementation AppDelegate
 
+- (instancetype)init {
+    id instance = [super init];
+    if (instance) {
+        _updateList = [NSMutableArray new];
+    }
+    return instance;
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    //[RealmGenerator generateCardRealm];
+    //[RealmGenerator generateCardRealm];    
+    [NetEaseCardBuilderImporter importDockerWithId:@"42621"];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -28,6 +39,12 @@
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag{
     return YES;
+}
+
+- (void)updateWithCards:(NSArray *)cards {
+    for (NSObject<CardListDelegate>* list in self.updateList) {
+        [list updateWithCards:cards];
+    }
 }
 
 @end

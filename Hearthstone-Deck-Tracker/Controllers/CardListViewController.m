@@ -9,6 +9,7 @@
 #import "CardListViewController.h"
 #import "CardModel.h"
 #import "CardCellView.h"
+#import "AppDelegate.h"
 
 @interface CardListViewController()
 
@@ -25,16 +26,24 @@
     self.cards = [NSMutableArray new];
     
     //NSArray *cards = [NSArray new];
-    NSArray *cards = [CardModel actualCards];
-
-    for(CardModel *card in cards) {
-        [self.cards addObject:card];
-    }
-
+    self.cards = [NSMutableArray arrayWithArray:[CardModel actualCards]];
+    CardModel *card = [self.cards objectAtIndex:0];
+    card.count = 2;
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
     [self.tableView setBackgroundColor:[NSColor colorWithCalibratedWhite:86.0/255.0 alpha:1]];
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+    [appDelegate.updateList addObject:self];
+}
+
+- (void)updateWithCards:(NSArray *)cards {
+    [self.cards removeAllObjects];
+    [self.cards addObjectsFromArray:cards];
+    
+    [self.tableView reloadData];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

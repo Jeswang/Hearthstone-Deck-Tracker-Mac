@@ -8,7 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CardListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
+@protocol CardListDelegate <NSObject>
+
+- (void)updateWithCards:(NSArray*)cards;
+
+@end
+
+@interface CardListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate, CardListDelegate>
 
 
 @end

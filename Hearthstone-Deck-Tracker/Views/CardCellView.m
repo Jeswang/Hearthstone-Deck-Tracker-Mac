@@ -39,7 +39,11 @@
 }
 
 - (NSString*)framePath {
-    return [NSString stringWithFormat:@"%@/%@.png", self.absPath, @"frame"];
+    return [self pngPathWithName:@"frame"];
+}
+
+- (NSString*)pngPathWithName:(NSString*)fileName {
+    return [NSString stringWithFormat:@"%@/%@.png", self.absPath, fileName];
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
@@ -51,6 +55,23 @@
     
     NSImage* frame = [[NSImage alloc] initWithContentsOfFile:[self framePath]];
     [frame drawInRect:CGRectMake(1, 0, 218, 35)];
+    
+    if(self.card.count >= 2 || [self.card.rarity  isEqual: @"Legendary"]) {
+        NSImage* frameCountBox = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:@"frame_countbox"]];
+        [frameCountBox drawInRect:CGRectMake(189, 5, 25, 24)];
+        
+        if(self.card.count >= 2 && self.card.count <= 9)
+        {
+            NSImage* extraInfo = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:[NSString stringWithFormat:@"frame_%d", self.card.count]]];
+            [extraInfo drawInRect:CGRectMake(194, 8, 18, 21)];
+        }
+        else
+        {
+            NSImage* extraInfo = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:@"frame_legendary"]];
+            [extraInfo drawInRect:CGRectMake(194, 8, 18, 21)];
+        }
+    }
+    
     
     NSMutableAttributedString *costLabel = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld", self.card.cost]];
     
@@ -73,7 +94,6 @@
                                NSForegroundColorAttributeName: [NSColor whiteColor],
                                } range:rangeOfCost];
     [titleLabel drawInRect:CGRectMake(37, 0, 184, 30) ];
-
 }
 
 @end

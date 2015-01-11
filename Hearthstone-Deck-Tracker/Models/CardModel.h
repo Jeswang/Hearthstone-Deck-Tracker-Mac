@@ -44,7 +44,9 @@ RLM_ARRAY_TYPE(StringObject)
 + (NSDictionary *)JsonMapping;
 
 + (CardModel *)cardById:(NSString*)cardId ofCountry:(NSString*)country;
++ (CardModel *)cardByEnglishName:(NSString*)name ofCountry:(NSString*)country;
 + (NSArray *)actualCards;
++ (NSArray *)sortCards:(NSMutableArray*)cards;
 
 @end
 
