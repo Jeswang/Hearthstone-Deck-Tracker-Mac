@@ -12,11 +12,16 @@
 		5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC11A5FC10300A43A59 /* Images.xcassets */; };
 		5132FAC51A5FC10300A43A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC31A5FC10300A43A59 /* Main.storyboard */; };
 		5132FAD11A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */; };
+		5166468C1A621F2900E36F26 /* CardCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468B1A621F2900E36F26 /* CardCellView.m */; };
+		5166468F1A621FF700E36F26 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468E1A621FF700E36F26 /* CardModel.m */; };
+		516646931A6228B700E36F26 /* RealmGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 516646921A6228B700E36F26 /* RealmGenerator.m */; };
 		51C72D7E1A6190B4004C374E /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7A1A6190B4004C374E /* Files */; };
 		51C72D7F1A6190B4004C374E /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7B1A6190B4004C374E /* Images */; };
 		51C72D801A6190B4004C374E /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7C1A6190B4004C374E /* Resources */; };
-		51C72D851A619118004C374E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D841A619118004C374E /* ViewController.m */; };
+		51C72D851A619118004C374E /* CardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D841A619118004C374E /* CardListViewController.m */; };
 		51C72D881A619218004C374E /* DeckManangerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D871A619218004C374E /* DeckManangerController.m */; };
+		51F7DAD11A625E7000E69120 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F7DAD01A625E7000E69120 /* CoreGraphics.framework */; };
+		D3D6FC08335C98DCC2E9265C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0D96C4241DA85CCE2EA371 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FBA87E4F9AB86CE995F70A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5132FAB41A5FC10200A43A59 /* Hearthstone-Deck-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hearthstone-Deck-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5132FAB81A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5132FAB91A5FC10300A43A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,13 +46,22 @@
 		5132FACA1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hearthstone-Deck-TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5132FACF1A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hearthstone_Deck_TrackerTests.m; sourceTree = "<group>"; };
+		5166468A1A621F2900E36F26 /* CardCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCellView.h; path = Views/CardCellView.h; sourceTree = "<group>"; };
+		5166468B1A621F2900E36F26 /* CardCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCellView.m; path = Views/CardCellView.m; sourceTree = "<group>"; };
+		5166468D1A621FF700E36F26 /* CardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardModel.h; path = Models/CardModel.h; sourceTree = "<group>"; };
+		5166468E1A621FF700E36F26 /* CardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardModel.m; path = Models/CardModel.m; sourceTree = "<group>"; };
+		516646911A6228B700E36F26 /* RealmGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealmGenerator.h; path = Utility/RealmGenerator.h; sourceTree = "<group>"; };
+		516646921A6228B700E36F26 /* RealmGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealmGenerator.m; path = Utility/RealmGenerator.m; sourceTree = "<group>"; };
 		51C72D7A1A6190B4004C374E /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Files; sourceTree = "<group>"; };
 		51C72D7B1A6190B4004C374E /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		51C72D7C1A6190B4004C374E /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
-		51C72D831A619118004C374E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		51C72D841A619118004C374E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		51C72D831A619118004C374E /* CardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardListViewController.h; sourceTree = "<group>"; };
+		51C72D841A619118004C374E /* CardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListViewController.m; sourceTree = "<group>"; };
 		51C72D861A619218004C374E /* DeckManangerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckManangerController.h; sourceTree = "<group>"; };
 		51C72D871A619218004C374E /* DeckManangerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckManangerController.m; sourceTree = "<group>"; };
+		51F7DAD01A625E7000E69120 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		774564573B6A33F52AC6E9AA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CB0D96C4241DA85CCE2EA371 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F7DAD11A625E7000E69120 /* CoreGraphics.framework in Frameworks */,
+				D3D6FC08335C98DCC2E9265C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +90,8 @@
 				5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */,
 				5132FACD1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests */,
 				5132FAB51A5FC10200A43A59 /* Products */,
+				ADED6EFEDB7C24AD291EA6FA /* Pods */,
+				F5ED1B09858E5D10239A9FBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +107,9 @@
 		5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				516646901A62287600E36F26 /* Utility */,
+				516646881A620C4200E36F26 /* Models */,
+				516646891A620C4A00E36F26 /* Views */,
 				51C72D821A619118004C374E /* Controllers */,
 				51C72D7A1A6190B4004C374E /* Files */,
 				51C72D7B1A6190B4004C374E /* Images */,
@@ -127,15 +149,60 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		516646881A620C4200E36F26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5166468D1A621FF700E36F26 /* CardModel.h */,
+				5166468E1A621FF700E36F26 /* CardModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		516646891A620C4A00E36F26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5166468A1A621F2900E36F26 /* CardCellView.h */,
+				5166468B1A621F2900E36F26 /* CardCellView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		516646901A62287600E36F26 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				516646911A6228B700E36F26 /* RealmGenerator.h */,
+				516646921A6228B700E36F26 /* RealmGenerator.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		51C72D821A619118004C374E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				51C72D831A619118004C374E /* ViewController.h */,
-				51C72D841A619118004C374E /* ViewController.m */,
+				51C72D831A619118004C374E /* CardListViewController.h */,
+				51C72D841A619118004C374E /* CardListViewController.m */,
 				51C72D861A619218004C374E /* DeckManangerController.h */,
 				51C72D871A619218004C374E /* DeckManangerController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ADED6EFEDB7C24AD291EA6FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FBA87E4F9AB86CE995F70A4 /* Pods.debug.xcconfig */,
+				774564573B6A33F52AC6E9AA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5ED1B09858E5D10239A9FBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51F7DAD01A625E7000E69120 /* CoreGraphics.framework */,
+				CB0D96C4241DA85CCE2EA371 /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5132FAD41A5FC10300A43A59 /* Build configuration list for PBXNativeTarget "Hearthstone-Deck-Tracker" */;
 			buildPhases = (
+				DCFD997D0199FDD9A8D581C4 /* Check Pods Manifest.lock */,
 				5132FAB01A5FC10200A43A59 /* Sources */,
 				5132FAB11A5FC10200A43A59 /* Frameworks */,
 				5132FAB21A5FC10200A43A59 /* Resources */,
+				0C00E600CC85C527CE4839BA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,13 +304,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C00E600CC85C527CE4839BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCFD997D0199FDD9A8D581C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5132FAB01A5FC10200A43A59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C72D851A619118004C374E /* ViewController.m in Sources */,
+				5166468C1A621F2900E36F26 /* CardCellView.m in Sources */,
+				5166468F1A621FF700E36F26 /* CardModel.m in Sources */,
+				51C72D851A619118004C374E /* CardListViewController.m in Sources */,
 				5132FABD1A5FC10300A43A59 /* main.m in Sources */,
+				516646931A6228B700E36F26 /* RealmGenerator.m in Sources */,
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
 				51C72D881A619218004C374E /* DeckManangerController.m in Sources */,
 			);
@@ -355,6 +460,7 @@
 		};
 		5132FAD51A5FC10300A43A59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FBA87E4F9AB86CE995F70A4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -366,6 +472,7 @@
 		};
 		5132FAD61A5FC10300A43A59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774564573B6A33F52AC6E9AA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;

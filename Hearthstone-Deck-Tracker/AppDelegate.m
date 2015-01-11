@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RealmGenerator.h"
+#import "CardModel.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,7 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    //[RealmGenerator generateCardRealm];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
