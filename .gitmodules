@@ -1,0 +1,3 @@
+[submodule "hearthstone-tracker-osx"]
+	path = hearthstone-tracker-osx
+	url = http://github.com/hellozimi/hearthstone-tracker-osx.git

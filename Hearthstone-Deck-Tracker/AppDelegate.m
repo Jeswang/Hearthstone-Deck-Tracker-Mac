@@ -11,6 +11,7 @@
 #import "CardListViewController.h"
 #import "RealmGenerator.h"
 #import "NetEaseCardBuilderImporter.h"
+#import "Hearthstone.h"
 
 @interface AppDelegate ()
 
@@ -30,7 +31,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //[RealmGenerator generateCardRealm];    
-    [NetEaseCardBuilderImporter importDockerWithId:@"42621"];
+    [NetEaseCardBuilderImporter importDockerWithId:@"42788"];
+    
+    [Hearthstone defaultInstance];
+
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
