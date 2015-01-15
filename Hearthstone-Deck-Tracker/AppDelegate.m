@@ -31,14 +31,15 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //[RealmGenerator generateCardRealm];    
-    [NetEaseCardBuilderImporter importDockerWithId:@"42788"];
+    [NetEaseCardBuilderImporter importDockerWithId:@"43259"];
     
-    [Hearthstone defaultInstance];
-
+    [[Hearthstone defaultInstance] setStatusDidUpdate:^(BOOL isRunning) {
+        NSLog(@"Hearthstone is running? %d", isRunning);
+    }];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+    
 }
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag{

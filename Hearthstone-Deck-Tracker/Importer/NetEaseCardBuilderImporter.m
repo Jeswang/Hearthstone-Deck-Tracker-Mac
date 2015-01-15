@@ -24,10 +24,10 @@
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     AFHTTPRequestOperation *loginRequest  = [manager GET:query parameters:Nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         TFHpple * doc       = [TFHpple hppleWithHTMLData:responseObject];
-        NSArray * gravetors  = [doc searchWithXPathQuery:@"//*[@id =\'content\']"];
+        NSArray * contentString  = [doc searchWithXPathQuery:@"//*[@id =\'content\']"];
         NSString *cardString;
-        if ([gravetors count] > 0) {
-            TFHppleElement *content = gravetors[0];
+        if ([contentString count] > 0) {
+            TFHppleElement *content = contentString[0];
             cardString = [[content attributes] objectForKey:@"value"];
         }
         else {

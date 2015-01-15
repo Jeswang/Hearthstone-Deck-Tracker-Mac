@@ -11,11 +11,12 @@
 @protocol CardListDelegate <NSObject>
 
 - (void)updateWithCards:(NSArray*)cards;
+- (void)resetCards;
+- (void)removeCard:(NSString *)cardId;
 
 @end
 
 @interface CardListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate, CardListDelegate>
-
 
 @end
 

@@ -14,7 +14,7 @@
 @implementation RealmGenerator
 
 + (void)generateCardRealm {
-    static NSString *pathTemplate = @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/Files/cardsDB.%@.json";
+    static NSString *pathTemplate = @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/CardJs/cardsDB.%@.json";
     
     NSArray *langs = @[@"deDE",
                       @"enGB",
