@@ -20,8 +20,9 @@ How to use
 
 How it works
 =============
-The automated tracking is done my reading out Hearthstone logfile.
-More information on that here:  http://www.reddit.com/r/hearthstone/comments/268fkk/simple_hearthstone_logging_see_your_complete_play
+The automated tracking is done my reading out Hearthstone logfile.  
+More information on that here:  
+http://www.reddit.com/r/hearthstone/comments/268fkk/simple_hearthstone_logging_see_your_complete_play
 
 Is Blizzard okay with this?
 =============
