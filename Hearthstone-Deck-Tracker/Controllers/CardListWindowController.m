@@ -23,7 +23,7 @@
 }
 
 - (IBAction)openBuilder:(id)sender {
-    
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.hearthstone.com.cn/cards/builder/"]];
 }
 
 - (IBAction)openSetting:(id)sender {

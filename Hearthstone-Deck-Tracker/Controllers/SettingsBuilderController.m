@@ -32,21 +32,20 @@
 }
 
 
-- (IBAction)cancel:(id)sender {
+- (IBAction)cancel:(id)sender {    
     NSWindow  *window = [[self view] window];
     [window orderOut:window];
 }
 
 - (IBAction)update:(id)sender {
     if ([[self.inputField stringValue] length] == 0) {
-        NSLog(@"Should input builder Id");
+        NSLog(@"Please input builder Id");
     }
     else {
         [self.indicator setHidden:NO];
         [self.indicator startAnimation:self];
         [self.status setHidden:NO];
         [self.status setStringValue:@"querying"];
-        
         
         [NetEaseCardBuilderImporter importDockerWithId:[self.inputField stringValue] success:^(NSArray *cards) {
             [self.indicator setHidden:YES];

@@ -32,7 +32,7 @@
             cardString = [[content attributes] objectForKey:@"value"];
         }
         else {
-            fail(@"Wrong build Id");
+            fail(@"Wrong Builder Id");
             return;
         }
 
