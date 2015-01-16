@@ -20,7 +20,7 @@ How to use
 
 How it works
 =============
-The automated tracking is done my reading out Hearthstone logfile.  
+The automated tracking is done by reading out Hearthstone logfile.  
 More information on that here:  
 http://www.reddit.com/r/hearthstone/comments/268fkk/simple_hearthstone_logging_see_your_complete_play
 
@@ -35,4 +35,4 @@ Requirements
 Special thanks
 =========
 - [Hearthstone-Deck-Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker): All the resources came from Epix37's project, and I learned a lot from reading the code.
-- [hearthstone-tracker-osx](https://github.com/hellozimi/hearthstone-tracker-osx): Using hellozimi's code to monitor the log file save me a lot of time.
+- [hearthstone-tracker-osx](https://github.com/hellozimi/hearthstone-tracker-osx): Using hellozimi's code to monitor the log file saved me a lot of time.
