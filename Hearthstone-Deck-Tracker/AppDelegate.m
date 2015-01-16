@@ -16,6 +16,7 @@
 @interface AppDelegate ()
 
 @property (nonatomic, weak) IBOutlet NSWindow *window;
+@property (nonatomic, weak) IBOutlet NSWindowController *cardListController;
 
 @end
 
@@ -36,6 +37,7 @@
     [[Hearthstone defaultInstance] setStatusDidUpdate:^(BOOL isRunning) {
         NSLog(@"Hearthstone is running? %d", isRunning);
     }];
+
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

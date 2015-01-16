@@ -85,8 +85,9 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="cIS-zh-nZq"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
@@ -219,7 +220,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="T4M-SC-xT3"/>
                                         </constraints>
-                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="cLV-se-iYK">
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="3.1352563068754214e-12" horizontal="YES" id="cLV-se-iYK">
                                             <rect key="frame" x="1" y="119" width="238" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
@@ -292,19 +293,27 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="B8D-0N-5wS" customClass="CardListWindowController" sceneMemberID="viewController">
                     <window key="window" title="Deck Tracker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
-                        <rect key="contentRect" x="1000" y="700" width="220" height="500"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="contentRect" x="1460" y="527" width="220" height="500"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                         <value key="minSize" type="size" width="220" height="500"/>
                         <value key="maxSize" type="size" width="220" height="1200"/>
                         <toolbar key="toolbar" implicitIdentifier="224D506B-0CA8-462C-8C2B-2B1B6EDCF926" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="labelOnly" sizeMode="regular" id="suy-gr-ad5">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="DF01DFFC-9A1C-442E-AA89-5FB83DA40582" label="Add Deck" paletteLabel="Toolbar Item" tag="-1" id="GoV-nN-unn"/>
+                                <toolbarItem implicitItemIdentifier="DF01DFFC-9A1C-442E-AA89-5FB83DA40582" label="Add Deck" paletteLabel="Toolbar Item" tag="-1" id="GoV-nN-unn">
+                                    <connections>
+                                        <action selector="openBuilder:" target="B8D-0N-5wS" id="mJ6-c9-lmb"/>
+                                    </connections>
+                                </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="XKg-v1-VhM"/>
-                                <toolbarItem implicitItemIdentifier="ADAF4CBC-431A-480F-9867-081441C5E44B" label="Settings" paletteLabel="Settings" tag="-1" id="AzW-Ar-TKE"/>
+                                <toolbarItem implicitItemIdentifier="ADAF4CBC-431A-480F-9867-081441C5E44B" label="Settings" paletteLabel="Settings" tag="-1" id="AzW-Ar-TKE">
+                                    <connections>
+                                        <action selector="openSetting:" target="B8D-0N-5wS" id="a6j-hk-Nb5"/>
+                                    </connections>
+                                </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="GoV-nN-unn"/>
@@ -319,7 +328,92 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-274" y="345"/>
+            <point key="canvasLocation" x="-756" y="270"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="yva-Xc-9n8">
+            <objects>
+                <windowController storyboardIdentifier="SettingBuilderWindowController" id="DzE-Ot-mKT" customClass="SettingBuilderWindowController" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="Nzt-vR-FiC">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="390" height="120"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                    </window>
+                    <connections>
+                        <segue destination="P0h-J6-dR7" kind="relationship" relationship="window.shadowedContentViewController" id="rna-iI-VYb"/>
+                    </connections>
+                </windowController>
+                <customObject id="KLs-F2-wf3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="7"/>
+        </scene>
+        <!--Settings Builder Controller-->
+        <scene sceneID="hMq-jh-F4D">
+            <objects>
+                <viewController id="P0h-J6-dR7" customClass="SettingsBuilderController" sceneMemberID="viewController">
+                    <view key="view" id="Qnd-rc-p76">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ye-rB-mYv">
+                                <rect key="frame" x="202" y="18" width="80" height="25"/>
+                                <buttonCell key="cell" type="roundTextured" title="Cancel" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6Vj-8X-u8e">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancel:" target="P0h-J6-dR7" id="uez-Do-era"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zsl-7a-yYg">
+                                <rect key="frame" x="290" y="18" width="80" height="25"/>
+                                <buttonCell key="cell" type="roundTextured" title="Update" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="97F-ly-SQe">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="update:" target="P0h-J6-dR7" id="E41-cO-mA2"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZU-8L-y89">
+                                <rect key="frame" x="18" y="83" width="354" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Builder ID:" id="B5p-HT-qkL">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-sS-hTU">
+                                <rect key="frame" x="20" y="53" width="350" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="WHi-uV-hPh">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="eZy-MC-rhI"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="4ex-l8-LNw">
+                                <rect key="frame" x="20" y="20" width="16" height="16"/>
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHt-bv-1jc">
+                                <rect key="frame" x="42" y="20" width="146" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Updating" id="sLZ-7x-bbA">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="4ex-l8-LNw" id="nhy-p5-7Jg"/>
+                        <outlet property="status" destination="gHt-bv-1jc" id="DdS-GF-3pk"/>
+                    </connections>
+                </viewController>
+                <customObject id="Qdd-n5-0Qi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="236"/>
         </scene>
         <!--Card List View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -400,7 +494,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-274" y="1007"/>
+            <point key="canvasLocation" x="-785" y="912"/>
         </scene>
         <!--Collection View Item-->
         <scene sceneID="X7Z-2O-dhR">
@@ -415,8 +509,47 @@
             </objects>
             <point key="canvasLocation" x="658" y="1396.5"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="H4D-f3-rAP">
+            <objects>
+                <windowController id="I1o-X7-I8R" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="xvr-Wm-0d7">
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="200" height="279"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+                        <value key="minSize" type="size" width="200" height="279"/>
+                        <value key="maxSize" type="size" width="200" height="279"/>
+                    </window>
+                    <connections>
+                        <segue destination="3jx-O0-4gT" kind="relationship" relationship="window.shadowedContentViewController" id="OmA-aG-niW"/>
+                    </connections>
+                </windowController>
+                <customObject id="r04-dK-Eor" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-485" y="545.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4ud-qU-sRp">
+            <objects>
+                <viewController id="3jx-O0-4gT" sceneMemberID="viewController">
+                    <view key="view" id="RQN-Vw-KR1">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="279"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8s-HD-l2C">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="279"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Abomination" id="zBd-0R-AAE"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="nZt-1O-tIa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-485" y="930.5"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Abomination" width="400" height="558"/>
         <image name="HearthstoneDeckTracker" width="256" height="256"/>
         <image name="NSActionTemplate" width="14" height="14"/>
     </resources>
