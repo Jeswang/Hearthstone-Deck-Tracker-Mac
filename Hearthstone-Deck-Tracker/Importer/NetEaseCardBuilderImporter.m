@@ -16,8 +16,9 @@
 
 @implementation NetEaseCardBuilderImporter
 
-+ (void)importDockerWithId:(NSString*)dockerId {
-    
++ (void)importDockerWithId:(NSString*)dockerId
+                   success:(void (^)(NSArray*))success
+                      fail:(void (^)(NSString*))fail {
     NSString* query = [NSString stringWithFormat:@"http://www.hearthstone.com.cn/cards/builder/%@", dockerId];
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -31,6 +32,7 @@
             cardString = [[content attributes] objectForKey:@"value"];
         }
         else {
+            fail(@"Wrong build Id");
             return;
         }
 
@@ -50,17 +52,13 @@
         }
         
         NSArray *sortedCards = [CardModel sortCards:cardsInDocker];
-        
-        AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
-        [appDelegate updateWithCards:sortedCards];
-        
+
+        success(sortedCards);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+        fail([error localizedDescription]);
     }];
-    [loginRequest start];
-
-
     
+    [loginRequest start];
 }
 
 + (NSDictionary*)transDictionary {

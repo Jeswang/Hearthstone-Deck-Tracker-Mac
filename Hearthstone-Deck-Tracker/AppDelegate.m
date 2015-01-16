@@ -32,7 +32,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //[RealmGenerator generateCardRealm];    
-    [NetEaseCardBuilderImporter importDockerWithId:@"43259"];
     
     [[Hearthstone defaultInstance] setStatusDidUpdate:^(BOOL isRunning) {
         NSLog(@"Hearthstone is running? %d", isRunning);

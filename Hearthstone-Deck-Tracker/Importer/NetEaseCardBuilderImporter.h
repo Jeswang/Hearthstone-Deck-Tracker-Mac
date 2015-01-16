@@ -10,6 +10,8 @@
 
 @interface NetEaseCardBuilderImporter : NSObject
 
-+ (void)importDockerWithId:(NSString*)dockerId;
++ (void)importDockerWithId:(NSString*)dockerId
+                   success:(void (^)(NSArray*))success
+                      fail:(void (^)(NSString*))fail;
 
 @end

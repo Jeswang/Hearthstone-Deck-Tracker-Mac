@@ -387,7 +387,6 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-sS-hTU">
                                 <rect key="frame" x="20" y="53" width="350" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="WHi-uV-hPh">
-                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="eZy-MC-rhI"/>
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -407,8 +406,11 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="5ye-rB-mYv" id="YFX-ZW-YDz"/>
                         <outlet property="indicator" destination="4ex-l8-LNw" id="nhy-p5-7Jg"/>
+                        <outlet property="inputField" destination="nmy-sS-hTU" id="3xv-Dt-Cmq"/>
                         <outlet property="status" destination="gHt-bv-1jc" id="DdS-GF-3pk"/>
+                        <outlet property="updateButton" destination="Zsl-7a-yYg" id="3E7-Ij-sgK"/>
                     </connections>
                 </viewController>
                 <customObject id="Qdd-n5-0Qi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
