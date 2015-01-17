@@ -29,6 +29,33 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Edit" id="Yiv-Ri-08y">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Edit" id="Ohk-eh-UkX">
+                                    <items>
+                                        <menuItem title="Cut" keyEquivalent="x" id="rAa-6Z-BpJ">
+                                            <connections>
+                                                <action selector="cut:" target="Ady-hI-5gd" id="Snm-Od-iMT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Copy" keyEquivalent="c" id="jwa-Dy-C74">
+                                            <connections>
+                                                <action selector="copy:" target="Ady-hI-5gd" id="5x4-vg-j8m"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste" keyEquivalent="v" id="e9v-mO-JXQ">
+                                            <connections>
+                                                <action selector="paste:" target="Ady-hI-5gd" id="Dtk-cL-kWr"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Select All" keyEquivalent="a" id="iE9-xJ-6rb">
+                                            <connections>
+                                                <action selector="selectAll:" target="Ady-hI-5gd" id="vXQ-Ib-hh5"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem title="Deck" id="oAT-c2-3Ue">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Deck" id="kDE-GC-1tV">
@@ -297,7 +324,7 @@
                     <window key="window" title="Deck Tracker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
-                        <rect key="contentRect" x="1460" y="527" width="220" height="500"/>
+                        <rect key="contentRect" x="1000" y="300" width="220" height="500"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                         <value key="minSize" type="size" width="220" height="500"/>
                         <value key="maxSize" type="size" width="220" height="1200"/>
