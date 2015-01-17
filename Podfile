@@ -8,3 +8,4 @@ pod 'Realm'
 pod 'SBJson'
 pod "hpple"
 pod 'AFNetworking'
+pod 'RegExCategories', '~> 1.0'

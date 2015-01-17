@@ -19,6 +19,9 @@
 @property IBOutlet NSButton *updateButton;
 
 @property IBOutlet NSTextField *inputField;
+@property IBOutlet NSComboBox *siteChooser;
+// TODO remove when Settings window will be implemented
+@property IBOutlet NSComboBox *languageChooser;
 
 @end
 
@@ -41,24 +44,34 @@
     if ([[self.inputField stringValue] length] == 0) {
         NSLog(@"Should input builder Id");
     }
+    else if (![self.siteChooser objectValueOfSelectedItem]) {
+        NSLog(@"Should select site");
+    }
+    else if (![self.languageChooser objectValueOfSelectedItem]) {
+        // TODO remove when Settings window will be implemented
+        NSLog(@"Should select language");
+    }
     else {
         [self.indicator setHidden:NO];
         [self.indicator startAnimation:self];
         [self.status setHidden:NO];
         [self.status setStringValue:@"querying"];
-        
-        
-        [NetEaseCardBuilderImporter importDockerWithId:[self.inputField stringValue] success:^(NSArray *cards) {
+
+        // TODO remove language when Settings window will be implemented
+        [NetEaseCardBuilderImporter importDocker:[self.siteChooser objectValueOfSelectedItem]
+                                          withId:[self.inputField stringValue]
+                                         country:[self.languageChooser objectValueOfSelectedItem]
+                                         success:^(NSArray *cards) {
             [self.indicator setHidden:YES];
             [self.status setStringValue:@"success"];
-            
-            AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
+
+            AppDelegate *appDelegate = (AppDelegate *) [[NSApplication sharedApplication] delegate];
             [appDelegate updateWithCards:cards];
-            
-            NSWindow  *window = [[self view] window];
+
+            NSWindow *window = [[self view] window];
             [window orderOut:window];
-            
-        } fail:^(NSString *failReason) {
+
+        }                                   fail:^(NSString *failReason) {
             [self.indicator setHidden:YES];
             [self.status setStringValue:failReason];
         }];

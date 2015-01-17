@@ -380,7 +380,7 @@
             <objects>
                 <viewController id="P0h-J6-dR7" customClass="SettingsBuilderController" sceneMemberID="viewController">
                     <view key="view" id="Qnd-rc-p76">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="193"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ye-rB-mYv">
@@ -404,15 +404,23 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZU-8L-y89">
-                                <rect key="frame" x="18" y="83" width="354" height="17"/>
+                                <rect key="frame" x="18" y="120" width="354" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Builder ID:" id="B5p-HT-qkL">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-Qc-Eww">
+                                <rect key="frame" x="18" y="168" width="354" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Site" id="SDg-kE-29G">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-sS-hTU">
-                                <rect key="frame" x="20" y="53" width="350" height="22"/>
+                                <rect key="frame" x="20" y="92" width="350" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="WHi-uV-hPh">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -430,19 +438,65 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSf-Hb-RMf">
+                                <rect key="frame" x="20" y="141" width="353" height="26"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="eQc-Vp-q8p">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>hearthstone.com.cn</string>
+                                        <string>hearthpwn.com</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhg-Ut-sfU">
+                                <rect key="frame" x="18" y="73" width="354" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Game language" id="UtY-64-COj">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feS-lu-O36">
+                                <rect key="frame" x="20" y="46" width="353" height="26"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="Q1L-7G-6x0">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>deDE</string>
+                                        <string>enGB</string>
+                                        <string>enUS</string>
+                                        <string>esES</string>
+                                        <string>esMX</string>
+                                        <string>frFR</string>
+                                        <string>itIT</string>
+                                        <string>koKR</string>
+                                        <string>plPL</string>
+                                        <string>ptBR</string>
+                                        <string>ptPT</string>
+                                        <string>ruRU</string>
+                                        <string>zhCN</string>
+                                        <string>zhTW</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="5ye-rB-mYv" id="YFX-ZW-YDz"/>
                         <outlet property="indicator" destination="4ex-l8-LNw" id="nhy-p5-7Jg"/>
                         <outlet property="inputField" destination="nmy-sS-hTU" id="3xv-Dt-Cmq"/>
+                        <outlet property="languageChooser" destination="feS-lu-O36" id="DTQ-6h-InN"/>
+                        <outlet property="siteChooser" destination="tSf-Hb-RMf" id="jal-PD-SM3"/>
                         <outlet property="status" destination="gHt-bv-1jc" id="DdS-GF-3pk"/>
                         <outlet property="updateButton" destination="Zsl-7a-yYg" id="3E7-Ij-sgK"/>
                     </connections>
                 </viewController>
                 <customObject id="Qdd-n5-0Qi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400" y="236"/>
+            <point key="canvasLocation" x="-400" y="272.5"/>
         </scene>
         <!--Card List View Controller-->
         <scene sceneID="hIz-AP-VOD">
