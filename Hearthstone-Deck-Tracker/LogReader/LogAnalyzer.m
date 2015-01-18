@@ -64,12 +64,17 @@
         NSString *from = [regexp matchWithString:line atIndex:2];
         NSString *to = [regexp matchWithString:line atIndex:3];
         
-        if([from contains:@"FRIENDLY DECK"] && [to contains:@"GRAVEYARD"]) {
-            _playerDidDiscardCard(PlayerMe, cardId);
+        if(([from isEqualToString:@""] || [from contains:@"FRIENDLY DECK"])
+           && [to contains:@"FRIENDLY HAND"]) {
+            _playerDidDrawCard(PlayerMe, cardId);
         }
         
-        if([from contains:@"FRIENDLY DECK"] && [to contains:@"FRIENDLY HAND"]) {
-            _playerDidDrawCard(PlayerMe, cardId);
+        if([from contains:@"FRIENDLY HAND"] && [to contains:@"FRIENDLY DECK"]) {
+            _playerDidReturnDeckCard(PlayerMe, cardId);
+        }
+        
+        if([from contains:@"FRIENDLY DECK"] && [to contains:@"GRAVEYARD"]) {
+            _playerDidDiscardCard(PlayerMe, cardId);
         }
         
         if([from contains:@"FRIENDLY HAND"] && [to contains:@"FRIENDLY PLAY"]) {
@@ -77,10 +82,10 @@
         }
         
         if([from contains:@"FRIENDLY PLAY"] && [to contains:@"FRIENDLY HAND"]) {
-            _playerDidReturnCard(PlayerMe, cardId);
+            _playerDidReturnHandCard(PlayerMe, cardId);
         }
         
-        //NSLog(@"%@ to %@", from, to);
+        //NSLog(@"%@", line);
     }
     [self analyzeForCoin:line];
     [self analyzeForHero:line];

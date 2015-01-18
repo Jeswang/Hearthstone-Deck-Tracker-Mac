@@ -144,7 +144,7 @@
         NSLog(@"Player %u played card %@", player, cardId);
     }];
     
-    [_logAnalyzer setPlayerDidReturnCard:^(Player player, NSString *cardId) {
+    [_logAnalyzer setPlayerDidReturnHandCard:^(Player player, NSString *cardId) {
         NSLog(@"Player %u return %@", player, cardId);
     }];
     
@@ -164,6 +164,13 @@
         NSLog(@"Player %u drawed %@", player, card);
         for (NSObject<CardListDelegate>* list in ws.updateList) {
             [list removeCard:card];
+        }
+    }];
+    
+    [_logAnalyzer setPlayerDidReturnDeckCard:^(Player player, NSString * card) {
+        NSLog(@"Player %u put back to deck %@", player, card);
+        for (NSObject<CardListDelegate>* list in ws.updateList) {
+            [list restoreCard:card];
         }
     }];
     

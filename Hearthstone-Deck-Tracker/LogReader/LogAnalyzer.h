@@ -14,9 +14,11 @@
 - (void)analyzeLine:(NSString *)line;
 
 @property (nonatomic, copy) void(^playerDidDrawCard)(Player player, NSString *cardID);
+@property (nonatomic, copy) void(^playerDidReturnDeckCard)(Player player, NSString *cardID);
 @property (nonatomic, copy) void(^playerDidDiscardCard)(Player player, NSString *cardID);
 @property (nonatomic, copy) void(^playerDidPlayCard)(Player player, NSString *cardID);
-@property (nonatomic, copy) void(^playerDidReturnCard)(Player player, NSString *cardID);
+@property (nonatomic, copy) void(^playerDidReturnHandCard)(Player player, NSString *cardID);
+
 @property (nonatomic, copy) void(^playerDidDie)(Player player);
 @property (nonatomic, copy) void(^playerGotCoin)(Player player);
 @property (nonatomic, copy) void(^playerHero)(Player player, NSString *heroId);
