@@ -162,4 +162,25 @@
     }
 }
 
+- (void)restoreCard:(NSString *)cardId {
+    for (CardModel *card in self.showingCards) {
+        if (card.cardId == cardId) {
+                card.count = card.count + 1;
+                [self.tableView reloadData];
+                return;
+        }
+    }
+    
+    for (CardModel *card in self.cards) {
+        if (card.cardId == cardId) {
+            CardModel *newCard = [card deepCopy];
+            newCard.count = 1;
+            [self.showingCards addObject:newCard];
+            [self.tableView reloadData];
+            return;
+        }
+    }
+}
+
+
 @end

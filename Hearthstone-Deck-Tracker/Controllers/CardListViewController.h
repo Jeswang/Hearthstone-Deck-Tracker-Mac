@@ -14,6 +14,7 @@
 - (void)updateWithCards:(NSArray*)cards;
 - (void)resetCards;
 - (void)removeCard:(NSString *)cardId;
+- (void)restoreCard:(NSString *)cardId;
 
 @end
 

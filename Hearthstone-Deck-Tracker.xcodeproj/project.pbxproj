@@ -20,12 +20,12 @@
 		51846C6E1A680A87004ED043 /* CardListWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51846C6D1A680A87004ED043 /* CardListWindowController.m */; };
 		51846C711A681384004ED043 /* SettingBuilderWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51846C701A681384004ED043 /* SettingBuilderWindowController.m */; };
 		51846C741A682571004ED043 /* SettingsBuilderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51846C731A682571004ED043 /* SettingsBuilderController.m */; };
+		518F4A261A6BDFCD00B0C7D0 /* Hearthstone.m in Sources */ = {isa = PBXBuildFile; fileRef = 518F4A211A6BDFCD00B0C7D0 /* Hearthstone.m */; };
+		518F4A271A6BDFCD00B0C7D0 /* LogAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 518F4A231A6BDFCD00B0C7D0 /* LogAnalyzer.m */; };
+		518F4A281A6BDFCD00B0C7D0 /* LogObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 518F4A251A6BDFCD00B0C7D0 /* LogObserver.m */; };
 		5192D17C1A62A5B500B239C5 /* RLMObject+Copying.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */; };
 		5192D1801A62B09E00B239C5 /* NetEaseCardBuilderImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */; };
 		5192D1831A62B10800B239C5 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D1821A62B10800B239C5 /* SystemHelper.m */; };
-		5194F5491A661746005BBD08 /* Hearthstone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5194F5411A661746005BBD08 /* Hearthstone.m */; };
-		5194F54A1A661746005BBD08 /* LogAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5194F5431A661746005BBD08 /* LogAnalyzer.m */; };
-		5194F54B1A661746005BBD08 /* LogObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 5194F5451A661746005BBD08 /* LogObserver.m */; };
 		5194F5581A6617E8005BBD08 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5194F5571A6617E8005BBD08 /* libsqlite3.0.dylib */; };
 		51AAA16C1A6B6F9D000228A9 /* Card_back-Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */; };
 		51B86CDD1A63DBD1001AB7D7 /* LogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B86CDC1A63DBD1001AB7D7 /* LogReader.m */; };
@@ -69,18 +69,18 @@
 		51846C701A681384004ED043 /* SettingBuilderWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingBuilderWindowController.m; sourceTree = "<group>"; };
 		51846C721A682571004ED043 /* SettingsBuilderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsBuilderController.h; sourceTree = "<group>"; };
 		51846C731A682571004ED043 /* SettingsBuilderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsBuilderController.m; sourceTree = "<group>"; };
+		518F4A201A6BDFCD00B0C7D0 /* Hearthstone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hearthstone.h; path = LogReader/Hearthstone.h; sourceTree = "<group>"; };
+		518F4A211A6BDFCD00B0C7D0 /* Hearthstone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hearthstone.m; path = LogReader/Hearthstone.m; sourceTree = "<group>"; };
+		518F4A221A6BDFCD00B0C7D0 /* LogAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogAnalyzer.h; path = LogReader/LogAnalyzer.h; sourceTree = "<group>"; };
+		518F4A231A6BDFCD00B0C7D0 /* LogAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogAnalyzer.m; path = LogReader/LogAnalyzer.m; sourceTree = "<group>"; };
+		518F4A241A6BDFCD00B0C7D0 /* LogObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogObserver.h; path = LogReader/LogObserver.h; sourceTree = "<group>"; };
+		518F4A251A6BDFCD00B0C7D0 /* LogObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogObserver.m; path = LogReader/LogObserver.m; sourceTree = "<group>"; };
 		5192D17A1A62A5B500B239C5 /* RLMObject+Copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RLMObject+Copying.h"; path = "Utility/RLMObject+Copying.h"; sourceTree = "<group>"; };
 		5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RLMObject+Copying.m"; path = "Utility/RLMObject+Copying.m"; sourceTree = "<group>"; };
 		5192D17E1A62B09E00B239C5 /* NetEaseCardBuilderImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetEaseCardBuilderImporter.h; path = Importer/NetEaseCardBuilderImporter.h; sourceTree = "<group>"; };
 		5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetEaseCardBuilderImporter.m; path = Importer/NetEaseCardBuilderImporter.m; sourceTree = "<group>"; };
 		5192D1811A62B10800B239C5 /* SystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemHelper.h; path = Utility/SystemHelper.h; sourceTree = "<group>"; };
 		5192D1821A62B10800B239C5 /* SystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystemHelper.m; path = Utility/SystemHelper.m; sourceTree = "<group>"; };
-		5194F5401A661746005BBD08 /* Hearthstone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hearthstone.h; sourceTree = "<group>"; };
-		5194F5411A661746005BBD08 /* Hearthstone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hearthstone.m; sourceTree = "<group>"; };
-		5194F5421A661746005BBD08 /* LogAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogAnalyzer.h; sourceTree = "<group>"; };
-		5194F5431A661746005BBD08 /* LogAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogAnalyzer.m; sourceTree = "<group>"; };
-		5194F5441A661746005BBD08 /* LogObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogObserver.h; sourceTree = "<group>"; };
-		5194F5451A661746005BBD08 /* LogObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogObserver.m; sourceTree = "<group>"; };
 		5194F5571A6617E8005BBD08 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Card_back-Default.png"; sourceTree = "<group>"; };
 		51B86CDB1A63DBD1001AB7D7 /* LogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogReader.h; path = LogReader/LogReader.h; sourceTree = "<group>"; };
@@ -245,24 +245,15 @@
 			name = Importer;
 			sourceTree = "<group>";
 		};
-		5194F53F1A661746005BBD08 /* Hearthstone */ = {
-			isa = PBXGroup;
-			children = (
-				5194F5401A661746005BBD08 /* Hearthstone.h */,
-				5194F5411A661746005BBD08 /* Hearthstone.m */,
-				5194F5421A661746005BBD08 /* LogAnalyzer.h */,
-				5194F5431A661746005BBD08 /* LogAnalyzer.m */,
-				5194F5441A661746005BBD08 /* LogObserver.h */,
-				5194F5451A661746005BBD08 /* LogObserver.m */,
-			);
-			name = Hearthstone;
-			path = "hearthstone-tracker-osx/hearth/Classes/Hearthstone";
-			sourceTree = SOURCE_ROOT;
-		};
 		51B86CDA1A63DB99001AB7D7 /* LogReader */ = {
 			isa = PBXGroup;
 			children = (
-				5194F53F1A661746005BBD08 /* Hearthstone */,
+				518F4A201A6BDFCD00B0C7D0 /* Hearthstone.h */,
+				518F4A211A6BDFCD00B0C7D0 /* Hearthstone.m */,
+				518F4A221A6BDFCD00B0C7D0 /* LogAnalyzer.h */,
+				518F4A231A6BDFCD00B0C7D0 /* LogAnalyzer.m */,
+				518F4A241A6BDFCD00B0C7D0 /* LogObserver.h */,
+				518F4A251A6BDFCD00B0C7D0 /* LogObserver.m */,
 				51B86CDB1A63DBD1001AB7D7 /* LogReader.h */,
 				51B86CDC1A63DBD1001AB7D7 /* LogReader.m */,
 			);
@@ -425,26 +416,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5194F54A1A661746005BBD08 /* LogAnalyzer.m in Sources */,
 				5166468C1A621F2900E36F26 /* CardCellView.m in Sources */,
 				51D1051B1A6A6C8D0074B86A /* CardPreviewController.m in Sources */,
+				518F4A271A6BDFCD00B0C7D0 /* LogAnalyzer.m in Sources */,
 				5166468F1A621FF700E36F26 /* CardModel.m in Sources */,
-				5194F5491A661746005BBD08 /* Hearthstone.m in Sources */,
 				51C72D851A619118004C374E /* CardListViewController.m in Sources */,
 				51846C6E1A680A87004ED043 /* CardListWindowController.m in Sources */,
 				43BAAA351A6BD54E00579756 /* Configuration.m in Sources */,
 				5132FABD1A5FC10300A43A59 /* main.m in Sources */,
 				5192D1801A62B09E00B239C5 /* NetEaseCardBuilderImporter.m in Sources */,
+				518F4A281A6BDFCD00B0C7D0 /* LogObserver.m in Sources */,
 				51846C711A681384004ED043 /* SettingBuilderWindowController.m in Sources */,
 				5192D17C1A62A5B500B239C5 /* RLMObject+Copying.m in Sources */,
 				51B86CDD1A63DBD1001AB7D7 /* LogReader.m in Sources */,
 				43BAAA311A6BC49900579756 /* SettingsController.m in Sources */,
 				5192D1831A62B10800B239C5 /* SystemHelper.m in Sources */,
-				5194F54B1A661746005BBD08 /* LogObserver.m in Sources */,
 				516646931A6228B700E36F26 /* RealmGenerator.m in Sources */,
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
 				51846C741A682571004ED043 /* SettingsBuilderController.m in Sources */,
 				51C72D881A619218004C374E /* DeckManangerController.m in Sources */,
+				518F4A261A6BDFCD00B0C7D0 /* Hearthstone.m in Sources */,
 				9A3A265DA881CFFFFF4DBA86 /* HoverTableCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
