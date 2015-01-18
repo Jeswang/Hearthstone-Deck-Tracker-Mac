@@ -1,6 +1,8 @@
 language: objective-c
 xcode_workspace: Hearthstone-Deck-Tracker.xcworkspace
 xcode_scheme: Hearthstone-Deck-Tracker
-install: gem install cocoapods --pre --verbose
+install: 
+  - gem install cocoapods --pre --verbose
+script: xctool -workspace Hearthstone-Deck-Tracker.xcworkspace -scheme 'Hearthstone-Deck-Tracker' build
 notifications:
   slack: hs-tracker:bIUUloat3Xmb7bTuzsdC52bm
