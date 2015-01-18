@@ -32,7 +32,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //[RealmGenerator generateCardRealm];    
-    
+
     [[Hearthstone defaultInstance] setStatusDidUpdate:^(BOOL isRunning) {
         NSLog(@"Hearthstone is running? %d", isRunning);
     }];

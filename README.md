@@ -1,7 +1,7 @@
 Hearthstone-Deck-Tracker-Mac
 ===========
 A deck tracker for Mac OS X
-![image](https://cloud.githubusercontent.com/assets/553783/5774070/dd436718-9da4-11e4-835c-81410db081fb.png)
+![image](https://cloud.githubusercontent.com/assets/553783/5791437/0cbdc62e-9f11-11e4-9b8e-24ba2e874fca.png)
 
 Features
 =========

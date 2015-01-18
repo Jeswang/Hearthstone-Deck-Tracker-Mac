@@ -25,14 +25,16 @@
 		5194F54A1A661746005BBD08 /* LogAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5194F5431A661746005BBD08 /* LogAnalyzer.m */; };
 		5194F54B1A661746005BBD08 /* LogObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 5194F5451A661746005BBD08 /* LogObserver.m */; };
 		5194F5581A6617E8005BBD08 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5194F5571A6617E8005BBD08 /* libsqlite3.0.dylib */; };
+		51AAA16C1A6B6F9D000228A9 /* Card_back-Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */; };
 		51B86CDD1A63DBD1001AB7D7 /* LogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B86CDC1A63DBD1001AB7D7 /* LogReader.m */; };
-		51C31ABE1A680046009D9170 /* Abomination.png in Resources */ = {isa = PBXBuildFile; fileRef = 51C31ABD1A680046009D9170 /* Abomination.png */; };
 		51C72D7E1A6190B4004C374E /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7A1A6190B4004C374E /* Files */; };
 		51C72D7F1A6190B4004C374E /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7B1A6190B4004C374E /* Images */; };
 		51C72D801A6190B4004C374E /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7C1A6190B4004C374E /* Resources */; };
 		51C72D851A619118004C374E /* CardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D841A619118004C374E /* CardListViewController.m */; };
 		51C72D881A619218004C374E /* DeckManangerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D871A619218004C374E /* DeckManangerController.m */; };
+		51D1051B1A6A6C8D0074B86A /* CardPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D1051A1A6A6C8D0074B86A /* CardPreviewController.m */; };
 		51F7DAD11A625E7000E69120 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F7DAD01A625E7000E69120 /* CoreGraphics.framework */; };
+		9A3A265DA881CFFFFF4DBA86 /* HoverTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A2885AAB381BE68B3572F /* HoverTableCellView.m */; };
 		D3D6FC08335C98DCC2E9265C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0D96C4241DA85CCE2EA371 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -84,9 +86,9 @@
 		5194F5441A661746005BBD08 /* LogObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogObserver.h; sourceTree = "<group>"; };
 		5194F5451A661746005BBD08 /* LogObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogObserver.m; sourceTree = "<group>"; };
 		5194F5571A6617E8005BBD08 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Card_back-Default.png"; sourceTree = "<group>"; };
 		51B86CDB1A63DBD1001AB7D7 /* LogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogReader.h; path = LogReader/LogReader.h; sourceTree = "<group>"; };
 		51B86CDC1A63DBD1001AB7D7 /* LogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogReader.m; path = LogReader/LogReader.m; sourceTree = "<group>"; };
-		51C31ABD1A680046009D9170 /* Abomination.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Abomination.png; sourceTree = "<group>"; };
 		51C72D7A1A6190B4004C374E /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Files; sourceTree = "<group>"; };
 		51C72D7B1A6190B4004C374E /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		51C72D7C1A6190B4004C374E /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
@@ -94,8 +96,12 @@
 		51C72D841A619118004C374E /* CardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListViewController.m; sourceTree = "<group>"; };
 		51C72D861A619218004C374E /* DeckManangerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckManangerController.h; sourceTree = "<group>"; };
 		51C72D871A619218004C374E /* DeckManangerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckManangerController.m; sourceTree = "<group>"; };
+		51D105191A6A6C8D0074B86A /* CardPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPreviewController.h; sourceTree = "<group>"; };
+		51D1051A1A6A6C8D0074B86A /* CardPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPreviewController.m; sourceTree = "<group>"; };
 		51F7DAD01A625E7000E69120 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		774564573B6A33F52AC6E9AA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9A3A26DA11AD707583B09BD5 /* HoverTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoverTableCellView.h; sourceTree = "<group>"; };
+		9A3A2885AAB381BE68B3572F /* HoverTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoverTableCellView.m; sourceTree = "<group>"; };
 		CB0D96C4241DA85CCE2EA371 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +149,7 @@
 		5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */,
 				51B86CDA1A63DB99001AB7D7 /* LogReader */,
 				5192D17D1A62B04C00B239C5 /* Importer */,
 				516646901A62287600E36F26 /* Utility */,
@@ -157,8 +164,8 @@
 				5132FABA1A5FC10300A43A59 /* AppDelegate.m */,
 				5132FAC11A5FC10300A43A59 /* Images.xcassets */,
 				5132FAC31A5FC10300A43A59 /* Main.storyboard */,
-				51C31ABD1A680046009D9170 /* Abomination.png */,
 				5132FAB71A5FC10200A43A59 /* Supporting Files */,
+				9A3A2F0245B1234C8E3A62F2 /* Libraries */,
 			);
 			path = "Hearthstone-Deck-Tracker";
 			sourceTree = "<group>";
@@ -203,6 +210,8 @@
 			children = (
 				5166468A1A621F2900E36F26 /* CardCellView.h */,
 				5166468B1A621F2900E36F26 /* CardCellView.m */,
+				9A3A26DA11AD707583B09BD5 /* HoverTableCellView.h */,
+				9A3A2885AAB381BE68B3572F /* HoverTableCellView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -260,6 +269,8 @@
 				51846C6D1A680A87004ED043 /* CardListWindowController.m */,
 				51C72D831A619118004C374E /* CardListViewController.h */,
 				51C72D841A619118004C374E /* CardListViewController.m */,
+				51D105191A6A6C8D0074B86A /* CardPreviewController.h */,
+				51D1051A1A6A6C8D0074B86A /* CardPreviewController.m */,
 				51C72D861A619218004C374E /* DeckManangerController.h */,
 				51C72D871A619218004C374E /* DeckManangerController.m */,
 				51846C721A682571004ED043 /* SettingsBuilderController.h */,
@@ -268,6 +279,13 @@
 				51846C701A681384004ED043 /* SettingBuilderWindowController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9A3A2F0245B1234C8E3A62F2 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 		ADED6EFEDB7C24AD291EA6FA /* Pods */ = {
@@ -372,10 +390,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				51C72D7F1A6190B4004C374E /* Images in Resources */,
-				51C31ABE1A680046009D9170 /* Abomination.png in Resources */,
 				51C72D7E1A6190B4004C374E /* Files in Resources */,
 				51C72D801A6190B4004C374E /* Resources in Resources */,
 				5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */,
+				51AAA16C1A6B6F9D000228A9 /* Card_back-Default.png in Resources */,
 				5132FAC51A5FC10300A43A59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +447,7 @@
 			files = (
 				5194F54A1A661746005BBD08 /* LogAnalyzer.m in Sources */,
 				5166468C1A621F2900E36F26 /* CardCellView.m in Sources */,
+				51D1051B1A6A6C8D0074B86A /* CardPreviewController.m in Sources */,
 				5166468F1A621FF700E36F26 /* CardModel.m in Sources */,
 				5194F5491A661746005BBD08 /* Hearthstone.m in Sources */,
 				51C72D851A619118004C374E /* CardListViewController.m in Sources */,
@@ -444,6 +463,7 @@
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
 				51846C741A682571004ED043 /* SettingsBuilderController.m in Sources */,
 				51C72D881A619218004C374E /* DeckManangerController.m in Sources */,
+				9A3A265DA881CFFFFF4DBA86 /* HoverTableCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

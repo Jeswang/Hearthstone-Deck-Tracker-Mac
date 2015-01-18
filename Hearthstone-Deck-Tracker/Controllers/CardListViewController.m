@@ -12,6 +12,7 @@
 #import "AppDelegate.h"
 #import "RLMObject+Copying.h"
 #import "Hearthstone.h"
+#import "CardPreviewController.h"
 
 @interface CardListViewController()
 
@@ -19,6 +20,8 @@
 @property(nonatomic, strong) NSMutableArray *cards;
 @property(nonatomic, strong) NSMutableArray *showingCards;
 
+@property(nonatomic, strong) NSWindowController *previewWindowController;
+@property(nonatomic, strong) NSString *currentPreviewCardId;
 @end
 
 @implementation CardListViewController
@@ -28,9 +31,11 @@
     
     self.cards = [NSMutableArray new];
     
-    //NSArray *cards = [NSArray new];
-    self.cards = [NSMutableArray new];
-    self.showingCards = [NSMutableArray new];
+    self.cards = [CardModel actualCards];
+    self.showingCards = [CardModel actualCards];
+    
+    //self.cards = [NSMutableArray new];
+    //self.showingCards = [NSMutableArray new];
 
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -54,11 +59,74 @@
 }
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    //NSTableCellView *result = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
     CardModel *card = [self.showingCards objectAtIndex:row];
     CardCellView *cell = [CardCellView initWithCard:card];
-    
+    cell.delegate = self;
     return cell;
+}
+
+- (void)hoverCell:(NSTableCellView *)cell mouseInside:(BOOL)mouseInside{
+    if (mouseInside) {
+        CardCellView *cardCell = (CardCellView *)cell;
+        [self showPreviewWindowBeside:cardCell];
+    }
+    else {
+        [self hidePreviewWindow:(CardCellView *)cell];
+    }
+}
+
+- (void)hidePreviewWindow:(CardCellView *)cell {
+    if (cell.card.cardId == self.currentPreviewCardId) {
+        [self.previewWindowController.window close];
+        self.currentPreviewCardId = nil;
+    }
+}
+
+- (void)showPreviewWindowBeside:(CardCellView *)cell {
+    if (_previewWindowController == nil) {
+        NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.previewWindowController = [sb instantiateControllerWithIdentifier:@"CardPreviewWindowController"];
+        [self.previewWindowController.window setOpaque:NO];
+        [self.previewWindowController.window setBackgroundColor:[NSColor clearColor]];
+        [self.previewWindowController.window setLevel:NSScreenSaverWindowLevel];
+    }
+    
+    CardPreviewController *contentController =  (CardPreviewController *)self.previewWindowController.contentViewController;
+    [contentController loadCardByCardId:cell.card.cardId];
+    
+    self.currentPreviewCardId = cell.card.cardId;
+    
+    [self.previewWindowController showWindow:self.previewWindowController.window];
+    
+    NSPoint point = [self calPreivewWindowPointBesideCell:cell];
+    
+    [self.previewWindowController.window setFrameTopLeftPoint:point];
+}
+
+- (NSPoint)calPreivewWindowPointBesideCell:(CardCellView *)cell {
+    NSInteger row = [self.tableView rowForView:cell];
+    NSInteger column = [self.tableView columnForView:cell];
+    NSRect rect = [self.tableView frameOfCellAtColumn:column row:row];
+    
+    float offset = rect.origin.y - self.tableView.enclosingScrollView.documentVisibleRect.origin.y;
+    
+    NSRect windowRect = self.view.window.frame;
+    //NSSize screenSize = self.view.window.screen.frame.size;
+    
+    float x,y;
+    if (windowRect.origin.x < 200) {
+        x = windowRect.origin.x + windowRect.size.width;
+    }
+    else {
+        x = windowRect.origin.x-200;
+    }
+    
+    y = windowRect.origin.y+windowRect.size.height - offset - 30;
+    if (y < 278) {
+        y = 278;
+    }
+    
+    return NSMakePoint(x, y);
 }
 
 - (void)updateWithCards:(NSArray *)cards {

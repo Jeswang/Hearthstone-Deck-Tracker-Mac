@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "HoverTableCellView.h"
 
 @class CardModel;
 
-@interface CardCellView : NSTableCellView
+@interface CardCellView : HoverTableCellView
 
 @property CardModel *card;
 

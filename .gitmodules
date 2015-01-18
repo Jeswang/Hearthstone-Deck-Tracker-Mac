@@ -1,3 +1,6 @@
 [submodule "hearthstone-tracker-osx"]
 	path = hearthstone-tracker-osx
 	url = http://github.com/Jeswang/hearthstone-tracker-osx.git
+[submodule "Hearthstone-Deck-Tracker/Libraries/OTWebImage"]
+	path = Hearthstone-Deck-Tracker/Libraries/OTWebImage
+	url = https://github.com/OpenFibers/OTWebImage.git
