@@ -1,3 +1,6 @@
 language: objective-c
 xcode_workspace: Hearthstone-Deck-Tracker.xcworkspace
 xcode_scheme: Hearthstone-Deck-Tracker
+install: bundle exec install cocoapods --pre --verbose
+notifications:
+  slack: hs-tracker:bIUUloat3Xmb7bTuzsdC52bm
