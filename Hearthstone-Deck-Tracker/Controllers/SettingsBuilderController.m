@@ -9,6 +9,7 @@
 #import "SettingsBuilderController.h"
 #import "NetEaseCardBuilderImporter.h"
 #import "AppDelegate.h"
+#import "Configuration.h"
 
 @interface SettingsBuilderController ()
 
@@ -20,8 +21,6 @@
 
 @property IBOutlet NSTextField *inputField;
 @property IBOutlet NSComboBox *siteChooser;
-// TODO remove when Settings window will be implemented
-@property IBOutlet NSComboBox *languageChooser;
 
 @end
 
@@ -33,7 +32,6 @@
     [self.indicator setHidden:YES];
     [self.status setHidden:YES];
 }
-
 
 - (IBAction)cancel:(id)sender {    
     NSWindow  *window = [[self view] window];
@@ -47,9 +45,11 @@
     else if (![self.siteChooser objectValueOfSelectedItem]) {
         NSLog(@"Should select site");
     }
-    else if (![self.languageChooser objectValueOfSelectedItem]) {
-        // TODO remove when Settings window will be implemented
-        NSLog(@"Should select language");
+    else if (![Configuration instance].countryLanguage) {
+        NSAlert *alert = [[NSAlert alloc] init];
+        alert.alertStyle = NSWarningAlertStyle;
+        alert.informativeText = @"Game language is not configured in the Preferences panel";
+        [alert runModal];
     }
     else {
         [self.indicator setHidden:NO];
@@ -59,7 +59,6 @@
 
         [NetEaseCardBuilderImporter importDocker:[self.siteChooser objectValueOfSelectedItem]
                                           withId:[self.inputField stringValue]
-                                         country:[self.languageChooser objectValueOfSelectedItem]
                                          success:^(NSArray *cards) {
             [self.indicator setHidden:YES];
             [self.status setStringValue:@"success"];

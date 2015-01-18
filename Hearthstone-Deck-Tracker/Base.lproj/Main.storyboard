@@ -20,6 +20,12 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Preferences" id="YDs-yn-yHW">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="openSettings:" target="Voe-Tx-rLC" id="067-fB-NOt"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Quit Hearthstone-Deck-Tracker" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
@@ -116,7 +122,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="cIS-zh-nZq"/>
             </objects>
-            <point key="canvasLocation" x="-1064.5" y="-176"/>
+            <point key="canvasLocation" x="-1067.5" y="-215"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="GmK-p1-FWG">
@@ -380,11 +386,11 @@
             <objects>
                 <viewController id="P0h-J6-dR7" customClass="SettingsBuilderController" sceneMemberID="viewController">
                     <view key="view" id="Qnd-rc-p76">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="193"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ye-rB-mYv">
-                                <rect key="frame" x="202" y="18" width="80" height="25"/>
+                                <rect key="frame" x="202" y="11" width="80" height="25"/>
                                 <buttonCell key="cell" type="roundTextured" title="Cancel" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6Vj-8X-u8e">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -394,7 +400,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zsl-7a-yYg">
-                                <rect key="frame" x="290" y="18" width="80" height="25"/>
+                                <rect key="frame" x="290" y="11" width="80" height="25"/>
                                 <buttonCell key="cell" type="roundTextured" title="Update" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="97F-ly-SQe">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -404,7 +410,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZU-8L-y89">
-                                <rect key="frame" x="18" y="120" width="354" height="17"/>
+                                <rect key="frame" x="18" y="77" width="354" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Builder ID:" id="B5p-HT-qkL">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -412,7 +418,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-Qc-Eww">
-                                <rect key="frame" x="18" y="168" width="354" height="17"/>
+                                <rect key="frame" x="18" y="125" width="354" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Site" id="SDg-kE-29G">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -420,7 +426,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-sS-hTU">
-                                <rect key="frame" x="20" y="92" width="350" height="22"/>
+                                <rect key="frame" x="20" y="49" width="350" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="WHi-uV-hPh">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -428,10 +434,10 @@
                                 </textFieldCell>
                             </textField>
                             <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="4ex-l8-LNw">
-                                <rect key="frame" x="20" y="20" width="16" height="16"/>
+                                <rect key="frame" x="20" y="13" width="16" height="16"/>
                             </progressIndicator>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHt-bv-1jc">
-                                <rect key="frame" x="42" y="20" width="146" height="17"/>
+                                <rect key="frame" x="42" y="13" width="146" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Updating" id="sLZ-7x-bbA">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -439,7 +445,7 @@
                                 </textFieldCell>
                             </textField>
                             <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSf-Hb-RMf">
-                                <rect key="frame" x="20" y="141" width="353" height="26"/>
+                                <rect key="frame" x="20" y="98" width="353" height="26"/>
                                 <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="eQc-Vp-q8p">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -450,45 +456,12 @@
                                     </objectValues>
                                 </comboBoxCell>
                             </comboBox>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhg-Ut-sfU">
-                                <rect key="frame" x="18" y="73" width="354" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Game language" id="UtY-64-COj">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feS-lu-O36">
-                                <rect key="frame" x="20" y="46" width="353" height="26"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="Q1L-7G-6x0">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <objectValues>
-                                        <string>deDE</string>
-                                        <string>enGB</string>
-                                        <string>enUS</string>
-                                        <string>esES</string>
-                                        <string>esMX</string>
-                                        <string>frFR</string>
-                                        <string>itIT</string>
-                                        <string>koKR</string>
-                                        <string>plPL</string>
-                                        <string>ptBR</string>
-                                        <string>ptPT</string>
-                                        <string>ruRU</string>
-                                        <string>zhCN</string>
-                                        <string>zhTW</string>
-                                    </objectValues>
-                                </comboBoxCell>
-                            </comboBox>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="5ye-rB-mYv" id="YFX-ZW-YDz"/>
                         <outlet property="indicator" destination="4ex-l8-LNw" id="nhy-p5-7Jg"/>
                         <outlet property="inputField" destination="nmy-sS-hTU" id="3xv-Dt-Cmq"/>
-                        <outlet property="languageChooser" destination="feS-lu-O36" id="DTQ-6h-InN"/>
                         <outlet property="siteChooser" destination="tSf-Hb-RMf" id="jal-PD-SM3"/>
                         <outlet property="status" destination="gHt-bv-1jc" id="DdS-GF-3pk"/>
                         <outlet property="updateButton" destination="Zsl-7a-yYg" id="3E7-Ij-sgK"/>
@@ -496,7 +469,7 @@
                 </viewController>
                 <customObject id="Qdd-n5-0Qi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-474" y="231"/>
+            <point key="canvasLocation" x="-474" y="209"/>
         </scene>
         <!--Card List View Controller-->
         <scene sceneID="hIz-AP-VOD">
