@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "HoverTableCellView.h"
 
 @protocol CardListDelegate <NSObject>
 
@@ -16,7 +17,7 @@
 
 @end
 
-@interface CardListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate, CardListDelegate>
+@interface CardListViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate, CardListDelegate, HoverCellProtocal>
 
 @end
 

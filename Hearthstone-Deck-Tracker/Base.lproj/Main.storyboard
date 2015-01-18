@@ -89,7 +89,7 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="cIS-zh-nZq"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="-1064.5" y="-176"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="GmK-p1-FWG">
@@ -132,7 +132,7 @@
                 </windowController>
                 <customObject id="ihh-8w-ecj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="573.5" y="326"/>
+            <point key="canvasLocation" x="-406.5" y="876"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8Du-Di-Cyh">
@@ -220,7 +220,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="T4M-SC-xT3"/>
                                         </constraints>
-                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="3.1352563068754214e-12" horizontal="YES" id="cLV-se-iYK">
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="cLV-se-iYK">
                                             <rect key="frame" x="1" y="119" width="238" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
@@ -288,7 +288,7 @@
                 </viewController>
                 <customObject id="Ouo-Q1-aK7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="573" y="931"/>
+            <point key="canvasLocation" x="-407" y="1503"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -328,7 +328,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-756" y="270"/>
+            <point key="canvasLocation" x="-1160" y="211"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="yva-Xc-9n8">
@@ -346,7 +346,7 @@
                 </windowController>
                 <customObject id="KLs-F2-wf3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400" y="7"/>
+            <point key="canvasLocation" x="-474" y="2"/>
         </scene>
         <!--Settings Builder Controller-->
         <scene sceneID="hMq-jh-F4D">
@@ -415,7 +415,7 @@
                 </viewController>
                 <customObject id="Qdd-n5-0Qi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400" y="236"/>
+            <point key="canvasLocation" x="-474" y="231"/>
         </scene>
         <!--Card List View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -496,7 +496,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-785" y="912"/>
+            <point key="canvasLocation" x="-868" y="192"/>
         </scene>
         <!--Collection View Item-->
         <scene sceneID="X7Z-2O-dhR">
@@ -514,10 +514,10 @@
         <!--Window Controller-->
         <scene sceneID="H4D-f3-rAP">
             <objects>
-                <windowController id="I1o-X7-I8R" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="CardPreviewWindowController" id="I1o-X7-I8R" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="xvr-Wm-0d7">
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="200" height="279"/>
+                        <rect key="contentRect" x="860" y="502" width="200" height="279"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
                         <value key="minSize" type="size" width="200" height="279"/>
                         <value key="maxSize" type="size" width="200" height="279"/>
@@ -528,26 +528,29 @@
                 </windowController>
                 <customObject id="r04-dK-Eor" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-485" y="545.5"/>
+            <point key="canvasLocation" x="-1160" y="753.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Card Preview Controller-->
         <scene sceneID="4ud-qU-sRp">
             <objects>
-                <viewController id="3jx-O0-4gT" sceneMemberID="viewController">
+                <viewController id="3jx-O0-4gT" customClass="CardPreviewController" sceneMemberID="viewController">
                     <view key="view" id="RQN-Vw-KR1">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="279"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P8s-HD-l2C">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="279"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Abomination" id="zBd-0R-AAE"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-0B-3U1">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="278"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Abomination" id="v9H-sk-ZFf"/>
                             </imageView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="cardImage" destination="0xb-0B-3U1" id="UCN-QY-hHW"/>
+                    </connections>
                 </viewController>
                 <customObject id="nZt-1O-tIa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-485" y="930.5"/>
+            <point key="canvasLocation" x="-878" y="753.5"/>
         </scene>
     </scenes>
     <resources>

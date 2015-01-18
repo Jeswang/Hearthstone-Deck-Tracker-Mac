@@ -8,3 +8,4 @@ pod 'Realm'
 pod 'SBJson'
 pod "hpple"
 pod 'AFNetworking'
+pod 'OTWebImage', :git => 'https://github.com/OpenFibers/OTWebImage.git'
