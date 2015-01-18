@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: Hearthstone-Deck-Tracker.xcworkspace
+xcode_scheme: Hearthstone-Deck-Tracker
