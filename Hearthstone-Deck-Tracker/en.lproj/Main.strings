@@ -1,0 +1,144 @@
+
+/* Class = "(null)"; title = "Window"; ObjectID = "01x-0O-ZW8"; */
+"01x-0O-ZW8.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Hearthstone-Deck-Tracker"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Hearthstone-Deck-Tracker";
+
+/* Class = "NSMenuItem"; title = "Quit Hearthstone-Deck-Tracker"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit Hearthstone-Deck-Tracker";
+
+/* Class = "NSMenuItem"; title = "About Deck Tracker"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About Deck Tracker";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "6Vj-8X-u8e"; */
+"6Vj-8X-u8e.title" = "Cancel";
+
+/* Class = "NSButtonCell"; title = "Update"; ObjectID = "97F-ly-SQe"; */
+"97F-ly-SQe.title" = "Update";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSToolbarItem"; label = "Settings"; ObjectID = "AzW-Ar-TKE"; */
+"AzW-Ar-TKE.label" = "Settings";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Settings"; ObjectID = "AzW-Ar-TKE"; */
+"AzW-Ar-TKE.paletteLabel" = "Settings";
+
+/* Class = "NSTextFieldCell"; title = "Builder ID:"; ObjectID = "B5p-HT-qkL"; */
+"B5p-HT-qkL.title" = "Builder ID:";
+
+/* Class = "NSTextFieldCell"; title = "HEADER CELL"; ObjectID = "Ez1-er-PWQ"; */
+"Ez1-er-PWQ.title" = "HEADER CELL";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Hearthstone-Deck-Tracker Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Hearthstone-Deck-Tracker Help";
+
+/* Class = "NSToolbarItem"; label = "Add Dock"; ObjectID = "Ghw-GG-BaU"; */
+"Ghw-GG-BaU.label" = "Add Dock";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Add Dock"; ObjectID = "Ghw-GG-BaU"; */
+"Ghw-GG-BaU.paletteLabel" = "Add Dock";
+
+/* Class = "NSToolbarItem"; label = "Add Deck"; ObjectID = "GoV-nN-unn"; */
+"GoV-nN-unn.label" = "Add Deck";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Toolbar Item"; ObjectID = "GoV-nN-unn"; */
+"GoV-nN-unn.paletteLabel" = "Toolbar Item";
+
+/* Class = "(null)"; title = "Deck Tracker"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Deck Tracker";
+
+/* Class = "NSMenuItem"; title = "Settings"; ObjectID = "L33-q4-D2i"; */
+"L33-q4-D2i.title" = "Settings";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Bring All to Front";
+
+/* Class = "NSToolbarItem"; label = "Search Cards"; ObjectID = "LyI-9S-91S"; */
+"LyI-9S-91S.label" = "Search Cards";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Search Cards"; ObjectID = "LyI-9S-91S"; */
+"LyI-9S-91S.paletteLabel" = "Search Cards";
+
+/* Class = "(null)"; title = "Window"; ObjectID = "Nzt-vR-FiC"; */
+"Nzt-vR-FiC.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimize";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "Ohk-eh-UkX"; */
+"Ohk-eh-UkX.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSTextFieldCell"; title = "Site"; ObjectID = "SDg-kE-29G"; */
+"SDg-kE-29G.title" = "Site";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Preferences"; ObjectID = "YDs-yn-yHW"; */
+"YDs-yn-yHW.title" = "Preferences";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "Yiv-Ri-08y"; */
+"Yiv-Ri-08y.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "c7y-dd-yJe"; */
+"c7y-dd-yJe.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "e9v-mO-JXQ"; */
+"e9v-mO-JXQ.title" = "Paste";
+
+/* Class = "NSComboBoxCell"; eQc-Vp-q8p.ibShadowedObjectValues[0] = "hearthstone.com.cn"; ObjectID = "eQc-Vp-q8p"; */
+"eQc-Vp-q8p.ibShadowedObjectValues[0]" = "hearthstone.com.cn";
+
+/* Class = "NSComboBoxCell"; eQc-Vp-q8p.ibShadowedObjectValues[1] = "hearthpwn.com"; ObjectID = "eQc-Vp-q8p"; */
+"eQc-Vp-q8p.ibShadowedObjectValues[1]" = "hearthpwn.com";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "erl-MO-pgB"; */
+"erl-MO-pgB.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Cards"; ObjectID = "fo4-fJ-RaX"; */
+"fo4-fJ-RaX.title" = "Cards";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "gXO-yI-wvL"; */
+"gXO-yI-wvL.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "iE9-xJ-6rb"; */
+"iE9-xJ-6rb.title" = "Select All";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "jwa-Dy-C74"; */
+"jwa-Dy-C74.title" = "Copy";
+
+/* Class = "NSMenu"; title = "Deck"; ObjectID = "kDE-GC-1tV"; */
+"kDE-GC-1tV.title" = "Deck";
+
+/* Class = "NSMenuItem"; title = "Deck"; ObjectID = "oAT-c2-3Ue"; */
+"oAT-c2-3Ue.title" = "Deck";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "rAa-6Z-BpJ"; */
+"rAa-6Z-BpJ.title" = "Cut";
+
+/* Class = "NSTextFieldCell"; title = "Updating"; ObjectID = "sLZ-7x-bbA"; */
+"sLZ-7x-bbA.title" = "Updating";
+
+/* Class = "NSMenu"; title = "Hearthstone-Deck-Tracker"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Hearthstone-Deck-Tracker";
+
+/* Class = "NSMenuItem"; title = "New Deck"; ObjectID = "uwQ-EB-AyU"; */
+"uwQ-EB-AyU.title" = "New Deck";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
+
+/* Class = "(null)"; title = "Window"; ObjectID = "xvr-Wm-0d7"; */
+"xvr-Wm-0d7.title" = "Window";
