@@ -6,5 +6,6 @@ inhibit_all_warnings!
 pod 'ReactiveCocoa'
 pod 'Realm'
 pod 'SBJson'
-pod "hpple"
+pod 'hpple'
 pod 'AFNetworking'
+pod 'RegExCategories', '~> 1.0'

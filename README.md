@@ -7,6 +7,7 @@ Features
 =========
 - **Tracks** cards left in your deck
 - **Import** cards from [http://www.hearthstone.com.cn/cards/builder/](http://www.hearthstone.com.cn/cards/builder/)
+- **Import** cards from [http://www.hearthpwn.com/](http://www.hearthpwn.com/)
 
 How to use
 ===========
@@ -14,7 +15,7 @@ How to use
 1) Download latest release [here](https://github.com/Jeswang/Hearthstone-Deck-Tracker-Mac/releases)   
 2) Extract file   
 3) Run "Deck Tracker.app"   
-4) Create your decks in [http://www.hearthstone.com.cn/cards/builder/](http://www.hearthstone.com.cn/cards/builder/)   
+4) Create or copy your decks in [http://www.hearthstone.com.cn/cards/builder/](http://www.hearthstone.com.cn/cards/builder/) or [http://www.hearthpwn.com/](http://www.hearthpwn.com/)
 5) Update the deck using your builder id   
 6) Play!
 
