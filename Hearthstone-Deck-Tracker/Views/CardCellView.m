@@ -8,6 +8,7 @@
 
 #import "CardCellView.h"
 #import "CardModel.h"
+#import "Configuration.h"
 
 @implementation CardCellView
 
@@ -56,22 +57,6 @@
     NSImage* frame = [[NSImage alloc] initWithContentsOfFile:[self framePath]];
     [frame drawInRect:CGRectMake(1, 0, 218, 35)];
     
-    if(self.card.count >= 2 || [self.card.rarity  isEqual: @"Legendary"]) {
-        NSImage* frameCountBox = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:@"frame_countbox"]];
-        [frameCountBox drawInRect:CGRectMake(189, 5, 25, 24)];
-        
-        if(self.card.count >= 2 && self.card.count <= 9)
-        {
-            NSImage* extraInfo = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:[NSString stringWithFormat:@"frame_%d", self.card.count]]];
-            [extraInfo drawInRect:CGRectMake(194, 8, 18, 21)];
-        }
-        else
-        {
-            NSImage* extraInfo = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:@"frame_legendary"]];
-            [extraInfo drawInRect:CGRectMake(194, 8, 18, 21)];
-        }
-    }
-    
     
     NSMutableAttributedString *costLabel = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%ld", self.card.cost]];
     
@@ -88,12 +73,35 @@
     
     NSMutableAttributedString *titleLabel = [[NSMutableAttributedString alloc] initWithString:self.card.name];
     rangeOfCost = NSMakeRange(0,[titleLabel length]);
-    NSFont *font2 = [NSFont fontWithName:@"GBJenLei-Medium" size:18];
+    NSFont *font2;
+    if ([Configuration instance].isAsiaLanguage) {
+        font2 = [NSFont fontWithName:@"GBJenLei-Medium" size:18];
+    }
+    else {
+        font2 = [NSFont fontWithName:@"BelweBT-Bold" size:12];
+    }
     [titleLabel setAttributes:@{NSFontAttributeName : font2,
-                               NSStrokeColorAttributeName:[NSColor blackColor],
-                               NSForegroundColorAttributeName: [NSColor whiteColor],
-                               } range:rangeOfCost];
+                                NSStrokeColorAttributeName:[NSColor blackColor],
+                                NSForegroundColorAttributeName: [NSColor whiteColor],
+                                } range:rangeOfCost];
     [titleLabel drawInRect:CGRectMake(37, 0, 184, 30) ];
+    
+    if(self.card.count >= 2 || [self.card.rarity  isEqual: @"Legendary"]) {
+        NSImage* frameCountBox = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:@"frame_countbox"]];
+        [frameCountBox drawInRect:CGRectMake(189, 5, 25, 24)];
+        
+        if(self.card.count >= 2 && self.card.count <= 9)
+        {
+            NSImage* extraInfo = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:[NSString stringWithFormat:@"frame_%d", self.card.count]]];
+            [extraInfo drawInRect:CGRectMake(194, 8, 18, 21)];
+        }
+        else
+        {
+            NSImage* extraInfo = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:@"frame_legendary"]];
+            [extraInfo drawInRect:CGRectMake(194, 8, 18, 21)];
+        }
+    }
+    
 }
 
 @end
