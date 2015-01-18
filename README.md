@@ -1,4 +1,4 @@
-Hearthstone-Deck-Tracker-Mac
+Hearthstone-Deck-Tracker-Mac ![travis](https://travis-ci.org/Jeswang/Hearthstone-Deck-Tracker-Mac.svg)
 ===========
 A deck tracker for Mac OS X
 ![image](https://cloud.githubusercontent.com/assets/553783/5791437/0cbdc62e-9f11-11e4-9b8e-24ba2e874fca.png)
