@@ -13,6 +13,7 @@
 #import "RLMObject+Copying.h"
 #import "Hearthstone.h"
 #import "CardPreviewController.h"
+#import "Configuration.h"
 
 @interface CardListViewController()
 
@@ -148,8 +149,13 @@
 - (void)removeCard:(NSString *)cardId {
     for (CardModel *card in self.showingCards) {
         if (card.cardId == cardId) {
-            if (card.count == 1) {
-                [self.showingCards removeObject:card];
+            if (card.count <= 1) {
+                card.count = 0;
+                
+                if (![Configuration instance].fadeCards) {
+                    [self.showingCards removeObject:card];
+                }
+                
                 [self.tableView reloadData];
                 return;
             }

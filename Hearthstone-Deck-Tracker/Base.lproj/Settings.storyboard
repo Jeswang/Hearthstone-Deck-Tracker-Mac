@@ -55,10 +55,35 @@
                                     </connections>
                                 </popUpButtonCell>
                             </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAm-9H-xaf">
+                                <rect key="frame" x="18" y="236" width="88" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="On card draw" id="lvQ-7e-fev">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yiw-Up-L4U">
+                                <rect key="frame" x="128" y="230" width="305" height="26"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="3eX-nF-umq">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="5MN-dz-iqh">
+                                        <items>
+                                            <menuItem title="Remove card" id="MBD-rJ-WOb"/>
+                                            <menuItem title="Fade card" id="Hvy-6H-QYi"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="onCardDraw:" target="WWs-on-KEW" id="Zr1-yg-UdD"/>
+                                </connections>
+                            </popUpButton>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="languageChooser" destination="bKt-wq-6C6" id="tUc-Ql-W1O"/>
+                        <outlet property="onCardDraw" destination="Yiw-Up-L4U" id="mkh-5z-tvP"/>
                     </connections>
                 </viewController>
                 <customObject id="ZFZ-kj-zeI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

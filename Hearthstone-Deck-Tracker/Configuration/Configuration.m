@@ -9,6 +9,7 @@
 #import "Configuration.h"
 
 NSString* const kCountryLanguage = @"country_language";
+NSString* const kFadeCards = @"fade_cards";
 
 @implementation Configuration
 
@@ -31,6 +32,14 @@ NSString* const kCountryLanguage = @"country_language";
 
 - (void)setCountryLanguage:(NSString *)countryLanguage {
     [[NSUserDefaults standardUserDefaults] setObject:countryLanguage forKey:kCountryLanguage];
+}
+
+- (BOOL)fadeCards {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:kFadeCards];
+}
+
+- (void)setFadeCards:(BOOL)fadeCards {
+    [[NSUserDefaults standardUserDefaults] setBool:fadeCards forKey:kFadeCards];
 }
 
 @end

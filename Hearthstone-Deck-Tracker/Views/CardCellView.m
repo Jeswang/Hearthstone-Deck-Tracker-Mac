@@ -102,6 +102,14 @@
         }
     }
     
+    if ([Configuration instance].fadeCards) {
+        if (self.card.count <= 0) {
+            self.alphaValue = 0.4;
+        }
+        else {
+            self.alphaValue = 1.0;
+        }
+    }
 }
 
 @end

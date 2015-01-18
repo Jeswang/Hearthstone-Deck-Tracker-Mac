@@ -15,6 +15,7 @@
 }
 
 @property (strong) IBOutlet NSPopUpButton *languageChooser;
+@property (strong) IBOutlet NSPopUpButton *onCardDraw;
 
 @end
 
@@ -57,11 +58,16 @@
         NSInteger index = [[_languages allKeys] indexOfObject:[Configuration instance].countryLanguage];
         [self.languageChooser selectItemAtIndex:index];
      }
+    
+    [self.onCardDraw selectItemAtIndex:[Configuration instance].fadeCards ? 1 : 0];
 }
 
 - (IBAction)languageChoose:(id)sender {
     [Configuration instance].countryLanguage = [_languages allKeys][[self.languageChooser indexOfSelectedItem]];
 }
 
+- (IBAction)onCardDraw:(id)sender {
+    [Configuration instance].fadeCards = [self.onCardDraw indexOfSelectedItem] == 1;
+}
 
 @end
