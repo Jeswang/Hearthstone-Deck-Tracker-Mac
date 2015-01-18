@@ -27,12 +27,12 @@
 
 - (void)loadCardByCardId:(NSString *)cardId {
     
-    NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:HEARTHHEAD_IMAGE_TEMPLATE, cardId]];
-    [self.cardImage setImage:[NSImage imageNamed:@"Card_back-Default"]];
-    [self.cardImage setImageURL:imageURL];
+    //NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:HEARTHHEAD_IMAGE_TEMPLATE, cardId]];
+    //[self.cardImage setImage:[NSImage imageNamed:@"Card_back-Default"]];
+    //[self.cardImage setImageURL:imageURL];
     
-    //NSString *imageFilePath = [NSString stringWithFormat:LOCAL_IMAGE_TEMPLATE, cardId];
-    //[self.cardImage setImage:[[NSImage alloc] initWithContentsOfFile:imageFilePath]];
+    NSString *imageFilePath = [NSString stringWithFormat:LOCAL_IMAGE_TEMPLATE, cardId];
+    [self.cardImage setImage:[[NSImage alloc] initWithContentsOfFile:imageFilePath]];
 }
 
 @end

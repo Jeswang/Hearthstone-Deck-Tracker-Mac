@@ -338,7 +338,7 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="XKg-v1-VhM"/>
                                 <toolbarItem implicitItemIdentifier="ADAF4CBC-431A-480F-9867-081441C5E44B" label="Settings" paletteLabel="Settings" tag="-1" id="AzW-Ar-TKE">
                                     <connections>
-                                        <action selector="openSetting:" target="B8D-0N-5wS" id="a6j-hk-Nb5"/>
+                                        <action selector="openSetting:" target="B8D-0N-5wS" id="Oel-gF-BO6"/>
                                     </connections>
                                 </toolbarItem>
                             </allowedToolbarItems>

@@ -19,8 +19,17 @@
 
 - (void)windowDidLoad {
     [super windowDidLoad];
+    self.window.delegate = self;
     [self.window setLevel:NSScreenSaverWindowLevel];
 }
+
+- (void)windowWillMiniaturize:(NSNotification *)notification {
+    [self.window setLevel:NSNormalWindowLevel];
+}
+- (void)windowDidMiniaturize:(NSNotification *)notification {
+    [self.window setLevel:NSScreenSaverWindowLevel];
+}
+
 
 - (IBAction)openBuilder:(id)sender {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.hearthstone.com.cn/cards/builder/"]];

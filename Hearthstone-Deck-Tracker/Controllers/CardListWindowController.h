@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CardListWindowController : NSWindowController
+@interface CardListWindowController : NSWindowController <NSWindowDelegate>
 
 @end
