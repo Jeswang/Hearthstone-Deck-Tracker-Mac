@@ -12,7 +12,6 @@
 
 + (void)importDocker:(NSString *)site
               withId:(NSString *)dockerId
-             country:(NSString *)country
              success:(void (^)(NSArray *))success
                 fail:(void (^)(NSString *))fail;
 

@@ -14,31 +14,28 @@
 #import "AFNetworking.h"
 #import "TFHpple.h"
 #import "RegExCategories.h"
+#import "Configuration.h"
 
 @implementation NetEaseCardBuilderImporter
 
 + (void)importDocker:(NSString *)site
               withId:(NSString *)dockerId
-             country:(NSString *)country
              success:(void (^)(NSArray *))success
                 fail:(void (^)(NSString *))fail
 {
     if ([site isEqualToString:@"hearthstone.com.cn"]) {
         [NetEaseCardBuilderImporter importHearthstoneComCnDockerWithId:dockerId
-                                                               country:country
                                                                success:success
                                                                   fail:fail];
     }
     else if ([site isEqualToString:@"hearthpwn.com"]) {
         [NetEaseCardBuilderImporter importHearthPwnDockerWithId:dockerId
-                                                        country:country
                                                         success:success
                                                            fail:fail];
     }
 }
 
 + (void)importHearthstoneComCnDockerWithId:(NSString*)dockerId
-                                   country:(NSString *)country
                                    success:(void (^)(NSArray*))success
                                       fail:(void (^)(NSString*))fail {
     
@@ -59,7 +56,7 @@
             return;
         }
         
-        NSDictionary * trans = [NetEaseCardBuilderImporter transDictionaryOfCountry:country];
+        NSDictionary * trans = [NetEaseCardBuilderImporter transDictionary];
         NSMutableDictionary *result = [NSMutableDictionary new ];
         NSArray *cards = [cardString componentsSeparatedByString:@";"];
         for (NSString* card in cards) {
@@ -69,7 +66,7 @@
         
         NSMutableArray *cardsInDocker = [NSMutableArray new];
         for (NSString* cardName in [result allKeys]) {
-            CardModel *card = [CardModel cardByEnglishName:cardName ofCountry:country];
+            CardModel *card = [CardModel cardByEnglishName:cardName ofCountry:[Configuration instance].countryLanguage];
             card.count = [result[cardName] intValue];
             [cardsInDocker addObject:card];
         }
@@ -85,7 +82,6 @@
 }
 
 + (void)importHearthPwnDockerWithId:(NSString*)dockerId
-                            country:(NSString *)country
                             success:(void (^)(NSArray*))success
                                fail:(void (^)(NSString*))fail {
     NSString* query = [NSString stringWithFormat:@"http://www.hearthpwn.com/decks/%@", dockerId];
@@ -112,7 +108,7 @@
                 NSString *count = [[[content children] lastObject] content];
                 int cardCount = [[count firstMatch:RX(@"(\\d+)")] intValue];
                 
-                CardModel *card = [CardModel cardByEnglishName:cardName ofCountry:country];
+                CardModel *card = [CardModel cardByEnglishName:cardName ofCountry:[Configuration instance].countryLanguage];
                 card.count = cardCount;
                 [cardsInDocker addObject:card];
             }
@@ -128,7 +124,7 @@
     [loginRequest start];
 }
 
-+ (NSDictionary*)transDictionaryOfCountry:(NSString *)country {
++ (NSDictionary*)transDictionary {
     static NSMutableDictionary *map;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -140,7 +136,7 @@
                 for (NSString* cardId in [cards allKeys]) {
                     NSDictionary *card = cards[cardId];
                     map[cardId] = card[@"name"];
-                    if([CardModel cardByEnglishName:card[@"name"] ofCountry:country] == NULL) {
+                    if([CardModel cardByEnglishName:card[@"name"] ofCountry:[Configuration instance].countryLanguage] == NULL) {
                         NSLog(@"%@ name is not card", card[@"name"]);
                     }
                 }
