@@ -9,6 +9,7 @@
 #import "CardModel.h"
 #import "SystemHelper.h"
 #import "RLMObject+Copying.h"
+#import "Configuration.h"
 
 @implementation StringObject
 @end
@@ -112,7 +113,7 @@
     RLMRealm* realm = [RLMRealm realmWithPath:[SystemHelper cardRealmPath]];
     
     RLMResults* cards;
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"collectible = 1 AND cardType != 'Hero' AND lang = %@", @"zhCN"];
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"collectible = 1 AND cardType != 'Hero' AND lang = %@", [Configuration instance].countryLanguage];
     cards = [[CardModel objectsInRealm:realm withPredicate:pred] sortedResultsUsingProperty:@"cost" ascending:YES];
     
     NSMutableArray *result = [NSMutableArray new];
@@ -123,7 +124,13 @@
 }
 
 - (NSComparisonResult)compare:(CardModel *)otherObject {
-    return [@(self.cost) compare:@(otherObject.cost)];
+    NSComparisonResult result = [@(self.cost) compare:@(otherObject.cost)];
+    // first order by cost
+    if (result != NSOrderedSame) {
+        return result;
+    }
+    // then by name
+    return [self.name compare:otherObject.name];
 }
 
 + (NSArray*)sortCards:(NSMutableArray*)cards {

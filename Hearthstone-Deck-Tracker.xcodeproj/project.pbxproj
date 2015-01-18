@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43BAAA2E1A6BC30200579756 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAA2D1A6BC30200579756 /* Settings.storyboard */; };
 		43BAAA311A6BC49900579756 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA301A6BC49900579756 /* SettingsController.m */; };
 		43BAAA351A6BD54E00579756 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA341A6BD54E00579756 /* Configuration.m */; };
+		43BAAA3B1A6C026300579756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAA371A6C026300579756 /* Main.storyboard */; };
+		43BAAA3C1A6C026300579756 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAA391A6C026300579756 /* Settings.storyboard */; };
 		5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABA1A5FC10300A43A59 /* AppDelegate.m */; };
 		5132FABD1A5FC10300A43A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABC1A5FC10300A43A59 /* main.m */; };
 		5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC11A5FC10300A43A59 /* Images.xcassets */; };
-		5132FAC51A5FC10300A43A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC31A5FC10300A43A59 /* Main.storyboard */; };
 		5166468C1A621F2900E36F26 /* CardCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468B1A621F2900E36F26 /* CardCellView.m */; };
 		5166468F1A621FF700E36F26 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468E1A621FF700E36F26 /* CardModel.m */; };
 		516646931A6228B700E36F26 /* RealmGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 516646921A6228B700E36F26 /* RealmGenerator.m */; };
@@ -42,18 +42,18 @@
 
 /* Begin PBXFileReference section */
 		1FBA87E4F9AB86CE995F70A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		43BAAA2D1A6BC30200579756 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = "Hearthstone-Deck-Tracker/Base.lproj/Settings.storyboard"; sourceTree = "<group>"; };
 		43BAAA2F1A6BC49900579756 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		43BAAA301A6BC49900579756 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		43BAAA331A6BD54E00579756 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		43BAAA341A6BD54E00579756 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		43BAAA381A6C026300579756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Hearthstone-Deck-Tracker/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		43BAAA3A1A6C026300579756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Hearthstone-Deck-Tracker/Base.lproj/Settings.storyboard"; sourceTree = SOURCE_ROOT; };
 		5132FAB41A5FC10200A43A59 /* Deck Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deck Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5132FAB81A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5132FAB91A5FC10300A43A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5132FABA1A5FC10300A43A59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5132FABC1A5FC10300A43A59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5132FAC11A5FC10300A43A59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5132FAC41A5FC10300A43A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5132FACF1A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hearthstone_Deck_TrackerTests.m; sourceTree = "<group>"; };
 		51514C3A1A6657B400395567 /* CardJs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CardJs; path = "Hearthstone-Deck-Tracker/CardJs"; sourceTree = SOURCE_ROOT; };
@@ -118,8 +118,8 @@
 		43BAAA2C1A6BC2D000579756 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				5132FAC31A5FC10300A43A59 /* Main.storyboard */,
-				43BAAA2D1A6BC30200579756 /* Settings.storyboard */,
+				43BAAA371A6C026300579756 /* Main.storyboard */,
+				43BAAA391A6C026300579756 /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -369,10 +369,10 @@
 				51C72D7F1A6190B4004C374E /* Images in Resources */,
 				51C72D7E1A6190B4004C374E /* Files in Resources */,
 				51C72D801A6190B4004C374E /* Resources in Resources */,
+				43BAAA3B1A6C026300579756 /* Main.storyboard in Resources */,
 				5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */,
 				51AAA16C1A6B6F9D000228A9 /* Card_back-Default.png in Resources */,
-				5132FAC51A5FC10300A43A59 /* Main.storyboard in Resources */,
-				43BAAA2E1A6BC30200579756 /* Settings.storyboard in Resources */,
+				43BAAA3C1A6C026300579756 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,13 +443,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5132FAC31A5FC10300A43A59 /* Main.storyboard */ = {
+		43BAAA371A6C026300579756 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5132FAC41A5FC10300A43A59 /* Base */,
+				43BAAA381A6C026300579756 /* Base */,
 			);
 			name = Main.storyboard;
-			path = "Hearthstone-Deck-Tracker";
+			sourceTree = "<group>";
+		};
+		43BAAA391A6C026300579756 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43BAAA3A1A6C026300579756 /* Base */,
+			);
+			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

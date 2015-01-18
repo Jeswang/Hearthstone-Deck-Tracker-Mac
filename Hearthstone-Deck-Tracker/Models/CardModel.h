@@ -48,6 +48,7 @@ RLM_ARRAY_TYPE(StringObject)
 + (NSArray *)actualCards;
 + (NSArray *)sortCards:(NSMutableArray*)cards;
 
+
 @end
 
 // This protocol enables typed collections. i.e.:

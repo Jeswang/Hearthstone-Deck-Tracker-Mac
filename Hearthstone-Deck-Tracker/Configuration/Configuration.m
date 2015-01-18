@@ -11,6 +11,9 @@
 NSString* const kCountryLanguage = @"country_language";
 NSString* const kFadeCards = @"fade_cards";
 
+NSString* const kCountryLanguageChanged = @"country_language_changed";
+NSString* const kFadeCardsChanged = @"fade_cards_changed";
+
 @implementation Configuration
 
 + (instancetype)instance {

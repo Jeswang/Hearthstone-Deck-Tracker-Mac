@@ -64,10 +64,12 @@
 
 - (IBAction)languageChoose:(id)sender {
     [Configuration instance].countryLanguage = [_languages allKeys][[self.languageChooser indexOfSelectedItem]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kCountryLanguageChanged object:nil];
 }
 
 - (IBAction)onCardDraw:(id)sender {
     [Configuration instance].fadeCards = [self.onCardDraw indexOfSelectedItem] == 1;
+    [[NSNotificationCenter defaultCenter] postNotificationName:kFadeCardsChanged object:nil];
 }
 
 @end

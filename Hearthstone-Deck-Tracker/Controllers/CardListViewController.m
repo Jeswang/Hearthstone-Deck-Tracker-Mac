@@ -32,8 +32,8 @@
     
     self.cards = [NSMutableArray new];
     
-    self.cards = [CardModel actualCards];
-    self.showingCards = [CardModel actualCards];
+    self.cards = [[CardModel actualCards] mutableCopy];
+    self.showingCards = [[CardModel actualCards] mutableCopy];
     
     //self.cards = [NSMutableArray new];
     //self.showingCards = [NSMutableArray new];
@@ -47,6 +47,40 @@
     
     [appDelegate.updateList addObject:self];
     [[[Hearthstone defaultInstance] updateList] addObject:self];
+}
+
+- (void)viewDidAppear {
+    [super viewDidAppear];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadCountry:)
+                                                 name:kCountryLanguageChanged
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadCards:)
+                                                 name:kFadeCardsChanged
+                                               object:nil];
+}
+
+- (void)reloadCountry:(NSNotification *)notification {
+    NSMutableArray *tmp = [NSMutableArray new];
+    NSString *country = [Configuration instance].countryLanguage;
+    for (CardModel *card in self.cards) {
+        CardModel *newCard = [CardModel cardById:card.cardId ofCountry:country];
+        newCard.count = card.count;
+        [tmp addObject:newCard];
+    }
+    [CardModel sortCards:tmp];
+    self.cards = tmp;
+    [self resetCards];
+}
+
+- (void)reloadCards:(NSNotification *)notification {
+    [self.tableView reloadData];
+}
+
+- (void)viewDidDisappear {
+    [super viewDidDisappear];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

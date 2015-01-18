@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+// keys for settings
 extern NSString* const kCountryLanguage;
 extern NSString* const kFadeCards;
+
+// notification names
+extern NSString* const kCountryLanguageChanged;
+extern NSString* const kFadeCardsChanged;
 
 @interface Configuration : NSObject
 
