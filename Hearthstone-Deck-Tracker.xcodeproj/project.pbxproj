@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		43BAAA311A6BC49900579756 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA301A6BC49900579756 /* SettingsController.m */; };
 		43BAAA351A6BD54E00579756 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA341A6BD54E00579756 /* Configuration.m */; };
-		43BAAA3B1A6C026300579756 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAA371A6C026300579756 /* Main.storyboard */; };
-		43BAAA3C1A6C026300579756 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BAAA391A6C026300579756 /* Settings.storyboard */; };
 		5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABA1A5FC10300A43A59 /* AppDelegate.m */; };
 		5132FABD1A5FC10300A43A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABC1A5FC10300A43A59 /* main.m */; };
 		5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC11A5FC10300A43A59 /* Images.xcassets */; };
@@ -27,6 +25,8 @@
 		5192D1801A62B09E00B239C5 /* NetEaseCardBuilderImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */; };
 		5192D1831A62B10800B239C5 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D1821A62B10800B239C5 /* SystemHelper.m */; };
 		5194F5581A6617E8005BBD08 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5194F5571A6617E8005BBD08 /* libsqlite3.0.dylib */; };
+		519BD72B1A6C00A800AE8123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519BD7291A6C00A800AE8123 /* Main.storyboard */; };
+		519BD72C1A6C00A800AE8123 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519BD72A1A6C00A800AE8123 /* Settings.storyboard */; };
 		51AAA16C1A6B6F9D000228A9 /* Card_back-Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */; };
 		51B86CDD1A63DBD1001AB7D7 /* LogReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B86CDC1A63DBD1001AB7D7 /* LogReader.m */; };
 		51C72D7E1A6190B4004C374E /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 51C72D7A1A6190B4004C374E /* Files */; };
@@ -46,8 +46,6 @@
 		43BAAA301A6BC49900579756 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		43BAAA331A6BD54E00579756 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		43BAAA341A6BD54E00579756 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
-		43BAAA381A6C026300579756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Hearthstone-Deck-Tracker/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
-		43BAAA3A1A6C026300579756 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Hearthstone-Deck-Tracker/Base.lproj/Settings.storyboard"; sourceTree = SOURCE_ROOT; };
 		5132FAB41A5FC10200A43A59 /* Deck Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deck Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5132FAB81A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5132FAB91A5FC10300A43A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +80,8 @@
 		5192D1811A62B10800B239C5 /* SystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemHelper.h; path = Utility/SystemHelper.h; sourceTree = "<group>"; };
 		5192D1821A62B10800B239C5 /* SystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystemHelper.m; path = Utility/SystemHelper.m; sourceTree = "<group>"; };
 		5194F5571A6617E8005BBD08 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		519BD7291A6C00A800AE8123 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		519BD72A1A6C00A800AE8123 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Card_back-Default.png"; sourceTree = "<group>"; };
 		51B86CDB1A63DBD1001AB7D7 /* LogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogReader.h; path = LogReader/LogReader.h; sourceTree = "<group>"; };
 		51B86CDC1A63DBD1001AB7D7 /* LogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogReader.m; path = LogReader/LogReader.m; sourceTree = "<group>"; };
@@ -115,15 +115,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43BAAA2C1A6BC2D000579756 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				43BAAA371A6C026300579756 /* Main.storyboard */,
-				43BAAA391A6C026300579756 /* Settings.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		43BAAA321A6BD4FD00579756 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +146,8 @@
 		5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				519BD7281A6C00A800AE8123 /* Storyboards */,
 				43BAAA321A6BD4FD00579756 /* Configuration */,
-				43BAAA2C1A6BC2D000579756 /* Storyboards */,
 				51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */,
 				51B86CDA1A63DB99001AB7D7 /* LogReader */,
 				5192D17D1A62B04C00B239C5 /* Importer */,
@@ -243,6 +234,15 @@
 				5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */,
 			);
 			name = Importer;
+			sourceTree = "<group>";
+		};
+		519BD7281A6C00A800AE8123 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				519BD7291A6C00A800AE8123 /* Main.storyboard */,
+				519BD72A1A6C00A800AE8123 /* Settings.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		51B86CDA1A63DB99001AB7D7 /* LogReader */ = {
@@ -369,10 +369,10 @@
 				51C72D7F1A6190B4004C374E /* Images in Resources */,
 				51C72D7E1A6190B4004C374E /* Files in Resources */,
 				51C72D801A6190B4004C374E /* Resources in Resources */,
-				43BAAA3B1A6C026300579756 /* Main.storyboard in Resources */,
+				519BD72B1A6C00A800AE8123 /* Main.storyboard in Resources */,
 				5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */,
 				51AAA16C1A6B6F9D000228A9 /* Card_back-Default.png in Resources */,
-				43BAAA3C1A6C026300579756 /* Settings.storyboard in Resources */,
+				519BD72C1A6C00A800AE8123 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,25 +442,21 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+<<<<<<< HEAD
+=======
 /* Begin PBXVariantGroup section */
-		43BAAA371A6C026300579756 /* Main.storyboard */ = {
+		5132FAC31A5FC10300A43A59 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				43BAAA381A6C026300579756 /* Base */,
+				5132FAC41A5FC10300A43A59 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		43BAAA391A6C026300579756 /* Settings.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43BAAA3A1A6C026300579756 /* Base */,
-			);
-			name = Settings.storyboard;
+			path = "Hearthstone-Deck-Tracker";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
+>>>>>>> 19f54631d7f4a5a35e09d1a52b8dbc0000481bb3
 /* Begin XCBuildConfiguration section */
 		5132FAD21A5FC10300A43A59 /* Debug */ = {
 			isa = XCBuildConfiguration;
