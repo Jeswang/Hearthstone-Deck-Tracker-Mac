@@ -442,6 +442,21 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+<<<<<<< HEAD
+=======
+/* Begin PBXVariantGroup section */
+		5132FAC31A5FC10300A43A59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5132FAC41A5FC10300A43A59 /* Base */,
+			);
+			name = Main.storyboard;
+			path = "Hearthstone-Deck-Tracker";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+>>>>>>> 19f54631d7f4a5a35e09d1a52b8dbc0000481bb3
 /* Begin XCBuildConfiguration section */
 		5132FAD21A5FC10300A43A59 /* Debug */ = {
 			isa = XCBuildConfiguration;
