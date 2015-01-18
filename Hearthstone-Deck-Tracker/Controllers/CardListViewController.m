@@ -133,12 +133,12 @@
     
     [self.previewWindowController showWindow:self.previewWindowController.window];
     
-    NSPoint point = [self calPreivewWindowPointBesideCell:cell];
+    NSPoint point = [self calPreviewWindowPointBesideCell:cell];
     
     [self.previewWindowController.window setFrameTopLeftPoint:point];
 }
 
-- (NSPoint)calPreivewWindowPointBesideCell:(CardCellView *)cell {
+- (NSPoint)calPreviewWindowPointBesideCell:(CardCellView *)cell {
     NSInteger row = [self.tableView rowForView:cell];
     NSInteger column = [self.tableView columnForView:cell];
     NSRect rect = [self.tableView frameOfCellAtColumn:column row:row];
