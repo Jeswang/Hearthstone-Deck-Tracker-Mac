@@ -133,7 +133,7 @@
     return [self.name compare:otherObject.name];
 }
 
-+ (NSArray*)sortCards:(NSMutableArray*)cards {
++ (NSArray*)sortCards:(NSArray*)cards {
     return [cards sortedArrayUsingSelector:@selector(compare:)];
 }
 

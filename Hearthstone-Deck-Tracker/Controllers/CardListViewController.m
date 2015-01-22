@@ -216,6 +216,11 @@
             CardModel *newCard = [card deepCopy];
             newCard.count = 1;
             [self.showingCards addObject:newCard];
+            
+            NSArray *sortedCards = [CardModel sortCards:self.showingCards];
+            [self.showingCards removeAllObjects];
+            [self.showingCards addObjectsFromArray:sortedCards];
+            
             [self.tableView reloadData];
             return;
         }

@@ -46,7 +46,7 @@ RLM_ARRAY_TYPE(StringObject)
 + (CardModel *)cardById:(NSString*)cardId ofCountry:(NSString*)country;
 + (CardModel *)cardByEnglishName:(NSString*)name ofCountry:(NSString*)country;
 + (NSArray *)actualCards;
-+ (NSArray *)sortCards:(NSMutableArray*)cards;
++ (NSArray *)sortCards:(NSArray*)cards;
 
 
 @end
