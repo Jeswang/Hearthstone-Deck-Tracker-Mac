@@ -27,12 +27,16 @@
 
 - (void)loadCardByCardId:(NSString *)cardId {
     
-    //NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:HEARTHHEAD_IMAGE_TEMPLATE, cardId]];
-    //[self.cardImage setImage:[NSImage imageNamed:@"Card_back-Default"]];
-    //[self.cardImage setImageURL:imageURL];
-    
     NSString *imageFilePath = [NSString stringWithFormat:LOCAL_IMAGE_TEMPLATE, cardId];
-    [self.cardImage setImage:[[NSImage alloc] initWithContentsOfFile:imageFilePath]];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    if ([fm fileExistsAtPath:imageFilePath]) {
+        [self.cardImage setImage:[[NSImage alloc] initWithContentsOfFile:imageFilePath]];
+    }
+    else {
+        NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:HEARTHHEAD_IMAGE_TEMPLATE, cardId]];
+        [self.cardImage setImage:[NSImage imageNamed:@"Card_back-Default"]];
+        [self.cardImage setImageURL:imageURL];
+    }
 }
 
 @end
