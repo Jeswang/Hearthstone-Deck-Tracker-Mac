@@ -26,16 +26,15 @@
 
 @implementation SettingsBuilderController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)windowDidLoad {
+    [super windowDidLoad];
     // Do view setup here.
     [self.indicator setHidden:YES];
     [self.status setHidden:YES];
 }
 
 - (IBAction)cancel:(id)sender {    
-    NSWindow  *window = [[self view] window];
-    [window orderOut:window];
+    [self.window orderOut:nil];
 }
 
 - (IBAction)update:(id)sender {
@@ -66,8 +65,7 @@
             AppDelegate *appDelegate = (AppDelegate *) [[NSApplication sharedApplication] delegate];
             [appDelegate updateWithCards:cards];
 
-            NSWindow *window = [[self view] window];
-            [window orderOut:window];
+            [self.window orderOut:nil];
 
         }                                   fail:^(NSString *failReason) {
             [self.indicator setHidden:YES];

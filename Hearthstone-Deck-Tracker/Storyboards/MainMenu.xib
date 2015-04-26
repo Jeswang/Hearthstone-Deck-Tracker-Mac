@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="zIK-7H-fTv" id="6h2-oD-EDN"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="4fp-jE-g1j">
+            <items>
+                <menuItem title="Hearthstone-Deck-Tracker" id="ECD-Nk-k6b">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Hearthstone-Deck-Tracker" systemMenu="apple" id="d09-7P-dVF">
+                        <items>
+                            <menuItem title="About Deck Tracker" id="oOC-2O-ICe">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="EkB-ZW-Rg9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="YOB-yO-I6b"/>
+                            <menuItem title="Preferences" keyEquivalent="," id="dDN-Jl-0BM">
+                                <connections>
+                                    <action selector="openSettings:" target="zIK-7H-fTv" id="PaP-Wd-ciG"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="WRz-nS-w5t"/>
+                            <menuItem title="Quit Hearthstone-Deck-Tracker" keyEquivalent="q" id="MAx-En-JZc">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="XAQ-Am-sBx"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Edit" id="Zhh-R8-PNT">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Edit" id="Xgu-Lr-pV7">
+                        <items>
+                            <menuItem title="Cut" keyEquivalent="x" id="FFV-LR-nLM">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="OHh-bh-dWv"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="qby-RT-Okz">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="R1l-GM-Vq3"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Paste" keyEquivalent="v" id="hRr-qW-mdK">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="kuL-Nw-g42"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Select All" keyEquivalent="a" id="7YP-Xm-JGp">
+                                <connections>
+                                    <action selector="selectAll:" target="-1" id="pUM-9P-Ki4"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Deck" id="fUD-Zb-HV7">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Deck" id="7S5-ag-MYN">
+                        <items>
+                            <menuItem title="New Deck" id="PRC-Jk-wXq" userLabel="New Deck">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Settings" id="T3p-uU-CSw" userLabel="Settings">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="jWU-KB-GKl">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Window" systemMenu="window" id="OM9-Zt-iz9">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="1iv-lB-UCb">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="ZdS-Nx-Fbk"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="Ckf-ze-CcV">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="HvH-Ji-UN8"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="1cj-e3-PbS"/>
+                            <menuItem title="Bring All to Front" id="Mur-hp-BFH">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="dCx-Ac-MYq"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="WHa-iA-0uy">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="sod-yc-FCH">
+                        <items>
+                            <menuItem title="Hearthstone-Deck-Tracker Help" keyEquivalent="?" id="btb-zZ-U7v">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="xO7-Wb-1Bg"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="zIK-7H-fTv" userLabel="AppDelegate" customClass="AppDelegate"/>
+    </objects>
+</document>

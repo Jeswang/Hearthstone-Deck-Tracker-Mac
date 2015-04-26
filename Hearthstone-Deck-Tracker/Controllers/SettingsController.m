@@ -72,4 +72,22 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:kFadeCardsChanged object:nil];
 }
 
+#pragma mark -
+#pragma mark MASPreferencesViewController
+
+- (NSString *)identifier
+{
+    return @"GeneralPreferences";
+}
+
+- (NSImage *)toolbarItemImage
+{
+    return [NSImage imageNamed:NSImageNamePreferencesGeneral];
+}
+
+- (NSString *)toolbarItemLabel
+{
+    return NSLocalizedString(@"General", @"Toolbar item name for the General preference pane");
+}
+
 @end

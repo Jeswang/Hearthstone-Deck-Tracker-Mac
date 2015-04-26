@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CardPreviewController">
+            <connections>
+                <outlet property="cardImage" destination="VhJ-kG-yR8" id="7fk-bS-ao5"/>
+                <outlet property="window" destination="uF9-Di-JYt" id="JW4-CK-tJ1"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="uF9-Di-JYt">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="139" y="81" width="200" height="279"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="200" height="279"/>
+            <value key="maxSize" type="size" width="200" height="279"/>
+            <view key="contentView" id="Dlg-Yk-PsF">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="279"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VhJ-kG-yR8">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="279"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Card_back-Default" id="T3y-5H-luJ"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="204" y="256"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Card_back-Default" width="669" height="997"/>
+    </resources>
+</document>

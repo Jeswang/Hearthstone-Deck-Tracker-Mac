@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SettingsBuilderController : NSViewController
+@interface SettingsBuilderController : NSWindowController
 
 @end

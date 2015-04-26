@@ -40,9 +40,11 @@
                                        @"Basic",
                                        @"Reward",
                                        @"Expert",
+                                       @"Classic",
                                        @"Promotion",
                                        @"Curse of Naxxramas",
-                                       @"Goblins vs Gnomes"
+                                       @"Goblins vs Gnomes",
+                                       @"Blackrock Mountain"
                                        ];
             NSDictionary * dict = (NSDictionary *)item;
             
@@ -78,7 +80,6 @@
         NSString *filePath = [NSString stringWithFormat:pathTemplate, lang];
         NSData *data = [NSData dataWithContentsOfFile:filePath];
         [parser parse:data];
-        NSLog(@"");
     }
 }
 

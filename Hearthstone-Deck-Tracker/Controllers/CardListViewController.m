@@ -21,7 +21,7 @@
 @property(nonatomic, strong) NSMutableArray *cards;
 @property(nonatomic, strong) NSMutableArray *showingCards;
 
-@property(nonatomic, strong) NSWindowController *previewWindowController;
+@property(nonatomic, strong) CardPreviewController *previewWindowController;
 @property(nonatomic, strong) NSString *currentPreviewCardId;
 @end
 
@@ -119,15 +119,13 @@
 
 - (void)showPreviewWindowBeside:(CardCellView *)cell {
     if (_previewWindowController == nil) {
-        NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
-        self.previewWindowController = [sb instantiateControllerWithIdentifier:@"CardPreviewWindowController"];
+        self.previewWindowController = [[CardPreviewController alloc] initWithWindowNibName:@"CardPreviewWindow"];
         [self.previewWindowController.window setOpaque:NO];
         [self.previewWindowController.window setBackgroundColor:[NSColor clearColor]];
         [self.previewWindowController.window setLevel:NSScreenSaverWindowLevel];
     }
     
-    CardPreviewController *contentController =  (CardPreviewController *)self.previewWindowController.contentViewController;
-    [contentController loadCardByCardId:cell.card.cardId];
+    [self.previewWindowController loadCardByCardId:cell.card.cardId];
     
     self.currentPreviewCardId = cell.card.cardId;
     

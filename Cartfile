@@ -1,1 +1,3 @@
 github "ReactiveCocoa/ReactiveCocoa"
+github "realm/realm-cocoa"
+github "SnapKit/Masonry"

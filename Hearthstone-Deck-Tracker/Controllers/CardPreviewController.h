@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CardPreviewController : NSViewController
+@interface CardPreviewController : NSWindowController
 
 - (void)loadCardByCardId:(NSString *)cardId;
 

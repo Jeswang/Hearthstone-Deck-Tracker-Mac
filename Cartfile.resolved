@@ -1,1 +1,3 @@
+github "SnapKit/Masonry" "v0.6.1"
 github "ReactiveCocoa/ReactiveCocoa" "v2.5"
+github "realm/realm-cocoa" "v0.91.3"

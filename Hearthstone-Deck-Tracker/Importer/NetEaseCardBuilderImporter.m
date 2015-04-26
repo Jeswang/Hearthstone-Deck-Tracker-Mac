@@ -91,7 +91,7 @@
     AFHTTPRequestOperation *loginRequest  = [manager GET:query parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         TFHpple * doc       = [TFHpple hppleWithHTMLData:responseObject];
         
-        NSArray *cardNameNodes = [doc searchWithXPathQuery:@"//td[contains(@class,'col-name')]"];
+        NSArray *cardNameNodes = [doc searchWithXPathQuery:@"//aside//td[contains(@class, 'col-name')]"];
         if ([cardNameNodes count] == 0) {
             fail(@"Wrong build Id");
             return;

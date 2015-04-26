@@ -36,7 +36,7 @@
                                stringByReplacingOccurrencesOfString:@"." withString:@""]
                               stringByReplacingOccurrencesOfString:@"!" withString:@""];
     
-    return [NSString stringWithFormat:@"%@/%@.png", self.absPath, cardFileName];
+    return [NSString stringWithFormat:@"%@/small/%@.png", self.absPath, cardFileName];
 }
 
 - (NSString*)framePath {

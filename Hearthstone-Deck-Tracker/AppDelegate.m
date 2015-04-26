@@ -9,15 +9,21 @@
 #import "AppDelegate.h"
 #import "CardModel.h"
 #import "CardListViewController.h"
+#import "CardListWindowController.h"
 #import "RealmGenerator.h"
 #import "NetEaseCardBuilderImporter.h"
 #import "Hearthstone.h"
+#import "SettingsController.h"
+#import "MASPreferencesWindowController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    NSWindowController *_preferencesWindowController;
+}
 
 @property (nonatomic, weak) IBOutlet NSWindow *window;
-@property (nonatomic, weak) IBOutlet NSWindowController *cardListController;
 @property (nonatomic) IBOutlet NSWindowController *settingsWindow;
+@property (nonatomic, strong) CardListWindowController *cardListController;
+
 @end
 
 @implementation AppDelegate
@@ -32,6 +38,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //[RealmGenerator generateCardRealm];
+    
+    if (self.cardListController == nil)
+    {
+        self.cardListController = [[CardListWindowController alloc] initWithWindowNibName:@"CardListWindow"];
+    }
+    [self.cardListController showWindow:self];
 
     [[Hearthstone defaultInstance] setStatusDidUpdate:^(BOOL isRunning) {
         NSLog(@"Hearthstone is running? %d", isRunning);
@@ -54,13 +66,26 @@
 }
 
 - (IBAction)openSettings:(id)sender {
-    if (!self.settingsWindow) {
-        NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Settings" bundle:nil];
-        self.settingsWindow = [storyboard instantiateInitialController];
-    }
-    if (self.settingsWindow) {
-        [self.settingsWindow showWindow:nil];
-    }
+    [self.preferencesWindowController showWindow:nil];
 }
+
+#pragma mark - Public accessors
+
+- (NSWindowController *)preferencesWindowController
+{
+    if (_preferencesWindowController == nil)
+    {
+        NSViewController *generalViewController = [[SettingsController alloc] initWithNibName:@"SettingLanguageView" bundle:nil];
+        NSArray *controllers = [[NSArray alloc] initWithObjects:generalViewController, nil];
+        
+        // To add a flexible space between General and Advanced preference panes insert [NSNull null]:
+        //     NSArray *controllers = [[NSArray alloc] initWithObjects:generalViewController, [NSNull null], advancedViewController, nil];
+        
+        NSString *title = NSLocalizedString(@"Preferences", @"Common title for Preferences window");
+        _preferencesWindowController = [[MASPreferencesWindowController alloc] initWithViewControllers:controllers title:title];
+    }
+    return _preferencesWindowController;
+}
+
 
 @end

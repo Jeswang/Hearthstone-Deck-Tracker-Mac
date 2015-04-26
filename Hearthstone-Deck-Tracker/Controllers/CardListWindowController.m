@@ -7,11 +7,15 @@
 //
 
 #import "CardListWindowController.h"
-#import "SettingBuilderWindowController.h"
+#import "CardListViewController.h"
+#import "SettingsBuilderController.h"
+#import "Masonry.h"
 
 @interface CardListWindowController ()
 
-@property(nonatomic, strong) SettingBuilderWindowController *settingController;
+@property(nonatomic, weak) IBOutlet NSView *container;
+@property(nonatomic, strong) SettingsBuilderController *settingController;
+@property(nonatomic, strong) CardListViewController *cardListController;
 
 @end
 
@@ -21,6 +25,20 @@
     [super windowDidLoad];
     self.window.delegate = self;
     [self.window setLevel:NSScreenSaverWindowLevel];
+    
+    [self loadCardView];
+}
+
+- (void)loadCardView {
+    if (self.cardListController == nil) {
+        self.cardListController = [[CardListViewController alloc] initWithNibName:@"CardListView" bundle:nil];
+    }
+    [self.container addSubview:[self.cardListController view]];
+    
+    [self.cardListController.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.container);
+    }];
+    
 }
 
 - (void)windowWillMiniaturize:(NSNotification *)notification {
@@ -37,8 +55,12 @@
 }
 
 - (IBAction)openSetting:(id)sender {
-    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
-    self.settingController = [sb instantiateControllerWithIdentifier:@"SettingBuilderWindowController"];
+    if (self.settingController == nil) {
+        self.settingController = [[SettingsBuilderController alloc] initWithWindowNibName:@"ImportWindow"];
+        NSWindow * fakeWindow = [self.settingController window];
+        [fakeWindow description];
+    }
+    
     [self.window beginSheet:self.settingController.window completionHandler:^(NSModalResponse returnCode) {
         
     }];
