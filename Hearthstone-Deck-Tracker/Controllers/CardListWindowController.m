@@ -26,6 +26,7 @@
 - (void)windowWillMiniaturize:(NSNotification *)notification {
     [self.window setLevel:NSNormalWindowLevel];
 }
+
 - (void)windowDidMiniaturize:(NSNotification *)notification {
     [self.window setLevel:NSScreenSaverWindowLevel];
 }
