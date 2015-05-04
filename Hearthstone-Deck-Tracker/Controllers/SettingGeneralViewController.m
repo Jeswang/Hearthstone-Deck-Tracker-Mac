@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 rainy. All rights reserved.
 //
 
-#import "SettingsController.h"
+#import "SettingGeneralViewController.h"
 #import "Configuration.h"
 
-@interface SettingsController ()
+@interface SettingGeneralViewController ()
 {
     NSDictionary *_languages;
 }
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation SettingsController
+@implementation SettingGeneralViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

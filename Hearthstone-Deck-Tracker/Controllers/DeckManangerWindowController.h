@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface DeckManangerController : NSViewController
+@interface DeckManangerWindowController : NSWindowController
 
 @end

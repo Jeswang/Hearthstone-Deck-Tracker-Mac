@@ -10,10 +10,11 @@
 #import "CardModel.h"
 #import "CardListViewController.h"
 #import "CardListWindowController.h"
+#import "DeckManangerWindowController.h"
 #import "RealmGenerator.h"
 #import "NetEaseCardBuilderImporter.h"
 #import "Hearthstone.h"
-#import "SettingsController.h"
+#import "SettingGeneralViewController.h"
 #import "MASPreferencesWindowController.h"
 
 @interface AppDelegate () {
@@ -22,6 +23,7 @@
 
 @property (nonatomic, weak) IBOutlet NSWindow *window;
 @property (nonatomic) IBOutlet NSWindowController *settingsWindow;
+@property (nonatomic, strong) DeckManangerWindowController *managerController;
 @property (nonatomic, strong) CardListWindowController *cardListController;
 
 @end
@@ -43,7 +45,13 @@
     {
         self.cardListController = [[CardListWindowController alloc] initWithWindowNibName:@"CardListWindow"];
     }
-    [self.cardListController showWindow:self];
+    //[self.cardListController showWindow:self];
+    
+    if (self.managerController == nil) {
+        self.managerController = [[DeckManangerWindowController alloc] initWithWindowNibName:@"DeckManangerWindowController"];
+    }
+    
+    [self.managerController showWindow:self];
 
     [[Hearthstone defaultInstance] setStatusDidUpdate:^(BOOL isRunning) {
         NSLog(@"Hearthstone is running? %d", isRunning);
@@ -75,7 +83,7 @@
 {
     if (_preferencesWindowController == nil)
     {
-        NSViewController *generalViewController = [[SettingsController alloc] initWithNibName:@"SettingLanguageView" bundle:nil];
+        NSViewController *generalViewController = [[SettingGeneralViewController alloc] initWithNibName:@"SettingLanguageView" bundle:nil];
         NSArray *controllers = [[NSArray alloc] initWithObjects:generalViewController, nil];
         
         // To add a flexible space between General and Advanced preference panes insert [NSNull null]:

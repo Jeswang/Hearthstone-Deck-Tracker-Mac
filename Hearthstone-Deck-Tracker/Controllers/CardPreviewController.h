@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NSImageView+WebCache.h"
 
-@interface CardPreviewController : NSWindowController
+@interface CardPreviewController : NSWindowController<NSImageViewWebCacheDelegate>
 
 - (void)loadCardByCardId:(NSString *)cardId;
 

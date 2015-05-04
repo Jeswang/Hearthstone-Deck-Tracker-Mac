@@ -72,7 +72,9 @@
     [costLabel drawInRect:CGRectMake(0, 0, 34, 37)];
     
     NSMutableAttributedString *titleLabel = [[NSMutableAttributedString alloc] initWithString:self.card.name];
-    rangeOfCost = NSMakeRange(0,[titleLabel length]);
+    NSRange rangeOfTitle = NSMakeRange(0,[titleLabel length]);
+
+    
     NSFont *font2;
     if ([Configuration instance].isAsiaLanguage) {
         font2 = [NSFont fontWithName:@"GBJenLei-Medium" size:18];
@@ -80,10 +82,13 @@
     else {
         font2 = [NSFont fontWithName:@"BelweBT-Bold" size:12];
     }
+    
     [titleLabel setAttributes:@{NSFontAttributeName : font2,
+                                NSStrokeWidthAttributeName: [NSNumber numberWithFloat:-0.5],
                                 NSStrokeColorAttributeName:[NSColor blackColor],
                                 NSForegroundColorAttributeName: [NSColor whiteColor],
-                                } range:rangeOfCost];
+                                } range:rangeOfTitle];
+    
     [titleLabel drawInRect:CGRectMake(37, 0, 184, 30) ];
     
     if(self.card.count >= 2 || [self.card.rarity  isEqual: @"Legendary"]) {

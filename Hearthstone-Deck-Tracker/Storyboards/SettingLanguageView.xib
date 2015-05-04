@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="SettingsController">
+        <customObject id="-2" userLabel="File's Owner" customClass="SettingGeneralViewController">
             <connections>
                 <outlet property="languageChooser" destination="O3r-i3-2WH" id="5aW-he-DkZ"/>
                 <outlet property="onCardDraw" destination="Ipw-Qs-g4h" id="7Fs-Zp-UeV"/>
@@ -27,12 +27,12 @@
                 </textField>
                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3r-i3-2WH">
                     <rect key="frame" x="128" y="256" width="305" height="26"/>
-                    <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Uay-fU-V15">
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="Uay-fU-V15">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
                         <menu key="menu" id="GnS-iW-Bkb">
                             <items>
-                                <menuItem title="Item 1" state="on" id="6z1-dO-S2C"/>
+                                <menuItem title="Item 1" id="6z1-dO-S2C"/>
                                 <menuItem title="Item 2" id="NNw-4Y-Uin"/>
                                 <menuItem title="Item 3" id="tom-1k-Ynk"/>
                             </items>
@@ -52,12 +52,12 @@
                 </textField>
                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ipw-Qs-g4h">
                     <rect key="frame" x="128" y="230" width="305" height="26"/>
-                    <popUpButtonCell key="cell" type="push" title="Remove card" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="6ag-3R-63N">
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="6ag-3R-63N">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="menu"/>
                         <menu key="menu" id="xhP-X7-ywi">
                             <items>
-                                <menuItem title="Remove card" state="on" id="uDH-ya-cN9"/>
+                                <menuItem title="Remove card" id="uDH-ya-cN9"/>
                                 <menuItem title="Fade card" id="R9f-BG-9QJ"/>
                             </items>
                         </menu>

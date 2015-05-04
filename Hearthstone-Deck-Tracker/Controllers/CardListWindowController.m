@@ -8,13 +8,13 @@
 
 #import "CardListWindowController.h"
 #import "CardListViewController.h"
-#import "SettingsBuilderController.h"
+#import "ImportWindowController.h"
 #import "Masonry.h"
 
 @interface CardListWindowController ()
 
 @property(nonatomic, weak) IBOutlet NSView *container;
-@property(nonatomic, strong) SettingsBuilderController *settingController;
+@property(nonatomic, strong) ImportWindowController *settingController;
 @property(nonatomic, strong) CardListViewController *cardListController;
 
 @end
@@ -31,7 +31,7 @@
 
 - (void)loadCardView {
     if (self.cardListController == nil) {
-        self.cardListController = [[CardListViewController alloc] initWithNibName:@"CardListView" bundle:nil];
+        self.cardListController = [[CardListViewController alloc] init];
     }
     [self.container addSubview:[self.cardListController view]];
     
@@ -56,7 +56,7 @@
 
 - (IBAction)openSetting:(id)sender {
     if (self.settingController == nil) {
-        self.settingController = [[SettingsBuilderController alloc] initWithWindowNibName:@"ImportWindow"];
+        self.settingController = [[ImportWindowController alloc] initWithWindowNibName:@"ImportWindow"];
         NSWindow * fakeWindow = [self.settingController window];
         [fakeWindow description];
     }

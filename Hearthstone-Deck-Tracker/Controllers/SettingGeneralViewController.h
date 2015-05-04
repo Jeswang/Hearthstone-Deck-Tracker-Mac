@@ -9,6 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import "MASPreferencesViewController.h"
 
-@interface SettingsController : NSViewController
+@interface SettingGeneralViewController : NSViewController
 
 @end

@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 rainy. All rights reserved.
 //
 
-#import "SettingsBuilderController.h"
+#import "ImportWindowController.h"
 #import "NetEaseCardBuilderImporter.h"
 #import "AppDelegate.h"
 #import "Configuration.h"
 
-@interface SettingsBuilderController ()
+@interface ImportWindowController ()
 
 @property IBOutlet NSTextField *status;
 @property IBOutlet NSProgressIndicator *indicator;
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation SettingsBuilderController
+@implementation ImportWindowController
 
 - (void)windowDidLoad {
     [super windowDidLoad];

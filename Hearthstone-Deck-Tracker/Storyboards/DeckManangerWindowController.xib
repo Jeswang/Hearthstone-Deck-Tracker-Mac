@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DeckManangerWindowController">
+            <connections>
+                <outlet property="cardsView" destination="0Md-gg-KxL" id="d2g-tf-az6"/>
+                <outlet property="deckView" destination="Edi-4m-na2" id="Gvf-A0-xZL"/>
+                <outlet property="detailView" destination="6TZ-8F-l1C" id="BOV-xU-CU3"/>
+                <outlet property="window" destination="Pzw-RR-XbZ" id="cfH-nS-UKN"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Deck Manager" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="Pzw-RR-XbZ">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="131" y="158" width="797" height="396"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="AUr-Gn-WFy">
+                <rect key="frame" x="0.0" y="0.0" width="797" height="396"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Edi-4m-na2">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="396"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="7gf-lD-mil"/>
+                        </constraints>
+                    </customView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="0Md-gg-KxL">
+                        <rect key="frame" x="420" y="0.0" width="377" height="396"/>
+                    </customView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-8F-l1C">
+                        <rect key="frame" x="200" y="0.0" width="220" height="396"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="220" id="Hjz-xP-PWy"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6TZ-8F-l1C" firstAttribute="leading" secondItem="Edi-4m-na2" secondAttribute="trailing" id="3Pf-EY-Tin"/>
+                    <constraint firstItem="6TZ-8F-l1C" firstAttribute="top" secondItem="AUr-Gn-WFy" secondAttribute="top" id="4R0-4P-gle"/>
+                    <constraint firstAttribute="trailing" secondItem="0Md-gg-KxL" secondAttribute="trailing" id="8Jh-TD-nnD"/>
+                    <constraint firstAttribute="bottom" secondItem="6TZ-8F-l1C" secondAttribute="bottom" id="Cer-vE-bro"/>
+                    <constraint firstItem="0Md-gg-KxL" firstAttribute="leading" secondItem="6TZ-8F-l1C" secondAttribute="trailing" id="Cpb-pU-68L"/>
+                    <constraint firstAttribute="bottom" secondItem="Edi-4m-na2" secondAttribute="bottom" id="DFJ-dW-ZHb"/>
+                    <constraint firstItem="0Md-gg-KxL" firstAttribute="top" secondItem="AUr-Gn-WFy" secondAttribute="top" id="QLF-4J-ItR"/>
+                    <constraint firstItem="Edi-4m-na2" firstAttribute="leading" secondItem="AUr-Gn-WFy" secondAttribute="leading" id="Tzu-pP-6gw"/>
+                    <constraint firstItem="Edi-4m-na2" firstAttribute="top" secondItem="AUr-Gn-WFy" secondAttribute="top" id="UGk-bM-qLY"/>
+                    <constraint firstAttribute="bottom" secondItem="0Md-gg-KxL" secondAttribute="bottom" id="v7Y-A2-DYW"/>
+                </constraints>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="E90C74CB-0E44-481A-AA80-0A2844A7B25D" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="small" id="gdO-iz-JmV">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="UWT-1M-Sh8"/>
+                    <toolbarItem implicitItemIdentifier="DCBEB50D-01D5-4974-B01C-9C5EDE255784" label="Custom View" paletteLabel="Custom View" id="ppY-se-zhv">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="96" height="22"/>
+                        <size key="maxSize" width="96" height="22"/>
+                        <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" id="Mdg-Lb-scm">
+                            <rect key="frame" x="0.0" y="0.0" width="96" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="5gZ-4W-Pn4">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                        </searchField>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Dbn-Ni-2qf"/>
+                    <toolbarItem implicitItemIdentifier="000176E4-6C77-4D79-A78C-1C6487936E67" label="Toolbar Item" paletteLabel="Toolbar Item" tag="-1" image="NSAddTemplate" id="hEx-zF-cpk"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="hEx-zF-cpk"/>
+                    <toolbarItem reference="Dbn-Ni-2qf"/>
+                    <toolbarItem reference="UWT-1M-Sh8"/>
+                    <toolbarItem reference="ppY-se-zhv"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <point key="canvasLocation" x="623.5" y="-618"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+    </resources>
+</document>

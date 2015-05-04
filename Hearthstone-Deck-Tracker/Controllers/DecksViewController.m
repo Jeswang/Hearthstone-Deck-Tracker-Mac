@@ -1,18 +1,18 @@
 //
-//  DeckManangerController.m
+//  DecksViewController.m
 //  Hearthstone-Deck-Tracker
 //
-//  Created by jeswang on 15/1/11.
+//  Created by jeswang on 15/5/3.
 //  Copyright (c) 2015年 rainy. All rights reserved.
 //
 
-#import "DeckManangerController.h"
+#import "DecksViewController.h"
 
-@interface DeckManangerController ()
+@interface DecksViewController ()
 
 @end
 
-@implementation DeckManangerController
+@implementation DecksViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
