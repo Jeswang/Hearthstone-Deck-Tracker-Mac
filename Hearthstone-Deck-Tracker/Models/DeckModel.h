@@ -25,6 +25,7 @@ RLM_ARRAY_TYPE(CardItem) // define RLMArray<Dog>
 @property NSInteger totalCount;
 @property RLMArray<CardItem> *cards;
 
+
 @end
 
 // This protocol enables typed collections. i.e.:

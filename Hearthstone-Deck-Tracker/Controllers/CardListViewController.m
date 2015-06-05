@@ -132,8 +132,14 @@
     [self.previewWindowController showWindow:self.previewWindowController.window];
     
     NSPoint point = [self calPreviewWindowPointBesideCell:cell];
+
+    NSWindow *window = self.previewWindowController.window;
+    NSRect newFrame = [window frame];
     
-    [self.previewWindowController.window setFrameTopLeftPoint:point];
+    newFrame.origin = point;
+    newFrame.origin.y -= newFrame.size.height;
+    //[self.previewWindowController.window setFrameTopLeftPoint:point];
+    [self.previewWindowController.window setFrame:newFrame display:YES animate:YES];
 }
 
 - (NSPoint)calPreviewWindowPointBesideCell:(CardCellView *)cell {

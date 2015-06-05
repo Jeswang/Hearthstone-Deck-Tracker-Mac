@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CardsViewController">
             <connections>
+                <outlet property="buttonBar" destination="xG8-BE-RBz" id="g2P-G5-bih"/>
                 <outlet property="cardCollectionView" destination="jaR-mg-gqT" id="Uvw-7v-TwU"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
@@ -42,32 +43,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="xG8-BE-RBz">
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="xG8-BE-RBz" customClass="AMButtonBar">
                     <rect key="frame" x="0.0" y="416" width="710" height="35"/>
-                    <subviews>
-                        <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p1q-tg-E0g">
-                            <rect key="frame" x="21" y="6" width="668" height="23"/>
-                            <segmentedCell key="cell" borderStyle="border" alignment="left" style="smallSquare" trackingMode="selectOne" id="jFY-8P-199">
-                                <font key="font" metaFont="system"/>
-                                <segments>
-                                    <segment label="All"/>
-                                    <segment label="Druid" selected="YES" tag="1"/>
-                                    <segment label="Hunter"/>
-                                    <segment label="Mage"/>
-                                    <segment label="Paladin"/>
-                                    <segment label="Priest"/>
-                                    <segment label="Rogue"/>
-                                    <segment label="Shaman"/>
-                                    <segment label="Warlock"/>
-                                    <segment label="Warrior"/>
-                                    <segment label="Neutre"/>
-                                </segments>
-                            </segmentedCell>
-                        </segmentedControl>
-                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="centerX" secondItem="p1q-tg-E0g" secondAttribute="centerX" id="BhD-A5-SmD"/>
-                        <constraint firstAttribute="centerY" secondItem="p1q-tg-E0g" secondAttribute="centerY" id="Scz-OX-OHg"/>
                         <constraint firstAttribute="height" constant="35" id="sXX-pK-0bA"/>
                     </constraints>
                 </customView>

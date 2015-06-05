@@ -12,4 +12,11 @@
 @end
 
 @implementation DeckModel
+
++ (DeckModel *)deckWithDeckName:(NSString *)title {
+    DeckModel *newDeck = [DeckModel new];
+    newDeck.name = title;
+    return newDeck;
+}
+
 @end

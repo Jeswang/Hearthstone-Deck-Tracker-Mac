@@ -16,6 +16,21 @@
 		5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC11A5FC10300A43A59 /* Images.xcassets */; };
 		513343BC1AECBA3D0012FC0C /* CardListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513343BB1AECBA3D0012FC0C /* CardListViewController.xib */; };
 		513343BE1AECC78B0012FC0C /* CardPreviewWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513343BD1AECC78B0012FC0C /* CardPreviewWindow.xib */; };
+		51637F981B214260002256D7 /* AMButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F811B214260002256D7 /* AMButtonBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637F991B214260002256D7 /* AMButtonBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F831B214260002256D7 /* AMButtonBarCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637F9A1B214260002256D7 /* AMButtonBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F851B214260002256D7 /* AMButtonBarItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637F9B1B214260002256D7 /* AMButtonBarSeparatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F871B214260002256D7 /* AMButtonBarSeparatorCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637F9C1B214260002256D7 /* CTGradient_AMButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F891B214260002256D7 /* CTGradient_AMButtonBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637F9D1B214260002256D7 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F8B1B214260002256D7 /* CTGradient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637F9E1B214260002256D7 /* NSBezierPath_AMAdditons.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F8D1B214260002256D7 /* NSBezierPath_AMAdditons.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637F9F1B214260002256D7 /* NSBezierPath_AMShading.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F8F1B214260002256D7 /* NSBezierPath_AMShading.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637FA01B214260002256D7 /* NSColor_AMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F911B214260002256D7 /* NSColor_AMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637FA11B214260002256D7 /* NSFont_AMFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F931B214260002256D7 /* NSFont_AMFixes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637FA21B214260002256D7 /* NSGradient_AMButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F951B214260002256D7 /* NSGradient_AMButtonBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637FA31B214260002256D7 /* NSShadow_AMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F971B214260002256D7 /* NSShadow_AMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51637FA91B214DCE002256D7 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637FA51B214DCE002256D7 /* Photo.m */; };
+		51637FAA1B214DCE002256D7 /* PhotoCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637FA71B214DCE002256D7 /* PhotoCollection.m */; };
+		51637FAB1B214DCE002256D7 /* SourceListIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51637FA81B214DCE002256D7 /* SourceListIcons.xcassets */; };
 		5166468C1A621F2900E36F26 /* CardCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468B1A621F2900E36F26 /* CardCellView.m */; };
 		5166468F1A621FF700E36F26 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468E1A621FF700E36F26 /* CardModel.m */; };
 		516646931A6228B700E36F26 /* RealmGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 516646921A6228B700E36F26 /* RealmGenerator.m */; };
@@ -58,10 +73,10 @@
 		43BAAA301A6BC49900579756 /* SettingGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingGeneralViewController.m; sourceTree = "<group>"; };
 		43BAAA331A6BD54E00579756 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		43BAAA341A6BD54E00579756 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
-		51022A411AFE3F1F00C6E78A /* DeckModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeckModel.h; path = Models/DeckModel.h; sourceTree = "<group>"; };
-		51022A421AFE3F1F00C6E78A /* DeckModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckModel.m; path = Models/DeckModel.m; sourceTree = "<group>"; };
-		511B434B1AF66D3300FB7A61 /* CardCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCollectionViewItem.h; path = Utility/CardCollectionViewItem.h; sourceTree = "<group>"; };
-		511B434C1AF66D3300FB7A61 /* CardCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCollectionViewItem.m; path = Utility/CardCollectionViewItem.m; sourceTree = "<group>"; };
+		51022A411AFE3F1F00C6E78A /* DeckModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckModel.h; sourceTree = "<group>"; };
+		51022A421AFE3F1F00C6E78A /* DeckModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckModel.m; sourceTree = "<group>"; };
+		511B434B1AF66D3300FB7A61 /* CardCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewItem.h; sourceTree = "<group>"; };
+		511B434C1AF66D3300FB7A61 /* CardCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewItem.m; sourceTree = "<group>"; };
 		5132FAB41A5FC10200A43A59 /* Deck Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deck Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5132FAB81A5FC10300A43A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5132FAB91A5FC10300A43A59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,13 +87,42 @@
 		5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hearthstone_Deck_TrackerTests.m; sourceTree = "<group>"; };
 		513343BB1AECBA3D0012FC0C /* CardListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardListViewController.xib; sourceTree = "<group>"; };
 		513343BD1AECC78B0012FC0C /* CardPreviewWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardPreviewWindow.xib; sourceTree = "<group>"; };
-		51514C3A1A6657B400395567 /* CardJs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CardJs; path = "Hearthstone-Deck-Tracker/CardJs"; sourceTree = SOURCE_ROOT; };
-		5166468A1A621F2900E36F26 /* CardCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCellView.h; path = Views/CardCellView.h; sourceTree = "<group>"; };
-		5166468B1A621F2900E36F26 /* CardCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCellView.m; path = Views/CardCellView.m; sourceTree = "<group>"; };
-		5166468D1A621FF700E36F26 /* CardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardModel.h; path = Models/CardModel.h; sourceTree = "<group>"; };
-		5166468E1A621FF700E36F26 /* CardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardModel.m; path = Models/CardModel.m; sourceTree = "<group>"; };
-		516646911A6228B700E36F26 /* RealmGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealmGenerator.h; path = Utility/RealmGenerator.h; sourceTree = "<group>"; };
-		516646921A6228B700E36F26 /* RealmGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealmGenerator.m; path = Utility/RealmGenerator.m; sourceTree = "<group>"; };
+		51514C3A1A6657B400395567 /* CardJs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CardJs; sourceTree = "<group>"; };
+		51637F801B214260002256D7 /* AMButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMButtonBar.h; sourceTree = "<group>"; };
+		51637F811B214260002256D7 /* AMButtonBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMButtonBar.m; sourceTree = "<group>"; };
+		51637F821B214260002256D7 /* AMButtonBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMButtonBarCell.h; sourceTree = "<group>"; };
+		51637F831B214260002256D7 /* AMButtonBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMButtonBarCell.m; sourceTree = "<group>"; };
+		51637F841B214260002256D7 /* AMButtonBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMButtonBarItem.h; sourceTree = "<group>"; };
+		51637F851B214260002256D7 /* AMButtonBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMButtonBarItem.m; sourceTree = "<group>"; };
+		51637F861B214260002256D7 /* AMButtonBarSeparatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMButtonBarSeparatorCell.h; sourceTree = "<group>"; };
+		51637F871B214260002256D7 /* AMButtonBarSeparatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMButtonBarSeparatorCell.m; sourceTree = "<group>"; };
+		51637F881B214260002256D7 /* CTGradient_AMButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient_AMButtonBar.h; sourceTree = "<group>"; };
+		51637F891B214260002256D7 /* CTGradient_AMButtonBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient_AMButtonBar.m; sourceTree = "<group>"; };
+		51637F8A1B214260002256D7 /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
+		51637F8B1B214260002256D7 /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
+		51637F8C1B214260002256D7 /* NSBezierPath_AMAdditons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBezierPath_AMAdditons.h; sourceTree = "<group>"; };
+		51637F8D1B214260002256D7 /* NSBezierPath_AMAdditons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBezierPath_AMAdditons.m; sourceTree = "<group>"; };
+		51637F8E1B214260002256D7 /* NSBezierPath_AMShading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBezierPath_AMShading.h; sourceTree = "<group>"; };
+		51637F8F1B214260002256D7 /* NSBezierPath_AMShading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBezierPath_AMShading.m; sourceTree = "<group>"; };
+		51637F901B214260002256D7 /* NSColor_AMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSColor_AMAdditions.h; sourceTree = "<group>"; };
+		51637F911B214260002256D7 /* NSColor_AMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSColor_AMAdditions.m; sourceTree = "<group>"; };
+		51637F921B214260002256D7 /* NSFont_AMFixes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFont_AMFixes.h; sourceTree = "<group>"; };
+		51637F931B214260002256D7 /* NSFont_AMFixes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFont_AMFixes.m; sourceTree = "<group>"; };
+		51637F941B214260002256D7 /* NSGradient_AMButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSGradient_AMButtonBar.h; sourceTree = "<group>"; };
+		51637F951B214260002256D7 /* NSGradient_AMButtonBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSGradient_AMButtonBar.m; sourceTree = "<group>"; };
+		51637F961B214260002256D7 /* NSShadow_AMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSShadow_AMAdditions.h; sourceTree = "<group>"; };
+		51637F971B214260002256D7 /* NSShadow_AMAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSShadow_AMAdditions.m; sourceTree = "<group>"; };
+		51637FA51B214DCE002256D7 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		51637FA61B214DCE002256D7 /* PhotoCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollection.h; sourceTree = "<group>"; };
+		51637FA71B214DCE002256D7 /* PhotoCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollection.m; sourceTree = "<group>"; };
+		51637FA81B214DCE002256D7 /* SourceListIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SourceListIcons.xcassets; sourceTree = "<group>"; };
+		51637FAC1B214E7F002256D7 /* Photo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		5166468A1A621F2900E36F26 /* CardCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCellView.h; sourceTree = "<group>"; };
+		5166468B1A621F2900E36F26 /* CardCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCellView.m; sourceTree = "<group>"; };
+		5166468D1A621FF700E36F26 /* CardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardModel.h; sourceTree = "<group>"; };
+		5166468E1A621FF700E36F26 /* CardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardModel.m; sourceTree = "<group>"; };
+		516646911A6228B700E36F26 /* RealmGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmGenerator.h; sourceTree = "<group>"; };
+		516646921A6228B700E36F26 /* RealmGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmGenerator.m; sourceTree = "<group>"; };
 		51681FF71AECD34100F21320 /* ImportWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImportWindow.xib; sourceTree = "<group>"; };
 		51681FF91AECDA4800F21320 /* SettingLanguageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingLanguageView.xib; sourceTree = "<group>"; };
 		5169ED5D1AF62872001EFBA3 /* ScaleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleImageView.h; sourceTree = "<group>"; };
@@ -90,18 +134,18 @@
 		51846C6D1A680A87004ED043 /* CardListWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardListWindowController.m; sourceTree = "<group>"; };
 		51846C721A682571004ED043 /* ImportWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportWindowController.h; sourceTree = "<group>"; };
 		51846C731A682571004ED043 /* ImportWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportWindowController.m; sourceTree = "<group>"; };
-		518F4A201A6BDFCD00B0C7D0 /* Hearthstone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hearthstone.h; path = LogReader/Hearthstone.h; sourceTree = "<group>"; };
-		518F4A211A6BDFCD00B0C7D0 /* Hearthstone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hearthstone.m; path = LogReader/Hearthstone.m; sourceTree = "<group>"; };
-		518F4A221A6BDFCD00B0C7D0 /* LogAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogAnalyzer.h; path = LogReader/LogAnalyzer.h; sourceTree = "<group>"; };
-		518F4A231A6BDFCD00B0C7D0 /* LogAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogAnalyzer.m; path = LogReader/LogAnalyzer.m; sourceTree = "<group>"; };
-		518F4A241A6BDFCD00B0C7D0 /* LogObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogObserver.h; path = LogReader/LogObserver.h; sourceTree = "<group>"; };
-		518F4A251A6BDFCD00B0C7D0 /* LogObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogObserver.m; path = LogReader/LogObserver.m; sourceTree = "<group>"; };
-		5192D17A1A62A5B500B239C5 /* RLMObject+Copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RLMObject+Copying.h"; path = "Utility/RLMObject+Copying.h"; sourceTree = "<group>"; };
-		5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RLMObject+Copying.m"; path = "Utility/RLMObject+Copying.m"; sourceTree = "<group>"; };
-		5192D17E1A62B09E00B239C5 /* NetEaseCardBuilderImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetEaseCardBuilderImporter.h; path = Importer/NetEaseCardBuilderImporter.h; sourceTree = "<group>"; };
-		5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetEaseCardBuilderImporter.m; path = Importer/NetEaseCardBuilderImporter.m; sourceTree = "<group>"; };
-		5192D1811A62B10800B239C5 /* SystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SystemHelper.h; path = Utility/SystemHelper.h; sourceTree = "<group>"; };
-		5192D1821A62B10800B239C5 /* SystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SystemHelper.m; path = Utility/SystemHelper.m; sourceTree = "<group>"; };
+		518F4A201A6BDFCD00B0C7D0 /* Hearthstone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hearthstone.h; sourceTree = "<group>"; };
+		518F4A211A6BDFCD00B0C7D0 /* Hearthstone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hearthstone.m; sourceTree = "<group>"; };
+		518F4A221A6BDFCD00B0C7D0 /* LogAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogAnalyzer.h; sourceTree = "<group>"; };
+		518F4A231A6BDFCD00B0C7D0 /* LogAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogAnalyzer.m; sourceTree = "<group>"; };
+		518F4A241A6BDFCD00B0C7D0 /* LogObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogObserver.h; sourceTree = "<group>"; };
+		518F4A251A6BDFCD00B0C7D0 /* LogObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogObserver.m; sourceTree = "<group>"; };
+		5192D17A1A62A5B500B239C5 /* RLMObject+Copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+Copying.h"; sourceTree = "<group>"; };
+		5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+Copying.m"; sourceTree = "<group>"; };
+		5192D17E1A62B09E00B239C5 /* NetEaseCardBuilderImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetEaseCardBuilderImporter.h; sourceTree = "<group>"; };
+		5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetEaseCardBuilderImporter.m; sourceTree = "<group>"; };
+		5192D1811A62B10800B239C5 /* SystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemHelper.h; sourceTree = "<group>"; };
+		5192D1821A62B10800B239C5 /* SystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemHelper.m; sourceTree = "<group>"; };
 		5194F5571A6617E8005BBD08 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		5195F4EE1AF6572E00FC86AD /* DecksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecksViewController.h; sourceTree = "<group>"; };
 		5195F4EF1AF6572E00FC86AD /* DecksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecksViewController.m; sourceTree = "<group>"; };
@@ -111,8 +155,8 @@
 		5195F4F51AF657AB00FC86AD /* CardsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardsViewController.xib; sourceTree = "<group>"; };
 		51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Card_back-Default.png"; sourceTree = "<group>"; };
 		51B7AF391AECB813006D5D6C /* CardListWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardListWindow.xib; sourceTree = "<group>"; };
-		51B86CDB1A63DBD1001AB7D7 /* LogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogReader.h; path = LogReader/LogReader.h; sourceTree = "<group>"; };
-		51B86CDC1A63DBD1001AB7D7 /* LogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogReader.m; path = LogReader/LogReader.m; sourceTree = "<group>"; };
+		51B86CDB1A63DBD1001AB7D7 /* LogReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogReader.h; sourceTree = "<group>"; };
+		51B86CDC1A63DBD1001AB7D7 /* LogReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogReader.m; sourceTree = "<group>"; };
 		51C72D7A1A6190B4004C374E /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Files; sourceTree = "<group>"; };
 		51C72D7B1A6190B4004C374E /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		51C72D7C1A6190B4004C374E /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
@@ -175,7 +219,7 @@
 		5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				519BD7281A6C00A800AE8123 /* Storyboards */,
+				519BD7281A6C00A800AE8123 /* xibs */,
 				43BAAA321A6BD4FD00579756 /* Configuration */,
 				51AAA16B1A6B6F9D000228A9 /* Card_back-Default.png */,
 				51B86CDA1A63DB99001AB7D7 /* LogReader */,
@@ -203,7 +247,7 @@
 				5132FAB81A5FC10300A43A59 /* Info.plist */,
 				5132FABC1A5FC10300A43A59 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5132FACD1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests */ = {
@@ -220,7 +264,50 @@
 			children = (
 				5132FACF1A5FC10300A43A59 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51637F5B1B213F93002256D7 /* ButtonBar */ = {
+			isa = PBXGroup;
+			children = (
+				51637F801B214260002256D7 /* AMButtonBar.h */,
+				51637F811B214260002256D7 /* AMButtonBar.m */,
+				51637F821B214260002256D7 /* AMButtonBarCell.h */,
+				51637F831B214260002256D7 /* AMButtonBarCell.m */,
+				51637F841B214260002256D7 /* AMButtonBarItem.h */,
+				51637F851B214260002256D7 /* AMButtonBarItem.m */,
+				51637F861B214260002256D7 /* AMButtonBarSeparatorCell.h */,
+				51637F871B214260002256D7 /* AMButtonBarSeparatorCell.m */,
+				51637F881B214260002256D7 /* CTGradient_AMButtonBar.h */,
+				51637F891B214260002256D7 /* CTGradient_AMButtonBar.m */,
+				51637F8A1B214260002256D7 /* CTGradient.h */,
+				51637F8B1B214260002256D7 /* CTGradient.m */,
+				51637F8C1B214260002256D7 /* NSBezierPath_AMAdditons.h */,
+				51637F8D1B214260002256D7 /* NSBezierPath_AMAdditons.m */,
+				51637F8E1B214260002256D7 /* NSBezierPath_AMShading.h */,
+				51637F8F1B214260002256D7 /* NSBezierPath_AMShading.m */,
+				51637F901B214260002256D7 /* NSColor_AMAdditions.h */,
+				51637F911B214260002256D7 /* NSColor_AMAdditions.m */,
+				51637F921B214260002256D7 /* NSFont_AMFixes.h */,
+				51637F931B214260002256D7 /* NSFont_AMFixes.m */,
+				51637F941B214260002256D7 /* NSGradient_AMButtonBar.h */,
+				51637F951B214260002256D7 /* NSGradient_AMButtonBar.m */,
+				51637F961B214260002256D7 /* NSShadow_AMAdditions.h */,
+				51637F971B214260002256D7 /* NSShadow_AMAdditions.m */,
+			);
+			path = ButtonBar;
+			sourceTree = "<group>";
+		};
+		51637FA41B214DAD002256D7 /* SourceListTest */ = {
+			isa = PBXGroup;
+			children = (
+				51637FAC1B214E7F002256D7 /* Photo.h */,
+				51637FA51B214DCE002256D7 /* Photo.m */,
+				51637FA61B214DCE002256D7 /* PhotoCollection.h */,
+				51637FA71B214DCE002256D7 /* PhotoCollection.m */,
+				51637FA81B214DCE002256D7 /* SourceListIcons.xcassets */,
+			);
+			path = SourceListTest;
 			sourceTree = "<group>";
 		};
 		516646881A620C4200E36F26 /* Models */ = {
@@ -231,7 +318,7 @@
 				51022A411AFE3F1F00C6E78A /* DeckModel.h */,
 				51022A421AFE3F1F00C6E78A /* DeckModel.m */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		516646891A620C4A00E36F26 /* Views */ = {
@@ -244,12 +331,14 @@
 				511B434B1AF66D3300FB7A61 /* CardCollectionViewItem.h */,
 				511B434C1AF66D3300FB7A61 /* CardCollectionViewItem.m */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		516646901A62287600E36F26 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				51637FA41B214DAD002256D7 /* SourceListTest */,
+				51637F5B1B213F93002256D7 /* ButtonBar */,
 				5192D1811A62B10800B239C5 /* SystemHelper.h */,
 				5192D1821A62B10800B239C5 /* SystemHelper.m */,
 				516646911A6228B700E36F26 /* RealmGenerator.h */,
@@ -257,7 +346,7 @@
 				5192D17A1A62A5B500B239C5 /* RLMObject+Copying.h */,
 				5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */,
 			);
-			name = Utility;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		5169ED591AF60458001EFBA3 /* Monitor */ = {
@@ -268,7 +357,7 @@
 				51D105191A6A6C8D0074B86A /* CardPreviewController.h */,
 				51D1051A1A6A6C8D0074B86A /* CardPreviewController.m */,
 			);
-			name = Monitor;
+			path = Monitor;
 			sourceTree = "<group>";
 		};
 		5169ED5A1AF6047E001EFBA3 /* Preferences */ = {
@@ -277,7 +366,7 @@
 				43BAAA2F1A6BC49900579756 /* SettingGeneralViewController.h */,
 				43BAAA301A6BC49900579756 /* SettingGeneralViewController.m */,
 			);
-			name = Preferences;
+			path = Preferences;
 			sourceTree = "<group>";
 		};
 		5169ED5B1AF604B0001EFBA3 /* Manager */ = {
@@ -287,12 +376,10 @@
 				51C72D871A619218004C374E /* DeckManangerWindowController.m */,
 				5195F4EE1AF6572E00FC86AD /* DecksViewController.h */,
 				5195F4EF1AF6572E00FC86AD /* DecksViewController.m */,
-				5195F4F01AF6572E00FC86AD /* DecksViewController.xib */,
 				5195F4F31AF657AB00FC86AD /* CardsViewController.h */,
 				5195F4F41AF657AB00FC86AD /* CardsViewController.m */,
-				5195F4F51AF657AB00FC86AD /* CardsViewController.xib */,
 			);
-			name = Manager;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		5169ED5C1AF62872001EFBA3 /* ScaleImageView */ = {
@@ -310,8 +397,7 @@
 				5169ED7D1AF63C86001EFBA3 /* NSImage+Trim.h */,
 				5169ED7E1AF63C86001EFBA3 /* NSImage+Trim.m */,
 			);
-			name = "NSImage-Trim";
-			path = "UIImage-Trim";
+			path = "NSImage-Trim";
 			sourceTree = "<group>";
 		};
 		5192D17D1A62B04C00B239C5 /* Importer */ = {
@@ -320,10 +406,10 @@
 				5192D17E1A62B09E00B239C5 /* NetEaseCardBuilderImporter.h */,
 				5192D17F1A62B09E00B239C5 /* NetEaseCardBuilderImporter.m */,
 			);
-			name = Importer;
+			path = Importer;
 			sourceTree = "<group>";
 		};
-		519BD7281A6C00A800AE8123 /* Storyboards */ = {
+		519BD7281A6C00A800AE8123 /* xibs */ = {
 			isa = PBXGroup;
 			children = (
 				51CD88421AECAF4A00BF6742 /* MainMenu.xib */,
@@ -333,8 +419,10 @@
 				51681FF71AECD34100F21320 /* ImportWindow.xib */,
 				51681FF91AECDA4800F21320 /* SettingLanguageView.xib */,
 				5169ED911AF64DF6001EFBA3 /* DeckManangerWindowController.xib */,
+				5195F4F51AF657AB00FC86AD /* CardsViewController.xib */,
+				5195F4F01AF6572E00FC86AD /* DecksViewController.xib */,
 			);
-			path = Storyboards;
+			path = xibs;
 			sourceTree = "<group>";
 		};
 		51B86CDA1A63DB99001AB7D7 /* LogReader */ = {
@@ -349,17 +437,17 @@
 				51B86CDB1A63DBD1001AB7D7 /* LogReader.h */,
 				51B86CDC1A63DBD1001AB7D7 /* LogReader.m */,
 			);
-			name = LogReader;
+			path = LogReader;
 			sourceTree = "<group>";
 		};
 		51C72D821A619118004C374E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				51C72D831A619118004C374E /* CardListViewController.h */,
-				51C72D841A619118004C374E /* CardListViewController.m */,
 				5169ED5B1AF604B0001EFBA3 /* Manager */,
 				5169ED591AF60458001EFBA3 /* Monitor */,
 				5169ED5A1AF6047E001EFBA3 /* Preferences */,
+				51C72D831A619118004C374E /* CardListViewController.h */,
+				51C72D841A619118004C374E /* CardListViewController.m */,
 				51846C721A682571004ED043 /* ImportWindowController.h */,
 				51846C731A682571004ED043 /* ImportWindowController.m */,
 			);
@@ -456,6 +544,7 @@
 				51681FF81AECD34100F21320 /* ImportWindow.xib in Resources */,
 				51C72D7F1A6190B4004C374E /* Images in Resources */,
 				51C72D7E1A6190B4004C374E /* Files in Resources */,
+				51637FAB1B214DCE002256D7 /* SourceListIcons.xcassets in Resources */,
 				51B7AF3A1AECB813006D5D6C /* CardListWindow.xib in Resources */,
 				5195F4F71AF657AB00FC86AD /* CardsViewController.xib in Resources */,
 				5195F4F21AF6572E00FC86AD /* DecksViewController.xib in Resources */,
@@ -514,25 +603,39 @@
 				51D1051B1A6A6C8D0074B86A /* CardPreviewController.m in Sources */,
 				518F4A271A6BDFCD00B0C7D0 /* LogAnalyzer.m in Sources */,
 				5166468F1A621FF700E36F26 /* CardModel.m in Sources */,
+				51637F9E1B214260002256D7 /* NSBezierPath_AMAdditons.m in Sources */,
 				5195F4F61AF657AB00FC86AD /* CardsViewController.m in Sources */,
 				51C72D851A619118004C374E /* CardListViewController.m in Sources */,
 				51846C6E1A680A87004ED043 /* CardListWindowController.m in Sources */,
 				5169ED5F1AF62872001EFBA3 /* ScaleImageView.m in Sources */,
+				51637FA01B214260002256D7 /* NSColor_AMAdditions.m in Sources */,
 				5195F4F11AF6572E00FC86AD /* DecksViewController.m in Sources */,
 				43BAAA351A6BD54E00579756 /* Configuration.m in Sources */,
 				5132FABD1A5FC10300A43A59 /* main.m in Sources */,
 				5192D1801A62B09E00B239C5 /* NetEaseCardBuilderImporter.m in Sources */,
+				51637F9D1B214260002256D7 /* CTGradient.m in Sources */,
 				518F4A281A6BDFCD00B0C7D0 /* LogObserver.m in Sources */,
 				5192D17C1A62A5B500B239C5 /* RLMObject+Copying.m in Sources */,
+				51637F981B214260002256D7 /* AMButtonBar.m in Sources */,
+				51637F9F1B214260002256D7 /* NSBezierPath_AMShading.m in Sources */,
+				51637FA11B214260002256D7 /* NSFont_AMFixes.m in Sources */,
 				51B86CDD1A63DBD1001AB7D7 /* LogReader.m in Sources */,
 				43BAAA311A6BC49900579756 /* SettingGeneralViewController.m in Sources */,
+				51637FA31B214260002256D7 /* NSShadow_AMAdditions.m in Sources */,
+				51637F9B1B214260002256D7 /* AMButtonBarSeparatorCell.m in Sources */,
 				5192D1831A62B10800B239C5 /* SystemHelper.m in Sources */,
 				511B434E1AF66D3300FB7A61 /* CardCollectionViewItem.m in Sources */,
+				51637FA21B214260002256D7 /* NSGradient_AMButtonBar.m in Sources */,
 				51022A431AFE3F1F00C6E78A /* DeckModel.m in Sources */,
 				516646931A6228B700E36F26 /* RealmGenerator.m in Sources */,
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
+				51637FA91B214DCE002256D7 /* Photo.m in Sources */,
 				51846C741A682571004ED043 /* ImportWindowController.m in Sources */,
+				51637F9C1B214260002256D7 /* CTGradient_AMButtonBar.m in Sources */,
+				51637F991B214260002256D7 /* AMButtonBarCell.m in Sources */,
+				51637FAA1B214DCE002256D7 /* PhotoCollection.m in Sources */,
 				51C72D881A619218004C374E /* DeckManangerWindowController.m in Sources */,
+				51637F9A1B214260002256D7 /* AMButtonBarItem.m in Sources */,
 				518F4A261A6BDFCD00B0C7D0 /* Hearthstone.m in Sources */,
 				5169ED8D1AF63C86001EFBA3 /* NSImage+Trim.m in Sources */,
 				9A3A265DA881CFFFFF4DBA86 /* HoverTableCellView.m in Sources */,
@@ -625,7 +728,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Info.plist";
+				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -639,7 +742,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Info.plist";
+				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";

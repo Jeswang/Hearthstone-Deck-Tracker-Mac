@@ -26,6 +26,7 @@
 
 - (void)windowDidLoad {
     [super windowDidLoad];
+    
     // Do view setup here.
     self.deckViewController = [[DecksViewController alloc] init];
     self.detailViewController = [[CardListViewController alloc] init];
