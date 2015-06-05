@@ -8,7 +8,8 @@
 
 #import "CardCollectionViewItem.h"
 
-#define LOCAL_IMAGE_TEMPLATE @"/Users/jeswang/Documents/App/Hearthstone_Cards/resources/data/Images/20150109/%@.png"
+//#define LOCAL_IMAGE_TEMPLATE @"/Users/jeswang/Documents/App/Hearthstone_Cards/resources/data/Images/20150109/%@.png"
+#define LOCAL_IMAGE_TEMPLATE @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Inject/Scripts/t_cards/%@.png"
 
 @interface CardCollectionViewItem ()
 @property (nonatomic, strong) NSImage *cardImage;

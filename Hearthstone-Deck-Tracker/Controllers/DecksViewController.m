@@ -8,7 +8,11 @@
 
 #import "DecksViewController.h"
 
-@interface DecksViewController ()
+@interface DecksViewController () {
+    IBOutlet NSOutlineView *deckOutlineView;
+}
+
+@property (strong) NSMutableArray *decks; // used to keep track of dragged nodes
 
 @end
 

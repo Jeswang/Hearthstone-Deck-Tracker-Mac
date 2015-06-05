@@ -12,7 +12,7 @@
 
 #define HEARTHHEAD_IMAGE_TEMPLATE @"http://wow.zamimg.com/images/hearthstone/cards/enus/original/%@.png"
 #define CN_CARD_IMAGE_TEMPLATE @"http://lai1tong.com/cards/CN/%@.png"
-#define LOCAL_IMAGE_TEMPLATE @"/Users/jeswang/Documents/App/Hearthstone_Cards/resources/data/Images/20150109/%@.png"
+#define LOCAL_IMAGE_TEMPLATE @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Inject/Scripts/t_cards/%@.png"
 
 @interface CardPreviewController ()
 @property(nonatomic, weak) IBOutlet NSImageView *cardImage;

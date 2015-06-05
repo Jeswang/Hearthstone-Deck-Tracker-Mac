@@ -45,6 +45,7 @@
     {
         self.cardListController = [[CardListWindowController alloc] initWithWindowNibName:@"CardListWindow"];
     }
+    
     //[self.cardListController showWindow:self];
     
     if (self.managerController == nil) {

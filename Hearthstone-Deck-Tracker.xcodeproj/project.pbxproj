@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		43BAAA311A6BC49900579756 /* SettingGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA301A6BC49900579756 /* SettingGeneralViewController.m */; };
 		43BAAA351A6BD54E00579756 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA341A6BD54E00579756 /* Configuration.m */; };
+		51022A431AFE3F1F00C6E78A /* DeckModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51022A421AFE3F1F00C6E78A /* DeckModel.m */; };
 		511B434E1AF66D3300FB7A61 /* CardCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 511B434C1AF66D3300FB7A61 /* CardCollectionViewItem.m */; };
 		5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABA1A5FC10300A43A59 /* AppDelegate.m */; };
 		5132FABD1A5FC10300A43A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABC1A5FC10300A43A59 /* main.m */; };
@@ -57,6 +58,8 @@
 		43BAAA301A6BC49900579756 /* SettingGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingGeneralViewController.m; sourceTree = "<group>"; };
 		43BAAA331A6BD54E00579756 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		43BAAA341A6BD54E00579756 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		51022A411AFE3F1F00C6E78A /* DeckModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeckModel.h; path = Models/DeckModel.h; sourceTree = "<group>"; };
+		51022A421AFE3F1F00C6E78A /* DeckModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckModel.m; path = Models/DeckModel.m; sourceTree = "<group>"; };
 		511B434B1AF66D3300FB7A61 /* CardCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCollectionViewItem.h; path = Utility/CardCollectionViewItem.h; sourceTree = "<group>"; };
 		511B434C1AF66D3300FB7A61 /* CardCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCollectionViewItem.m; path = Utility/CardCollectionViewItem.m; sourceTree = "<group>"; };
 		5132FAB41A5FC10200A43A59 /* Deck Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deck Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +228,8 @@
 			children = (
 				5166468D1A621FF700E36F26 /* CardModel.h */,
 				5166468E1A621FF700E36F26 /* CardModel.m */,
+				51022A411AFE3F1F00C6E78A /* DeckModel.h */,
+				51022A421AFE3F1F00C6E78A /* DeckModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 				43BAAA311A6BC49900579756 /* SettingGeneralViewController.m in Sources */,
 				5192D1831A62B10800B239C5 /* SystemHelper.m in Sources */,
 				511B434E1AF66D3300FB7A61 /* CardCollectionViewItem.m in Sources */,
+				51022A431AFE3F1F00C6E78A /* DeckModel.m in Sources */,
 				516646931A6228B700E36F26 /* RealmGenerator.m in Sources */,
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
 				51846C741A682571004ED043 /* ImportWindowController.m in Sources */,
@@ -617,6 +623,7 @@
 			baseConfigurationReference = 1FBA87E4F9AB86CE995F70A4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -630,6 +637,7 @@
 			baseConfigurationReference = 774564573B6A33F52AC6E9AA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
