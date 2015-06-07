@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class DeckModel;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-- (void)updateWithCards:(NSArray *)cards;
+- (void)updateWithDeck:(DeckModel *)deck;
 
 @property (nonatomic, strong) NSMutableArray *updateList;
 

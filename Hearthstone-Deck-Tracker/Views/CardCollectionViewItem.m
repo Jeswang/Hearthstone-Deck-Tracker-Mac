@@ -8,19 +8,28 @@
 
 #import "CardCollectionViewItem.h"
 
-//#define LOCAL_IMAGE_TEMPLATE @"/Users/jeswang/Documents/App/Hearthstone_Cards/resources/data/Images/20150109/%@.png"
-#define LOCAL_IMAGE_TEMPLATE @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Inject/Scripts/t_cards/%@.png"
 
 @interface CardCollectionViewItem ()
 @property (nonatomic, strong) NSImage *cardImage;
+@property (nonatomic, strong) NSString *cardId;
+- (IBAction)click:(id)sender;
+
 @end
 
 @implementation CardCollectionViewItem
 
 - (void)setCardImageWithId:(NSString *)cardId {
-    NSImage *image = [[NSImage alloc] initWithContentsOfFile:[NSString stringWithFormat:LOCAL_IMAGE_TEMPLATE, cardId]];
+    NSString *country = @"cn";
+    NSString *imagePath = [NSString stringWithFormat:@"%@/%@/%@.png", IMAGE, country, cardId];
+    NSImage *image = [[NSImage alloc] initWithContentsOfFile:imagePath];
     self.cardImage = image;
-    return;
+    self.cardId = cardId;
+}
+
+
+- (IBAction)click:(id)sender {
+    NSLog(@"Add Card %@", self.cardId);
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AddCard" object:self.cardId];
 }
 
 - (void)viewDidLoad {

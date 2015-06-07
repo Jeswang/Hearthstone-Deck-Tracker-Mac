@@ -16,6 +16,7 @@
 #import "Hearthstone.h"
 #import "SettingGeneralViewController.h"
 #import "MASPreferencesWindowController.h"
+#import "Realm.h"
 
 @interface AppDelegate () {
     NSWindowController *_preferencesWindowController;
@@ -41,9 +42,14 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //[RealmGenerator generateCardRealm];
     
+    [RLMRealm setSchemaVersion:2 withMigrationBlock:^(RLMMigration *migration, NSUInteger oldSchemaVersion) {
+        
+    }];
+    
     if (self.cardListController == nil)
     {
         self.cardListController = [[CardListWindowController alloc] initWithWindowNibName:@"CardListWindow"];
+        
     }
     
     //[self.cardListController showWindow:self];
@@ -68,9 +74,9 @@
     return YES;
 }
 
-- (void)updateWithCards:(NSArray *)cards {
+- (void)updateWithDeck:(DeckModel *)deck {
     for (NSObject<CardListDelegate>* list in self.updateList) {
-        [list updateWithCards:cards];
+        [list updateWithDeck:deck];
     }
 }
 

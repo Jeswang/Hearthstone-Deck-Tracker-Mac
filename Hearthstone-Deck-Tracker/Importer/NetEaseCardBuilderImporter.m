@@ -15,12 +15,13 @@
 #import "TFHpple.h"
 #import "RegExCategories.h"
 #import "Configuration.h"
+#import "DeckModel.h"
 
 @implementation NetEaseCardBuilderImporter
 
 + (void)importDocker:(NSString *)site
               withId:(NSString *)dockerId
-             success:(void (^)(NSArray *))success
+             success:(void (^)(DeckModel *))success
                 fail:(void (^)(NSString *))fail
 {
     if ([site isEqualToString:@"hearthstone.com.cn"]) {
@@ -36,7 +37,7 @@
 }
 
 + (void)importHearthstoneComCnDockerWithId:(NSString*)dockerId
-                                   success:(void (^)(NSArray*))success
+                                   success:(void (^)(DeckModel*))success
                                       fail:(void (^)(NSString*))fail {
     
     NSString* query = [NSString stringWithFormat:@"http://www.hearthstone.com.cn/cards/builder/%@", dockerId];
@@ -64,16 +65,18 @@
             result[trans[cardDetail[0]]] =  cardDetail[1];
         }
         
-        NSMutableArray *cardsInDocker = [NSMutableArray new];
+        DeckModel *deck = [DeckModel new];
         for (NSString* cardName in [result allKeys]) {
             CardModel *card = [CardModel cardByEnglishName:cardName ofCountry:[Configuration instance].countryLanguage];
             card.count = [result[cardName] intValue];
-            [cardsInDocker addObject:card];
+            CardItem *item = [CardItem new];
+            
+            item.cardId = card.cardId;
+            item.count = card.count;
+            [deck.cards addObject:item];
         }
         
-        NSArray *sortedCards = [CardModel sortCards:cardsInDocker];
-        
-        success(sortedCards);
+        success(deck);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         fail([error localizedDescription]);
     }];
@@ -82,7 +85,7 @@
 }
 
 + (void)importHearthPwnDockerWithId:(NSString*)dockerId
-                            success:(void (^)(NSArray*))success
+                            success:(void (^)(DeckModel*))success
                                fail:(void (^)(NSString*))fail {
     NSString* query = [NSString stringWithFormat:@"http://www.hearthpwn.com/decks/%@", dockerId];
     
@@ -97,7 +100,7 @@
             return;
         }
         else {
-            NSMutableArray *cardsInDocker = [NSMutableArray new];
+            DeckModel *deck = [DeckModel new];
 
             for (TFHppleElement *content in cardNameNodes) {
                 TFHppleElement *element = [[content firstChildWithTagName:@"b"] firstChildWithTagName:@"a"];
@@ -110,12 +113,15 @@
                 
                 CardModel *card = [CardModel cardByEnglishName:cardName ofCountry:[Configuration instance].countryLanguage];
                 card.count = cardCount;
-                [cardsInDocker addObject:card];
+                
+                CardItem *item = [CardItem new];
+                
+                item.cardId = card.cardId;
+                item.count = card.count;
+                [deck.cards addObject:item];
             }
             
-            NSArray *sortedCards = [CardModel sortCards:cardsInDocker];
-            
-            success(sortedCards);
+            success(deck);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         fail([error localizedDescription]);

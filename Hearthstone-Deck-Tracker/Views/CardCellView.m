@@ -14,18 +14,14 @@
 
 + (instancetype)initWithCard:(CardModel*)card {
     CardCellView *cell = [CardCellView new];
+    
     cell.card = card;
     return cell;
 }
 
-- (NSString*)absPath {
-    static NSString *absPath;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSBundle *appBundle = [NSBundle mainBundle];
-        absPath = [NSString stringWithFormat:@"%@/Contents/Resources/Images/", [appBundle bundlePath]];
-    });
-    return absPath;
+- (void)mouseUp:(NSEvent *)theEvent {
+    NSLog(@"Remove Card %@", self.card.cardId);
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RemoveCard" object:self.card.cardId];
 }
 
 - (NSString*)imagePath {
@@ -36,7 +32,7 @@
                                stringByReplacingOccurrencesOfString:@"." withString:@""]
                               stringByReplacingOccurrencesOfString:@"!" withString:@""];
     
-    return [NSString stringWithFormat:@"%@/small/%@.png", self.absPath, cardFileName];
+    return [NSString stringWithFormat:@"%@/small/%@.png", IMAGE, cardFileName];
 }
 
 - (NSString*)framePath {
@@ -44,7 +40,7 @@
 }
 
 - (NSString*)pngPathWithName:(NSString*)fileName {
-    return [NSString stringWithFormat:@"%@/%@.png", self.absPath, fileName];
+    return [NSString stringWithFormat:@"%@/%@.png", IMAGE, fileName];
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
@@ -97,7 +93,7 @@
         
         if(self.card.count >= 2 && self.card.count <= 9)
         {
-            NSImage* extraInfo = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:[NSString stringWithFormat:@"frame_%d", self.card.count]]];
+            NSImage* extraInfo = [[NSImage alloc] initWithContentsOfFile:[self pngPathWithName:[NSString stringWithFormat:@"frame_%ld", (long)self.card.count]]];
             [extraInfo drawInRect:CGRectMake(194, 8, 18, 21)];
         }
         else

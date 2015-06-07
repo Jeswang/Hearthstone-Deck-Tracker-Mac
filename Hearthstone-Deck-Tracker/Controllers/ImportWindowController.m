@@ -10,6 +10,7 @@
 #import "NetEaseCardBuilderImporter.h"
 #import "AppDelegate.h"
 #import "Configuration.h"
+#import "DeckModel.h"
 
 @interface ImportWindowController ()
 
@@ -58,12 +59,12 @@
 
         [NetEaseCardBuilderImporter importDocker:[self.siteChooser objectValueOfSelectedItem]
                                           withId:[self.inputField stringValue]
-                                         success:^(NSArray *cards) {
+                                         success:^(DeckModel *deck) {
             [self.indicator setHidden:YES];
             [self.status setStringValue:@"success"];
 
             AppDelegate *appDelegate = (AppDelegate *) [[NSApplication sharedApplication] delegate];
-            [appDelegate updateWithCards:cards];
+            [appDelegate updateWithDeck:deck];
 
             [self.window orderOut:nil];
 

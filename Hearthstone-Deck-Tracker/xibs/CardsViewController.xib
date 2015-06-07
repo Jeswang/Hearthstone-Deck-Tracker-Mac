@@ -85,19 +85,33 @@
                         <constraint firstAttribute="height" constant="250" id="QIi-bq-kXE"/>
                         <constraint firstAttribute="width" constant="180" id="wRc-2o-aVr"/>
                     </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Mpn-L7-Xzb">
-                        <connections>
-                            <binding destination="7fs-JH-pcg" name="value" keyPath="self.cardImage" id="Ajy-f7-XAf"/>
-                        </connections>
-                    </imageCell>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Mpn-L7-Xzb"/>
                     <connections>
                         <binding destination="7fs-JH-pcg" name="value" keyPath="representedObject.cardImage" id="Ljj-yJ-92p"/>
                     </connections>
                 </imageView>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="4Ha-Gc-mVU">
+                    <rect key="frame" x="-2" y="-3" width="204" height="275"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" state="on" borderStyle="border" transparent="YES" imageScaling="proportionallyDown" inset="2" id="7b9-O5-IEa">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="7fs-JH-pcg" name="target" keyPath="representedObject" id="ZOC-Sg-Ee3">
+                            <dictionary key="options">
+                                <string key="NSSelectorName">click:</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Ikh-Vs-n3L" secondAttribute="bottom" constant="10" id="1yY-mL-4hi"/>
                 <constraint firstItem="Ikh-Vs-n3L" firstAttribute="top" secondItem="Un1-TX-ar2" secondAttribute="top" constant="10" id="Kxw-Q6-0EW"/>
+                <constraint firstItem="4Ha-Gc-mVU" firstAttribute="top" secondItem="Un1-TX-ar2" secondAttribute="top" id="Rrt-Kt-1S4"/>
+                <constraint firstAttribute="bottom" secondItem="4Ha-Gc-mVU" secondAttribute="bottom" id="bm4-dV-aij"/>
+                <constraint firstAttribute="trailing" secondItem="4Ha-Gc-mVU" secondAttribute="trailing" id="f0u-cj-YEb"/>
+                <constraint firstItem="4Ha-Gc-mVU" firstAttribute="leading" secondItem="Un1-TX-ar2" secondAttribute="leading" id="m7R-uV-HAL"/>
                 <constraint firstItem="Ikh-Vs-n3L" firstAttribute="leading" secondItem="Un1-TX-ar2" secondAttribute="leading" constant="10" id="oCu-Me-kKQ"/>
                 <constraint firstAttribute="trailing" secondItem="Ikh-Vs-n3L" secondAttribute="trailing" constant="10" id="zWy-yh-Gbc"/>
             </constraints>

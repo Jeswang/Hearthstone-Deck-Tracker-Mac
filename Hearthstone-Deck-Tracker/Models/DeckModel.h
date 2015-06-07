@@ -25,7 +25,13 @@ RLM_ARRAY_TYPE(CardItem) // define RLMArray<Dog>
 @property NSInteger totalCount;
 @property RLMArray<CardItem> *cards;
 
++ (DeckModel *)deckWithDeckName:(NSString *)title;
++ (void)deleteDeck:(DeckModel *)deck;
 
+- (void)addCard:(NSString*)cardId;
+- (void)removeCard:(NSString*)cardId;
+
++ (NSMutableArray *)decks;
 @end
 
 // This protocol enables typed collections. i.e.:

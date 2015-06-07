@@ -4,3 +4,6 @@
 [submodule "Hearthstone-Deck-Tracker/Libraries/OTWebImage"]
 	path = Hearthstone-Deck-Tracker/Libraries/OTWebImage
 	url = https://github.com/OpenFibers/OTWebImage.git
+[submodule "Hearthstone-Deck-Tracker/Libraries/AGScopeBar"]
+	path = Hearthstone-Deck-Tracker/Libraries/AGScopeBar
+	url = https://github.com/Jeswang/AGScopeBar.git

@@ -8,8 +8,7 @@
 
 #import "DecksViewController.h"
 #import "PXSourceList.h"
-#import "Photo.h"
-#import "PhotoCollection.h"
+#import "DeckModel.h"
 
 static NSString * const draggingType = @"SourceListExampleDraggingType";
 
@@ -17,11 +16,12 @@ static NSString * const draggingType = @"SourceListExampleDraggingType";
 }
 
 @property (weak, nonatomic) IBOutlet PXSourceList *sourceList;
+@property (assign) IBOutlet NSButton *removeButton;
 
-@property (strong) NSMutableArray *decks; // used to keep track of dragged nodes
 @property (strong, nonatomic) NSMutableArray *modelObjects;
 @property (strong, nonatomic) NSMutableArray *sourceListItems;
-@property (assign) IBOutlet NSButton *removeButton;
+
+@property (nonatomic, strong) DeckModel *selectedDeck;
 
 @end
 
@@ -35,8 +35,7 @@ static NSString * const draggingType = @"SourceListExampleDraggingType";
     self.sourceListItems = [[NSMutableArray alloc] init];
     
     // Store all of the model objects in an array because each source list item only holds a weak reference to them.
-    self.modelObjects = [NSMutableArray new];
-    // TODO: Load all the decks
+    self.modelObjects = [DeckModel decks];
     
     NSImage *deckImage = [NSImage imageNamed:@"album"];
     [deckImage setTemplate:YES];
@@ -44,20 +43,36 @@ static NSString * const draggingType = @"SourceListExampleDraggingType";
     PXSourceListItem *albumsItem = [PXSourceListItem itemWithTitle:@"DECKS" identifier:nil];
     
     [self.sourceListItems addObject:albumsItem];
-    
+    for (DeckModel* model in self.modelObjects) {
+        [albumsItem addChildItem:[PXSourceListItem itemWithRepresentedObject:model icon:deckImage]];
+    }
     [self.sourceList reloadData];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(addCard:)
+                                                 name:@"AddCard"
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(removeCard:)
+                                                 name:@"RemoveCard"
+                                               object:nil];
 }
 
-/* Convenience method for adding dummy Photo objects to a PhotoCollection instance. */
-- (void)addNumberOfPhotoObjects:(NSUInteger)numberOfObjects toCollection:(PhotoCollection *)collection
-{
-    NSMutableArray *photos = [[NSMutableArray alloc] init];
-    for (NSUInteger i = 0; i < numberOfObjects; ++i)
-        [photos addObject:[[Photo alloc] init]];
-    collection.photos = photos;
+- (void)addCard:(NSNotification *)notification {
+    if (self.selectedDeck) {
+        NSString *cardId = [notification object];
+        [self.selectedDeck addCard:cardId];
+        [NC postNotificationName:@"UpdateDeck" object:nil];
+    }
 }
 
-
+- (void)removeCard:(NSNotification *)notification {
+    if (self.selectedDeck) {
+        NSString *cardId = [notification object];
+        [self.selectedDeck removeCard:cardId];
+        [NC postNotificationName:@"UpdateDeck" object:nil];
+    }
+}
 
 - (PXSourceListItem *)albumsItem
 {
@@ -71,22 +86,30 @@ static NSString * const draggingType = @"SourceListExampleDraggingType";
     NSImage *deckImage = [NSImage imageNamed:@"album"];
     [deckImage setTemplate:YES];
     
-    PhotoCollection *collection = [PhotoCollection collectionWithTitle:@"New Deck" identifier:nil type:PhotoCollectionTypeUserCreated];
-    [self.modelObjects addObject:collection];
+    DeckModel *deck = [DeckModel deckWithDeckName:@"New Deck"];
     
-    PXSourceListItem *newItem = [PXSourceListItem itemWithRepresentedObject:collection icon:deckImage];
+    [self.modelObjects addObject:deck];
+    
+    PXSourceListItem *newItem = [PXSourceListItem itemWithRepresentedObject:deck icon:deckImage];
     [self.albumsItem addChildItem:newItem];
     
     NSUInteger childIndex = [[self.albumsItem children] indexOfObject:newItem];
+    
     [self.sourceList insertItemsAtIndexes:[NSIndexSet indexSetWithIndex:childIndex]
                                  inParent:self.albumsItem
                             withAnimation:NSTableViewAnimationEffectNone];
     
+    if (childIndex == 0) {
+        [self.sourceList reloadData];
+    }
+    //[self.sourceList reloadData];
     [self.sourceList editColumn:0 row:[self.sourceList rowForItem:newItem] withEvent:nil select:YES];
 }
 
 - (IBAction)removeButtonAction:(id)sender
 {
+    [DeckModel deleteDeck:self.selectedDeck];
+    
     PXSourceListItem *selectedItem = [self.sourceList itemAtRow:self.sourceList.selectedRow];
     PXSourceListItem *parentItem = self.albumsItem;
     
@@ -139,17 +162,35 @@ static NSString * const draggingType = @"SourceListExampleDraggingType";
         cellView = [aSourceList makeViewWithIdentifier:@"MainCell" owner:nil];
     
     PXSourceListItem *sourceListItem = item;
-    PhotoCollection *collection = sourceListItem.representedObject;
+    DeckModel *deck = sourceListItem.representedObject;
     
     // Only allow us to edit the user created photo collection titles.
-    BOOL isTitleEditable = [collection isKindOfClass:[PhotoCollection class]];
+    BOOL isTitleEditable = [deck isKindOfClass:[DeckModel class]];
     cellView.textField.editable = isTitleEditable;
     cellView.textField.selectable = isTitleEditable;
     
-    cellView.textField.stringValue = sourceListItem.title ? sourceListItem.title : [sourceListItem.representedObject title];
+    cellView.textField.stringValue = sourceListItem.title ? sourceListItem.title : [sourceListItem.representedObject name];
     cellView.imageView.image = [item icon];
-    cellView.badgeView.hidden = collection.photos.count == 0;
-    cellView.badgeView.badgeValue = collection.photos.count;
+    cellView.badgeView.hidden = deck.totalCount == 0;
+    cellView.badgeView.badgeValue = deck.totalCount;
+
+    @weakify(deck)
+    [cellView.textField.rac_textSignal subscribeNext:^(id x) {
+        @strongify(deck)
+        [REALM beginWriteTransaction];
+        deck.name = (NSString *)x;
+        [REALM commitWriteTransaction];
+    }];
+    
+    @weakify(cellView)
+    [RACObserve(deck, totalCount) subscribeNext:^(NSNumber *x) {
+        @strongify(cellView)
+        NSInteger count = [x integerValue];
+        cellView.badgeView.hidden = count == 0;
+        cellView.badgeView.badgeValue = count;
+        [cellView setNeedsLayout:YES];
+        [cellView.badgeView setNeedsDisplay:YES];
+    }];
     
     return cellView;
 }
@@ -158,21 +199,17 @@ static NSString * const draggingType = @"SourceListExampleDraggingType";
 {
     PXSourceListItem *selectedItem = [self.sourceList itemAtRow:self.sourceList.selectedRow];
     BOOL removeButtonEnabled = NO;
-    NSString *newLabel = @"";
     if (selectedItem) {
-        // Only allow us to remove items in the 'albums' group.
         removeButtonEnabled = [[self.albumsItem children] containsObject:selectedItem];
+        self.selectedDeck = [self.modelObjects objectAtIndex:self.sourceList.selectedRow-1];
         
-        // We can use the underlying model object to do something based on the selection.
-        PhotoCollection *collection = selectedItem.representedObject;
-        
-        if (collection.identifier)
-            newLabel = [NSString stringWithFormat:@"'%@' collection selected.", collection.identifier];
-        else
-            newLabel = @"User-created collection selected.";
+        [NC postNotificationName:@"SelectDeck" object:self.selectedDeck];
+    }
+    else {
+        self.selectedDeck = nil;
+        [NC postNotificationName:@"SelectDeck" object:nil];
     }
     
-    //self.selectedItemLabel.stringValue = newLabel;
     self.removeButton.enabled = removeButtonEnabled;
 }
 
@@ -182,8 +219,8 @@ static NSString * const draggingType = @"SourceListExampleDraggingType";
 {
     // Only allow user-created items (not those in "Library" to be moved around).
     for (PXSourceListItem *item in items) {
-        PhotoCollection *collection = item.representedObject;
-        if (![collection isKindOfClass:[PhotoCollection class]] || collection.type != PhotoCollectionTypeUserCreated)
+        DeckModel *collection = item.representedObject;
+        if (![collection isKindOfClass:[DeckModel class]])
             return NO;
     }
     
@@ -205,9 +242,7 @@ static NSString * const draggingType = @"SourceListExampleDraggingType";
 - (NSDragOperation)sourceList:(PXSourceList*)sourceList validateDrop:(id < NSDraggingInfo >)info proposedItem:(id)item proposedChildIndex:(NSInteger)index
 {
     PXSourceListItem *albumsItem = self.albumsItem;
-    
-    // Only allow the items in the 'albums' group to be moved around. It can either be dropped on the group header, or inserted between other child items.
-    // It can't be made the child of another item in this group, so the only valid case is when the proposedItem is the 'Albums' group item.
+
     if (![item isEqual:albumsItem])
         return NSDragOperationNone;
     

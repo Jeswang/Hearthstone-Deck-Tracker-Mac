@@ -67,14 +67,9 @@
 }
 
 + (CardModel *)cardById:(NSString*)cardId ofCountry:(NSString*)country {
-
-    RLMRealm* realm = [RLMRealm realmWithPath:[SystemHelper cardRealmPath]];
-
-    RLMResults* cards;
-    
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"cardId = %@ AND lang = %@",
                          cardId, country];
-    cards = [CardModel objectsInRealm:realm withPredicate:pred];
+    RLMResults* cards = [CardModel objectsInRealm:CARD_REALM withPredicate:pred];
 
     if ([cards count] > 0) {
         CardModel *card = [[cards objectAtIndex:0] deepCopy];
@@ -86,13 +81,9 @@
 }
 
 + (CardModel *)cardByEnglishName:(NSString*)name ofCountry:(NSString*)country {
-    
-    RLMRealm* realm = [RLMRealm realmWithPath:[SystemHelper cardRealmPath]];
-    
-    RLMResults* cards;
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"name = %@ AND lang = %@",
                          name, @"enUS"];
-    cards = [CardModel objectsInRealm:realm withPredicate:pred];
+    RLMResults* cards = [CardModel objectsInRealm:CARD_REALM withPredicate:pred];
     
     if ([cards count] > 1) {
         NSPredicate *predValid = [NSPredicate predicateWithFormat:@"collectible = 1 AND cardType != 'Hero'"];
@@ -110,12 +101,8 @@
 
 
 + (NSArray *)actualCards {
-    RLMRealm* realm = [RLMRealm realmWithPath:[SystemHelper cardRealmPath]];
-    
-    RLMResults* cards;
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"collectible = 1 AND cardType != 'Hero' AND lang = %@", [Configuration instance].countryLanguage];
-    cards = [[CardModel objectsInRealm:realm withPredicate:pred] sortedResultsUsingProperty:@"cost" ascending:YES];
-    
+    RLMResults* cards = [[CardModel objectsInRealm:CARD_REALM withPredicate:pred] sortedResultsUsingProperty:@"cost" ascending:YES];
     NSMutableArray *result = [NSMutableArray new];
     for (CardModel* card in cards) {
         [result addObject:[card deepCopy]];
@@ -133,8 +120,8 @@
     return [self.name compare:otherObject.name];
 }
 
-+ (NSArray*)sortCards:(NSArray*)cards {
-    return [cards sortedArrayUsingSelector:@selector(compare:)];
++ (void)sortCards:(NSMutableArray*)cards {
+    [cards sortUsingSelector:@selector(compare:)];
 }
 
 @end

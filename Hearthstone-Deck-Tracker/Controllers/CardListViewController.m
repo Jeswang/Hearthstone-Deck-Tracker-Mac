@@ -8,6 +8,7 @@
 
 #import "CardListViewController.h"
 #import "CardModel.h"
+#import "DeckModel.h"
 #import "CardCellView.h"
 #import "AppDelegate.h"
 #import "RLMObject+Copying.h"
@@ -18,8 +19,9 @@
 @interface CardListViewController()
 
 @property(nonatomic, weak) IBOutlet NSTableView* tableView;
-@property(nonatomic, strong) NSMutableArray *cards;
+
 @property(nonatomic, strong) NSMutableArray *showingCards;
+@property(nonatomic, strong) DeckModel *currentDeck;
 
 @property(nonatomic, strong) CardPreviewController *previewWindowController;
 @property(nonatomic, strong) NSString *currentPreviewCardId;
@@ -30,52 +32,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.cards = [NSMutableArray new];
+    self.showingCards = [NSMutableArray new];
     
-    self.cards = [[CardModel actualCards] mutableCopy];
-    self.showingCards = [[CardModel actualCards] mutableCopy];
-    
-    //self.cards = [NSMutableArray new];
-    //self.showingCards = [NSMutableArray new];
-
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
     [self.tableView setBackgroundColor:[NSColor colorWithCalibratedWhite:86.0/255.0 alpha:1]];
     
-    AppDelegate *appDelegate = (AppDelegate *)[[NSApplication sharedApplication] delegate];
-    
-    [appDelegate.updateList addObject:self];
-    [[[Hearthstone defaultInstance] updateList] addObject:self];
+    if (!self.isManager) {
+        [[APP updateList] addObject:self];
+        [[[Hearthstone defaultInstance] updateList] addObject:self];
+    }
 }
 
 - (void)viewDidAppear {
     [super viewDidAppear];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(reloadCountry:)
-                                                 name:kCountryLanguageChanged
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(reloadCards:)
-                                                 name:kFadeCardsChanged
-                                               object:nil];
+    [NC addObserver:self
+           selector:@selector(reloadCountry:)
+               name:kCountryLanguageChanged
+             object:nil];
+    
+    [NC addObserver:self
+           selector:@selector(reloadCards:)
+               name:kFadeCardsChanged
+             object:nil];
+    
+    if (self.isManager) {
+        [NC addObserver:self selector:@selector(updateDeck:) name:@"UpdateDeck" object:nil];
+        [NC addObserver:self selector:@selector(selectDeck:) name:@"SelectDeck" object:nil];
+    }
 }
 
-- (void)reloadCountry:(NSNotification *)notification {
-    NSMutableArray *tmp = [NSMutableArray new];
-    NSString *country = [Configuration instance].countryLanguage;
-    for (CardModel *card in self.cards) {
-        CardModel *newCard = [CardModel cardById:card.cardId ofCountry:country];
-        newCard.count = card.count;
-        [tmp addObject:newCard];
-    }
-    [CardModel sortCards:tmp];
-    self.cards = tmp;
+
+- (void)selectDeck:(NSNotification *)notification {
+    self.currentDeck = notification.object;
     [self resetCards];
 }
 
-- (void)reloadCards:(NSNotification *)notification {
-    [self.tableView reloadData];
+- (void)updateDeck:(NSNotification *)notification {
+    [self resetCards];
 }
 
 - (void)viewDidDisappear {
@@ -83,10 +78,25 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
 
-    // Update the view, if already loaded.
+- (void)reloadCountry:(NSNotification *)notification {
+    [self resetCards];
+}
+
+- (void)reloadCards:(NSNotification *)notification {
+    [self.tableView reloadData];
+}
+
+- (IBAction)columnChangeSelected:(id)sender
+{
+    NSInteger selectedRow = [self.tableView selectedRow];
+    
+    if (selectedRow != -1) {
+        NSLog(@"Do something with selectedRow! %ld", selectedRow);
+        CardModel *card = [self.showingCards objectAtIndex:selectedRow];
+        [self.tableView deselectRow:selectedRow];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"RemoveCard" object:card.cardId];
+    }
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
@@ -101,6 +111,10 @@
 }
 
 - (void)hoverCell:(NSTableCellView *)cell mouseInside:(BOOL)mouseInside{
+    if (self.isManager) {
+        return;
+    }
+    
     if (mouseInside) {
         CardCellView *cardCell = (CardCellView *)cell;
         [self showPreviewWindowBeside:cardCell];
@@ -168,21 +182,28 @@
     return NSMakePoint(x, y);
 }
 
-- (void)updateWithCards:(NSArray *)cards {
-    [self.cards removeAllObjects];
-    [self.cards addObjectsFromArray:cards];
-    
+- (void)updateWithDeck:(DeckModel *)deck {
+    self.currentDeck = deck;
     [self resetCards];
+    
     [self.tableView reloadData];
 }
 
 - (void)resetCards {
     [self.showingCards removeAllObjects];
-    for (id card in self.cards) {
-        [self.showingCards addObject:[card deepCopy]];
+    if (!self.currentDeck) {
+        return;
     }
+    for (CardItem *card in self.currentDeck.cards) {
+        CardModel *newCard = [CardModel cardById:card.cardId ofCountry:COUNTRY];
+        newCard.count = card.count;
+        [self.showingCards addObject:newCard];
+    }
+    [CardModel sortCards:self.showingCards];
+    
     [self.tableView reloadData];
 }
+
 
 - (void)removeCard:(NSString *)cardId {
     for (CardModel *card in self.showingCards) {
@@ -190,7 +211,7 @@
             if (card.count <= 1) {
                 card.count = 0;
                 
-                if (![Configuration instance].fadeCards) {
+                if (!FADE_CARDS || self.isManager) {
                     [self.showingCards removeObject:card];
                 }
                 
@@ -214,21 +235,16 @@
                 return;
         }
     }
+
+    CardModel *newCard = [CardModel cardById:cardId ofCountry:COUNTRY];
+    newCard.count = 1;
     
-    for (CardModel *card in self.cards) {
-        if (card.cardId == cardId) {
-            CardModel *newCard = [card deepCopy];
-            newCard.count = 1;
-            [self.showingCards addObject:newCard];
-            
-            NSArray *sortedCards = [CardModel sortCards:self.showingCards];
-            [self.showingCards removeAllObjects];
-            [self.showingCards addObjectsFromArray:sortedCards];
-            
-            [self.tableView reloadData];
-            return;
-        }
-    }
+    [self.showingCards addObject:newCard];
+    
+    [CardModel sortCards:self.showingCards];
+    
+    [self.tableView reloadData];
+
 }
 
 

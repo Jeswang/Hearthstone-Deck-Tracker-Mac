@@ -33,7 +33,7 @@ RLM_ARRAY_TYPE(StringObject)
 @property NSString *faction;
 @property NSString *lang;
 
-@property int count;
+@property NSInteger count;
 @property int inHandCount;
 @property bool isStolen;
 @property bool justDrawn;
@@ -46,7 +46,7 @@ RLM_ARRAY_TYPE(StringObject)
 + (CardModel *)cardById:(NSString*)cardId ofCountry:(NSString*)country;
 + (CardModel *)cardByEnglishName:(NSString*)name ofCountry:(NSString*)country;
 + (NSArray *)actualCards;
-+ (NSArray *)sortCards:(NSArray*)cards;
++ (void)sortCards:(NSArray*)cards;
 
 
 @end

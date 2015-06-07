@@ -32,6 +32,7 @@
 - (void)loadCardView {
     if (self.cardListController == nil) {
         self.cardListController = [[CardListViewController alloc] init];
+        self.cardListController.isManager = false;
     }
     [self.container addSubview:[self.cardListController view]];
     

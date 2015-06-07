@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class DeckModel;
+
 @interface NetEaseCardBuilderImporter : NSObject
 
 + (void)importDocker:(NSString *)site
               withId:(NSString *)dockerId
-             success:(void (^)(NSArray *))success
+             success:(void (^)(DeckModel *))success
                 fail:(void (^)(NSString *))fail;
 
 @end

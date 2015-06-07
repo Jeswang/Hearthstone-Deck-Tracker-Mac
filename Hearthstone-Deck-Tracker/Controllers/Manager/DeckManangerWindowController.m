@@ -27,9 +27,11 @@
 - (void)windowDidLoad {
     [super windowDidLoad];
     
-    // Do view setup here.
     self.deckViewController = [[DecksViewController alloc] init];
+    
     self.detailViewController = [[CardListViewController alloc] init];
+    self.detailViewController.isManager = true;
+    
     self.cardsViewController = [[CardsViewController alloc] init];
     
     [self insertController:self.deckViewController toSubview:self.deckView];
@@ -39,6 +41,8 @@
     [self.cardsView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_greaterThanOrEqualTo(700);
     }];
+    
+    
 }
 
 - (void)insertController:(NSViewController *)controller toSubview:(NSView*)subview {
