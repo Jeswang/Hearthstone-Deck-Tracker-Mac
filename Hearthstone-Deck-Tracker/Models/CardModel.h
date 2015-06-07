@@ -8,6 +8,18 @@
 
 #import <Realm/Realm.h>
 
+@interface CardFilter : NSObject
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *label;
+@property (nonatomic, strong) NSDictionary *dict;
+
+@property (nonatomic, strong) NSString *selectedKey;
+
+- (RLMResults *)filterdResult:(RLMResults *)input;
++ (CardFilter *)filterWithName:(NSString *)name label:(NSString *)label dict:(NSDictionary *)dict;
+
+@end
+
 @interface StringObject : RLMObject
 @property NSString *value;
 @end
@@ -45,7 +57,10 @@ RLM_ARRAY_TYPE(StringObject)
 
 + (CardModel *)cardById:(NSString*)cardId ofCountry:(NSString*)country;
 + (CardModel *)cardByEnglishName:(NSString*)name ofCountry:(NSString*)country;
+
 + (NSArray *)actualCards;
++ (NSArray *)cardWithFilters:(NSArray *)filters;
+
 + (void)sortCards:(NSArray*)cards;
 
 

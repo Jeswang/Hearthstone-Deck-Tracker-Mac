@@ -59,8 +59,10 @@
     
     if (self.isManager) {
         [NC addObserver:self selector:@selector(updateDeck:) name:@"UpdateDeck" object:nil];
-        [NC addObserver:self selector:@selector(selectDeck:) name:@"SelectDeck" object:nil];
     }
+
+    [NC addObserver:self selector:@selector(selectDeck:) name:@"SelectDeck" object:nil];
+
 }
 
 

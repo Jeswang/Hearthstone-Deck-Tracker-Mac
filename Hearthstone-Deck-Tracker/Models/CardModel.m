@@ -11,6 +11,50 @@
 #import "RLMObject+Copying.h"
 #import "Configuration.h"
 
+@implementation CardFilter {
+    
+}
+
++ (CardFilter *)filterWithName:(NSString *)name label:(NSString *)label dict:(NSDictionary *)dict {
+    CardFilter *filter = [CardFilter new];
+    filter.name = name;
+    filter.label = label;
+    filter.dict = dict;
+    filter.selectedKey = @"";
+    return filter;
+}
+
+- (RLMResults *)filterdResult:(RLMResults *)input {
+    if ([self.selectedKey isEqualTo:@""] ||
+        [self.selectedKey isEqualTo:@"all"] ||
+        [self.selectedKey isEqualTo:@"0 all"]) {
+        return input;
+    }
+    
+    NSString *trueKey = [[self.selectedKey componentsSeparatedByString:@" "] lastObject];
+    
+    if ([self.name isEqualTo:@"name"]) {
+        return [input objectsWhere:@"%K CONTAINS %@", self.name, trueKey];
+    }
+    
+    if ([self.name isEqualTo:@"cost"]) {
+        if ([trueKey isEqualTo:@"7"]) {
+            return [input objectsWhere:@"%K >= %d", self.name, [trueKey integerValue]];
+        }
+        else {
+            return [input objectsWhere:@"%K = %d", self.name, [trueKey integerValue]];
+        }
+    }
+    
+    if ([self.name isEqualTo:@"playerClass"] && [trueKey isEqualTo:@"Neutral"]) {
+        trueKey = @"";
+    }
+    
+    return [input objectsWhere:@"%K = %@", self.name, trueKey];
+}
+
+@end
+
 @implementation StringObject
 @end
 
@@ -99,15 +143,35 @@
     }
 }
 
++ (NSArray *)cardWithFilters:(NSArray *)filters {
+    RLMResults *cards = [CardModel actualCardResults];
+    for (CardFilter *filter in filters) {
+        cards = [filter filterdResult:cards];
+    }
+    return [CardModel arrayFromResult:cards];
+}
 
-+ (NSArray *)actualCards {
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"collectible = 1 AND cardType != 'Hero' AND lang = %@", [Configuration instance].countryLanguage];
-    RLMResults* cards = [[CardModel objectsInRealm:CARD_REALM withPredicate:pred] sortedResultsUsingProperty:@"cost" ascending:YES];
++ (RLMResults *)resultWithFilter:(RLMResults *)input {
+    return input;
+}
+
++ (NSArray *)arrayFromResult:(RLMResults *)cards{
     NSMutableArray *result = [NSMutableArray new];
     for (CardModel* card in cards) {
         [result addObject:[card deepCopy]];
     }
     return result;
+}
+
++ (RLMResults *)actualCardResults {
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"collectible = 1 AND cardType != 'Hero' AND lang = %@", COUNTRY];
+    RLMResults* cards = [[CardModel objectsInRealm:CARD_REALM withPredicate:pred] sortedResultsUsingProperty:@"cost" ascending:YES];
+    return cards;
+}
+
++ (NSArray *)actualCards {
+    RLMResults* cards = [CardModel actualCardResults];
+    return [CardModel arrayFromResult:cards];
 }
 
 - (NSComparisonResult)compare:(CardModel *)otherObject {

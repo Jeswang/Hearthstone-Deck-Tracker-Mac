@@ -7,8 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="CardsViewController">
             <connections>
-                <outlet property="buttonBar" destination="xG8-BE-RBz" id="g2P-G5-bih"/>
                 <outlet property="cardCollectionView" destination="jaR-mg-gqT" id="Uvw-7v-TwU"/>
+                <outlet property="mgAccessoryView" destination="gEs-GP-4o7" id="FYV-lV-6Kf"/>
+                <outlet property="mgScopeBar" destination="xG8-BE-RBz" id="fPr-G9-zcu"/>
+                <outlet property="searchField" destination="W2n-sX-9KF" id="iUG-mu-mca"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -19,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJU-Fr-UHI">
-                    <rect key="frame" x="0.0" y="35" width="710" height="381"/>
+                    <rect key="frame" x="0.0" y="0.0" width="710" height="426"/>
                     <clipView key="contentView" id="qab-8h-LRZ">
                         <rect key="frame" x="1" y="1" width="248" height="158"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,32 +45,26 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="xG8-BE-RBz" customClass="AMButtonBar">
-                    <rect key="frame" x="0.0" y="416" width="710" height="35"/>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="xG8-BE-RBz" customClass="MGScopeBar">
+                    <rect key="frame" x="0.0" y="426" width="710" height="25"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="35" id="sXX-pK-0bA"/>
+                        <constraint firstAttribute="height" constant="25" id="e39-57-P4J"/>
                     </constraints>
-                </customView>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="8aA-e3-sos">
-                    <rect key="frame" x="0.0" y="0.0" width="710" height="35"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="35" id="i6q-b1-vPf"/>
-                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="4Jl-3Y-ANZ"/>
+                    </connections>
                 </customView>
             </subviews>
             <constraints>
-                <constraint firstItem="8aA-e3-sos" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="0yE-Yh-A5O"/>
-                <constraint firstAttribute="trailing" secondItem="uJU-Fr-UHI" secondAttribute="trailing" id="2QX-Wo-f0t"/>
-                <constraint firstItem="xG8-BE-RBz" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="9Sz-ce-bvn"/>
-                <constraint firstItem="uJU-Fr-UHI" firstAttribute="top" secondItem="xG8-BE-RBz" secondAttribute="bottom" id="MDE-As-weh"/>
-                <constraint firstAttribute="bottom" secondItem="8aA-e3-sos" secondAttribute="bottom" id="R5s-IX-qwi"/>
-                <constraint firstAttribute="trailing" secondItem="8aA-e3-sos" secondAttribute="trailing" id="Zau-03-KB0"/>
-                <constraint firstAttribute="trailing" secondItem="xG8-BE-RBz" secondAttribute="trailing" id="lrD-SU-dEC"/>
-                <constraint firstItem="8aA-e3-sos" firstAttribute="top" secondItem="uJU-Fr-UHI" secondAttribute="bottom" id="nvc-Cc-jOV"/>
-                <constraint firstItem="xG8-BE-RBz" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="sFg-ha-fvd"/>
-                <constraint firstItem="uJU-Fr-UHI" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="u8t-Ho-3l7"/>
+                <constraint firstItem="xG8-BE-RBz" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="O4k-J8-2tf"/>
+                <constraint firstItem="uJU-Fr-UHI" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="X8h-Qi-c1j"/>
+                <constraint firstItem="uJU-Fr-UHI" firstAttribute="top" secondItem="xG8-BE-RBz" secondAttribute="bottom" id="YjB-ZO-Y7m"/>
+                <constraint firstAttribute="trailing" secondItem="xG8-BE-RBz" secondAttribute="trailing" id="bh0-gW-QzG"/>
+                <constraint firstItem="xG8-BE-RBz" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="bqk-RK-KB4"/>
+                <constraint firstAttribute="trailing" secondItem="uJU-Fr-UHI" secondAttribute="trailing" id="v6p-Ds-8Jc"/>
+                <constraint firstAttribute="bottom" secondItem="uJU-Fr-UHI" secondAttribute="bottom" id="zjX-ed-edD"/>
             </constraints>
-            <point key="canvasLocation" x="276" y="200.5"/>
+            <point key="canvasLocation" x="74" y="204.5"/>
         </customView>
         <collectionViewItem id="7fs-JH-pcg" customClass="CardCollectionViewItem">
             <connections>
@@ -118,5 +114,20 @@
             <point key="canvasLocation" x="262" y="-262"/>
         </view>
         <userDefaultsController representsSharedInstance="YES" id="Aik-e8-CuO"/>
+        <customView id="gEs-GP-4o7" userLabel="MGAccessory">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2n-sX-9KF">
+                    <rect key="frame" x="0.0" y="3" width="163" height="19"/>
+                    <searchFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="BGw-X6-g1d">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </searchFieldCell>
+                </searchField>
+            </subviews>
+            <point key="canvasLocation" x="-30.5" y="-347.5"/>
+        </customView>
     </objects>
 </document>

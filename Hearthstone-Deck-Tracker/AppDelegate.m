@@ -52,7 +52,7 @@
         
     }
     
-    //[self.cardListController showWindow:self];
+    [self.cardListController showWindow:self];
     
     if (self.managerController == nil) {
         self.managerController = [[DeckManangerWindowController alloc] initWithWindowNibName:@"DeckManangerWindowController"];

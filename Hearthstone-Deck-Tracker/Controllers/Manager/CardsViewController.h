@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MGScopeBar.h"
 
-@interface CardsViewController : NSViewController <NSCollectionViewDelegate>
+@interface CardsViewController : NSViewController <NSCollectionViewDelegate, MGScopeBarDelegate>
 
 @end

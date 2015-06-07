@@ -16,6 +16,9 @@
 		5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC11A5FC10300A43A59 /* Images.xcassets */; };
 		513343BC1AECBA3D0012FC0C /* CardListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513343BB1AECBA3D0012FC0C /* CardListViewController.xib */; };
 		513343BE1AECC78B0012FC0C /* CardPreviewWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513343BD1AECC78B0012FC0C /* CardPreviewWindow.xib */; };
+		5147A79F1B2415DC00B5B62C /* AGScopeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5147A7911B2415DC00B5B62C /* AGScopeBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5147A7A41B2415DC00B5B62C /* MGRecessedPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5147A79A1B2415DC00B5B62C /* MGRecessedPopUpButtonCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5147A7A51B2415DC00B5B62C /* MGScopeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5147A79C1B2415DC00B5B62C /* MGScopeBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		51637F981B214260002256D7 /* AMButtonBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F811B214260002256D7 /* AMButtonBar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		51637F991B214260002256D7 /* AMButtonBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F831B214260002256D7 /* AMButtonBarCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		51637F9A1B214260002256D7 /* AMButtonBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 51637F851B214260002256D7 /* AMButtonBarItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -87,6 +90,12 @@
 		5132FAD01A5FC10300A43A59 /* Hearthstone_Deck_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hearthstone_Deck_TrackerTests.m; sourceTree = "<group>"; };
 		513343BB1AECBA3D0012FC0C /* CardListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardListViewController.xib; sourceTree = "<group>"; };
 		513343BD1AECC78B0012FC0C /* CardPreviewWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardPreviewWindow.xib; sourceTree = "<group>"; };
+		5147A7901B2415DC00B5B62C /* AGScopeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGScopeBar.h; sourceTree = "<group>"; };
+		5147A7911B2415DC00B5B62C /* AGScopeBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGScopeBar.m; sourceTree = "<group>"; };
+		5147A7991B2415DC00B5B62C /* MGRecessedPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRecessedPopUpButtonCell.h; sourceTree = "<group>"; };
+		5147A79A1B2415DC00B5B62C /* MGRecessedPopUpButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRecessedPopUpButtonCell.m; sourceTree = "<group>"; };
+		5147A79B1B2415DC00B5B62C /* MGScopeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGScopeBar.h; sourceTree = "<group>"; };
+		5147A79C1B2415DC00B5B62C /* MGScopeBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGScopeBar.m; sourceTree = "<group>"; };
 		51514C3A1A6657B400395567 /* CardJs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CardJs; sourceTree = "<group>"; };
 		51637F801B214260002256D7 /* AMButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMButtonBar.h; sourceTree = "<group>"; };
 		51637F811B214260002256D7 /* AMButtonBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMButtonBar.m; sourceTree = "<group>"; };
@@ -226,6 +235,7 @@
 				51B86CDA1A63DB99001AB7D7 /* LogReader */,
 				5192D17D1A62B04C00B239C5 /* Importer */,
 				516646901A62287600E36F26 /* Utility */,
+				9A3A2F0245B1234C8E3A62F2 /* Libraries */,
 				516646881A620C4200E36F26 /* Models */,
 				516646891A620C4A00E36F26 /* Views */,
 				51C72D821A619118004C374E /* Controllers */,
@@ -237,7 +247,6 @@
 				5132FABA1A5FC10300A43A59 /* AppDelegate.m */,
 				5132FAC11A5FC10300A43A59 /* Images.xcassets */,
 				5132FAB71A5FC10200A43A59 /* Supporting Files */,
-				9A3A2F0245B1234C8E3A62F2 /* Libraries */,
 			);
 			path = "Hearthstone-Deck-Tracker";
 			sourceTree = "<group>";
@@ -267,6 +276,28 @@
 				5132FACF1A5FC10300A43A59 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5147A78B1B2415DC00B5B62C /* AGScopeBar */ = {
+			isa = PBXGroup;
+			children = (
+				5147A7901B2415DC00B5B62C /* AGScopeBar.h */,
+				5147A7911B2415DC00B5B62C /* AGScopeBar.m */,
+				5147A7991B2415DC00B5B62C /* MGRecessedPopUpButtonCell.h */,
+				5147A79A1B2415DC00B5B62C /* MGRecessedPopUpButtonCell.m */,
+				5147A79B1B2415DC00B5B62C /* MGScopeBar.h */,
+				5147A79C1B2415DC00B5B62C /* MGScopeBar.m */,
+			);
+			name = AGScopeBar;
+			path = AGScopeBar/AGScopeBar;
+			sourceTree = "<group>";
+		};
+		5147A7A61B24169E00B5B62C /* AGScopeBar */ = {
+			isa = PBXGroup;
+			children = (
+				5147A78B1B2415DC00B5B62C /* AGScopeBar */,
+			);
+			name = AGScopeBar;
 			sourceTree = "<group>";
 		};
 		51637F5B1B213F93002256D7 /* ButtonBar */ = {
@@ -459,6 +490,7 @@
 		9A3A2F0245B1234C8E3A62F2 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				5147A7A61B24169E00B5B62C /* AGScopeBar */,
 				5169ED631AF63C86001EFBA3 /* NSImage-Trim */,
 				5169ED5C1AF62872001EFBA3 /* ScaleImageView */,
 			);
@@ -605,10 +637,12 @@
 				51D1051B1A6A6C8D0074B86A /* CardPreviewController.m in Sources */,
 				518F4A271A6BDFCD00B0C7D0 /* LogAnalyzer.m in Sources */,
 				5166468F1A621FF700E36F26 /* CardModel.m in Sources */,
+				5147A7A41B2415DC00B5B62C /* MGRecessedPopUpButtonCell.m in Sources */,
 				51637F9E1B214260002256D7 /* NSBezierPath_AMAdditons.m in Sources */,
 				5195F4F61AF657AB00FC86AD /* CardsViewController.m in Sources */,
 				51C72D851A619118004C374E /* CardListViewController.m in Sources */,
 				51846C6E1A680A87004ED043 /* CardListWindowController.m in Sources */,
+				5147A79F1B2415DC00B5B62C /* AGScopeBar.m in Sources */,
 				5169ED5F1AF62872001EFBA3 /* ScaleImageView.m in Sources */,
 				51637FA01B214260002256D7 /* NSColor_AMAdditions.m in Sources */,
 				5195F4F11AF6572E00FC86AD /* DecksViewController.m in Sources */,
@@ -636,6 +670,7 @@
 				51637F9C1B214260002256D7 /* CTGradient_AMButtonBar.m in Sources */,
 				51637F991B214260002256D7 /* AMButtonBarCell.m in Sources */,
 				51637FAA1B214DCE002256D7 /* PhotoCollection.m in Sources */,
+				5147A7A51B2415DC00B5B62C /* MGScopeBar.m in Sources */,
 				51C72D881A619218004C374E /* DeckManangerWindowController.m in Sources */,
 				51637F9A1B214260002256D7 /* AMButtonBarItem.m in Sources */,
 				518F4A261A6BDFCD00B0C7D0 /* Hearthstone.m in Sources */,
