@@ -1,0 +1,85 @@
+﻿TAG	TEXT	COMMENT
+11*Description	Completa una partita in modalità Gioco.	
+11*Name	Primo sangue	
+12*Description	Affronta 3 partite in modalità Gioco.	
+12*Name	Duellista	
+31*Description	Porta una qualsiasi classe a livello 10.	
+31*Name	Livello 10	
+32*Description	Vinci 2 partite con il Druido o con il Cacciatore.	
+32*Name	Vittoria: Druido o Cacciatore	
+33*Description	Vinci 2 partite con il Druido o con il Ladro.	
+33*Name	Vittoria: Druido o Ladro	
+34*Description	Vinci 2 partite con il Cacciatore o con il Mago.	
+34*Name	Vittoria: Cacciatore o Mago	
+35*Description	Vinci 2 partite con il Mago o con lo Sciamano.	
+35*Name	Vittoria: Mago o Sciamano	
+36*Description	Vinci 2 partite con il Paladino o con il Sacerdote.	
+36*Name	Vittoria: Paladino o Sacerdote	
+37*Description	Vinci 2 partite con il Paladino o con il Guerriero.	
+37*Name	Vittoria: Paladino o Guerriero	
+38*Description	Vinci 2 partite con il Sacerdote o con lo Stregone.	
+38*Name	Vittoria: Sacerdote o Stregone	
+39*Description	Vinci 2 partite con il Ladro o con il Guerriero.	
+39*Name	Vittoria: Ladro o Guerriero	
+40*Description	Vinci 2 partite con lo Sciamano o con lo Stregone.	
+40*Name	Vittoria: Sciamano o Stregone	
+41*Description	Vinci 5 partite con il Druido o con il Cacciatore.	
+41*Name	Dominazione: Druido o Cacciatore	
+42*Description	Vinci 5 partite con il Druido o con il Ladro.	
+42*Name	Dominazione: Druido o Ladro	
+43*Description	Vinci 5 partite con il Cacciatore o con il Mago.	
+43*Name	Dominazione: Cacciatore o Mago	
+44*Description	Vinci 5 partite con il Mago o con lo Sciamano.	
+44*Name	Dominazione: Mago o Sciamano	
+45*Description	Vinci 5 partite con il Paladino o con il Sacerdote.	
+45*Name	Dominazione: Paladino o Sacerdote	
+46*Description	Vinci 5 partite con il Paladino o con il Guerriero.	
+46*Name	Dominazione: Paladino o Guerriero	
+47*Description	Vinci 5 partite con il Sacerdote o con lo Stregone.	
+47*Name	Dominazione: Sacerdote o Stregone	
+48*Description	Vinci 5 partite con il Ladro o con il Guerriero.	
+48*Name	Dominazione: Ladro o Guerriero	
+49*Description	Vinci 5 partite con lo Sciamano o con lo Stregone.	
+49*Name	Dominazione: Sciamano o Stregone	
+50*Description	Distruggi 40 servitori.	
+50*Name	Distruggili tutti	
+51*Description	Gioca 20 servitori che costino 5 o più Mana.	
+51*Name	Solo i migliori	
+52*Description	Gioca 40 servitori che costino 2 o meno Mana.	
+52*Name	Potere ai piccoli	
+53*Description	Lancia 40 Magie.	
+53*Name	Maestro d'incantesimi	
+54*Description	Infliggi 100 danni agli eroi nemici.	
+54*Name	Senza pietà	
+55*Description	Disincanta una carta.	
+55*Name	Passione per l'artigianato	
+56*Description	Entra nell'Arena.	
+56*Name	Benvenuti nell'Arena	
+58*Description	Ottieni tutti i Pirati.	
+58*Name	Arrrrrr!!!	
+59*Description	Ottieni tutti i Pirati Dorati.	
+59*Name	Arrrrrr dorato!!!	
+60*Description	Ottieni tutti i Murloc.	
+60*Name	Mrglglglgl!	
+61*Description	Ottieni tutti i Murloc Dorati.	
+61*Name	Mrglglglgl dorato!	
+62*Description	Vinci 100 partite in qualsiasi modalità.	
+62*Name	Successo senza limiti	
+63*Description	Vinci 1.000 partite in qualsiasi modalità.	
+63*Name	Inarrestabile	
+64*Description	Vinci 7 partite in qualsiasi modalità.	
+64*Name	Dominazione totale	
+69*Description	Vinci 3 partite con qualsiasi classe.	
+69*Name	3 vittorie!	
+79*Description	Sblocca tutti gli eroi.	
+79*Name	Pronti alla partenza!	
+89*Description	Sconfiggi ogni eroe IA alla difficoltà Esperto.	
+89*Name	Sconfiggili tutti!	
+90*Description	Colleziona tutte le carte del Set Base.	
+90*Name	Ottenere le basi!	
+91*Description	Colleziona tutte le carte del Set Avanzato.	
+91*Name	Ce le ho tutte!	
+95*Description	Grazie per averci aiutato a testare il nostro negozio!	
+95*Name	Eroe della beta!	
+96*Description	Grazie per aver partecipato alla BlizzCon 2013!	
+96*Name	Pronti all'azione	

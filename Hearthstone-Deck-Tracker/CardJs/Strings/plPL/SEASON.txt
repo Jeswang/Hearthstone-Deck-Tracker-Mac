@@ -1,0 +1,3 @@
+﻿TAG	TEXT	COMMENT
+2*Name	Sezon grudzień 2013	
+3*Name	Sezon styczeń 2014	

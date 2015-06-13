@@ -1,0 +1,85 @@
+﻿TAG	TEXT	COMMENT
+11*Description	Completa una partida en el modo Jugar.	
+11*Name	La primera, en la frente	
+12*Description	Juega 3 partidas en el modo Jugar.	
+12*Name	El duelista	
+31*Description	Alcanza el nivel 10 con cualquier clase.	
+31*Name	Subir nivel	
+32*Description	Gana 2 partidas con el druida o con el cazador.	
+32*Name	Victoria del druida o del cazador	
+33*Description	Gana 2 partidas con el druida o con el pícaro.	
+33*Name	Victoria del druida o del pícaro	
+34*Description	Gana 2 partidas con el cazador o con el mago.	
+34*Name	Victoria del cazador o del mago	
+35*Description	Gana 2 partidas con el mago o con el chamán.	
+35*Name	Victoria del mago o del chamán	
+36*Description	Gana 2 partidas con el paladín o con el sacerdote.	
+36*Name	Victoria del paladín o del sacerdote	
+37*Description	Gana 2 partidas con el paladín o con el guerrero.	
+37*Name	Victoria del paladín o del guerrero	
+38*Description	Gana 2 partidas con el sacerdote o con el brujo.	
+38*Name	Victoria del sacerdote o del brujo	
+39*Description	Gana 2 partidas con el pícaro o con el guerrero.	
+39*Name	Victoria del pícaro o del guerrero	
+40*Description	Gana 2 partidas con el chamán o con el brujo.	
+40*Name	Victoria del chamán o del brujo	
+41*Description	Gana 5 partidas con el druida o con el cazador.	
+41*Name	Dominancia del druida o del cazador	
+42*Description	Gana 5 partidas con el druida o con el pícaro.	
+42*Name	Dominancia del druida o del pícaro	
+43*Description	Gana 5 partidas con el cazador o con el mago.	
+43*Name	Dominancia del cazador o del mago	
+44*Description	Gana 5 partidas con el mago o con el chamán.	
+44*Name	Dominancia del mago o del chamán	
+45*Description	Gana 5 partidas con el paladín o con el sacerdote.	
+45*Name	Dominancia del paladín o del sacerdote	
+46*Description	Gana 5 partidas con el paladín o con el guerrero.	
+46*Name	Dominancia del paladín o del guerrero	
+47*Description	Gana 5 partidas con el sacerdote o con el brujo.	
+47*Name	Dominancia del sacerdote o del brujo	
+48*Description	Gana 5 partidas con el pícaro o con el guerrero.	
+48*Name	Dominancia del pícaro o del guerrero	
+49*Description	Gana 5 partidas con el chamán o con el brujo.	
+49*Name	Dominancia del chamán o del brujo	
+50*Description	Destruye a 40 esbirros.	
+50*Name	Destrúyelos a todos	
+51*Description	Juega 20 esbirros que cuesten 5 cristales o más.	
+51*Name	Juego de poder	
+52*Description	Juega 40 esbirros que cuesten 2 cristales o menos.	
+52*Name	Chiquito, pero matón	
+53*Description	Lanza 40 hechizos.	
+53*Name	Maestro de los hechizos	
+54*Description	Inflige 100 p. de daño a héroes enemigos.	
+54*Name	Pegar fuerte	
+55*Description	Desencanta una carta.	
+55*Name	A crear se ha dicho	
+56*Description	Entra en la Arena.	
+56*Name	Entra en la Arena	
+58*Description	Consigue a todos los piratas.	
+58*Name	¡¡¡Arrrrrr!!!	
+59*Description	Consigue a todos los piratas dorados.	
+59*Name	¡¡¡Arrrrrr dorado!!!	
+60*Description	Consigue a todos los múrlocs.	
+60*Name	¡Mrglglglgl!	
+61*Description	Consigue a todos los múrlocs dorados.	
+61*Name	¡Mrglglglgl dorado!	
+62*Description	Gana 100 partidas en cualquier modo.	
+62*Name	Porque yo lo valgo	
+63*Description	Gana 1000 partidas en cualquier modo.	
+63*Name	A por todas	
+64*Description	Gana 7 partidas en cualquier modo.	
+64*Name	Dominancia total	
+69*Description	Gana 3 partidas con cualquier clase.	
+69*Name	¡3 victorias!	
+79*Description	Desbloquea a todos los héroes.	
+79*Name	¡Hazte con todos!	
+89*Description	Derrota a todos los héroes expertos de la IA.	
+89*Name	Arrasando	
+90*Description	Reúne todas las cartas del conjunto básico.	
+90*Name	Lo básico	
+91*Description	Reúne todas las cartas del conjunto experto.	
+91*Name	Una de cada	
+95*Description	¡Gracias por ayudarnos a probar la tienda!	
+95*Name	¡Héroe de la beta!	
+96*Description	¡Gracias por asistir a la BlizzCon 2013!	
+96*Name	¡Nos gusta el rock!	

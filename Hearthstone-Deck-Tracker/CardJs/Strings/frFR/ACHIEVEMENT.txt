@@ -1,0 +1,85 @@
+﻿TAG	TEXT	COMMENT
+11*Description	Terminer un match en mode Partie.	
+11*Name	Premier sang	
+12*Description	Jouer 3 matchs en mode Partie.	
+12*Name	Le duelliste	
+31*Description	Atteindre le niveau 10 avec une classe.	
+31*Name	Gain de niveau	
+32*Description	Gagner 2 matchs avec un druide ou un chasseur.	
+32*Name	Victoire du druide ou du chasseur	
+33*Description	Gagner 2 matchs avec un druide ou un voleur.	
+33*Name	Victoire du druide ou du voleur	
+34*Description	Gagner 2 matchs avec un chasseur ou un mage.	
+34*Name	Victoire du chasseur ou du mage	
+35*Description	Gagner 2 matchs avec un mage ou un chaman.	
+35*Name	Victoire du mage ou du chaman	
+36*Description	Gagner 2 matchs avec un paladin ou un prêtre.	
+36*Name	Victoire du paladin ou du prêtre	
+37*Description	Gagner 2 matchs avec un paladin ou un guerrier.	
+37*Name	Victoire du paladin ou du guerrier	
+38*Description	Gagner 2 matchs avec un prêtre ou un démoniste.	
+38*Name	Victoire du prêtre ou du démoniste	
+39*Description	Gagner 2 matchs avec un voleur ou un guerrier.	
+39*Name	Victoire du voleur ou du guerrier	
+40*Description	Gagner 2 matchs avec un chaman ou un démoniste.	
+40*Name	Victoire du chaman ou du démoniste	
+41*Description	Gagner 5 matchs avec un druide ou un chasseur.	
+41*Name	Domination du druide ou du chasseur	
+42*Description	Gagner 5 matchs avec un druide ou un voleur.	
+42*Name	Domination du druide ou du voleur	
+43*Description	Gagner 5 matchs avec un chasseur ou un mage.	
+43*Name	Domination du chasseur ou du mage	
+44*Description	Gagner 5 matchs avec un mage ou un chaman.	
+44*Name	Domination du mage ou du chaman	
+45*Description	Gagner 5 matchs avec un paladin ou un prêtre.	
+45*Name	Domination du paladin ou du prêtre	
+46*Description	Gagner 5 matchs avec un paladin ou un guerrier.	
+46*Name	Domination du paladin ou du guerrier	
+47*Description	Gagner 5 matchs avec un prêtre ou un démoniste.	
+47*Name	Domination du prêtre ou du démoniste	
+48*Description	Gagner 5 matchs avec un voleur ou un guerrier.	
+48*Name	Domination du voleur ou du guerrier	
+49*Description	Gagner 5 matchs avec un chaman ou un démoniste.	
+49*Name	Domination du chaman ou du démoniste	
+50*Description	Détruire 40 serviteurs.	
+50*Name	Détruisez-les tous !	
+51*Description	Jouer 20 serviteurs coûtant 5 cristaux ou plus.	
+51*Name	Tout-puissant	
+52*Description	Jouer 40 serviteurs coûtant 2 cristaux ou moins.	
+52*Name	Faible en apparence	
+53*Description	Lancer 40 sorts.	
+53*Name	Maître des sorts	
+54*Description	Infliger 100 points de dégâts aux héros adverses.	
+54*Name	Passage à tabac	
+55*Description	Désenchanter une carte.	
+55*Name	Génération désenchantée	
+56*Description	Entrez dans l’Arène.	
+56*Name	Entrer dans l'Arène	
+58*Description	Obtenir toutes les cartes de pirates.	
+58*Name	Arrrrrr !!!	
+59*Description	Obtenir toutes les cartes dorées de pirates.	
+59*Name	Arrrrrr, de l’or !!!	
+60*Description	Obtenir toutes les cartes de murlocs.	
+60*Name	Mrglglglgl !	
+61*Description	Obtenir toutes les cartes dorées de murlocs.	
+61*Name	De l’or, mrglglglgl !	
+62*Description	Gagner 100 matchs au total.	
+62*Name	Heureux gagnant	
+63*Description	Gagner 1 000 matchs au total.	
+63*Name	Grand gagnant	
+64*Description	Gagner 7 matchs au total.	
+64*Name	Domination totale	
+69*Description	Gagner 3 matchs avec une classe.	
+69*Name	3 victoires !	
+79*Description	Débloquer tous les héros.	
+79*Name	Paré au combat !	
+89*Description	Vaincre tous les héros Expert.	
+89*Name	La classe dominante	
+90*Description	Obtenir toutes les cartes du jeu de base.	
+90*Name	Connaître les bases	
+91*Description	Obtenir toutes les cartes du jeu Expert.	
+91*Name	Une de chaque	
+95*Description	Merci de votre aide pour tester la boutique !	
+95*Name	Héros de la Bêta !	
+96*Description	Merci d’avoir participé à la BlizzCon 2013 !	
+96*Name	Légende du rock !	

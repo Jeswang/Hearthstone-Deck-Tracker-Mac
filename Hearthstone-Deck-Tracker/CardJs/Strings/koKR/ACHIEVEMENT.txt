@@ -1,0 +1,85 @@
+﻿TAG	TEXT	COMMENT
+11*Description	대전 모드에서 첫 게임 완료	
+11*Name	첫 번째 대전	
+12*Description	대전 모드에서 게임 세 번 완료	
+12*Name	카드 결투사	
+31*Description	아무 직업이나 10레벨 달성	
+31*Name	레벨 업!	
+32*Description	드루이드 또는 사냥꾼으로 2승	
+32*Name	드루이드 또는 사냥꾼으로 승리	
+33*Description	드루이드 또는 도적으로 2승	
+33*Name	드루이드 또는 도적으로 승리	
+34*Description	사냥꾼 또는 마법사로 2승	
+34*Name	사냥꾼 또는 마법사로 승리	
+35*Description	마법사 또는 주술사로 2승	
+35*Name	마법사 또는 주술사로 승리	
+36*Description	성기사 또는 사제로 2승	
+36*Name	성기사 또는 사제로 승리	
+37*Description	성기사 또는 전사로 2승	
+37*Name	성기사 또는 전사로 승리	
+38*Description	사제 또는 흑마법사로 2승	
+38*Name	사제 또는 흑마법사로 승리	
+39*Description	도적 또는 전사로 2승	
+39*Name	도적 또는 전사로 승리	
+40*Description	주술사 또는 흑마법사로 2승	
+40*Name	주술사 또는 흑마법사로 승리	
+41*Description	드루이드 또는 사냥꾼으로 5승	
+41*Name	드루이드 또는 사냥꾼의 달인	
+42*Description	드루이드 또는 도적으로 5승	
+42*Name	드루이드 또는 도적의 달인	
+43*Description	사냥꾼 또는 마법사로 5승	
+43*Name	사냥꾼 또는 마법사의 달인	
+44*Description	마법사 또는 주술사로 5승	
+44*Name	마법사 또는 주술사의 달인	
+45*Description	성기사 또는 사제로 5승	
+45*Name	성기사 또는 사제의 달인	
+46*Description	성기사 또는 전사로 5승	
+46*Name	성기사 또는 전사의 달인	
+47*Description	사제 또는 흑마법사로 5승	
+47*Name	사제 또는 흑마법사의 달인	
+48*Description	도적 또는 전사로 5승	
+48*Name	도적 또는 전사의 달인	
+49*Description	주술사 또는 흑마법사로 5승	
+49*Name	주술사 또는 흑마법사의 달인	
+50*Description	하수인 카드 40장 파괴	
+50*Name	초토화	
+51*Description	비용이 5 이상인 하수인 카드 20장 내기	
+51*Name	강자만이 살아남는다	
+52*Description	비용이 2 이하인 하수인 카드 40장 내기	
+52*Name	약자의 반격	
+53*Description	주문 40회 사용	
+53*Name	주문술사	
+54*Description	적 영웅들에게 총 100의 피해 입히기	
+54*Name	때려눕히기	
+55*Description	카드에서 마력을 추출	
+55*Name	즐거운 제작 시간	
+56*Description	투기장 입장	
+56*Name	투기장을 향하여	
+58*Description	모든 해적 카드 획득	
+58*Name	요호호!	
+59*Description	모든 황금 해적 카드 획득	
+59*Name	반짝반짝 요호호!	
+60*Description	모든 멀록 카드 획득	
+60*Name	아옳옳옳!	
+61*Description	모든 황금 멀록 카드 획득	
+61*Name	반짝반짝 아옳옳옳!	
+62*Description	아무 모드에서 100승 달성	
+62*Name	오늘은 내가 한턱 내지!	
+63*Description	아무 모드에서 1000승 달성	
+63*Name	위대한 승자	
+64*Description	아무 모드에서 7승 달성	
+64*Name	진정한 달인	
+69*Description	아무 직업으로 3승 달성	
+69*Name	세 번의 승리!	
+79*Description	모든 영웅 잠금 해제	
+79*Name	준비 완료!	
+89*Description	모든 전문가 인공지능 영웅을 상대로 승리	
+89*Name	전부 짓밟아라!	
+90*Description	모든 기본 카드 획득	
+90*Name	기본에 충실하게!	
+91*Description	모든 고급 카드 획득	
+91*Name	모두 다 내 손안에!	
+95*Description	상점을 테스트하는 데 도움을 주셔서 감사합니다!	
+95*Name	베타 테스트의 영웅!	
+96*Description	블리즈컨 2013에 참여해주셔서 감사합니다!	
+96*Name	로큰롤!	

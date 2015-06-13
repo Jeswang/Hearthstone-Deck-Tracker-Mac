@@ -52,10 +52,11 @@
 
 
 - (IBAction)openBuilder:(id)sender {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.hearthstone.com.cn/cards/builder/"]];
+    //[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.hearthstone.com.cn/cards/builder/"]];
+    [APP openManger:nil];
 }
 
-- (IBAction)openSetting:(id)sender {
+- (IBAction)openImport:(id)sender {
     if (self.settingController == nil) {
         self.settingController = [[ImportWindowController alloc] initWithWindowNibName:@"ImportWindow"];
         NSWindow * fakeWindow = [self.settingController window];
@@ -65,6 +66,9 @@
     [self.window beginSheet:self.settingController.window completionHandler:^(NSModalResponse returnCode) {
         
     }];
+}
+- (IBAction)openSetting:(id)sender {
+    [APP openSettings:nil];
 }
 
 @end

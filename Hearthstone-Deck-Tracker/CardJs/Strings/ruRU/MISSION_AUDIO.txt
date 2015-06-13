@@ -1,0 +1,374 @@
+TAG	TEXT	COMMENT	AUDIOFILE
+ChromaggusBoss_Death_1	Р-р-р-р!		ChromaggusBoss_Death_1.wav
+ChromaggusBoss_EmoteResponse_1	*Рычит*		ChromaggusBoss_EmoteResponse_1.wav
+ChromaggusBoss_Start_1	Р-р-р!		ChromaggusBoss_Start_1.wav
+OnyxiaBoss_Death_1	Р-р-р-р-р!		OnyxiaBoss_Death_1.wav
+OnyxiaBoss_EmoteResponse_1	*Рычит*		OnyxiaBoss_EmoteResponse_1.wav
+OnyxiaBoss_Start_1	Р-р-р!		OnyxiaBoss_Start_1.wav
+VO_BRM_027h_Death_63	Нет! НЕТ! НЕЕЕЕЕЕЕЕЕЕЕЕТ!!!		VO_BRM_027h_Death_63.wav
+VO_BRMA01_1_CARD_05	Ну-ка, устроим им теплый прием!		VO_BRMA01_1_CARD_05.wav
+VO_BRMA01_1_DEATH_09	Ой-ой-ой! Что? А? Мне это совсем не нравится, но ничего не поделаешь.		VO_BRMA01_1_DEATH_09.wav
+VO_BRMA01_1_ETC_06	Пришла пора хорошенько зажечь! Встречайте вождя тауренов! 		VO_BRMA01_1_ETC_06.wav
+VO_BRMA01_1_HERO_POWER_04	Ха-ха-ха! Куча мала!		VO_BRMA01_1_HERO_POWER_04.wav
+VO_BRMA01_1_RESPONSE_03	Ха-ха-ха! Ик!.. Ой, извиняюсь.		VO_BRMA01_1_RESPONSE_03.wav
+VO_BRMA01_1_START_01	Приветствую в «Угрюмом обжоре»!		VO_BRMA01_1_START_01.wav
+VO_BRMA01_1_SUCCUBUS_08	Госпожа Нагмара! Нашего «друга» мучает жажда.		VO_BRMA01_1_SUCCUBUS_08.wav
+VO_BRMA01_1_TURN1_02	Эй, народ! Смотрите-ка! У нас гость!		VO_BRMA01_1_TURN1_02.wav
+VO_BRMA01_1_WARGOLEM_07	О-хо-хо! Сейчас Фаланг тебе покажет!		VO_BRMA01_1_WARGOLEM_07.wav
+VO_BRMA02_1_ALAKIR_34	Перед вами – не выносящий насекомых повелитель элементалей! Ал'акир!		VO_BRMA02_1_ALAKIR_34.wav
+VO_BRMA02_1_ALEXSTRAZA_32	Королева драконов, Хранительница Жизни, боец арены Черного Железа! Это – Алекстраза!		VO_BRMA02_1_ALEXSTRAZA_32.wav
+VO_BRMA02_1_BEAST_22	Гномы – его любимая пища, но он готов к экспериментам! Это – Чудовище!		VO_BRMA02_1_BEAST_22.wav
+VO_BRMA02_1_BOOM_28	Надеюсь, никого не заденет осколками. Наш следующий гость – доктор Бум!		VO_BRMA02_1_BOOM_28.wav
+VO_BRMA02_1_CAIRNE_20	Он воспитывает своего сына настоящим мууужчиной! Кэрн Кровавое Копыто!		VO_BRMA02_1_CAIRNE_20.wav
+VO_BRMA02_1_CHO_07	Хотите послушать сказку? Встречайте – Хранитель истории Чо!		VO_BRMA02_1_CHO_07.wav
+VO_BRMA02_1_DEATH_38	Ый! А? Ой!  *умирает*		VO_BRMA02_1_DEATH_38.wav
+VO_BRMA02_1_DEATHWING_35	О-о-о! Дамы и джентльдворфы! Единственный и неповторимый – Смертокрыл!		VO_BRMA02_1_DEATHWING_35.wav
+VO_BRMA02_1_ETC_18	А теперь – вождь, таурен, легенда! Встречайте – «Вождь тауренов»! 		VO_BRMA02_1_ETC_18.wav
+VO_BRMA02_1_FEUGEN_15	Аплодисменты Фойгену!		VO_BRMA02_1_FEUGEN_15.wav
+VO_BRMA02_1_FOEREAPER_29	Его настроили на максимальное разрушение. Аплодисменты Врагорезу 4000!		VO_BRMA02_1_FOEREAPER_29.wav
+VO_BRMA02_1_GEDDON_13	О-о-о! На арене становится жарко! Встречайте – Барон Геддон!		VO_BRMA02_1_GEDDON_13.wav
+VO_BRMA02_1_GELBIN_21	Прямиком из Нового Города Механиков к нам приехал предводитель гномов – Гелбин Меггакрут!		VO_BRMA02_1_GELBIN_21.wav
+VO_BRMA02_1_GRUUL_31	Титул драконобоя надо заслужить! Бурные аплодисменты Груулу!		VO_BRMA02_1_GRUUL_31.wav
+VO_BRMA02_1_HERO_POWER_05	Публика хочет зрелищ! Ха-ха!		VO_BRMA02_1_HERO_POWER_05.wav
+VO_BRMA02_1_HOGGER_27	Гнолл одиннадцатого уровня и живая легенда! Поприветствуйте Дробителя! 		VO_BRMA02_1_HOGGER_27.wav
+VO_BRMA02_1_ILLIDAN_23	К чему глаза, если есть парные клинки? Иллидан тоже так считает!		VO_BRMA02_1_ILLIDAN_23.wav
+VO_BRMA02_1_LEVIATHAN_12	«Огненный Левиафан», отремонтирован и готов сокрушать!		VO_BRMA02_1_LEVIATHAN_12.wav
+VO_BRMA02_1_LOATHEB_16	Задержите дыхание и поприветствуйте нашего вонючего друга Лотхиба!		VO_BRMA02_1_LOATHEB_16.wav
+VO_BRMA02_1_MAEXXNA_24	Огромный голодный паук – скажите, как ее зовут? Мексна!		VO_BRMA02_1_MAEXXNA_24.wav
+VO_BRMA02_1_MILLHOUSE_09	Эй, это шутка?! Его-то кто пустил на арену?		VO_BRMA02_1_MILLHOUSE_09.wav
+VO_BRMA02_1_MOGOR_25	Огр Могор не слишком разговорчив, зато черепа крушить он мастак!		VO_BRMA02_1_MOGOR_25.wav
+VO_BRMA02_1_MUKLA_10	Встречайте властелина бананов – короля Муклу!		VO_BRMA02_1_MUKLA_10.wav
+VO_BRMA02_1_NOZDORMU_36	Дамы и… ой! Время вышло!		VO_BRMA02_1_NOZDORMU_36.wav
+VO_BRMA02_1_ONYXIA_33	Прямиком из Пылевых топей и крепости Штормграда – сама Ониксия!		VO_BRMA02_1_ONYXIA_33.wav
+VO_BRMA02_1_PAGLE_08	Прямо с рыбалки к нам завернул Нат Пэгл!		VO_BRMA02_1_PAGLE_08.wav
+VO_BRMA02_1_RESPONSE_04	Никто не выстоит против всех этих легендарных бойцов!		VO_BRMA02_1_RESPONSE_04.wav
+VO_BRMA02_1_SNEED_30	Наш следующий гость скрывается за рычагами ржавого крошшера. Кто бы это мог быть?		VO_BRMA02_1_SNEED_30.wav
+VO_BRMA02_1_STALAGG_14	Сможет ли Сталагг выжить на арене? Посмотрим!		VO_BRMA02_1_STALAGG_14.wav
+VO_BRMA02_1_START_01	Новый претендент!		VO_BRMA02_1_START_01.wav
+VO_BRMA02_1_SYLVANAS_19	Ее вечная ненависть горит ярким пламенем! Встречайте Сильвану Ветрокрылую!		VO_BRMA02_1_SYLVANAS_19.wav
+VO_BRMA02_1_THALNOS_06	Встречайте скелета в модном платье – нас посетил маг крови Талнос!		VO_BRMA02_1_THALNOS_06.wav
+VO_BRMA02_1_THAURISSAN_37	Прямиком из следующей битвы к нам спешит император Тауриссан!		VO_BRMA02_1_THAURISSAN_37.wav
+VO_BRMA02_1_TINKMASTER_11	Ваши аплодисменты великому мехмастеру Замыкальцу!		VO_BRMA02_1_TINKMASTER_11.wav
+VO_BRMA02_1_TOSHLEY_26	Поприветствуйте гнома вдалеке от дома! Тошли!		VO_BRMA02_1_TOSHLEY_26.wav
+VO_BRMA02_1_TURN1_02	Леди и джентльдворфы! Сегодня мы покажем вам отменное шоу!		VO_BRMA02_1_TURN1_02.wav
+VO_BRMA02_1_TURN1_PT2_03	Легенды Азерота против одинокого искателя приключений!		VO_BRMA02_1_TURN1_PT2_03.wav
+VO_BRMA02_1_VOLJIN_17	Минуточку внимания! К нам заглянул особый гость – Вол'джин!		VO_BRMA02_1_VOLJIN_17.wav
+VO_BRMA03_1_CARD_04	Рагнарос наделил меня своей мощью!		VO_BRMA03_1_CARD_04.wav
+VO_BRMA03_1_DEATH_09	Ааааааааа!		VO_BRMA03_1_DEATH_09.wav
+VO_BRMA03_1_HERO_POWER_06	Умри!		VO_BRMA03_1_HERO_POWER_06.wav
+VO_BRMA03_1_MOIRA_DEATH_05	Нет! Мойра!!! Ты за это заплатишь!!!		VO_BRMA03_1_MOIRA_DEATH_05.wav
+VO_BRMA03_1_RESPONSE_03	Закрой рот, а не то я помогу!		VO_BRMA03_1_RESPONSE_03.wav
+VO_BRMA03_1_START_01	Дворфы Черного Железа непобедимы!		VO_BRMA03_1_START_01.wav
+VO_BRMA03_1_TURN1_02	Эй! Оставь мою жену в покое!		VO_BRMA03_1_TURN1_02.wav
+VO_BRMA03_1_VS_RAG_07	Рагнарос?! Нет! Хватит!!!		VO_BRMA03_1_VS_RAG_07.wav
+VO_BRMA04_1_CARD_04	Слуги огня, вперед!		VO_BRMA04_1_CARD_04.wav
+VO_BRMA04_1_DEATH_06	Аррррррррр!		VO_BRMA04_1_DEATH_06.wav
+VO_BRMA04_1_HERO_POWER_05	Магма!		VO_BRMA04_1_HERO_POWER_05.wav
+VO_BRMA04_1_RESPONSE_03	Против камня нет приема.		VO_BRMA04_1_RESPONSE_03.wav
+VO_BRMA04_1_START_01	Я сотру тебя в порошок!		VO_BRMA04_1_START_01.wav
+VO_BRMA04_1_TURN1_02	Поехали.		VO_BRMA04_1_TURN1_02.wav
+VO_BRMA05_1_CARD_05	Тик-так, смертный!		VO_BRMA05_1_CARD_05.wav
+VO_BRMA05_1_DEATH_04	Последняя услуга…		VO_BRMA05_1_DEATH_04.wav
+VO_BRMA05_1_HERO_POWER_06	Сгори!		VO_BRMA05_1_HERO_POWER_06.wav
+VO_BRMA05_1_RESPONSE_03	Армагеддон!		VO_BRMA05_1_RESPONSE_03.wav
+VO_BRMA05_1_START_01	Ты сгоришь!		VO_BRMA05_1_START_01.wav
+VO_BRMA05_1_TURN1_02	Рагнарос поглотит тебя!		VO_BRMA05_1_TURN1_02.wav
+VO_BRMA06_1_DEATH_04	Я сдаюсь! Сдаюсь!		VO_BRMA06_1_DEATH_04.wav
+VO_BRMA06_1_RESPONSE_03	Думаешь, победа за тобой? Похоже, придется преподать тебе еще один урок!		VO_BRMA06_1_RESPONSE_03.wav
+VO_BRMA06_1_START_01	Никто не сможет устоять против Живого Пламени!		VO_BRMA06_1_START_01.wav
+VO_BRMA06_1_SUMMON_RAG_05	Узри Рагнароса! Того, кто видел зарю этого мира!		VO_BRMA06_1_SUMMON_RAG_05.wav
+VO_BRMA06_1_TURN1_02_ALT	Уничтожить их!		VO_BRMA06_1_TURN1_02_ALT.wav
+VO_BRMA06_3_INTRO_01	Слишком... рано! Ты разбудил меня слишком рано, Экзекутус!		VO_BRMA06_3_INTRO_01.wav
+VO_BRMA06_3_RESPONSE_03	Что это за незваные гости?!		VO_BRMA06_3_RESPONSE_03.wav
+VO_BRMA06_3_TURN1_02	Презренные смертные! Вы осмелились вторгнуться в мои владения?		VO_BRMA06_3_TURN1_02.wav
+VO_BRMA07_1_CARD_04	Круши-и-ить!!		VO_BRMA07_1_CARD_04.wav
+VO_BRMA07_1_DEATH_06	Арррргх!		VO_BRMA07_1_DEATH_06.wav
+VO_BRMA07_1_HERO_POWER_05	Я крушить! Ты умирать!		VO_BRMA07_1_HERO_POWER_05.wav
+VO_BRMA07_1_RESPONSE_03	Р-р-р! Крушить!		VO_BRMA07_1_RESPONSE_03.wav
+VO_BRMA07_1_START_01	Я тебя раздавлю!		VO_BRMA07_1_START_01.wav
+VO_BRMA07_1_TURN1_02	Давить или крушить? Тяжко!		VO_BRMA07_1_TURN1_02.wav
+VO_BRMA08_1_CARD_05	Пик Черной горы выстоит!		VO_BRMA08_1_CARD_05.wav
+VO_BRMA08_1_DEATH_06	Аррргх!		VO_BRMA08_1_DEATH_06.wav
+VO_BRMA08_1_RESPONSE_04	ПОЧЕМУ?! Скажи мне! Мы же были на одной стороне!		VO_BRMA08_1_RESPONSE_04.wav
+VO_BRMA08_1_START_01	А ты что здесь делаешь?		VO_BRMA08_1_START_01.wav
+VO_BRMA08_1_TURN1_03	Лорд Нефариус! Я думал, это существо убило для нас Рагнароса!		VO_BRMA08_1_TURN1_03.wav
+VO_BRMA08_1_TURN1_ALT_02	Хочешь помочь мне уничтожить жалких смертных?		VO_BRMA08_1_TURN1_ALT_02.wav
+VO_BRMA09_1_CARD_05	Пик принадлежит нам!		VO_BRMA09_1_CARD_05.wav
+VO_BRMA09_1_DEATH_11	Аааааааа!		VO_BRMA09_1_DEATH_11.wav
+VO_BRMA09_1_HERO_POWER1_06	Открыть врата!		VO_BRMA09_1_HERO_POWER1_06.wav
+VO_BRMA09_1_HERO_POWER2_07	Убить того, позади!		VO_BRMA09_1_HERO_POWER2_07.wav
+VO_BRMA09_1_HERO_POWER3_08	Все на героя, идиоты!		VO_BRMA09_1_HERO_POWER3_08.wav
+VO_BRMA09_1_HERO_POWER4_09	Вместе мы непобедимы!		VO_BRMA09_1_HERO_POWER4_09.wav
+VO_BRMA09_1_RESPONSE_04	Ха-ха-ха-ха-ха.		VO_BRMA09_1_RESPONSE_04.wav
+VO_BRMA09_1_START_01	Мы – истинная Орда!		VO_BRMA09_1_START_01.wav
+VO_BRMA09_1_TURN1_03	Твой выбор пал на неправильную гору!		VO_BRMA09_1_TURN1_03.wav
+VO_BRMA09_1_TURN1_ALT_02	Нас никто не остановит! Умри!		VO_BRMA09_1_TURN1_ALT_02.wav
+VO_BRMA10_1_DEATH_08	Рррррррррах!		VO_BRMA10_1_DEATH_08.wav
+VO_BRMA10_1_EGG_DEATH_1_05	Недоумки! Эти яйца ценнее, чем вы думаете!		VO_BRMA10_1_EGG_DEATH_1_05.wav
+VO_BRMA10_1_EGG_DEATH_2_06	Да сколько же можно?! Вы заплатите за это головой!		VO_BRMA10_1_EGG_DEATH_2_06.wav
+VO_BRMA10_1_EGG_DEATH_3_07	Я это так не оставлю!		VO_BRMA10_1_EGG_DEATH_3_07.wav
+VO_BRMA10_1_HERO_POWER_04	Держись подальше от кладки!		VO_BRMA10_1_HERO_POWER_04.wav
+VO_BRMA10_1_RESPONSE_03	Я омлет из тебя сделаю!		VO_BRMA10_1_RESPONSE_03.wav
+VO_BRMA10_1_START_01	Узри оскверненную кладку новых драконов!		VO_BRMA10_1_START_01.wav
+VO_BRMA10_1_TURN1_02	Эти яйца принесут тебе погибель!		VO_BRMA10_1_TURN1_02.wav
+VO_BRMA11_1_ALEXSTRAZA_07	Хранительница Жизни, спаси меня!		VO_BRMA11_1_ALEXSTRAZA_07.wav
+VO_BRMA11_1_CARD_04	Ярость Черной горы бежит по моим венам!		VO_BRMA11_1_CARD_04.wav
+VO_BRMA11_1_DEATH_ALT_08	Наконец-то мои мучения прекратятся…		VO_BRMA11_1_DEATH_ALT_08.wav
+VO_BRMA11_1_HERO_POWER_05	А-а-а! Разрушение!		VO_BRMA11_1_HERO_POWER_05.wav
+VO_BRMA11_1_KILL_PLAYER_06	Прости, я подвел тебя.		VO_BRMA11_1_KILL_PLAYER_06.wav
+VO_BRMA11_1_RESPONSE_03	Тебе следовало бежать, пока можно было, смертный!		VO_BRMA11_1_RESPONSE_03.wav
+VO_BRMA11_1_START_01	Беги, пока я еще могу себя удержать!		VO_BRMA11_1_START_01.wav
+VO_BRMA11_1_TURN1_02	Слишком поздно! Проклятие Нефариана поработило меня! 		VO_BRMA11_1_TURN1_02.wav
+VO_BRMA13_1_DEATH_ALT_23	Нет! Нет! Я еще вернусь!		VO_BRMA13_1_DEATH_ALT_23.wav
+VO_BRMA13_1_DEATHWING_19	Папа?..		VO_BRMA13_1_DEATHWING_19.wav
+VO_BRMA13_1_HP_DRUID_14	Дикая природа теперь подвластна мне, друид!		VO_BRMA13_1_HP_DRUID_14.wav
+VO_BRMA13_1_HP_GENERIC_18	Теперь я владею твоей магией!		VO_BRMA13_1_HP_GENERIC_18.wav
+VO_BRMA13_1_HP_HUNTER_12	Охотник становится добычей!		VO_BRMA13_1_HP_HUNTER_12.wav
+VO_BRMA13_1_HP_MAGE_11	Тебе следует осторожнее вести себя с магией!		VO_BRMA13_1_HP_MAGE_11.wav
+VO_BRMA13_1_HP_PALADIN_07	Неужели Свет оставил тебя, паладин?		VO_BRMA13_1_HP_PALADIN_07.wav
+VO_BRMA13_1_HP_PRIEST_08	Теперь Свет служит мне, жрец!		VO_BRMA13_1_HP_PRIEST_08.wav
+VO_BRMA13_1_HP_ROGUE_15	Хватит прятаться! Выйди и сразись со мной!		VO_BRMA13_1_HP_ROGUE_15.wav
+VO_BRMA13_1_HP_SHAMAN_13	Стихии теперь подчиняются мне, шаман!		VO_BRMA13_1_HP_SHAMAN_13.wav
+VO_BRMA13_1_HP_WARLOCK_10	Ты играешь с магией, недоступной твоему разумению!		VO_BRMA13_1_HP_WARLOCK_10.wav
+VO_BRMA13_1_HP_WARRIOR_09	Твоя сила стала твоей слабостью, воин!		VO_BRMA13_1_HP_WARRIOR_09.wav
+VO_BRMA13_1_RESPONSE_05	 Я здесь главный!		VO_BRMA13_1_RESPONSE_05.wav
+VO_BRMA13_1_START_01	Добро пожаловать в мою резиденцию, герой!		VO_BRMA13_1_START_01.wav
+VO_BRMA13_1_TURN1_PT1_02	Познай истинную силу Нефариана!		VO_BRMA13_1_TURN1_PT1_02.wav
+VO_BRMA13_1_TURN1_PT2_03	Бесконечная мана! Бронированная чешуя!		VO_BRMA13_1_TURN1_PT2_03.wav
+VO_BRMA14_1_CARD_09	Перенаправляю избыток энергии.		VO_BRMA14_1_CARD_09.wav
+VO_BRMA14_1_DEATH_08	Защитные системы уничтожены. Отключение...		VO_BRMA14_1_DEATH_08.wav
+VO_BRMA14_1_HP1_03	Модуль «Электрон» включен.		VO_BRMA14_1_HP1_03.wav
+VO_BRMA14_1_HP2_04	Модуль «Токситрон» включен.		VO_BRMA14_1_HP2_04.wav
+VO_BRMA14_1_HP3_05	Модуль «Чаротрон» включен.		VO_BRMA14_1_HP3_05.wav
+VO_BRMA14_1_HP4_06	Модуль «Магматрон» включен.		VO_BRMA14_1_HP4_06.wav
+VO_BRMA14_1_HP5_07	Защитный модуль подключен.		VO_BRMA14_1_HP5_07.wav
+VO_BRMA14_1_RESPONSE1_10	Бип-бип-бип.		VO_BRMA14_1_RESPONSE1_10.wav
+VO_BRMA14_1_RESPONSE2_11	Идет попытка подключения…		VO_BRMA14_1_RESPONSE2_11.wav
+VO_BRMA14_1_RESPONSE3_12	Подключение завершено. Загружаю обновление системы.		VO_BRMA14_1_RESPONSE3_12.wav
+VO_BRMA14_1_RESPONSE4_13	Обновление установлено. ПРИВЕТ, ПРИВЕТ, ПРИВЕТ.		VO_BRMA14_1_RESPONSE4_13.wav
+VO_BRMA14_1_RESPONSE5_14	ПРИВЕТ, ПРИВЕТ, ПРИВЕТ.		VO_BRMA14_1_RESPONSE5_14.wav
+VO_BRMA14_1_START_01	Обнаружено вторжение. 		VO_BRMA14_1_START_01.wav
+VO_BRMA14_1_TURN1_02	Первичная защитная матрица активирована.		VO_BRMA14_1_TURN1_02.wav
+VO_BRMA15_1_CARD_05	Мои неудачные творения станут вашей погибелью!		VO_BRMA15_1_CARD_05.wav
+VO_BRMA15_1_DEATH_04	Аааааааааах!		VO_BRMA15_1_DEATH_04.wav
+VO_BRMA15_1_HERO_POWER_06	Помешивая, довести до кипения...		VO_BRMA15_1_HERO_POWER_06.wav
+VO_BRMA15_1_RESPONSE_03	Ничто не пропадет впустую!		VO_BRMA15_1_RESPONSE_03.wav
+VO_BRMA15_1_START_01	Нельзя прерывать процесс!		VO_BRMA15_1_START_01.wav
+VO_BRMA15_1_TURN1_02	Нельзя заставлять господина ждать! Больше нельзя ошибаться!		VO_BRMA15_1_TURN1_02.wav
+VO_BRMA16_1_CARD_04	Тебе не спрятаться!		VO_BRMA16_1_CARD_04.wav
+VO_BRMA16_1_DEATH_06	Ррррраааааах!		VO_BRMA16_1_DEATH_06.wav
+VO_BRMA16_1_GONG1_10	А-а! Этот звук!		VO_BRMA16_1_GONG1_10.wav
+VO_BRMA16_1_GONG2_11	Нет! Почти!		VO_BRMA16_1_GONG2_11.wav
+VO_BRMA16_1_GONG3_12	Мои уши!		VO_BRMA16_1_GONG3_12.wav
+VO_BRMA16_1_HERO_POWER_05	Тебя выдает неловкая поступь и отвратительный запах!		VO_BRMA16_1_HERO_POWER_05.wav
+VO_BRMA16_1_RESPONSE_03	Да, говори! Я уже рядом!		VO_BRMA16_1_RESPONSE_03.wav
+VO_BRMA16_1_START_01	Я слышу, как бьется твое сердце!		VO_BRMA16_1_START_01.wav
+VO_BRMA16_1_TRIGGER1_07	О! Я тебя слышу…		VO_BRMA16_1_TRIGGER1_07.wav
+VO_BRMA16_1_TRIGGER2_08	 Я слышу шаги.		VO_BRMA16_1_TRIGGER2_08.wav
+VO_BRMA16_1_TRIGGER3_09	Биение сердца… Тебе не сбежать!		VO_BRMA16_1_TRIGGER3_09.wav
+VO_BRMA16_1_TURN1_02	Смерть ждет во тьме!		VO_BRMA16_1_TURN1_02.wav
+VO_BRMA17_1_CARD_86	Надеюсь, вы умеете плавать... в кипящей лаве!		VO_BRMA17_1_CARD_86.wav
+VO_BRMA17_1_DEATH_97	А-а-а-а-а!		VO_BRMA17_1_DEATH_97.wav
+VO_BRMA17_1_DEATH_HEROIC_98	Ааааааааа!		VO_BRMA17_1_DEATH_HEROIC_98.wav
+VO_BRMA17_1_DEATHWING_88	Папа?		VO_BRMA17_1_DEATHWING_88.wav
+VO_BRMA17_1_HERO_POWER_87	Смотри, как темное пламя вдыхает жизнь в их кости!		VO_BRMA17_1_HERO_POWER_87.wav
+VO_BRMA17_1_NEF_AIR1_89	Узри летящее с неба пламя! Одна единица урона – это только начало!		VO_BRMA17_1_NEF_AIR1_89.wav
+VO_BRMA17_1_NEF_AIR2_90	Два огненных шара! Я низвергаю их с высоты!		VO_BRMA17_1_NEF_AIR2_90.wav
+VO_BRMA17_1_NEF_AIR3_91	На этот раз обойдусь одним огненным шаром. Зато дальше тебя ждет сюрприз!		VO_BRMA17_1_NEF_AIR3_91.wav
+VO_BRMA17_1_NEF_AIR4_92	Хо-хо! Три шара! На-ка! Получи с высоты!		VO_BRMA17_1_NEF_AIR4_92.wav
+VO_BRMA17_1_NEF_AIR5_93	Дальше буду бросать по одному огненному шару!		VO_BRMA17_1_NEF_AIR5_93.wav
+VO_BRMA17_1_NEF_AIR6_94	Пошутил, пошутил! Получи четыре! Ха-ха-ха!		VO_BRMA17_1_NEF_AIR6_94.wav
+VO_BRMA17_1_NEF_AIR7_95	Не буду пока тратить на тебя пламя… Но будь начеку…		VO_BRMA17_1_NEF_AIR7_95.wav
+VO_BRMA17_1_NEF_AIR8_96	Двадцать огненных шаров! А-ха-ха-ха-ха-ха!!!		VO_BRMA17_1_NEF_AIR8_96.wav
+VO_BRMA17_1_RESPONSE_85	Разум смертных... так легко подчинить.		VO_BRMA17_1_RESPONSE_85.wav
+VO_BRMA17_1_RESURRECT1_82	Я сокрушу вас с высоты!		VO_BRMA17_1_RESURRECT1_82.wav
+VO_BRMA17_1_RESURRECT2_83	Пока я здесь, наверху, на земле вас ждет сюрприз!		VO_BRMA17_1_RESURRECT2_83.wav
+VO_BRMA17_1_RESURRECT3_84	Прошу приветствовать мое лучшее творение! Проснись, сестра! Проснись, Ониксия!		VO_BRMA17_1_RESURRECT3_84.wav
+VO_BRMA17_1_START_78	Ха-ха! Тебе удалось дойти до самого конца!		VO_BRMA17_1_START_78.wav
+VO_BRMA17_1_TRANSFORM1_80	Я пытался следовать законам гостеприимства, но ты все никак не умрешь!		VO_BRMA17_1_TRANSFORM1_80.wav
+VO_BRMA17_1_TRANSFORM2_81	Придется отбросить условности и просто... УБИТЬ ВАС ВСЕХ!		VO_BRMA17_1_TRANSFORM2_81.wav
+VO_BRMA17_1_TURN1_79	Мое лучшее творение ждет тебя.		VO_BRMA17_1_TURN1_79.wav
+VO_FP1_014t_EnterPlay_01	Теперь ты познаешь боль!		VO_FP1_014t_EnterPlay_01.wav
+VO_FP1_031_Attack_07	Да начнется бойня!		VO_FP1_031_Attack_07.wav
+VO_FP1_031_EnterPlay_06	Плеть поглотит тебя!		VO_FP1_031_EnterPlay_06.wav
+VO_KT_ANTI_CHEESE1_65	Это героический режим. Я не потерплю таких дешевых уловок.		VO_KT_ANTI_CHEESE1_65.wav
+VO_KT_ANTI_CHEESE2_66	Вестник рока? Думаешь, ты умнее всех?		VO_KT_ANTI_CHEESE2_66.wav
+VO_KT_ANTI_CHEESE3_67	Равенство? Только не у меня дома.		VO_KT_ANTI_CHEESE3_67.wav
+VO_KT_ANUB2_43	НЕ-Е-ЕТ! То есть... неважно. Тебе никогда не победить Великую вдову.		VO_KT_ANUB2_43.wav
+VO_KT_BARON2_64	Слуги из Военного квартала подвели меня! В наши дни так сложно найти хороших солдат...		VO_KT_BARON2_64.wav
+VO_KT_FAERLINA2_45	Фарлина – всего лишь пешка. А вот Паучья Королева С ЛЕГКОСТЬЮ разорвет тебя на куски.		VO_KT_FAERLINA2_45.wav
+VO_KT_GLUTH2_73	Я попросил зомби сожрать твои мозги, а они сказали, что не могут питаться воздухом. АХАХАХАХАХА.		VO_KT_GLUTH2_73.wav
+VO_KT_GLUTH2_ALT_74	За проигрыш Глуту дают достижение. Я уверен.		VO_KT_GLUTH2_ALT_74.wav
+VO_KT_GLUTH3_75	АХАХАХАХАХА, НИКАКОГО ДОСТИЖЕНИЯ ЗА ПРОИГРЫШ ГЛУТУ НЕ ДАЮТ!		VO_KT_GLUTH3_75.wav
+VO_KT_GLUTH4_76	Нет! И кому теперь скармливать лишних зомби?		VO_KT_GLUTH4_76.wav
+VO_KT_GLUTH5_77	Что может быть лучше истребления? Ну разве что заморозка крови в жилах!		VO_KT_GLUTH5_77.wav
+VO_KT_GLUTH6_78	Хороший пес! Хор-р-р-роший!		VO_KT_GLUTH6_78.wav
+VO_KT_GOTHIK2_62	Ну почему Готик не превращается в Призрачного Готика? Так не интересно!		VO_KT_GOTHIK2_62.wav
+VO_KT_GROBBULUS2_71	Да... Над ним еще работать и работать...		VO_KT_GROBBULUS2_71.wav
+VO_KT_HEIGAN2_55	Я просто вне себя от гнева. Я весь БУРЛЮ.		VO_KT_HEIGAN2_55.wav
+VO_KT_LOATHEB2_57	Сколько можно УБИВАТЬ МОИХ СЛУГ! Хватит! Прекрати немедленно!		VO_KT_LOATHEB2_57.wav
+VO_KT_MAEXXNA2_47	Ее яд убьет тебя безболезненно. Ну… почти.		VO_KT_MAEXXNA2_47.wav
+VO_KT_MAEXXNA3_48	Морской великан?! Мексна, ты почему его взяла без разрешения?!		VO_KT_MAEXXNA3_48.wav
+VO_KT_MAEXXNA4_49	Это невозможно! Ты за это еще заплатишь!		VO_KT_MAEXXNA4_49.wav
+VO_KT_MAEXXNA6_51	Как назвать игрока, чье существо застряло в паутине? ОБРЕЧЕННЫЙ!		VO_KT_MAEXXNA6_51.wav
+VO_KT_NOTH2_53	Очуметь, какой поганый день!		VO_KT_NOTH2_53.wav
+VO_KT_PATCHWERK2_69	Мое поганище! Надо было шить его из кого получше...		VO_KT_PATCHWERK2_69.wav
+VO_KT_RAZUVIOUS2_59	Ну и кто теперь будет тренировать моих рыцарей смерти?! Я же не могу сам этим заниматься, у меня ДЕЛА!		VO_KT_RAZUVIOUS2_59.wav
+VO_KT_SAPPHIRON2_84	Взгляни на этого бедного гнома. Его ТОЖЕ сюда никто не звал.		VO_KT_SAPPHIRON2_84.wav
+VO_KT_SAPPHIRON3_85	Сколько можно прятаться за этой глыбой льда!		VO_KT_SAPPHIRON3_85.wav
+VO_KT_SAPPHIRON4_ALT_87	Сапфирон, переходим к плану «ЗАМОРОЗИТЬ КРОВЬ У НИХ В ЖИЛАХ»!		VO_KT_SAPPHIRON4_ALT_87.wav
+VO_KT_SAPPHIRON5_88	Мой дракон! ТЫ МНЕ НЕ НРАВИШЬСЯ.		VO_KT_SAPPHIRON5_88.wav
+VO_KT_THADDIUS2_81	Ну все, незваный гость! Это была последняя капля!		VO_KT_THADDIUS2_81.wav
+VO_NAX1_01_CARD_02	Посмотрим, какие вы на вкус!		VO_NAX1_01_CARD_02.wav
+VO_NAX1_01_DEATH_05	Ну почему?!		VO_NAX1_01_DEATH_05.wav
+VO_NAX1_01_EMOTE_04	Оно разговаривает!		VO_NAX1_01_EMOTE_04.wav
+VO_NAX1_01_HP_03	Подойдите ближе, лакомые кусочки.		VO_NAX1_01_HP_03.wav
+VO_NAX1_01_START_01	Добро пожаловать!		VO_NAX1_01_START_01.wav
+VO_NAX10_01_DEATH_LINE_03	Что... случилось... с Лоску...		VO_NAX10_01_DEATH_LINE_03.wav
+VO_NAX10_01_EMOTE1_04	Пора играть?		VO_NAX10_01_EMOTE1_04.wav
+VO_NAX10_01_EMOTE2_05	Да! Да! Играть!		VO_NAX10_01_EMOTE2_05.wav
+VO_NAX10_01_HP_02	Больше не хочешь играть?		VO_NAX10_01_HP_02.wav
+VO_NAX10_01_START_01	Лоскутик хочет поиграть!		VO_NAX10_01_START_01.wav
+VO_NAX11_01_CARD_03	Слизь.		VO_NAX11_01_CARD_03.wav
+VO_NAX11_01_DEATH_05	*ух ox ах аррр грлаааааа*		VO_NAX11_01_DEATH_05.wav
+VO_NAX11_01_EMOTE_04	Молчи.		VO_NAX11_01_EMOTE_04.wav
+VO_NAX11_01_HP_02	Отрава.		VO_NAX11_01_HP_02.wav
+VO_NAX11_01_START_01	Мясо.		VO_NAX11_01_START_01.wav
+VO_NAX12_01_CARD_01	*Рычит*		VO_NAX12_01_CARD_01.wav
+VO_NAX12_01_DEATH_01	*Скулит*		VO_NAX12_01_DEATH_01.wav
+VO_NAX12_01_EMOTE_01	*Ворчит*		VO_NAX12_01_EMOTE_01.wav
+VO_NAX12_01_EMOTE_02	*Грррр*		VO_NAX12_01_EMOTE_02.wav
+VO_NAX12_01_EMOTE_03	*Грррооооо*		VO_NAX12_01_EMOTE_03.wav
+VO_NAX12_01_HP_01	*Рррр – ХРУМ*		VO_NAX12_01_HP_01.wav
+VO_NAX12_01_START_01	*Рычит*		VO_NAX12_01_START_01.wav
+VO_NAX13_01_DEATH_LINE_03	Благодарю тебя.		VO_NAX13_01_DEATH_LINE_03.wav
+VO_NAX13_01_EMOTE_04	Убью!		VO_NAX13_01_EMOTE_04.wav
+VO_NAX13_01_HP_02	Сейчас ты умрешь!		VO_NAX13_01_HP_02.wav
+VO_NAX13_01_START_01	Я... должен... повиноваться...		VO_NAX13_01_START_01.wav
+VO_NAX14_01_CARD_01	*ррррАААХ*		VO_NAX14_01_CARD_01.wav
+VO_NAX14_01_DEATH_01	*аррррр...*		VO_NAX14_01_DEATH_01.wav
+VO_NAX14_01_EMOTE_01	*ррр Ррраххх!*		VO_NAX14_01_EMOTE_01.wav
+VO_NAX14_01_EMOTE_02	*грррраааааах*		VO_NAX14_01_EMOTE_02.wav
+VO_NAX14_01_EMOTE_03	*арррррррр*		VO_NAX14_01_EMOTE_03.wav
+VO_NAX14_01_HP_01	*гррррррр*		VO_NAX14_01_HP_01.wav
+VO_NAX14_01_START_01	*АРРРРРРР*		VO_NAX14_01_START_01.wav
+VO_NAX15_01_BIGGLES_32	Да что ж вы все к нему лезете?!		VO_NAX15_01_BIGGLES_32.wav
+VO_NAX15_01_DEATH_LINE_08	Это еще не конец... Есть еще героический режим!		VO_NAX15_01_DEATH_LINE_08.wav
+VO_NAX15_01_DEATH_LINE2_09	Неееееееееееееет!		VO_NAX15_01_DEATH_LINE2_09.wav
+VO_NAX15_01_EMOTE_HELLO_26	Ты всегда любезничаешь с теми, кто хочет тебя убить?		VO_NAX15_01_EMOTE_HELLO_26.wav
+VO_NAX15_01_EMOTE_OOPS_29	Это точно.		VO_NAX15_01_EMOTE_OOPS_29.wav
+VO_NAX15_01_EMOTE_SORRY_28	Ничего страшного, незваный гость, мы все ошибаемся.		VO_NAX15_01_EMOTE_SORRY_28.wav
+VO_NAX15_01_EMOTE_THANKS_27	Эм... Всегда к твоим услугам.		VO_NAX15_01_EMOTE_THANKS_27.wav
+VO_NAX15_01_EMOTE_THREATEN_30	Ой-ой-ой-ой! Как страшно!		VO_NAX15_01_EMOTE_THREATEN_30.wav
+VO_NAX15_01_EMOTE_WP_25	Бррр, а как еще я мог сыграть?! Я же Кел'Тузад, а не кто попало!		VO_NAX15_01_EMOTE_WP_25.wav
+VO_NAX15_01_HP_07	Я заморожу кровь в твоих жилах!		VO_NAX15_01_HP_07.wav
+VO_NAX15_01_HP2_05	Теперь твоя душа служит мне!		VO_NAX15_01_HP2_05.wav
+VO_NAX15_01_HP3_06	Тебе не уйти!		VO_NAX15_01_HP3_06.wav
+VO_NAX15_01_HURRY_31	Мое терпение не безгранично.		VO_NAX15_01_HURRY_31.wav
+VO_NAX15_01_PHASE2_10	Твои силы были потрачены впустую!		VO_NAX15_01_PHASE2_10.wav
+VO_NAX15_01_PHASE2_ALT_11	Все! Хватит! Теперь ходить буду Я!		VO_NAX15_01_PHASE2_ALT_11.wav
+VO_NAX15_01_RESPOND_ANDUIN_24	Святая простота! Напомнить, что случилось с Утером?		VO_NAX15_01_RESPOND_ANDUIN_24.wav
+VO_NAX15_01_RESPOND_GARROSH_15	Боюсь, все-таки смерть.		VO_NAX15_01_RESPOND_GARROSH_15.wav
+VO_NAX15_01_RESPOND_GARROSH_ALT_16	Это предложение? Тогда я выбираю победу.		VO_NAX15_01_RESPOND_GARROSH_ALT_16.wav
+VO_NAX15_01_RESPOND_GULDAN_22	А не много ли ты на себя берешь?		VO_NAX15_01_RESPOND_GULDAN_22.wav
+VO_NAX15_01_RESPOND_JAINA_23	Ну вы только посмотрите! Вломилась в мой некрополис, да еще и чем-то недовольна!		VO_NAX15_01_RESPOND_JAINA_23.wav
+VO_NAX15_01_RESPOND_MALFURION_ALT_21	Да? А Наксрамас тут при чем?		VO_NAX15_01_RESPOND_MALFURION_ALT_21.wav
+VO_NAX15_01_RESPOND_REXXAR_19	Ну если ты так настаиваешь...		VO_NAX15_01_RESPOND_REXXAR_19.wav
+VO_NAX15_01_RESPOND_THRALL_17	Сражаешься за молот? М-м-м... ладно.		VO_NAX15_01_RESPOND_THRALL_17.wav
+VO_NAX15_01_RESPOND_UTHER_14	А я — с мощными заклинаниями и толстыми прислужниками. Удачи!		VO_NAX15_01_RESPOND_UTHER_14.wav
+VO_NAX15_01_RESPOND_VALEERA_18	Поверь мне, я буду.		VO_NAX15_01_RESPOND_VALEERA_18.wav
+VO_NAX15_01_START_13	Наконец-то мы встретились.		VO_NAX15_01_START_13.wav
+VO_NAX15_01_SUMMON_ADDS_12	Вперед, слуги мои!		VO_NAX15_01_SUMMON_ADDS_12.wav
+VO_NAX2_01_CARD_02	Убивайте во имя господина!		VO_NAX2_01_CARD_02.wav
+VO_NAX2_01_CUSTOM_03	Ты подвел меня!		VO_NAX2_01_CUSTOM_03.wav
+VO_NAX2_01_DEATH_LINE_05	Господин отомстит за меня!		VO_NAX2_01_DEATH_LINE_05.wav
+VO_NAX2_01_EMOTE_06	Ха-ха-ха!		VO_NAX2_01_EMOTE_06.wav
+VO_NAX2_01_HP_04	Склонись предо мной, червь!		VO_NAX2_01_HP_04.wav
+VO_NAX2_01_START_01	Мои адепты подчиняются мне беспрекословно!		VO_NAX2_01_START_01.wav
+VO_NAX3_01_CARD_01	*гргргргргргр*		VO_NAX3_01_CARD_01.wav
+VO_NAX3_01_DEATH_01	*шипит*		VO_NAX3_01_DEATH_01.wav
+VO_NAX3_01_EMOTE_01	*шипит*		VO_NAX3_01_EMOTE_01.wav
+VO_NAX3_01_EMOTE_02	*шипит*		VO_NAX3_01_EMOTE_02.wav
+VO_NAX3_01_EMOTE_03	*шипит*		VO_NAX3_01_EMOTE_03.wav
+VO_NAX3_01_EMOTE_04	*шипит*		VO_NAX3_01_EMOTE_04.wav
+VO_NAX3_01_EMOTE_05	*шипит*		VO_NAX3_01_EMOTE_05.wav
+VO_NAX3_01_HP_01	*шипит*		VO_NAX3_01_HP_01.wav
+VO_NAX3_01_START_01	*щелкает жвалами*		VO_NAX3_01_START_01.wav
+VO_NAX4_01_CARD_03	Чума никого не щадит.		VO_NAX4_01_CARD_03.wav
+VO_NAX4_01_DEATH_LINE_04	Я буду служить господину...		VO_NAX4_01_DEATH_LINE_04.wav
+VO_NAX4_01_EMOTE_06	Ты умрешь!		VO_NAX4_01_EMOTE_06.wav
+VO_NAX4_01_HP_02	Восстаньте, мои воины! Восстаньте и сражайтесь вновь!		VO_NAX4_01_HP_02.wav
+VO_NAX4_01_START_01	Еще одна душа для моей «коллекции».		VO_NAX4_01_START_01.wav
+VO_NAX5_01_CARD_03	Я взорву ваш МОЗГ!		VO_NAX5_01_CARD_03.wav
+VO_NAX5_01_DEATH_LINE_04	Надо было принять душ...		VO_NAX5_01_DEATH_LINE_04.wav
+VO_NAX5_01_EMOTE_05	У меня нет времени на эту ерунду.		VO_NAX5_01_EMOTE_05.wav
+VO_NAX5_01_HP_02	Танцуйте, глупцы!		VO_NAX5_01_HP_02.wav
+VO_NAX5_01_START_01	Думаешь, здесь ты в безопасности?		VO_NAX5_01_START_01.wav
+VO_NAX6_01_CARD_03	Конец близок.		VO_NAX6_01_CARD_03.wav
+VO_NAX6_01_DEATH_LINE_04	*урррррррр*		VO_NAX6_01_DEATH_06.wav
+VO_NAX6_01_EMOTE_05	Ты впустую сотрясаешь воздух.		VO_NAX6_01_EMOTE_05.wav
+VO_NAX6_01_HP_02	Теперь ты принадлежишь мне!		VO_NAX6_01_HP_02.wav
+VO_NAX6_01_START_01	Я тебя вижу.		VO_NAX6_01_START_01.wav
+VO_NAX7_01_CARD_03	И что тебе дома не сиделось?		VO_NAX7_01_CARD_03.wav
+VO_NAX7_01_DEATH_LINE_04	Достойная смерть...		VO_NAX7_01_DEATH_LINE_04.wav
+VO_NAX7_01_EMOTE_05	Ну что, разомнемся?		VO_NAX7_01_EMOTE_05.wav
+VO_NAX7_01_HP_02	Йааааа!		VO_NAX7_01_HP_02.wav
+VO_NAX7_01_START_01	Нет... Нет! Мои ученики! Верни их!		VO_NAX7_01_START_01.wav
+VO_NAX8_01_CARD_02	Можешь убивать моих слуг сколько вздумается... Их души тебя еще навестят.		VO_NAX8_01_CARD_02.wav
+VO_NAX8_01_CUSTOM_03	Хахаха! Я – Жнец душ! 		VO_NAX8_01_CUSTOM_03.wav
+VO_NAX8_01_CUSTOM2_04	Мертвые восстают!		VO_NAX8_01_CUSTOM2_04.wav
+VO_NAX8_01_DEATH_LINE_05	Меня больше нет.		VO_NAX8_01_DEATH_LINE_05.wav
+VO_NAX8_01_EMOTE1_06	Ты слишком торопишься на встречу со смертью!		VO_NAX8_01_EMOTE1_06.wav
+VO_NAX8_01_EMOTE2_07	Тебе никогда не понять, сколь велика сила, потревоженная тобой.		VO_NAX8_01_EMOTE2_07.wav
+VO_NAX8_01_EMOTE3_08	Чтобы проникнуть в царство Жнеца, тебе пришлось отчаянно сражаться.		VO_NAX8_01_EMOTE3_08.wav
+VO_NAX8_01_EMOTE4_09	Теперь перед тобой лежит лишь один путь...		VO_NAX8_01_EMOTE4_09.wav
+VO_NAX8_01_EMOTE5_10	...войти в меню игры и нажать кнопку «Сдаться».		VO_NAX8_01_EMOTE5_10.wav
+VO_NAX8_01_START_01	Моих слуг не остановит даже смерть.		VO_NAX8_01_START_01.wav
+VO_NAX9_01_CUSTOM_02	Хватит болтать. Готовьтесь к бою.		VO_NAX9_01_CUSTOM_02.wav
+VO_NAX9_01_DEATH_LINE_03	Мне нужно больше времени!		VO_NAX9_01_DEATH_LINE_03.wav
+VO_NAX9_01_EMOTE_04	Ты ищешь смерти?		VO_NAX9_01_EMOTE_04.wav
+VO_NAX9_01_START_01	Мы сотрем тебя в порошок.		VO_NAX9_01_START_01.wav
+VO_NAX9_02_CUSTOM_01	Незваный гость! Беги, пока не поздно!		VO_NAX9_02_CUSTOM_01.wav
+VO_NAX9_03_CUSTOM_01	Ну что ты, Зелиек, давай повеселимся.		VO_NAX9_03_CUSTOM_01.wav
+VO_NAX9_04_CUSTOM_01	Давай, размазня, нападай!		VO_NAX9_04_CUSTOM_01.wav
+VO_NEFARIAN_ATRAMEDES_DEATH_76	 Убить слепого дракона! Тебе не стыдно?		VO_NEFARIAN_ATRAMEDES_DEATH_76.wav
+VO_NEFARIAN_BARON_GEDDON_DEAD_40	Хорошо. Да. Да!		VO_NEFARIAN_BARON_GEDDON_DEAD_40.wav
+VO_NEFARIAN_CHROMAGGUS_DEAD_63	Хромаггус был самым слабым прислужником. А ты, наверно, гордишься собой?		VO_NEFARIAN_CHROMAGGUS_DEAD_63.wav
+VO_NEFARIAN_CHROMAGGUS1_59	У него две головы, потому что в двух головах вдвое больше зубов!		VO_NEFARIAN_CHROMAGGUS1_59.wav
+VO_NEFARIAN_CHROMAGGUS2_60	Я наделил его силой драконов всех цветов! Он – просто совершенство!		VO_NEFARIAN_CHROMAGGUS2_60.wav
+VO_NEFARIAN_CHROMAGGUS3_61	Молодец, Хромаггус, хороший мальчик.		VO_NEFARIAN_CHROMAGGUS3_61.wav
+VO_NEFARIAN_CHROMAGGUS4_62	Что, карт многовато? А-ха-ха! Хороший пес.		VO_NEFARIAN_CHROMAGGUS4_62.wav
+VO_NEFARIAN_COREN_DEAD_28	«Угрюмый обжора», как мило.		VO_NEFARIAN_COREN_DEAD_28.wav
+VO_NEFARIAN_DRAKKISATH_DEAD_50	Ты начинаешь меня раздражать.		VO_NEFARIAN_DRAKKISATH_DEAD_50.wav
+VO_NEFARIAN_DRAKKISATH_RESPOND_48	Да, Драккисат. Герой, ты все еще находишься на НЕПРАВИЛЬНОЙ стороне горы!		VO_NEFARIAN_DRAKKISATH_RESPOND_48.wav
+VO_NEFARIAN_DRAKKISATH1_49	Иди-ка поиграй в рейтинговые игры. Это приключение не для тебя.		VO_NEFARIAN_DRAKKISATH1_49.wav
+VO_NEFARIAN_GARR_DEAD1_38	Возьми кусочек Гарра и пусти «блинчик» по озеру лавы Рагнароса. Он будет в восторге.		VO_NEFARIAN_GARR_DEAD1_38.wav
+VO_NEFARIAN_GARR2_35	Ты поосторожнее с этими камнями, ладно?		VO_NEFARIAN_GARR2_35.wav
+VO_NEFARIAN_GARR3_36	Постарайся не взорваться. Тебе еще Повелителя элементалей изгонять.		VO_NEFARIAN_GARR3_36.wav
+VO_NEFARIAN_GARR4_37	А мне нравится за тобой наблюдать.		VO_NEFARIAN_GARR4_37.wav
+VO_NEFARIAN_GRIMSTONE_DEAD1_30	Продолжай в том же духе, и скоро Рагнарос покинет эту гору!		VO_NEFARIAN_GRIMSTONE_DEAD1_30.wav
+VO_NEFARIAN_HEROIC_BLOCK_77	Не в героическом режиме.		VO_NEFARIAN_HEROIC_BLOCK_77.wav
+VO_NEFARIAN_MALORIAK_DEATH_PT1_72	Поздравляю! Удивительное достижение!		VO_NEFARIAN_MALORIAK_DEATH_PT1_72.wav
+VO_NEFARIAN_MALORIAK_DEATH_PT2_73	Думаю, по такому случаю я придумаю для тебя новый титул.		VO_NEFARIAN_MALORIAK_DEATH_PT2_73.wav
+VO_NEFARIAN_MALORIAK_DEATH_PT3_74	«Убийца глупых, неумелых и никчемных прислужников». Да, то, что надо.		VO_NEFARIAN_MALORIAK_DEATH_PT3_74.wav
+VO_NEFARIAN_MALORIAK_TURN2_71	Малориак, постарайся не проиграть.		VO_NEFARIAN_MALORIAK_TURN2_71.wav
+VO_NEFARIAN_NEF_MISSION_66	Так нечестно! Я этого не потерплю!		VO_NEFARIAN_NEF_MISSION_66.wav
+VO_NEFARIAN_NEF2_65	Нет! Нет! Я тебя уничтожу!		VO_NEFARIAN_NEF2_65.wav
+VO_NEFARIAN_OMNOTRON_DEAD_69	Спасибо, хоть на починку тратиться не придется.		VO_NEFARIAN_OMNOTRON_DEAD_69.wav
+VO_NEFARIAN_OMOKK_DEAD_46	Бессмыслица какая-то.		VO_NEFARIAN_OMOKK_DEAD_46.wav
+VO_NEFARIAN_OMOKK1_44	Что ты здесь делаешь? Рагнарос мертв. Иди, празднуй с друзьями.		VO_NEFARIAN_OMOKK1_44.wav
+VO_NEFARIAN_OMOKK2_45	Не понимаю. Нет здесь больше Рагнароса. Кончился. Задание выполнено. Уходи!		VO_NEFARIAN_OMOKK2_45.wav
+VO_NEFARIAN_RAZORGORE_DEAD_55	Эти яйца предназначались для великих экспериментов!		VO_NEFARIAN_RAZORGORE_DEAD_55.wav
+VO_NEFARIAN_REND_DEAD_53	Так, смертный. Со мной твои штучки не пройдут.		VO_NEFARIAN_REND_DEAD_53.wav
+VO_NEFARIAN_REND1_52	Даже этот орк знает, что ты все делаешь не так.		VO_NEFARIAN_REND1_52.wav
+VO_NEFARIAN_THAURISSAN_DEAD_32	Надо было и другого дворфа убить! Живых не оставлять!		VO_NEFARIAN_THAURISSAN_DEAD_32.wav
+VO_NEFARIAN_THAURISSAN_DEAD2_33	Тебе удалось убить обоих дворфов? Я впечатлен.		VO_NEFARIAN_THAURISSAN_DEAD2_33.wav
+VO_NEFARIAN_VAEL_DEAD_57	Ха! А ведь он был хорошим! Тебе, наверно, очень грустно.		VO_NEFARIAN_VAEL_DEAD_57.wav
+VO_RAGNAROS_GRIMSTONE_DEAD2_66	Я УНИЧТОЖУ ТЕБЯ, ЧЕШУЙЧАТОЕ ОТРОДЬЕ!		VO_RAGNAROS_GRIMSTONE_DEAD2_66.wav
+VO_RAGNAROS_NEF1_71	Похоже,  тебе не помешает помощь, герой.		VO_RAGNAROS_NEF1_71.wav
+VO_RAGNAROS_NEF3_72	Я отомщу! Очистись огнем!!!		VO_RAGNAROS_NEF3_72.wav
+VO_RAGNAROS_NEF4_73	Мои слуги уничтожат тебя, Крыло Тьмы!		VO_RAGNAROS_NEF4_73.wav
+VO_RAGNAROS_NEF5_74	Обрати этого пафосного дракона в прах!		VO_RAGNAROS_NEF5_74.wav
+VO_RAGNAROS_NEF6_75	Подарочек из Огненных Просторов!		VO_RAGNAROS_NEF6_75.wav
+VO_RAGNAROS_NEF7_76	Тебе не загасить пламя Повелителя Огня!		VO_RAGNAROS_NEF7_76.wav
+VO_RAGNAROS_NEF8_77	Я отомщу тебе, дракон!		VO_RAGNAROS_NEF8_77.wav

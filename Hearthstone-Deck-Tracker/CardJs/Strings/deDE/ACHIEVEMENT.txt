@@ -1,0 +1,85 @@
+﻿TAG	TEXT	COMMENT
+11*Description	Schließt ein Spiel im Modus „Spielen“ ab.	
+11*Name	Feldversuch	
+12*Description	Spielt 3 Spiele im Modus „Spielen“.	
+12*Name	Der Duellant	
+31*Description	Bringt eine Klasse bis auf Stufe 10.	
+31*Name	Ding!	
+32*Description	Gewinnt 2 Spiele als Druide oder Jäger.	
+32*Name	Sieg des Druiden oder Jägers	
+33*Description	Gewinnt 2 Spiele als Druide oder Schurke.	
+33*Name	Sieg des Druiden oder Schurken	
+34*Description	Gewinnt 2 Spiele als Jäger oder Magier.	
+34*Name	Sieg des Jägers oder Magiers	
+35*Description	Gewinnt 2 Spiele als Magier oder Schamane.	
+35*Name	Sieg des Magiers oder Schamanen	
+36*Description	Gewinnt 2 Spiele als Paladin oder Priester.	
+36*Name	Sieg des Paladins oder Priesters	
+37*Description	Gewinnt 2 Spiele als Paladin oder Krieger.	
+37*Name	Sieg des Paladins oder Kriegers	
+38*Description	Gewinnt 2 Spiele als Priester oder Hexenmeister.	
+38*Name	Sieg des Priesters oder Hexenmeisters	
+39*Description	Gewinnt 2 Spiele als Schurke oder Krieger.	
+39*Name	Sieg des Schurken oder Kriegers	
+40*Description	Gewinnt 2 Spiele als Schamane oder Hexenmeister.	
+40*Name	Sieg des Schamanen oder Hexenmeisters	
+41*Description	Gewinnt 5 Spiele als Druide oder Jäger.	
+41*Name	Dominanz des Druiden oder Jägers	
+42*Description	Gewinnt 5 Spiele als Druide oder Schurke.	
+42*Name	Dominanz des Druiden oder Schurken	
+43*Description	Gewinnt 5 Spiele als Jäger oder Magier.	
+43*Name	Dominanz des Jägers oder Magiers	
+44*Description	Gewinnt 5 Spiele als Magier oder Schamane.	
+44*Name	Dominanz des Magiers oder Schamanen	
+45*Description	Gewinnt 5 Spiele als Paladin oder Priester.	
+45*Name	Dominanz des Paladins oder Priesters	
+46*Description	Gewinnt 5 Spiele als Paladin oder Krieger.	
+46*Name	Dominanz des Paladins oder Kriegers	
+47*Description	Gewinnt 5 Spiele als Priester oder Hexenmeister.	
+47*Name	Dominanz des Priesters oder Hexenmeisters	
+48*Description	Gewinnt 5 Spiele als Schurke oder Krieger.	
+48*Name	Dominanz des Schurken oder Kriegers	
+49*Description	Gewinnt 5 Spiele als Schamane oder Hexenmeister.	
+49*Name	Dominanz des Schamanen oder Hexenmeisters	
+50*Description	Vernichtet 40 Diener.	
+50*Name	Vernichtet sie alle	
+51*Description	Spielt 20 Diener aus, die 5 oder mehr kosten.	
+51*Name	Nur die Größe zählt	
+52*Description	Spielt 40 Diener aus, die 2 oder weniger kosten.	
+52*Name	Klein aber oho	
+53*Description	Wirkt 40 Zauber.	
+53*Name	Zaubermeister	
+54*Description	Fügt feindlichen Helden 100 Schaden zu.	
+54*Name	Gefällt Euch das?	
+55*Description	Entzaubert eine Karte.	
+55*Name	Abstauben	
+56*Description	Betretet die Arena.	
+56*Name	Ab in die Arena	
+58*Description	Nennt jeden Piraten Euer Eigen.	
+58*Name	Ahoi!!!	
+59*Description	Nennt jeden goldenen Piraten Euer Eigen.	
+59*Name	Goldenes Ahoi!!!	
+60*Description	Nennt jeden Murloc Euer Eigen.	
+60*Name	Mrglglglgl!	
+61*Description	Nennt jeden goldenen Murloc Euer Eigen.	
+61*Name	Goldenes Mrglglglgl!	
+62*Description	Gewinnt 100 Spiele in einem beliebigen Modus.	
+62*Name	Mit Tempo 100	
+63*Description	Gewinnt 1000 Spiele in einem beliebigen Modus.	
+63*Name	Strahlender Sieger	
+64*Description	Gewinnt 7 Spiele in einem beliebigen Modus.	
+64*Name	Absolute Überlegenheit	
+69*Description	Gewinnt 3 Spiele mit einer beliebigen Klasse.	
+69*Name	3 Siege!	
+79*Description	Schaltet jeden Helden frei.	
+79*Name	Auf geht's!	
+89*Description	Besiegt jeden KI-Helden auf der Profistufe.	
+89*Name	Der wahre Profi	
+90*Description	Sammelt alle Karten des Basissets.	
+90*Name	Basis gesichert!	
+91*Description	Sammelt alle Karten des Profisets.	
+91*Name	Alles meins!	
+95*Description	Vielen Dank für die Hilfe beim Testen unseres Shops!	
+95*Name	Beta-Rocker!	
+96*Description	Danke, dass Ihr bei der BlizzCon 2013 dabei wart!	
+96*Name	BlizzCon-Rocker!	

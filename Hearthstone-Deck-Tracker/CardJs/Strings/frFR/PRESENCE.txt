@@ -1,0 +1,133 @@
+TAG	TEXT	COMMENT
+PRESENCE_ADVENTURE_MODE_BRM_CLASS_CHALLENGE	Défi de classe de Rochenoire	
+PRESENCE_ADVENTURE_MODE_BRM_HEROIC	Mont Rochenoire (Héroïque)	
+PRESENCE_ADVENTURE_MODE_BRM_NORMAL	Mont Rochenoire	
+PRESENCE_ADVENTURE_MODE_NAXX_CLASS_CHALLENGE	Défi de classe de Naxxramas	
+PRESENCE_ADVENTURE_MODE_NAXX_HEROIC	Naxxramas (héroïque)	
+PRESENCE_ADVENTURE_MODE_NAXX_NORMAL	Naxxramas	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_DRUID	Défi de druide de Rochenoire	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_HUNTER	Défi de chasseur de Rochenoire	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_MAGE	Défi de mage de Rochenoire	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_PALADIN	Défi de paladin de Rochenoire	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_PRIEST	Défi de prêtre de Rochenoire	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_ROGUE	Défi de voleur de Rochenoire	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_SHAMAN	Défi de chaman de Rochenoire	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_WARLOCK	Défi de démoniste de Rochenoire	
+PRESENCE_SCENARIO_BRM_CLASS_CHALLENGE_WARRIOR	Défi de guerrier de Rochenoire	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_ATRAMEDES	Atramédès (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_BARON_GEDDON	Baron Geddon (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_CHROMAGGUS	Chromaggus (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_DARK_IRON_ARENA	Arène sombrefer (héroïque)	feel free to shorten long translations since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_DRAKKISATH	Drakkisath (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_GARR	Garr (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_GRIM_GUZZLER	Sinistre écluseur (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_MAJORDOMO	Ragnaros (héroïque)	feel free to shorten long translations to 'Heroic Ragnaros' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_MALORIAK	Maloriak (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_NEFARIAN	Victor Nefarius (héroïque)	feel free to shorten long translations to 'Heroic Nefarius' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_OMNOTRON	Omnitron (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_OMOKK	Omokk (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_RAZORGORE	Tranchetripe (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_REND_BLACKHAND	Rend Main-Noire (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_THAURISSAN	Empereur Thaurissan (héroique)	feel free to shorten long translations to 'Heroic Thaurissan' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_VAELASTRASZ	Vaelastrasz (héroïque)	
+PRESENCE_SCENARIO_BRM_HEROIC_SCENARIO_ZOMBIE_NEF	Nefarian (héroïque)	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_ATRAMEDES	Affronte Atramédès	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_BARON_GEDDON	Affronte le baron Geddon	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_CHROMAGGUS	Affronte Chromaggus	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_DARK_IRON_ARENA	Affronte l’arène Sombrefer	feel free to shorten long translations since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_DRAKKISATH	Affronte Drakkisath	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_GARR	Affronte Garr	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_GRIM_GUZZLER	Affronte le Sinistre écluseur	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_MAJORDOMO	Affronte Ragnaros	feel free to shorten long translations to 'Battling Ragnaros' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_MALORIAK	Affronte Maloriak	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_NEFARIAN	Affronte Victor Nefarius	feel free to shorten long translations to 'Battling Nefarius' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_OMNOTRON	Affronte Omnitron	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_OMOKK	Affronte Omokk	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_RAZORGORE	Affronte Tranchetripe	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_REND_BLACKHAND	Affronte Rend Main-Noire	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_THAURISSAN	Affronte Thaurissan	feel free to shorten long translations to 'Battling Thaurissan' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_VAELASTRASZ	Affronte Vaelastrasz	
+PRESENCE_SCENARIO_BRM_NORMAL_SCENARIO_ZOMBIE_NEF	Affronte Nefarian	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_DRUID	Défi de druide de Naxxramas	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_HUNTER	Défi de chasseur de Naxxramas	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_MAGE	Défi de mage de Naxxramas	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_PALADIN	Défi de paladin de Naxxramas	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_PRIEST	Défi de prêtre de Naxxramas	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_ROGUE	Défi de voleur de Naxxramas	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_SHAMAN	Défi de chaman de Naxxramas	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_WARLOCK	Défi de démoniste de Naxxramas	
+PRESENCE_SCENARIO_NAXX_CLASS_CHALLENGE_WARRIOR	Défi de guerrier de Naxxramas	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_ANUBREKHAN	Anub’Rekhan (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_FAERLINA	Faerlina (héroïque)	feel free to shorten long translations to 'Heroic Faerlina' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_GLUTH	Gluth (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_GOTHIK	Gothik (héroïque)	feel free to shorten long translations to 'Heroic Gothik' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_GROBBULUS	Grobbulus (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_HEIGAN	Heigan (héroïque)	feel free to shorten long translations to 'Heroic Heigan' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_HORSEMEN	Les quatre cavaliers (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_KELTHUZAD	Kel’Thuzad (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_LOATHEB	Horreb (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_MAEXXNA	Maexxna (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_NOTH	Noth (héroïque)	feel free to shorten long translations to 'Heroic Noth' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_PATCHWERK	Le Recousu (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_RAZUVIOUS	Razuvious (héroïque)	feel free to shorten long translations to 'Heroic Razuvious' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_SAPPHIRON	Saphiron (héroïque)	
+PRESENCE_SCENARIO_NAXX_HEROIC_SCENARIO_THADDIUS	Thaddius (héroïque)	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_ANUBREKHAN	Affronte Anub’Rekhan	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_FAERLINA	Affronte Faerlina	feel free to shorten long translations to 'Battling Faerlina' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_GLUTH	Affronte Gluth	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_GOTHIK	Affronte Gothik	feel free to shorten long translations to 'Battling Gothik' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_GROBBULUS	Affronte Grobbulus	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_HEIGAN	Affronte Heigan	feel free to shorten long translations to 'Battling Heigan' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this is string shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_HORSEMEN	Affronte les quatre cavaliers	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_KELTHUZAD	Affronte Kel’Thuzad	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_LOATHEB	Affronte Horreb	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_MAEXXNA	Affronte Maexxna	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_NOTH	Affronte Noth	feel free to shorten long translations to 'Battling Noth' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_PATCHWERK	Affronte le Recousu	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_RAZUVIOUS	Affronte Razuvious	feel free to shorten long translations to 'Battling Razuvious' since the UI may squeeze text into a tiny (unreadable) font size when text is too long. this string is shown in the Friends List.
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_SAPPHIRON	Affronte Saphiron	
+PRESENCE_SCENARIO_NAXX_NORMAL_SCENARIO_THADDIUS	Affronte Thaddius	
+PRESENCE_STATUS_ADVENTURE_CHOOSING_MODE	Cherche une aventure	
+PRESENCE_STATUS_ADVENTURE_SCENARIO_PLAYING_GAME	{0}	{0} replaced with the specific scenario string, via PRESENCE_SCENARIO_NAXX_*
+PRESENCE_STATUS_ADVENTURE_SCENARIO_SELECT	{0}	{0} replaced with the adventure mode, via PRESENCE_ADVENTURE_MODE_*, e.g. Naxxramas (Heroic) -- (originally i wanted it to say "Mission Select: Naxxramas Class Challenge" but this got too long for the UI element.)
+PRESENCE_STATUS_ARENA_FORGE	Crée un deck d’Arène	
+PRESENCE_STATUS_ARENA_GAME	Se bat dans l’Arène	
+PRESENCE_STATUS_ARENA_IDLE	Dans l’Arène	
+PRESENCE_STATUS_ARENA_PURCHASE	Va entrer dans l’Arène	
+PRESENCE_STATUS_ARENA_QUEUE	Cherche un adversaire d’Arène	
+PRESENCE_STATUS_ARENA_REWARD	Obtient des récompenses d’Arène	
+PRESENCE_STATUS_COLLECTION	Consulte sa collection	
+PRESENCE_STATUS_CRAFTING	Crée des cartes	
+PRESENCE_STATUS_DECKEDITOR	Crée un deck	
+PRESENCE_STATUS_FRIENDLY_DECKPICKER	Va défier un de ses contacts	
+PRESENCE_STATUS_FRIENDLY_GAME	Se bat contre un contact	
+PRESENCE_STATUS_HUB	Dans le menu principal	
+PRESENCE_STATUS_LOGIN	Démarre le jeu	
+PRESENCE_STATUS_PACKOPENING	Ouvre des paquets de cartes !!!	
+PRESENCE_STATUS_PLAY_DECKPICKER	En mode Partie	
+PRESENCE_STATUS_PLAY_GAME	Se bat en mode Partie !	
+PRESENCE_STATUS_PLAY_QUEUE	Cherche un adversaire	
+PRESENCE_STATUS_PRACTICE_DECKPICKER	En mode Entraînement	
+PRESENCE_STATUS_PRACTICE_GAME	S’entraîne contre l’aubergiste	
+PRESENCE_STATUS_QUESTLOG	Consulte son journal	
+PRESENCE_STATUS_SPECTATING_GAME_ADVENTURE_BRM_CLASS_CHALLENGE	Regarde un défi de Rochenoire	
+PRESENCE_STATUS_SPECTATING_GAME_ADVENTURE_BRM_HEROIC	Regarde une héroïque de Rochenoire	
+PRESENCE_STATUS_SPECTATING_GAME_ADVENTURE_BRM_NORMAL	Regarde une partie de Rochenoire	
+PRESENCE_STATUS_SPECTATING_GAME_ADVENTURE_NAXX_CLASS_CHALLENGE	Regarde un défi de Naxxramas	
+PRESENCE_STATUS_SPECTATING_GAME_ADVENTURE_NAXX_HEROIC	Regarde une héroïque de Naxxramas	
+PRESENCE_STATUS_SPECTATING_GAME_ADVENTURE_NAXX_NORMAL	Regarde une partie de Naxxramas	
+PRESENCE_STATUS_SPECTATING_GAME_ARENA	Regarde une partie en Arène	
+PRESENCE_STATUS_SPECTATING_GAME_FRIENDLY	Regarde un duel amical	
+PRESENCE_STATUS_SPECTATING_GAME_PLAY	Regarde une partie	
+PRESENCE_STATUS_SPECTATING_GAME_PRACTICE	Regarde un entraînement	
+PRESENCE_STATUS_SPECTATING_GAME_TUTORIAL	Regarde une partie du didacticiel	
+PRESENCE_STATUS_STORE	Dans la boutique	
+PRESENCE_STATUS_TUTORIAL_GAME	Tente de battre {0}	0 = PRESENCE_TUTORIAL_*
+PRESENCE_STATUS_TUTORIAL_PREGAME	Lance le jeu pour la 1re fois	
+PRESENCE_STATUS_WELCOMEQUESTS	Réfléchit aux nouvelles quêtes !	
+PRESENCE_TUTORIAL_CHO	Chroniqueur Cho	
+PRESENCE_TUTORIAL_HEMET	Hemet Nesingwary	
+PRESENCE_TUTORIAL_HOGGER	Lardeur	
+PRESENCE_TUTORIAL_ILLIDAN	Illidan Hurlorage	
+PRESENCE_TUTORIAL_MILLHOUSE	Millhouse Tempête-de-Mana	
+PRESENCE_TUTORIAL_MUKLA	Roi Mukla	

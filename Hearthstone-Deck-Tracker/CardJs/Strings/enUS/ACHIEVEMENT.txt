@@ -1,0 +1,85 @@
+TAG	TEXT	COMMENT	
+11*Name	First Blood	
+11*Description	Complete a game in Play mode.	
+12*Name	The Duelist	
+12*Description	Play 3 games in Play mode.	
+31*Name	Level Up	
+31*Description	Get any class to level 10.	
+32*Name	Druid or Hunter Victory	
+32*Description	Win 2 games with Druid or Hunter.	
+33*Name	Druid or Rogue Victory	
+33*Description	Win 2 games with Druid or Rogue.	
+34*Name	Hunter or Mage Victory	
+34*Description	Win 2 games with Hunter or Mage.	
+35*Name	Mage or Shaman Victory	
+35*Description	Win 2 games with Mage or Shaman.	
+36*Name	Paladin or Priest Victory	
+36*Description	Win 2 games with Paladin or Priest.	
+37*Name	Paladin or Warrior Victory	
+37*Description	Win 2 games with Paladin or Warrior.	
+38*Name	Priest or Warlock Victory	
+38*Description	Win 2 games with Priest or Warlock.	
+39*Name	Rogue or Warrior Victory	
+39*Description	Win 2 games with Rogue or Warrior.	
+40*Name	Shaman or Warlock Victory	
+40*Description	Win 2 games with Shaman or Warlock.	
+41*Name	Druid or Hunter Dominance	
+41*Description	Win 5 games with Druid or Hunter.	
+42*Name	Druid or Rogue Dominance	
+42*Description	Win 5 games with Druid or Rogue.	
+43*Name	Hunter or Mage Dominance	
+43*Description	Win 5 games with Hunter or Mage.	
+44*Name	Mage or Shaman Dominance	
+44*Description	Win 5 games with Mage or Shaman.	
+45*Name	Paladin or Priest Dominance	
+45*Description	Win 5 games with Paladin or Priest.	
+46*Name	Paladin or Warrior Dominance	
+46*Description	Win 5 games with Paladin or Warrior.	
+47*Name	Priest or Warlock Dominance	
+47*Description	Win 5 games with Priest or Warlock.	
+48*Name	Rogue or Warrior Dominance	
+48*Description	Win 5 games with Rogue or Warrior.	
+49*Name	Shaman or Warlock Dominance	
+49*Description	Win 5 games with Shaman or Warlock.	
+50*Name	Destroy them All	
+50*Description	Destroy 40 minions.	
+51*Name	Only the Mighty	
+51*Description	Play 20 minions that cost 5 or more.	
+52*Name	The Meek Shall Inherit	
+52*Description	Play 40 minions that cost 2 or less.	
+53*Name	Spell Master	
+53*Description	Cast 40 spells.	
+54*Name	Beat Down	
+54*Description	Deal 100 damage to enemy heroes.	
+55*Name	Crafting Time	
+55*Description	Disenchant a card.	
+56*Name	Enter The Arena	
+56*Description	Enter The Arena.			
+58*Name	Arrrrrr!!!	
+58*Description	Acquire every Pirate.	
+59*Name	Golden Arrrrrr!!!	
+59*Description	Acquire every Golden Pirate.	
+60*Name	Mrglglglgl!	
+60*Description	Acquire every Murloc.	
+61*Name	Golden Mrglglglgl!	
+61*Description	Acquire every Golden Murloc.	
+62*Name	Chicken Dinner	
+62*Description	Win 100 games in any mode.	
+63*Name	Big Winner	
+63*Description	Win 1000 games in any mode.	
+64*Name	Total Dominance	
+64*Description	Win 7 games in any mode.		
+69*Name	3 Victories!	
+69*Description	Win 3 games with any class.	
+79*Name	Ready to Go!	
+79*Description	Unlock every Hero.		
+89*Name	Crushed Them All!	
+89*Description	Defeat every Expert AI Hero.	
+90*Name	Got the Basics!	
+90*Description	Collect every card in the Basic Set.	
+91*Name	One of Everything!	
+91*Description	Collect every card in the Expert Set.		
+95*Name	Beta Hero!	
+95*Description	Thank you for helping to test our Store!	
+96*Name	Ready to Rock!	
+96*Description	Thank you for attending BlizzCon 2013!	

@@ -40,11 +40,12 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    //[RealmGenerator generateCardRealm];
     
-    [RLMRealm setSchemaVersion:2 withMigrationBlock:^(RLMMigration *migration, NSUInteger oldSchemaVersion) {
+    [RLMRealm setSchemaVersion:4 withMigrationBlock:^(RLMMigration *migration, NSUInteger oldSchemaVersion) {
         
     }];
+    //[RealmGenerator generateCardRealm];
+
     
     if (self.cardListController == nil)
     {
@@ -82,6 +83,15 @@
 
 - (IBAction)openSettings:(id)sender {
     [self.preferencesWindowController showWindow:nil];
+}
+
+
+- (IBAction)openManger:(id)sender {
+    [self.managerController showWindow:nil];
+}
+
+- (IBAction)openTracker:(id)sender {
+    [self.cardListController showWindow:nil];
 }
 
 #pragma mark - Public accessors

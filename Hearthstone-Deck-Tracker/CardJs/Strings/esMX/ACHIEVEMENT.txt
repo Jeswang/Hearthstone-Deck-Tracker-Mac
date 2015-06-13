@@ -1,0 +1,85 @@
+﻿TAG	TEXT	COMMENT
+11*Description	Completa una partida en el modo Jugar.	
+11*Name	Debut sanguinario	
+12*Description	Juega 3 partidas en el modo Jugar.	
+12*Name	El duelista	
+31*Description	Lleva cualquier clase al nivel 10.	
+31*Name	¡Qué niveeeel!	
+32*Description	Gana 2 partidas como Druida o Cazador.	
+32*Name	Victoria como Druida o Cazador	
+33*Description	Gana 2 partidas como Druida o Pícaro.	
+33*Name	Victoria como Druida o Pícaro	
+34*Description	Gana 2 partidas como Cazador o Mago.	
+34*Name	Victoria como Cazador o Mago	
+35*Description	Gana 2 partidas como Mago o Chamán.	
+35*Name	Victoria como Mago o Chamán	
+36*Description	Gana 2 partidas como Paladín o Sacerdote.	
+36*Name	Victoria como Paladín o Sacerdote	
+37*Description	Gana 2 partidas como Paladín o Guerrero.	
+37*Name	Victoria como Paladín o Guerrero	
+38*Description	Gana 2 partidas como Sacerdote o Brujo.	
+38*Name	Victoria como Sacerdote o Brujo	
+39*Description	Gana 2 partidas como Pícaro o Guerrero.	
+39*Name	Victoria como Pícaro o Guerrero	
+40*Description	Gana 2 partidas como Chamán o Brujo.	
+40*Name	Victoria como Chamán o Brujo	
+41*Description	Gana 5 partidas como Druida o Cazador.	
+41*Name	Dominio de Druida o Cazador	
+42*Description	Gana 5 partidas como Druida o Pícaro.	
+42*Name	Dominio de Druida o Pícaro	
+43*Description	Gana 5 partidas como Cazador o Mago.	
+43*Name	Dominio de Cazador o Mago	
+44*Description	Gana 5 partidas como Mago o Chamán.	
+44*Name	Dominio de Mago o Chamán	
+45*Description	Gana 5 partidas como Paladín o Sacerdote.	
+45*Name	Dominio de Paladín o Sacerdote	
+46*Description	Gana 5 partidas como Paladín o Guerrero.	
+46*Name	Dominio de Paladín o Guerrero	
+47*Description	Gana 5 partidas como Sacerdote o Brujo.	
+47*Name	Dominio de Sacerdote o Brujo	
+48*Description	Gana 5 partidas como Pícaro o Guerrero.	
+48*Name	Dominio de Pícaro o Guerrero	
+49*Description	Gana 5 partidas como Chamán o Brujo.	
+49*Name	Dominio de Chamán o Brujo	
+50*Description	Destruye 40 esbirros.	
+50*Name	Aplanadora	
+51*Description	Juega 20 esbirros que cuesten 5 o más.	
+51*Name	Sin lugar para los débiles	
+52*Description	Juega 40 esbirros que cuesten 2 o menos.	
+52*Name	Los mansos heredarán la tierra	
+53*Description	Lanza 40 hechizos.	
+53*Name	Maestría en hechicería	
+54*Description	Inflige 100 de daño a los héroes enemigos.	
+54*Name	Paliza	
+55*Description	Desencanta una carta.	
+55*Name	Hora de artesanías	
+56*Description	Ingresa en la Arena.	
+56*Name	Ingreso a la Arena	
+58*Description	Adquiere todos los piratas.	
+58*Name	¡Alcen las velas!	
+59*Description	Adquiere todos los piratas dorados.	
+59*Name	¡Por las barbas de Poseidón!	
+60*Description	Adquiere todos los múrlocs.	
+60*Name	¡Mrglglglgl!	
+61*Description	Adquiere todos los múrlocs dorados.	
+61*Name	¡Mrglglglgl mrglglglgl!	
+62*Description	Gana 100 partidas en cualquier modo.	
+62*Name	Héroe de la centuria	
+63*Description	Gana 1000 partidas en cualquier modo.	
+63*Name	Nacido para ganar	
+64*Description	Gana 7 partidas en cualquier modo.	
+64*Name	Dominio absoluto	
+69*Description	Gana 3 partidas con cualquier clase.	
+69*Name	¡Triple victoria!	
+79*Description	Desbloquea a todos los héroes.	
+79*Name	¡Listos para la acción!	
+89*Description	Derrota a todos los héroes de IA experta.	
+89*Name	¡Masacre heroica!	
+90*Description	Consigue todas las cartas del kit básico.	
+90*Name	¡Principios básicos!	
+91*Description	Consigue todas las cartas del kit experto.	
+91*Name	¡Un poco de todo!	
+95*Description	¡Gracias por ayudarnos a probar nuestra tienda!	
+95*Name	¡Betahéroe!	
+96*Description	¡Gracias por ser parte de la BlizzCon 2013!	
+96*Name	¡Listo para rockear!	

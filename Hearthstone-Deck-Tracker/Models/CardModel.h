@@ -22,6 +22,9 @@
 
 @interface StringObject : RLMObject
 @property NSString *value;
+
++ (StringObject *)stringForValue:(NSString *)value;
+
 @end
 RLM_ARRAY_TYPE(StringObject)
 
@@ -44,6 +47,7 @@ RLM_ARRAY_TYPE(StringObject)
 @property NSString *cardType;
 @property NSString *faction;
 @property NSString *lang;
+@property NSString *race;
 
 @property NSInteger count;
 @property int inHandCount;

@@ -19,6 +19,8 @@
 #import "CTGradient_AMButtonBar.h"
 #endif
 
+#import "GameString.h"
+
 @interface CardsViewController () {
     IBOutlet MGScopeBar * mgScopeBar;
     IBOutlet NSView * mgAccessoryView;
@@ -52,25 +54,25 @@
     NSDictionary *cardCost;
     
     className = @{
-                  @"0 all": @"全部",
-                  @"1 Shaman": @"萨满",
-                  @"2 Priest": @"牧师",
-                  @"3 Rogue": @"潜行者",
-                  @"4 Mage": @"法师",
-                  @"5 Warrior": @"战士",
-                  @"6 Paladin": @"圣骑士",
-                  @"a Neutral": @"中立",
-                  @"7 Hunter": @"猎人",
-                  @"8 Druid": @"德鲁伊",
-                  @"9 Warlock": @"术士"
+                  @"0 all": @"All",
+                  @"1 Shaman": @"GLOBAL_CLASS_SHAMAN",
+                  @"2 Priest": @"GLOBAL_CLASS_PRIEST",
+                  @"3 Rogue": @"GLOBAL_CLASS_ROGUE",
+                  @"4 Mage": @"GLOBAL_CLASS_MAGE",
+                  @"5 Warrior": @"GLOBAL_CLASS_WARRIOR",
+                  @"6 Paladin": @"GLOBAL_CLASS_PALADIN",
+                  @"a Neutral": @"GLOBAL_CLASS_NEUTRAL",
+                  @"7 Hunter": @"GLOBAL_CLASS_HUNTER",
+                  @"8 Druid": @"GLOBAL_CLASS_DRUID",
+                  @"9 Warlock": @"GLOBAL_CLASS_WARLOCK"
                   };
     cardRarity = @{
-                   @"0 all": @"全部",
-                   @"5 Legendary": @"传说",
-                   @"4 Epic": @"史诗",
-                   @"3 Rare": @"稀有",
-                   @"1 Free": @"基本",
-                   @"2 Common": @"普通"
+                   @"0 all": @"All",
+                   @"5 Legendary": @"GLOBAL_RARITY_LEGENDARY",
+                   @"4 Epic": @"GLOBAL_RARITY_EPIC",
+                   @"3 Rare": @"GLOBAL_RARITY_RARE",
+                   @"1 Free": @"GLOBAL_RARITY_FREE",
+                   @"2 Common": @"GLOBAL_RARITY_COMMON"
                    };
     
     cardEffect = @{
@@ -101,10 +103,10 @@
                   };
     
     cardType = @{
-                 @"0 all": @"全部",
-                 @"2 Spell": @"法术",
-                 @"1 Minion": @"随从",
-                 @"3 Weapon": @"武器"
+                 @"0 all": @"All",
+                 @"2 Spell": @"GLOBAL_CARDTYPE_SPELL",
+                 @"1 Minion": @"GLOBAL_CARDTYPE_MINION",
+                 @"3 Weapon": @"GLOBAL_CARDTYPE_WEAPON"
                  };
     
     cardSet = @{
@@ -115,21 +117,21 @@
                 @"expert": @"专家级"};
     
     cardCost = @{
-                 @"0 all":@"全部",
+                 @"0 all":@"All",
                  @"1":@"1",
                  @"2":@"2",
                  @"3":@"3",
                  @"4":@"4",
                  @"5":@"5",
                  @"6":@"6",
-                 @"7":@"7以及以上"
+                 @"7":@"7 or more"
                  };
     
     filters = [[NSMutableArray alloc] initWithArray:@[
-               [CardFilter filterWithName:@"playerClass" label:@"职业" dict:className],
-               [CardFilter filterWithName:@"rarity" label:@"稀有度" dict:cardRarity],
-               [CardFilter filterWithName:@"cardType" label:@"类型" dict:cardType],
-               [CardFilter filterWithName:@"cost" label:@"花费" dict:cardCost],
+               [CardFilter filterWithName:@"playerClass" label:@"Hero" dict:className],
+               [CardFilter filterWithName:@"rarity" label:@"Rarity" dict:cardRarity],
+               [CardFilter filterWithName:@"cardType" label:@"Type" dict:cardType],
+               [CardFilter filterWithName:@"cost" label:@"Cost" dict:cardCost],
                //[CardFilter filterWithName:@"cardEffect" label:@"属性" dict:cardEffect],
                //[CardFilter filterWithName:@"cardRace" label:@"种族" dict:cardRace]
                ]];
@@ -160,8 +162,14 @@
         self.titleFilter.selectedKey = x;
         [self reloadWithFilter];
     }];
+    
+    [NC addObserver:self selector:@selector(reloadContent) name:kCountryLanguageChanged object:nil];
 }
 
+- (void)reloadContent {
+    [mgScopeBar reloadData];
+    //[mgScopeBar adjustSubviews];
+}
 
 - (NSUInteger)numberOfGroupsInScopeBar:(MGScopeBar *)theScopeBar;
 {
@@ -193,7 +201,7 @@
 - (NSString *)scopeBar:(MGScopeBar *)theScopeBar titleOfItem:(NSString *)identifier inGroup:(NSInteger)groupNumber;
 {
     NSDictionary *dic = [[filters objectAtIndex:groupNumber] dict];
-    return [dic objectForKey:identifier];
+    return [GameString valueForKey:[dic objectForKey:identifier]];
 }
 
 - (NSImage *)scopeBar:(MGScopeBar *)theScopeBar imageForItem:(NSString *)identifier inGroup:(NSInteger)groupNumber;
@@ -225,7 +233,7 @@
 
 - (void)scopeBar:(MGScopeBar *)theScopeBar selectedStateChanged:(BOOL)selected forItem:(NSString *)identifier inGroup:(NSInteger)groupNumber;
 {
-    NSLog(@"MG item selection changed");
+    //NSLog(@"MG item selection changed");
     
     [[filters objectAtIndex:groupNumber] setSelectedKey:identifier];
     

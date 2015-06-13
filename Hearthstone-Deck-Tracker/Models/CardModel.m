@@ -56,6 +56,22 @@
 @end
 
 @implementation StringObject
+
++ (StringObject *)stringForValue:(NSString *)value {
+    RLMResults *strings = [StringObject objectsInRealm:UPDATE_REALM where:@"value = %@", value];
+    if ([strings count] != 0) {
+        return strings[0];
+    }
+    else {
+        //[UPDATE_REALM beginWriteTransaction];
+        StringObject *obj = [StringObject new];
+        obj.value = value;
+        //[UPDATE_REALM addObject:obj];
+        //[UPDATE_REALM commitWriteTransaction];
+        return obj;
+    }
+}
+
 @end
 
 @implementation CardModel
@@ -84,7 +100,8 @@
              @"collectible":@false,
              @"howToGet":@"",
              @"artist":@"",
-             @"cost":@0
+             @"cost":@0,
+             @"race":@""
             };
 }
 
@@ -101,6 +118,7 @@
              @"flavor":@"flavor",
              @"howToGet":@"howToGet",
              @"artist":@"artist",
+             @"race":@"race",
              };
 }
 

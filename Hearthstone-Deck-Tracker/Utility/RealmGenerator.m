@@ -10,11 +10,15 @@
 #import <objc/message.h>
 #import "SBJson4.h"
 #import "CardModel.h"
+#import "GameString.h"
 
 @implementation RealmGenerator
 
 + (void)generateCardRealm {
-    static NSString *pathTemplate = @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/CardJs/cardsDB.%@.json";
+
+    static NSString *cardPathTemplate = @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/CardJs/cardsDB.%@.json";
+    
+    static NSString *stringFileTemplate = @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/CardJs/Strings/%@/GLOBAL.txt";
     
     NSArray *langs = @[@"deDE",
                       @"enGB",
@@ -31,8 +35,12 @@
                       @"zhCN",
                       @"zhTW"
                       ];
-    RLMRealm *realm = [RLMRealm realmWithPath:@"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/Files/cards.realm"];
+    RLMRealm *realm = UPDATE_REALM;
 
+    [realm beginWriteTransaction];
+    [realm deleteAllObjects];
+    [realm commitWriteTransaction];
+    
     for (NSString *lang in langs) {
         SBJson4Parser* parser = [SBJson4Parser multiRootParserWithBlock:^(id item, BOOL *stop) {
             NSString *localLang = [lang copy];
@@ -59,6 +67,15 @@
                     cardModel.cost = [card[@"cost"] longLongValue];
                     cardModel.collectible = [card[@"collectible"] boolValue];
                     cardModel.lang = localLang;
+                    cardModel.mechanics = (RLMArray<StringObject> *)[[RLMArray alloc] initWithObjectClassName:@"StringObject"];
+                    
+                    if ([[card allKeys] containsObject:@"mechanics"]) {
+                        NSMutableArray *mechanics = card[@"mechanics"];
+                        for (NSString *mechanic in mechanics) {
+                            StringObject *obj = [StringObject stringForValue:mechanic];
+                            [cardModel.mechanics addObject:obj];
+                        }
+                    }
                     
                     NSDictionary *mapping = [CardModel JsonMapping];
                     for (NSString* key in [mapping allKeys]) {
@@ -77,9 +94,27 @@
             
         }];
         
-        NSString *filePath = [NSString stringWithFormat:pathTemplate, lang];
+        NSString *filePath = [NSString stringWithFormat:cardPathTemplate, lang];
         NSData *data = [NSData dataWithContentsOfFile:filePath];
         [parser parse:data];
+        
+        filePath = [NSString stringWithFormat:stringFileTemplate, lang];
+        NSString *contents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        NSArray *lines = [contents componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\r\n"]];
+
+        for (NSString *line in lines) {
+            NSArray *parts = [line componentsSeparatedByString:@"\t"];
+            if ([parts count] > 1) {
+                GameString *string = [GameString new];
+                string.key = parts[0];
+                string.value = [line stringByReplacingCharactersInRange:NSMakeRange(0, string.key.length+1) withString:@""];
+                string.lang = lang;
+                [realm beginWriteTransaction];
+                [realm addObject:string];
+                [realm commitWriteTransaction];
+            }
+        }
+        
     }
 }
 

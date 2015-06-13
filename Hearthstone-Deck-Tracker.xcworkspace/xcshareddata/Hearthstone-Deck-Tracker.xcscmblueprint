@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "582FD2EADC3C12EE447DBFF18116DA12936D46C3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "582FD2EADC3C12EE447DBFF18116DA12936D46C3" : 0,
+    "7F3B3D2DA2DC1B6B6090AB9CB918652112988C1D" : 0,
+    "CFD5C1A3B8B53CE7DBB7C6A836CB0FA530F4156C" : 0,
+    "19D7D0BD789A900542F4D46EEA60009A11556FB7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E56DFFDD-02B5-43B3-A584-ABC036FB0FEC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "582FD2EADC3C12EE447DBFF18116DA12936D46C3" : "Hearthstone-Deck-Tracker-Mac",
+    "7F3B3D2DA2DC1B6B6090AB9CB918652112988C1D" : "Hearthstone-Deck-Tracker-Mac\/Hearthstone-Deck-Tracker\/Libraries\/AGScopeBar",
+    "CFD5C1A3B8B53CE7DBB7C6A836CB0FA530F4156C" : "Hearthstone-Deck-Tracker-Mac\/hearthstone-tracker-osx",
+    "19D7D0BD789A900542F4D46EEA60009A11556FB7" : "Hearthstone-Deck-Tracker-Mac\/Hearthstone-Deck-Tracker\/Libraries\/OTWebImage"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Hearthstone-Deck-Tracker",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Hearthstone-Deck-Tracker.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OpenFibers\/OTWebImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19D7D0BD789A900542F4D46EEA60009A11556FB7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Jeswang\/Hearthstone-Deck-Tracker-Mac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "582FD2EADC3C12EE447DBFF18116DA12936D46C3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Jeswang\/AGScopeBar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7F3B3D2DA2DC1B6B6090AB9CB918652112988C1D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/github.com\/hellozimi\/hearthstone-tracker-osx.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CFD5C1A3B8B53CE7DBB7C6A836CB0FA530F4156C"
+    }
+  ]
+}

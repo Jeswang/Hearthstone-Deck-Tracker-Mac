@@ -1,0 +1,573 @@
+TAG	TEXT	COMMENT
+GLOBAL_BUTTON_YES	Yes	
+GLOBAL_BUTTON_NO	No	
+GLOBAL_BUTTON_OK	Ok	
+GLOBAL_BUTTON_NEXT	Next
+GLOBAL_CARD_SET_CORE	Basic	
+GLOBAL_CARD_SET_EXPERT1	Classic	
+GLOBAL_CARD_SET_REWARD	Reward	
+GLOBAL_CARD_SET_PROMO	Promo
+GLOBAL_CARD_SET_NAXX	Naxxramas
+GLOBAL_CARD_SET_NAXX_SEARCHABLE_SHORTHAND_NAMES	Nax Naxx	This is a space-separated list indicating all of the allowable search keywords that can be used in Collection Manager screen's text-search feature to narrow down the cards to this specific Card Set via shorthand names (note: the full name above is also used for this feature). Also note: letter case is ignored.
+GLOBAL_CARD_SET_GVG	Goblins vs Gnomes
+GLOBAL_CARD_SET_GVG_SEARCHABLE_SHORTHAND_NAMES	gvg	This is a space-separated list indicating all of the allowable search keywords that can be used in Collection Manager screen's text-search feature to narrow down the cards to this specific Card Set via shorthand names (note: the full name above is also used for this feature). Also note: letter case is ignored.
+GLOBAL_CARD_SET_BRM	Blackrock Mountain	
+GLOBAL_CARD_SET_BRM_SEARCHABLE_SHORTHAND_NAMES	brm	This is a space-separated list indicating all of the allowable search keywords that can be used in Collection Manager screen's text-search feature to narrow down the cards to this specific Card Set via shorthand names (note: the full name above is also used for this feature). Also note: letter case is ignored.
+GLOBAL_CARDTYPE_ENCHANTMENT	Enchantment	
+GLOBAL_CARDTYPE_HERO	Hero	
+GLOBAL_CARDTYPE_HEROPOWER	HeroPower	
+GLOBAL_CARDTYPE_ITEM	Item	
+GLOBAL_CARDTYPE_MINION	Minion	
+GLOBAL_CARDTYPE_SPELL	Spell	
+GLOBAL_CARDTYPE_TOKEN	Token	
+GLOBAL_CARDTYPE_WEAPON	Weapon	
+GLOBAL_CLASS_DEATHKNIGHT	Death Knight	
+GLOBAL_CLASS_DRUID	Druid	
+GLOBAL_CLASS_HUNTER	Hunter	
+GLOBAL_CLASS_MAGE	Mage	
+GLOBAL_CLASS_NEUTRAL	Neutral	
+GLOBAL_CLASS_PALADIN	Paladin	
+GLOBAL_CLASS_PRIEST	Priest	
+GLOBAL_CLASS_ROGUE	Rogue	
+GLOBAL_CLASS_SHAMAN	Shaman	
+GLOBAL_CLASS_WARLOCK	Warlock	
+GLOBAL_CLASS_WARRIOR	Warrior	
+GLOBAL_KEYWORD_BATTLECRY	Battlecry	
+GLOBAL_KEYWORD_BATTLECRY_TEXT	Does something when you play it from your hand.	
+GLOBAL_KEYWORD_CHARGE	Charge	
+GLOBAL_KEYWORD_CHARGE_TEXT	Can attack immediately.	
+GLOBAL_KEYWORD_DIVINE_SHIELD	Divine Shield	
+GLOBAL_KEYWORD_DIVINE_SHIELD_TEXT	The first time this minion takes damage, ignore it.	
+GLOBAL_KEYWORD_DIVINE_SHIELD_REF_TEXT	The first time a Shielded minion takes damage, ignore it.	
+GLOBAL_KEYWORD_ENRAGED	Enrage	
+GLOBAL_KEYWORD_ENRAGED_TEXT	While damaged, this minion has a new power.	
+GLOBAL_KEYWORD_FREEZE	Freeze	
+GLOBAL_KEYWORD_FREEZE_TEXT	Frozen characters lose their next attack.	
+GLOBAL_KEYWORD_FROZEN	Frozen	
+GLOBAL_KEYWORD_FROZEN_TEXT	Misses its next attack.	
+GLOBAL_KEYWORD_IMMUNE	Immune	
+GLOBAL_KEYWORD_IMMUNE_TEXT	Can't be damaged.	
+GLOBAL_KEYWORD_IMMUNE_REF_TEXT	Immune characters can't be damaged.	
+GLOBAL_KEYWORD_SECRET	Secret	
+GLOBAL_KEYWORD_SECRET_TEXT	Hidden until a specific action occurs on your opponent's turn.	
+GLOBAL_KEYWORD_SPELLPOWER	Spell Damage	
+GLOBAL_KEYWORD_SPELLPOWER_TEXT	Your spell cards deal {0} extra damage.	0=amount of spell damage
+GLOBAL_KEYWORD_SPELLPOWER_REF_TEXT	Your spells deal extra damage.	
+GLOBAL_KEYWORD_STEALTH	Stealth	
+GLOBAL_KEYWORD_STEALTH_TEXT	Can't be attacked or targeted until it deals damage.	
+GLOBAL_KEYWORD_STEALTH_REF_TEXT	Can't be attacked or targeted until it deals damage.	
+GLOBAL_KEYWORD_TAUNT	Taunt	
+GLOBAL_KEYWORD_TAUNT_TEXT	Enemies must attack this minion.	
+GLOBAL_KEYWORD_TAUNT_REF_TEXT	Enemies must attack minions that have Taunt.	
+GLOBAL_KEYWORD_WINDFURY	Windfury	
+GLOBAL_KEYWORD_WINDFURY_TEXT	Can attack twice each turn.	
+GLOBAL_KEYWORD_DEATHRATTLE	Deathrattle	
+GLOBAL_KEYWORD_DEATHRATTLE_TEXT	Does something when it dies.	
+GLOBAL_KEYWORD_COMBO	Combo	
+GLOBAL_KEYWORD_COMBO_TEXT	A bonus if you already played a card this turn.	
+GLOBAL_KEYWORD_RECALL	Overload: X	
+GLOBAL_KEYWORD_RECALL_TEXT	You have X less mana next turn.	
+GLOBAL_KEYWORD_SILENCE	Silence	
+GLOBAL_KEYWORD_SILENCE_TEXT	Removes all card text and enchantments.	
+GLOBAL_KEYWORD_COUNTER	Counter	
+GLOBAL_KEYWORD_COUNTER_TEXT	A card that is Countered has no effect.	
+GLOBAL_KEYWORD_AUTOCAST	Auto-cast	
+GLOBAL_KEYWORD_AUTOCAST_TEXT	This Hero Power MUST be used every turn.	
+GLOBAL_KEYWORD_SPAREPART	Spare Parts	
+GLOBAL_KEYWORD_SPAREPART_TEXT	Spare Parts are 1-cost spells with minor effects.	
+GLOBAL_ATTACK	Attack	
+GLOBAL_COST	Cost	
+GLOBAL_HEALTH	Health	
+GLOBAL_RACE_BLOODELF	Blood Elf	
+GLOBAL_RACE_DEMON	Demon	
+GLOBAL_RACE_DRAENEI	Draenei	
+GLOBAL_RACE_DRAGON	Dragon	
+GLOBAL_RACE_DWARF	Dwarf	
+GLOBAL_RACE_ELEMENTAL	Elemental	
+GLOBAL_RACE_GNOME	Gnome	
+GLOBAL_RACE_GOBLIN	Goblin	
+GLOBAL_RACE_HUMAN	Human	
+GLOBAL_RACE_MECHANICAL	Mech	
+GLOBAL_RACE_MURLOC	Murloc	
+GLOBAL_RACE_NERUBIAN	Nerubian	
+GLOBAL_RACE_NIGHTELF	Night Elf	
+GLOBAL_RACE_OGRE	Ogre	
+GLOBAL_RACE_ORC	Orc	
+GLOBAL_RACE_PET	Beast	
+GLOBAL_RACE_PIRATE	Pirate	
+GLOBAL_RACE_SCOURGE	Scourge	
+GLOBAL_RACE_TAUREN	Tauren	
+GLOBAL_RACE_TOTEM	Totem
+GLOBAL_RACE_TROLL	Troll	
+GLOBAL_RACE_UNDEAD	Undead	
+GLOBAL_RACE_WORGEN	Worgen	
+GLOBAL_RARITY_COMMON	Common	
+GLOBAL_RARITY_EPIC	Epic	
+GLOBAL_RARITY_LEGENDARY	Legendary	
+GLOBAL_RARITY_RARE	Rare	
+GLOBAL_RARITY_FREE	Free	
+GLOBAL_SET_EXPERT1	Classic Set
+GLOBAL_SET_CORE	Basic Set
+GLOBAL_WINS	Wins
+GLOBAL_LOSSES	Losses	
+GLOBAL_MY_NUM_WINS	{0}	0=number of games this player has won
+GLOBAL_HERO_WINS	Wins: {0}/{1}	0=number of games this class has won 1=number of wins to get golden
+GLOBAL_HERO_WINS_PHONE	Wins\n{0}/{1}	0=number of games this class has won 1=number of wins to get golden
+GLOBAL_PLAY	Play	
+GLOBAL_PLAY_RANKED	Play Ranked	
+GLOBAL_BACK	Back	
+GLOBAL_DONE	Done	
+GLOBAL_CANCEL	Cancel	
+GLOBAL_HELP	Help	
+GLOBAL_EXIT	Exit	
+GLOBAL_CONFIRM	Confirm	
+GLOBAL_OKAY	OK	
+GLOBAL_MORE	More	
+GLOBAL_QUIT	Quit	
+GLOBAL_LOGOUT	Log Out	
+GLOBAL_LOGIN	Log In	
+GLOBAL_LOGOUT_CONFIRM_TITLE	Log Out?	
+GLOBAL_LOGIN_CONFIRM_TITLE	Log In?	
+GLOBAL_MOBILE_LOG_IN_TOOLTIP	Log in if you have an account!	
+GLOBAL_MOBILE_LOGIN_POINTER	Log In Here
+GLOBAL_OPTIONS	Options	
+GLOBAL_CONCEDE	Concede	
+GLOBAL_LEAVE_SPECTATOR_MODE	Leave	
+GLOBAL_RESUME_GAME	Resume	
+GLOBAL_GAME_MENU	Game Menu	
+GLOBAL_FRIEND_CHALLENGE_TITLE	Friendly	
+GLOBAL_FRIEND_CHALLENGE_HEADER	Challenge	
+GLOBAL_FRIEND_CHALLENGE_BODY1	You've been challenged by:	
+GLOBAL_FRIEND_CHALLENGE_BODY2	Do you accept?	
+GLOBAL_FRIEND_CHALLENGE_NEARBY_PLAYER_NOTE	You can turn off invites from nearby players in the options menu.
+GLOBAL_FRIEND_CHALLENGE_ACCEPT	Yes!	
+GLOBAL_FRIEND_CHALLENGE_DECLINE	No	
+GLOBAL_FRIEND_CHALLENGE_OPPONENT_WAITING_RESPONSE	You are waiting for {0} to respond to your challenge.	0=friend name
+GLOBAL_FRIEND_CHALLENGE_OPPONENT_WAITING_DECK	You are waiting for {0} to select a deck.	0=friend name
+GLOBAL_FRIEND_CHALLENGE_OPPONENT_DECLINED	{0} declined your challenge.	0=friend name
+GLOBAL_FRIEND_CHALLENGE_OPPONENT_FRIEND_REMOVED	Challenge canceled because {0} is no longer your friend.	0=friend name
+GLOBAL_FRIEND_CHALLENGE_OPPONENT_CANCELED	{0} canceled the challenge.	0=friend name
+GLOBAL_ERROR_GENERIC_HEADER	Error
+GLOBAL_ERROR_GAME_DENIED	There was an error starting your game. Please wait a few minutes and try again.
+GLOBAL_ERROR_GAME_OPPONENT_TIMEOUT	The game failed to start because your opponent failed to connect. Please try again.
+GLOBAL_ERROR_STREAMING_ASSET_TIMEOUT	Timed out while waiting for streaming system. Was loading asset {0}.	0=asset name
+GLOBAL_ERROR_ASSET_NO_FILE_PATH	Failed to find a file path for asset {0}.	0=asset name
+GLOBAL_ERROR_ASSET_DOWNLOAD_FAILED	Failed to download asset {0}.	0=asset name
+GLOBAL_ERROR_ASSET_INCORRECT_DATA	Asset {0} contained incorrect data.	0=asset name
+GLOBAL_ERROR_ASSET_CREATE_PERSISTENT_DATA_PATH	Failed to create a folder for saving data at {0}.	0=folder path
+GLOBAL_ERROR_ASSET_LOAD_FAILED	Failed to load asset {0}.	0=asset name
+GLOBAL_ERROR_CURRENCY_INVALID	Client attempted to use an invalid currency to make a purchase.
+GLOBAL_ERROR_NETWORK_TITLE	NETWORK ERROR	
+GLOBAL_ERROR_NETWORK_GENERIC	There was an internal network error.	
+GLOBAL_ERROR_NETWORK_LOGIN_FAILURE	The game was unable to log you in through Battle.net. Please wait a few minutes and try again.	
+GLOBAL_ERROR_NETWORK_UTIL_TIMEOUT	Your game timed out as it was requesting data from the Hearthstone utility service. Please relaunch Hearthstone to reconnect.	
+GLOBAL_MOBILE_ERROR_NETWORK_UTIL_TIMEOUT	Your connection timed out as it was requesting data from the Hearthstone servers.	
+GLOBAL_ERROR_NETWORK_DISCONNECT	You were disconnected from the Battle.net service. Please relaunch Hearthstone to reconnect.	
+GLOBAL_MOBILE_ERROR_NETWORK_DISCONNECT	You were disconnected.	
+GLOBAL_ERROR_NETWORK_DISCONNECT_GENERIC	You were disconnected.	
+GLOBAL_ERROR_NETWORK_DISCONNECT_GAME_SERVER	You were disconnected from the Hearthstone game service.	
+GLOBAL_ERROR_NETWORK_NO_CONNECTION	Unable to connect. Please check your Internet connection.	
+GLOBAL_ERROR_NETWORK_CONNECTION_TIMEOUT	Your connection timed out. Please check your Internet connection.	
+GLOBAL_ERROR_NETWORK_SPAM	You were disconnected from the Battle.net service for sending too many requests too quickly. Please relaunch Hearthstone to reconnect.	
+GLOBAL_ERROR_NETWORK_NO_GAME_SERVER	Oops! We were unable to start a game for you. Please try again.	
+GLOBAL_MOBILE_ERROR_NETWORK_SPAM	You were disconnected for sending too many requests too quickly.	
+GLOBAL_MOBILE_ERROR_BREAKING_NEWS	Breaking News:\n\n{0}	
+GLOBAL_ERROR_NETWORK_DUPLICATE_LOGIN	This Battle.net account just logged into Hearthstone from another device.\n\nThis client was disconnected because only one connection is supported at a time.	
+GLOBAL_ERROR_NETWORK_LOST_GAME_CONNECTION	Your game has been disconnected from the Battle.net game service. You can try to reconnect again by starting another game.
+GLOBAL_ERROR_NETWORK_INCORRECT_REGION	Your Battle.net account is not eligible to participate in this region's Hearthstone beta test. Once the Hearthstone beta is available in your home region, please try again!	
+GLOBAL_ERROR_NETWORK_ACCOUNT_SUSPENDED	Your account has been suspended.	
+GLOBAL_ERROR_NETWORK_ACCOUNT_BANNED	Your account has been banned.	
+GLOBAL_ERROR_NETWORK_PARENTAL_CONTROLS	Access to this account is currently restricted by parental controls.
+GLOBAL_ERROR_NETWORK_PHONE_LOCK	Please call your Battle.net Phone Lock number to allow this login.\nTaiwan: 0800-303-585\nHong Kong: 396-54666
+GLOBAL_ERROR_NETWORK_UNAVAILABLE_UPGRADE	Hearthstone has been updated!  Please download the latest version.
+GLOBAL_ERROR_NETWORK_UNAVAILABLE_OFFLINE	Hearthstone is offline. Please wait a few minutes and try again.
+GLOBAL_ERROR_NETWORK_UNAVAILABLE_UNKNOWN	Oops! Playful sprites have disrupted Hearthstone as it was connecting to our servers. Please wait a few minutes for them to disperse and try again.
+GLOBAL_ERROR_ACCOUNT_LICENSES	We had some trouble checking what you own, so some things might be missing. Sorry about that! We'll try again next time you log on.	
+GLOBAL_ERROR_NO_MAGE_PRECON	We just ran into a network problem as we were loading up all the cards in your collection. Please relaunch Hearthstone to access your collection and resume your duels!		
+GLOBAL_MOBILE_ERROR_UNSUPPORTED_IOS_PHONE_DETECTED	Sorry, Hearthstone requires an iPhone 4s or iPod Touch 5 or later.		
+GLOBAL_MOBILE_ERROR_UNSUPPORTED_IOS_TABLET_DETECTED	Sorry, Hearthstone requires an iPad 2 or later.		
+GLOBAL_MOBILE_ERROR_ANDROID_PHONE_DETECTED	Sorry, Hearthstone currently only runs on Android tablets 6" or larger.		
+GLOBAL_SEASON_END_WELCOME	Welcome
+GLOBAL_SEASON_END_NEW_SEASON	The {0} has begun!	0=season name
+GLOBAL_SEASON_END_NEW_CARD_BACK	You have earned a new card back
+GLOBAL_SEASON_END_RANK_LABEL	You have achieved the rank of
+GLOBAL_SEASON_END_PERCENTILE_LABEL	That puts you in the top {0}% of our ranked play players!	0=rank percentile
+GLOBAL_SEASON_END_BONUS_STAR_TITLE	Your rank from last season earned you
+GLOBAL_SEASON_END_BONUS_STARS_LABEL	Bonus |4(Star,Stars)
+GLOBAL_SEASON_END_BONUS_STAR_BOOST	Your bonus stars boost you to
+GLOBAL_MEDAL_REWARD_CONGRATULATIONS	Congratulations!	
+GLOBAL_MEDAL_REWARD_DESCRIPTION	Medal earned last week	
+GLOBAL_MEDAL_TOOLTIP_HEADER	{0} Medal	0=medal name
+GLOBAL_MEDAL_TOURNAMENT_TOOLTIP_BODY	Top {0}% in ranked play mode this season\n\nNext Rank:\n{1}	0=rank percentile 1=medal name
+GLOBAL_MEDAL_TOOLTIP_BODY	Win games to advance to the next rank!\n\nNext Rank:\n{0}	0=medal name
+GLOBAL_MEDAL_TOOLTIP_BODY_LEGEND	You're a legend! Your position in this rank will change with each game.	
+GLOBAL_MEDAL_ARENA_TOOLTIP_BODY	This is the best key you've earned in the Arena.\nWins: {0}	0=num wins
+GLOBAL_MEDAL_TOOLTIP_BODY_ARENA_GRAND_MASTER	You are a champion of The Arena!
+GLOBAL_DATETIME_FRIENDREQUEST_SECONDS	less than a minute ago	
+GLOBAL_DATETIME_FRIENDREQUEST_MINUTES	{0} |4(minute,minutes) ago	
+GLOBAL_DATETIME_FRIENDREQUEST_HOURS	{0} |4(hour,hours) ago	
+GLOBAL_DATETIME_FRIENDREQUEST_DAY	yesterday	
+GLOBAL_DATETIME_FRIENDREQUEST_DAYS	{0} |4(day,days) ago	
+GLOBAL_DATETIME_FRIENDREQUEST_WEEKS	{0} |4(week,weeks) ago	
+GLOBAL_DATETIME_FRIENDREQUEST_MONTH	more than a month ago	
+GLOBAL_DATETIME_LASTONLINE_SECONDS	Last online less than a minute ago	
+GLOBAL_DATETIME_LASTONLINE_MINUTES	Last online {0} |4(minute,minutes) ago	
+GLOBAL_DATETIME_LASTONLINE_HOURS	Last online {0} |4(hour,hours) ago	
+GLOBAL_DATETIME_LASTONLINE_DAY	Last online yesterday	
+GLOBAL_DATETIME_LASTONLINE_DAYS	Last online {0} |4(day,days) ago	
+GLOBAL_DATETIME_LASTONLINE_WEEKS	Last online {0} |4(week,weeks) ago	
+GLOBAL_DATETIME_LASTONLINE_MONTH	Last online more than a month ago	
+GLOBAL_DATETIME_AFK_SECONDS	Away for less than a minute	
+GLOBAL_DATETIME_AFK_MINUTES	Away for {0} |4(minute,minutes)	
+GLOBAL_DATETIME_AFK_HOURS	Away for {0} |4(hour,hours)	
+GLOBAL_DATETIME_AFK_DAY	Away for over a day	
+GLOBAL_DATETIME_AFK_DAYS	Away for {0} |4(day,days)	
+GLOBAL_DATETIME_AFK_WEEKS	Away for {0} |4(week,weeks)	
+GLOBAL_DATETIME_AFK_MONTH	Away for more than a month	
+GLOBAL_DATETIME_SPLASHSCREEN_SECONDS	< 1 min	
+GLOBAL_DATETIME_SPLASHSCREEN_MINUTES	{0} |4(min,mins)	
+GLOBAL_DATETIME_SPLASHSCREEN_HOURS	{0} |4(hour,hours)	
+GLOBAL_DATETIME_SPLASHSCREEN_DAY	> 1 day	
+GLOBAL_DATETIME_SPLASHSCREEN_DAYS	{0} |4(day,days)	
+GLOBAL_DATETIME_SPLASHSCREEN_WEEKS	{0} |4(week,weeks)	
+GLOBAL_DATETIME_SPLASHSCREEN_MONTH	> 1 month	
+GLOBAL_DATETIME_SPINNER_SECONDS	{0} |4(sec,secs)	
+GLOBAL_DATETIME_SPINNER_MINUTES	{0} |4(min,mins)	
+GLOBAL_DATETIME_SPINNER_HOURS	{0} |4(hour,hours)	
+GLOBAL_DATETIME_SPINNER_DAY	> 1 day	
+GLOBAL_DATETIME_SPINNER_DAYS	{0} |4(day,days)	
+GLOBAL_DATETIME_SPINNER_WEEKS	{0} |4(week,weeks)	
+GLOBAL_DATETIME_SPINNER_MONTH	> 1 month	
+GLOBAL_APPROXIMATE_DATETIME	~{0}	0=time string
+GLOBAL_APPROXIMATE_DATETIME_RANGE	~{0} - {1}	0=min seconds 1=max seconds string
+GLOBAL_REMAINING_DATETIME	{0} left	0=time string
+GLOBAL_GAME_QUEUE_WAIT_TIME	Wait Time	
+GLOBAL_GAME_QUEUE_TIME_IN_QUEUE	Time In Queue	
+GLOBAL_FRIENDLIST_REQUEST_SENT_TIME	Sent: {0}	0=one of the GLOBAL_DATETIME_ELAPSED_ strings
+GLOBAL_FRIENDLIST_REQUESTS_HEADER	FRIEND REQUESTS - {0}	0=number of received friend requests
+GLOBAL_FRIENDLIST_CURRENT_GAMES_HEADER	CURRENT GAMES - {0}	0=number of friends you have unfinished games with
+GLOBAL_FRIENDLIST_FRIENDS_HEADER	FRIENDS - {0}/{1} Online	0=number of online friends 1=number of offline friends
+GLOBAL_FRIENDLIST_FRIENDS_HEADER_ALL_ONLINE	FRIENDS - {0} Online
+GLOBAL_FRIENDLIST_NEARBY_PLAYERS_HEADER	NEARBY PLAYERS - {0}	0=number of players
+GLOBAL_FRIENDLIST_ADD_FRIEND_BUTTON	Add	
+GLOBAL_FRIENDLIST_REMOVE_FRIEND_BUTTON	Remove	
+GLOBAL_FRIENDLIST_REMOVE_FRIEND_ALERT_MESSAGE	Are you sure you want to remove {0}?	0=friend name
+GLOBAL_FRIENDLIST_MYSTATUS	ONLINE	
+GLOBAL_FRIENDLIST_BUSYSTATUS	Busy	
+GLOBAL_FRIENDLIST_LASTPLAYED	Last Played:
+GLOBAL_FRIENDLIST_CHALLENGE_BUTTON_HEADER	Friendly Challenge
+GLOBAL_FRIENDLIST_CHALLENGE_BUTTON_IM_UNAVAILABLE	You can't challenge {0} right now. Return to the main menu.	0=player name
+GLOBAL_FRIENDLIST_CHALLENGE_BUTTON_THEYRE_UNAVAILABLE	You can't challenge {0} right now. Wait for them to return to the main menu.	0=player name
+GLOBAL_FRIENDLIST_CHALLENGE_BUTTON_AVAILABLE	Challenge {0} to a game of Hearthstone.	0=player name
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_AVAILABLE_HEADER	Spectate this Game
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_AVAILABLE_TEXT	Click to begin spectating this player's game.	
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_AVAILABLE_TEXT_TOUCH	Tap here to begin spectating this player's game.	
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_RECEIVED_INVITE_TEXT	{0} has invited you to be a spectator. Click here to begin spectating.	
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_RECEIVED_INVITE_TEXT_TOUCH	{0} has invited you to be a spectator. Tap here to begin spectating.	
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_KICK_HEADER	Kick
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_KICK_TEXT	{0} is spectating you. Click here to remove this spectator.	
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_KICK_TEXT_TOUCH	{0} is spectating you. Tap here to remove this spectator.	
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_INVITE_HEADER	Invite to Spectate
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_INVITE_TEXT	Invite {0} to spectate you.	0=player name
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_INVITED_HEADER	Invited to Spectate
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_INVITED_TEXT	Invite sent to {0} to begin spectating.	0=player name
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_INVITE_OTHER_SIDE_HEADER	Spectating Opponent
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_INVITE_OTHER_SIDE_TEXT	Click to reveal your own cards to {0} as well.	0=player name
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_INVITE_OTHER_SIDE_TEXT_TOUCH	Tap to reveal your cards to {0}.	0=player name
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_SPECTATING_HEADER	In Spectator Mode
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_SPECTATING_TEXT	You are currently spectating this player.	
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_PREVIOUSLY_KICKED_HEADER	Cannot Spectate
+GLOBAL_FRIENDLIST_SPECTATE_TOOLTIP_PREVIOUSLY_KICKED_TEXT	You've been previously removed from spectating this player. You cannot attempt to spectate again.	
+GLOBAL_SPECTATOR_LEAVE_PROMPT_HEADER	Leave Spectator Mode	
+GLOBAL_SPECTATOR_LEAVE_PROMPT_TEXT	Are you sure you want to stop spectating?	
+GLOBAL_SPECTATOR_KICK_PROMPT_HEADER	Remove Spectator
+GLOBAL_SPECTATOR_KICK_PROMPT_TEXT	Are you sure you want to remove {0} from spectating? If you turn off 'Allow Friends to Spectate my Games' in Options Menu, you can prevent others from spectating.	0=player name
+GLOBAL_SPECTATOR_REMOVED_PROMPT_HEADER	Removed
+GLOBAL_SPECTATOR_REMOVED_PROMPT_TEXT	You have been removed from spectating.
+GLOBAL_SPECTATOR_SERVER_REJECTED_HEADER	Spectator Disconnected
+GLOBAL_SPECTATOR_SERVER_REJECTED_TEXT	The game you attempted to spectate may be full or already finished, or it may have been recently closed to spectators.
+GLOBAL_SPECTATOR_COUNT_PANEL_HEADER	Spectators Watching
+GLOBAL_SPECTATOR_COUNT_PANEL_TEXT_ONE	{0} is spectating you.	0=player name, this is shown when there's only 1 person spectating you.
+GLOBAL_SPECTATOR_MODE_INDICATOR_TEXT	Spectator Mode	text that shows up on the bottom left of screen showing that you're currently in Spectator Mode.
+GLOBAL_SPECTATOR_WAITING_FOR_NEXT_GAME_HEADER	Spectator Mode	
+GLOBAL_SPECTATOR_WAITING_FOR_NEXT_GAME_TEXT	Waiting for next game to start.\n\n{0} is {1}	0=player name, 1=player's current activity -- will be filled in with values PRESENCE_STATUS_* and PRESENCE_SCENARIO_*_NORMAL_SCENARIO_* from PRESENCE.txt (e.g. "Jane Doe is Heading into Play Mode")
+GLOBAL_SPECTATOR_WAITING_FOR_NEXT_GAME_TEXT_ENTERING	Waiting for next game to start.\n\n{0} is entering {1}	0=player name, 1=player's current activity -- will be filled in with values PRESENCE_ADVENTURE_MODE_* from PRESENCE.txt (e.g. "Jane Doe is entering Naxxramas")
+GLOBAL_SPECTATOR_WAITING_FOR_NEXT_GAME_TEXT_BATTLING	Waiting for next game to start.\n\n{0} is Battling {1}	0=player name, 1=player's current activity -- will be filled in with values PRESENCE_SCENARIO_*_HEROIC_* from PRESENCE.txt (e.g. "Jane Doe is Battling Heroic Gothik the Harvester")
+GLOBAL_SPECTATOR_WAITING_FOR_NEXT_GAME_TEXT_PLAYING	Waiting for next game to start.\n\n{0} is playing {1}	0=player name, 1=player's current activity -- will be filled in with values PRESENCE_SCENARIO_*_CLASS_CHALLENGE_* from PRESENCE.txt (e.g. "Jane Doe is playing Naxxramas Paladin Challenge")
+GLOBAL_SPECTATOR_WAITING_FOR_NEXT_GAME_TEXT_OFFLINE	Waiting for next game to start.\n\n{0} is Offline	0=player name; same string as above, except shown when player is offline.
+GLOBAL_SPECTATOR_WAITING_FOR_NEXT_GAME_TIMEOUT	The player you are spectating took too long to start the next game. Spectator Mode has been canceled.	
+GLOBAL_SPECTATOR_ERROR_CREATE_PARTY_TEXT	An error occurred attempting to create Spectator party.	
+GLOBAL_SPECTATOR_ERROR_LEAVE_FOR_SPECTATE_PLAYER_TEXT	An error occurred attempting to leave a previous party to spectate {0}.	0=player name
+GLOBAL_ADDFRIEND_HEADER	Add a Friend	
+GLOBAL_ADDFRIEND_INSTRUCTION	Enter a BattleTag or email address.	
+GLOBAL_ADDFRIEND_SENT_CONFIRMATION	Friend request sent.	
+GLOBAL_ADDFRIEND_ERROR_ALREADY_FRIEND	That person is already your friend.	
+GLOBAL_ADDFRIEND_ERROR_MALFORMED	You must enter an email address or Battle Tag.	
+GLOBAL_MOBILECHAT_RETURN_TO_MENU	Return to menu	
+GLOBAL_MOBILECHAT_RETURN_TO_GAME	Close
+GLOBAL_MOBILECHAT_NOTIFICATION_MULLIGAIN	Game started!	
+GLOBAL_MOBILECHAT_NOTIFICATION_YOUR_TURN	Your turn!	
+GLOBAL_MOBILECHAT_NOTIFICATION_TURN_COUNTDOWN	Running out of time!	
+GLOBAL_PROGRAMNAME_HEARTHSTONE	Hearthstone	
+GLOBAL_PROGRAMNAME_WOW	World of Warcraft	
+GLOBAL_PROGRAMNAME_DIABLO3	Diablo III	
+GLOBAL_PROGRAMNAME_STARCRAFT2	StarCraft II	
+GLOBAL_PROGRAMNAME_PHOENIX	Battle.net	
+GLOBAL_PROGRAMNAME_HEROES	Heroes of the Storm	
+GLOBAL_OFFLINE	Offline	
+GLOBAL_DEFAULT_ALERT_HEADER	Alert	
+GLOBAL_FORGE_END_TITLE	Arena Complete	
+GLOBAL_FORGE_END_DONE	Done	
+GLOBAL_FORGE_END_JOKE_0	That was spicy!	
+GLOBAL_FORGE_END_JOKE_1	There are no words!	
+GLOBAL_FORGE_END_JOKE_2	I don't believe it!	
+GLOBAL_FORGE_END_JOKE_3	You really got something special.	
+GLOBAL_FORGE_END_JOKE_4	Can you ever do this well again?	
+GLOBAL_FORGE_END_JOKE_5	That was jig-worthy!	
+GLOBAL_FORGE_END_JOKE_6	That one turn was amazing!
+GLOBAL_FORGE_END_JOKE_7	BEHOLD!	
+GLOBAL_FORGE_END_JOKE_8	It's not over yet! Oh wait, yeah it is.	
+GLOBAL_RANK_WIN_STREAK	Win Streak - Bonus star!	
+GLOBAL_RANK_SCRUB_RANK_DESC	You can't lose stars at this rank.
+GLOBAL_MEDAL_0	Legend
+GLOBAL_MEDAL_1	Innkeeper
+GLOBAL_MEDAL_2	Black Knight
+GLOBAL_MEDAL_3	Molten Giant
+GLOBAL_MEDAL_4	Mountain Giant
+GLOBAL_MEDAL_5	Sea Giant
+GLOBAL_MEDAL_6	Ancient of War
+GLOBAL_MEDAL_7	Sunwalker
+GLOBAL_MEDAL_8	Frostwolf Warlord
+GLOBAL_MEDAL_9	Silver Hand Knight
+GLOBAL_MEDAL_10	Ogre Magi
+GLOBAL_MEDAL_11	Big Game Hunter
+GLOBAL_MEDAL_12	Warsong Commander
+GLOBAL_MEDAL_13	Dread Corsair
+GLOBAL_MEDAL_14	Raid Leader
+GLOBAL_MEDAL_15	Silvermoon Guardian
+GLOBAL_MEDAL_16	Questing Adventurer
+GLOBAL_MEDAL_17	Tauren Warrior
+GLOBAL_MEDAL_18	Sorcerer's Apprentice
+GLOBAL_MEDAL_19	Novice Engineer
+GLOBAL_MEDAL_20	Shieldbearer
+GLOBAL_MEDAL_21	Southsea Deckhand
+GLOBAL_MEDAL_22	Murloc Raider
+GLOBAL_MEDAL_23	Argent Squire
+GLOBAL_MEDAL_24	Leper Gnome
+GLOBAL_MEDAL_25	Angry Chicken
+GLOBAL_ARENA_MEDAL_0	Novice Key
+GLOBAL_ARENA_MEDAL_1	Apprentice Key
+GLOBAL_ARENA_MEDAL_2	Journeyman Key
+GLOBAL_ARENA_MEDAL_3	Copper Key
+GLOBAL_ARENA_MEDAL_4	Silver Key
+GLOBAL_ARENA_MEDAL_5	Gold Key
+GLOBAL_ARENA_MEDAL_6	Platinum Key
+GLOBAL_ARENA_MEDAL_7	Diamond Key
+GLOBAL_ARENA_MEDAL_8	Champion Key
+GLOBAL_ARENA_MEDAL_9	Ruby Key
+GLOBAL_ARENA_MEDAL_10	Frostborn Key
+GLOBAL_ARENA_MEDAL_11	Molten Key
+GLOBAL_ARENA_MEDAL_12	Lightforge Key
+GLOBAL_FEATURE_DISABLED_TITLE	Disabled	
+GLOBAL_FEATURE_DISABLED_MESSAGE_FORGE	Sorry, the Arena is currently disabled.	
+GLOBAL_FEATURE_DISABLED_MESSAGE_PRACTICE	Sorry, Practice mode is currently disabled.	
+GLOBAL_FEATURE_DISABLED_MESSAGE_PLAY	Sorry, Play mode is currently disabled.	
+GLOBAL_FEATURE_DISABLED_MESSAGE_COLLECTION	Sorry, the Collection is currently disabled.	
+GLOBAL_CHAT_NO_FRIENDS_ONLINE	You don't have any friends online right now.	
+GLOBAL_CHAT_NO_RECENT_CONVERSATIONS	Use the friends menu to start a conversation with a friend.	
+GLOBAL_CHAT_RECEIVER_ONLINE	{0} is online.	0=player name
+GLOBAL_CHAT_RECEIVER_OFFLINE	{0} is offline.	0=player name
+GLOBAL_CHAT_CHALLENGE	Challenge	
+GLOBAL_CHAT_BUBBLE_RECEIVER_NAME	To: {0}	0=player name
+GLOBAL_SOCIAL_TOAST_FRIEND_ONLINE	<color=#{0}>{1}</color> has come online.	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_FRIEND_OFFLINE	<color=#{0}>{1}</color> has gone offline.	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_FRIEND_REQUEST	<color=#{0}>{1}</color> has sent you a friend invite.	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_RECENT_OPPONENT_FRIEND_REQUEST	A recent opponent would like to be your friend!
+GLOBAL_SOCIAL_TOAST_FRIEND_ARENA_COMPLETE	<color=#{0}>{1}</color> just finished an Arena run. ({2}-{3})	0=name color,1=player name,2=Arena Wins,3=Arena Losses
+GLOBAL_SOCIAL_TOAST_FRIEND_ARENA_START	<color=#{0}>{1}</color> started a new Arena run.	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_FRIEND_ARENA_START_WITH_MANY_WINS	<color=#{0}>{1}</color> has just started an Arena match with {2} wins already!	0=name color,1=player name,2=Arena Wins
+GLOBAL_SOCIAL_TOAST_FRIEND_GOLDEN_LEGENDARY	<color=#{0}>{1}</color> opened a <color=#{3}>Golden {2}</color>!	0=name color,1=player name,2=card name,3=Golden Color
+GLOBAL_SOCIAL_TOAST_FRIEND_LEGENDARY	<color=#{0}>{1}</color> opened <color=#{3}>{2}</color>!	0=name color,1=player name,2=card name
+GLOBAL_SOCIAL_TOAST_FRIEND_GAINED_RANK	<color=#{0}>{1}</color> just hit rank {2}!	0=name color,1=player name,2=medal rank
+GLOBAL_SOCIAL_TOAST_FRIEND_RANK_LEGEND	<color=#{0}>{1}</color> has attained the Rank of LEGEND!	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_FRIEND_ILLIDAN_COMPLETE	<color=#{0}>{1}</color> defeated Illidan Stormrage!	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_FRIEND_MAGE_LEVEL	<color=#{0}>{1}</color> became a Level {2} Mage.	0=name color,1=player name,2=level
+GLOBAL_SOCIAL_TOAST_FRIEND_PALADIN_LEVEL	<color=#{0}>{1}</color> became a Level {2} Paladin.	0=name color,1=player name,2=level
+GLOBAL_SOCIAL_TOAST_FRIEND_DRUID_LEVEL	<color=#{0}>{1}</color> became a Level {2} Druid.	0=name color,1=player name,2=level
+GLOBAL_SOCIAL_TOAST_FRIEND_ROGUE_LEVEL	<color=#{0}>{1}</color> became a Level {2} Rogue.	0=name color,1=player name,2=level
+GLOBAL_SOCIAL_TOAST_FRIEND_HUNTER_LEVEL	<color=#{0}>{1}</color> became a Level {2} Hunter.	0=name color,1=player name,2=level
+GLOBAL_SOCIAL_TOAST_FRIEND_SHAMAN_LEVEL	<color=#{0}>{1}</color> became a Level {2} Shaman.	0=name color,1=player name,2=level
+GLOBAL_SOCIAL_TOAST_FRIEND_WARRIOR_LEVEL	<color=#{0}>{1}</color> became a Level {2} Warrior.	0=name color,1=player name,2=level
+GLOBAL_SOCIAL_TOAST_FRIEND_WARLOCK_LEVEL	<color=#{0}>{1}</color> became a Level {2} Warlock.	0=name color,1=player name,2=level
+GLOBAL_SOCIAL_TOAST_FRIEND_PRIEST_LEVEL	<color=#{0}>{1}</color> became a Level {2} Priest.	0=name color,1=player name,2=level
+GLOBAL_HEALTHY_GAMING_TOAST	게임을 플레이한지 {0}시간 지났습니다. 과도한 게임이용은 정상적인 일상생활에 지장을 줄 수 있습니다	
+GLOBAL_HEALTHY_GAMING_TOAST_OVER_THRESHOLD	You have been playing for {0} |4(hour,hours). This is way, way too long	0=hours
+GLOBAL_SOCIAL_TOAST_SPECTATOR_INVITE_SENT	Spectator invite sent to <color=#{0}>{1}</color>.	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_SPECTATOR_INVITE_RECEIVED	<color=#{0}>{1}</color> invites you to spectate the game!	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_SPECTATOR_ADDED	<color=#{0}>{1}</color> has begun spectating you.	0=name color,1=player name
+GLOBAL_SOCIAL_TOAST_SPECTATOR_REMOVED	<color=#{0}>{1}</color> is no longer spectating you.	0=name color,1=player name
+GLOBAL_SHUTDOWN_TOAST	<color=#{0}>Battle.net will be shutting down in {1} |4(minute,minutes)</color>	0=color, 1=minutes
+GLOBAL_OPTIONS_SOUND_LABEL	Sound
+GLOBAL_OPTIONS_SOUND_MASTER_VOLUME_LABEL	Master Volume
+GLOBAL_OPTIONS_SOUND_MUSIC_VOLUME_LABEL	Music Volume
+GLOBAL_OPTIONS_SOUND_IN_BACKGROUND	Sound In Background	
+GLOBAL_OPTIONS_GRAPHICS_LABEL	Graphics
+GLOBAL_OPTIONS_GRAPHICS_RESOLUTION_LABEL	Resolution
+GLOBAL_OPTIONS_GRAPHICS_FULLSCREEN_LABEL	Fullscreen
+GLOBAL_OPTIONS_GRAPHICS_QUALITY_LOW	Low
+GLOBAL_OPTIONS_GRAPHICS_QUALITY_MEDIUM	Medium
+GLOBAL_OPTIONS_GRAPHICS_QUALITY_HIGH	High
+GLOBAL_OPTIONS_GRAPHICS_QUALITY_LABEL	Quality
+GLOBAL_OPTIONS_MISCELLANEOUS_LABEL	Miscellaneous	
+GLOBAL_OPTIONS_PREFERENCES_LABEL	Preferences	
+GLOBAL_OPTIONS_CREDITS	Credits	
+GLOBAL_OPTIONS_CINEMATIC	Cinematic	
+GLOBAL_OPTIONS_PUBLIC_CHAT_ENABLED	Unfriendly Chat	
+GLOBAL_OPTIONS_CARDBACK_LABEL	Choose Your Card Back	
+GLOBAL_OPTIONS_NEARBY_PLAYERS	Enable Challenging Nearby Players - Friends List
+GLOBAL_OPTIONS_SPECTATOR_OPEN_JOIN	Allow Friends to Spectate my Games
+GLOBAL_OPTIONS_CHOOSE_CARD_BACK	Choose Card Back
+GLOBAL_REWARD_BOOSTER_HEADLINE_GENERIC	Pack earned!	
+GLOBAL_REWARD_BOOSTER_HEADLINE_OUT_OF_BAND	Card Pack granted!
+GLOBAL_REWARD_BOOSTER_DETAILS_OUT_OF_BAND	{0} |4(pack was,packs were) added to your account from outside of the game.	0=count
+GLOBAL_REWARD_CARD_HEADLINE	Reward!	
+GLOBAL_REWARD_CARD_COUNT_MULTIPLIER	x	
+GLOBAL_REWARD_CARD_BACK_HEADLINE	Card back earned!
+GLOBAL_REWARD_ARCANE_DUST_HEADLINE	Arcane Dust earned!	
+GLOBAL_REWARD_GOLD_HEADLINE	Gold earned!
+GLOBAL_REWARD_FORGE_UNLOCKED_HEADLINE	Arena Unlocked!
+GLOBAL_REWARD_FORGE_UNLOCKED_SOURCE	Awarded for entering the Arena	
+GLOBAL_REWARD_FORGE_HEADLINE	Arena Entry Granted
+GLOBAL_REWARD_FORGE_DETAILS_OUT_OF_BAND	{0} arena |4(admission was,admissions were) added to your account from outside of the game.	0=count
+GLOBAL_REWARD_ARENA_TICKET_HEADLINE	Free Arena Run!
+GLOBAL_REWARD_ARENA_TICKET_LABEL	The Arena
+GLOBAL_REWARD_HEARTHSTEED_HEADLINE	Hearthsteed Mount
+GLOBAL_REWARD_HEROES_CARD_MOUNT_HEADLINE	Hearthstone Card Mount
+GLOBAL_REWARD_GOLDEN_HERO_HEADLINE	Golden Hero Unlocked	
+GLOBAL_REWARD_HERO_HEADLINE	{0} Unlocked	
+GLOBAL_REWARD_HERO_DETAILS	{0}/{1} Heroes Unlocked
+GLOBAL_REWARD_HERO_SOURCE	Unlocked by defeating a {0}	0=class
+GLOBAL_REWARD_CORE_CARD_DETAILS	{0}/{1} {2} Cards Unlocked	0=# cards unlocked, 1=# cards possible to unlock, 2=class
+GLOBAL_REWARD_CARD_DETAILS_TUTORIAL01	Oh yeah!
+GLOBAL_REWARD_CARD_DETAILS_TUTORIAL02	This is quite impressive.
+GLOBAL_REWARD_CARD_DETAILS_TUTORIAL03	You are on a roll!
+GLOBAL_REWARD_CARD_DETAILS_TUTORIAL04	That was incredible.
+GLOBAL_REWARD_CARD_DETAILS_TUTORIAL05	Magnificent!
+GLOBAL_REWARD_CARD_DETAILS_TUTORIAL06	Hot hot hot!
+GLOBAL_REWARD_CARD_LEVEL_UP	Unlocked by hitting level {0} as a {1}	0=# level, 1=class
+GLOBAL_REWARD_GOLD_SOURCE_IGR	Awarded for logging in from an IGR
+GLOBAL_REWARD_GOLD_SOURCE_IGR_DATED	Awarded for logging in from an IGR on {0}	0=GLOBAL_CURRENT_DATE
+GLOBAL_REWARD_GOLD_SOURCE_TOURNEY	Awarded for winning {0} |4(game,games) in Play mode
+GLOBAL_REWARD_CLASS_CHALLENGE_HEADLINE	Class |4(Challenge,Challenges) Unlocked
+GLOBAL_REWARD_CLASS_CHALLENGE_DETAIL	{0}	0=first class
+GLOBAL_REWARD_CLASS_CHALLENGE_DETAIL_DOUBLE	{0} and {1}	0=first class, 1=second class
+GLOBAL_REWARD_ARENA_TICKET_ADMIT	ADMIT	the word 'admit' in capital letters - displayed like "Admit 1" and looks like a movie/fair ticket. this is the Arena Ticket reward visual.
+GLOBAL_REWARD_ARENA_TICKET_ENTRANT	Entrant	a label that shows up in the Arena Ticket under the Player's name to say this person is allowed entrance into the Arena.
+GLOBAL_REWARD_ARENA_TICKET_AUTHORIZED_BY	Authorized By	a label that shows up in the Arena Ticket under the Player's name indicating this ticket reward was granted by some guy.
+GLOBAL_BETA_REIMBURSEMENT_HEADLINE	Account Wipe Credit
+GLOBAL_BETA_REIMBURSEMENT_DETAILS	This gold is a credit for your past purchases. Thank you!
+GLOBAL_PRACTICE_MAX_LEVEL_REACHED	Max Practice Level	 
+GLOBAL_SCREENSHOT_COMPLETE	Screenshot saved to desktop	
+GLOBAL_QUEST_PROGRESS_COUNT	{0}/{1}	0=progress,1=max progress
+GLOBAL_HERO_LEVEL_NEXT_REWARD_TITLE	Next reward at level {0}	0=level
+GLOBAL_HERO_LEVEL_REWARD_GOLDEN_CARD	{0} {1}	0=flair 1=card name
+GLOBAL_HERO_LEVEL_REWARD_BOOSTER	{0} booster pack	0=booster type
+GLOBAL_HERO_LEVEL_REWARD_ARCANE_DUST	{0} arcane dust	0=amount
+GLOBAL_HERO_LEVEL_REWARD_GOLD	{0} gold	0=amount
+GLOBAL_GOLD_REWARD_ALREADY_CAPPED	You have already earned {0} gold today.
+GLOBAL_GOLD_REWARD_BAD_RATING	You or your opponent do not meet the rating requirements to earn gold.
+GLOBAL_GOLD_REWARD_SHORT_GAME	Your game did not meet the time requirement to earn gold.
+GLOBAL_GOLD_REWARD_OVER_CAIS	You cannot gain any more gold due to CAIS.
+GLOBAL_COLLECTION_GOLDEN	Golden	
+GLOBAL_SPLASH_CLOSED_SIGN_TITLE	Closed	
+GLOBAL_ERROR_INACTIVITY_KICK	It's been a while since your last Hearthstone action and your connection was shut down. Relaunch the game when you're ready!	
+GLOBAL_MOBILE_ERROR_LOGON_WEB_TIMEOUT	It's been a while since your last Hearthstone action and your connection was shut down.	
+GLOBAL_ERROR_UNKNOWN_ERROR	Oops! Playful sprites have disrupted Hearthstone as it was linking up to the Battle.net service. Please wait a few minutes for them to disperse and try re-launching the game.	
+GLOBAL_CLICK_TO_CONTINUE	Click to continue	
+GLOBAL_CLICK_TO_CONTINUE_TOUCH	Tap to continue	
+GLOBAL_TOOLTIP_MENU_HEADER	Game Menu	
+GLOBAL_TOOLTIP_MENU_DESC	Take a look at the Options, Quit the Game, and more.	
+GLOBAL_TOOLTIP_FRIEND_BUTTON_HEADER	Friends	
+GLOBAL_TOOLTIP_FRIEND_BUTTON_DESC	Chat with and challenge your friends.	
+GLOBAL_HEALTHY_GAMING_CHINA_LESS_THAN_THREE_HOURS	您累计在线时间已满{0}小时。	
+GLOBAL_HEALTHY_GAMING_CHINA_THREE_HOURS	您累计在线时间已满{0}小时，请您下线休息，做适当身体活动。	
+GLOBAL_HEALTHY_GAMING_CHINA_THREE_TO_FIVE_HOURS	您已经进入疲劳游戏时间，您的游戏收益将降为正常值的0%，为了您的健康，请尽快下线休息，做适当身体活动，合理安排学习生活。	
+GLOBAL_HEALTHY_GAMING_CHINA_MORE_THAN_FIVE_HOURS	您已进入不健康游戏时间，为了您的健康，请您立即下线休息。如不下线，您的身体将受到损害，您的收益已降为零，直到您的累计下线时间满5小时后，才能恢复正常。	
+GLOBAL_CURRENT_TIME	{0:h:mm tt}	see http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx	
+GLOBAL_CURRENT_DATE	{0:MM/dd/yy}	see http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx
+GLOBAL_HEALTHY_GAMING_KOREA_STARTUP_MESSAGE	본 게임물은 만 12세 이용가 게임으로서 해당 연령 미만의 청소년이 이용하기에 부적절합니다. 반드시 보호자의 지도 감독이 필요합니다.	
+GLOBAL_HEALTHY_GAMING_CHINA_CAIS_ACTIVE	CAIS Active	
+GLOBAL_LANGUAGE_CHANGE_CONFIRM_TITLE	Change Language?	
+GLOBAL_LANGUAGE_CHANGE_CONFIRM_MESSAGE	This will interrupt your current activity. Are you sure?	
+GLOBAL_LOGIN_CONFIRM_MESSAGE	You will lose your current progress. Are you sure?	
+GLOBAL_LOGOUT_CONFIRM_MESSAGE	Are you sure?	
+GLOBAL_LANGUAGE_ENUS	English (United States)	
+GLOBAL_LANGUAGE_ENGB	English (Great Britain)	
+GLOBAL_LANGUAGE_FRFR	French	
+GLOBAL_LANGUAGE_DEDE	German	
+GLOBAL_LANGUAGE_KOKR	Korean	
+GLOBAL_LANGUAGE_ESES	Spanish (Spain)	
+GLOBAL_LANGUAGE_ESMX	Spanish (Latin America)	
+GLOBAL_LANGUAGE_RURU	Russian	
+GLOBAL_LANGUAGE_ZHTW	Chinese (Taiwan)	
+GLOBAL_LANGUAGE_ZHCN	Chinese (China)	
+GLOBAL_LANGUAGE_ITIT	Italian	
+GLOBAL_LANGUAGE_PTBR	Portuguese (Brazil)	
+GLOBAL_LANGUAGE_PLPL	Polish	
+GLOBAL_LANGUAGE_PTPT	Portuguese (Portugal)	
+GLOBAL_LANGUAGE_NATIVE_DEDE	Deutsch	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_ENUS	English	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_ESES	Español (España)	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_ESMX	Español (Latinoamérica)	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_FRFR	Français	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_ITIT	Italiano	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_KOKR	한국어	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_PLPL	Polski	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_PTBR	Português (Brasil)	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_RURU	Русский	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_ZHCN	中文（简体）	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_ZHTW	繁體中文(台灣)	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_NATIVE_JAJP	日本語	The name of the language IN THAT LANGUAGE.
+GLOBAL_LANGUAGE_DROPDOWN	Language	
+GLOBAL_LANGUAGE_DOWNLOAD_VOICE_PACK	(DEV) Downloaded Voice Pack	
+GLOBAL_REGION_AMERICAS	Americas & Southeast Asia
+GLOBAL_REGION_EUROPE	Europe
+GLOBAL_REGION_ASIA	Asia
+GLOBAL_REGION_CHINA	China
+GLOBAL_RECONNECT_RECONNECTING_HEADER	Reconnecting	
+GLOBAL_RECONNECT_RECONNECTING_LOGIN	You were disconnected from your last game. Reconnecting...	
+GLOBAL_RECONNECT_RECONNECTING	You were disconnected from your game. Reconnecting...	
+GLOBAL_RECONNECT_TIMEOUT_HEADER	Error	
+GLOBAL_RECONNECT_TIMEOUT	Unable to reconnect to your game.	
+GLOBAL_RECONNECT_RECONNECTED_HEADER	Reconnected	
+GLOBAL_RECONNECT_RECONNECTED_LOGIN	You were reconnected to your last game. Resuming...	
+GLOBAL_RECONNECT_RECONNECTED	You were reconnected to your game. Resuming...	
+GLOBAL_RECONNECT_EXIT_BUTTON	Exit Game
+GLOBAL_VERSION	Version	
+GLOBAL_MOBILE_TAP_TO_RECONNECT	Tap anywhere to reconnect	
+GLOBAL_MOBILE_TAP_TO_UPDATE	Tap anywhere to update	
+GLOBAL_SPLASH_CLOSED_RECONNECTING	Reconnecting...	
+GLOBAL_ADVENTURE_TRAY_HEADER	Choose an Adventure	
+GLOBAL_ADVENTURE_DESC_HEADER	Adventure	
+GLOBAL_ADVENTURE_CHOOSE_BUTTON_TEXT	Choose	
+GLOBAL_CHOOSE_PAYMENT	Choose Payment	
+GLOBAL_PLAYER_PLAYER	Player	this is the word for generic "Player" - this will be used when there a player's name is unknown at the time.
+GLOBAL_STORE_MOBILE_NAME_DEFAULT	the Blizzard store	
+GLOBAL_STORE_MOBILE_NAME_APPLE	the Apple App Store	
+GLOBAL_STORE_MOBILE_NAME_GOOGLE	Google Play	
+GLOBAL_STORE_MOBILE_NAME_AMAZON	the Amazon Appstore	
+GLOBAL_SUPPORT	Support	
+GLOBAL_ON	On	
+GLOBAL_OFF	Off	
+GLOBAL_TUTORIAL_HEALTH	Health	
+GLOBAL_TUTORIAL_ATTACK	Attack	
+GLOBAL_TUTORIAL_MINION	Minion	
+GLOBAL_TUTORIAL_COST	Cost	
+GLOBAL_TUTORIAL_YOUR_MANA	Your Mana	
+GLOBAL_TUTORIAL_ATTACKER	Attacker	
+GLOBAL_TUTORIAL_DEFENDER	Defender	
+GLOBAL_TUTORIAL_TAUNT	Taunt	
+GLOBAL_TUTORIAL_TAUNT_DESCRIPTION	Enemies must attack this minion	
+GLOBAL_TUTORIAL_HERO_POWER	Hero Power	
+GLOBAL_TUTORIAL_USED	Used	
+GLOBAL_TUTORIAL_YOUR_TURN	Your Turn	

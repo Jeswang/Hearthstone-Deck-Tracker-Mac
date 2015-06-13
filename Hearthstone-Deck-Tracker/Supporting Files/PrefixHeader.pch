@@ -13,6 +13,8 @@
 #import <Realm/Realm.h>
 #import <ReactiveCocoa.h>
 #import <extobjc.h>
+#import "AppDelegate.h"
+#import "Configuration.h"
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
@@ -25,4 +27,6 @@
 #define IMAGE [NSString stringWithFormat:@"%@/Contents/Resources/Images/", [[NSBundle mainBundle] bundlePath]]
 #define APP   (AppDelegate *)[[NSApplication sharedApplication] delegate]
 #define NC [NSNotificationCenter defaultCenter]
+
+#define UPDATE_REALM [RLMRealm realmWithPath:@"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/Files/cards.realm"]
 #endif

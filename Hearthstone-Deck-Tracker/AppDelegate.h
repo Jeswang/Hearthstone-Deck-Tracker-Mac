@@ -16,5 +16,8 @@
 
 @property (nonatomic, strong) NSMutableArray *updateList;
 
+- (IBAction)openSettings:(id)sender;
+- (IBAction)openManger:(id)sender;
+- (IBAction)openTracker:(id)sender;
 @end
 

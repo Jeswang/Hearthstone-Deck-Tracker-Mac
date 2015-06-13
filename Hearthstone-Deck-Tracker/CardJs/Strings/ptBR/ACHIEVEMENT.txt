@@ -1,0 +1,85 @@
+﻿TAG	TEXT	COMMENT
+11*Description	Completar uma partida no modo Jogo.	
+11*Name	Primeiro golpe	
+12*Description	Jogar 3 partidas no modo Jogo.	
+12*Name	Duelista	
+31*Description	Ir até o nível 10 com qualquer classe.	
+31*Name	Passar de nível	
+32*Description	Vencer 2 jogos com Druida ou Caçador.	
+32*Name	Vitória do Druida ou Caçador	
+33*Description	Vencer 2 jogos com Druida ou Ladino.	
+33*Name	Vitória do Druida ou Ladino	
+34*Description	Vencer 2 jogos com Caçador ou Mago.	
+34*Name	Vitória do Caçador ou Mago	
+35*Description	Vencer 2 jogos com Mago ou Xamã.	
+35*Name	Vitória do Mago ou Xamã	
+36*Description	Vencer 2 jogos com Paladino ou Sacerdote.	
+36*Name	Vitória do Paladino ou Sacerdote	
+37*Description	Vencer 2 jogos com Paladino ou Guerreiro.	
+37*Name	Vitória do Paladino ou Guerreiro	
+38*Description	Vencer 2 jogos com Sacerdote ou Bruxo.	
+38*Name	Vitória do Sacerdote ou Bruxo	
+39*Description	Vencer 2 jogos com Ladino ou Guerreiro.	
+39*Name	Vitória do Ladino ou Guerreiro	
+40*Description	Vencer 2 jogos com Xamã ou Bruxo.	
+40*Name	Vitória do Xamã ou Bruxo	
+41*Description	Vencer 5 jogos com Druida ou Caçador.	
+41*Name	Domínio do Druida ou Caçador	
+42*Description	Vencer 5 jogos com Druida ou Ladino.	
+42*Name	Domínio do Druida ou Ladino	
+43*Description	Vencer 5 jogos com Caçador ou Mago.	
+43*Name	Domínio do Caçador ou Mago	
+44*Description	Vencer 5 jogos com Mago ou Xamã.	
+44*Name	Domínio do Mago ou Xamã	
+45*Description	Vencer 5 jogos com Paladino ou Sacerdote.	
+45*Name	Domínio do Paladino ou Sacerdote	
+46*Description	Vencer 5 jogos com Paladino ou Guerreiro.	
+46*Name	Domínio do Paladino ou Guerreiro	
+47*Description	Vencer 5 jogos com Sacerdote ou Bruxo.	
+47*Name	Domínio do Sacerdote ou Bruxo	
+48*Description	Vencer 5 jogos com Ladino ou Guerreiro.	
+48*Name	Domínio do Ladino ou Guerreiro	
+49*Description	Vencer 5 jogos com Xamã ou Bruxo.	
+49*Name	Domínio do Xamã ou Bruxo	
+50*Description	Destruir 40 lacaios.	
+50*Name	Acabe com eles	
+51*Description	Jogar 20 lacaios que custam 5 ou mais.	
+51*Name	Só os fortes	
+52*Description	Jogar 40 lacaios que custam 2 ou menos.	
+52*Name	Onde os fracos têm vez	
+53*Description	Lançar 40 feitiços.	
+53*Name	Mestre dos feitiços	
+54*Description	Causar 100 de dano a Heróis inimigos.	
+54*Name	Surra	
+55*Description	Desencantar um card.	
+55*Name	Temos que criar!	
+56*Description	Entrar na Arena.	
+56*Name	Entrar na arena	
+58*Description	Conseguir todos os Piratas.	
+58*Name	Iaaarrr!!!	
+59*Description	Conseguir todos os Piratas Dourados.	
+59*Name	Iaaarrr dourado!!!	
+60*Description	Conseguir todos os Murlocs.	
+60*Name	Mrglglglgl!	
+61*Description	Conseguir todos os Murlocs Dourados.	
+61*Name	Mrglglglgl dourado!	
+62*Description	Vencer 100 jogos em qualquer modo.	
+62*Name	Honra ao mérito	
+63*Description	Vencer 1000 jogos em qualquer modo.	
+63*Name	Grande vencedor	
+64*Description	Vencer 7 jogos em qualquer modo.	
+64*Name	Domínio total	
+69*Description	Vencer 3 jogos com qualquer classe.	
+69*Name	3 Vitórias!	
+79*Description	Desbloquear todos os Heróis.	
+79*Name	Vamos lá!	
+89*Description	Derrotar todos os Heróis IA Peritos.	
+89*Name	Acabei com todos!	
+90*Description	Conseguir todos os cards do Conjunto Básico.	
+90*Name	Já tenho o básico!	
+91*Description	Conseguir todos os cards do Conjunto de Perito.	
+91*Name	Um de cada!	
+95*Description	Obrigado por nos ajudar a testar a Loja!	
+95*Name	Herói Beta!	
+96*Description	Obrigado por participar da BlizzCon 2013!	
+96*Name	Pronto para arrasar!	

@@ -37,6 +37,7 @@
 		5166468C1A621F2900E36F26 /* CardCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468B1A621F2900E36F26 /* CardCellView.m */; };
 		5166468F1A621FF700E36F26 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468E1A621FF700E36F26 /* CardModel.m */; };
 		516646931A6228B700E36F26 /* RealmGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 516646921A6228B700E36F26 /* RealmGenerator.m */; };
+		5166CDC21B2ADF0100C1819E /* GameString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166CDC11B2ADF0100C1819E /* GameString.m */; };
 		51681FF81AECD34100F21320 /* ImportWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51681FF71AECD34100F21320 /* ImportWindow.xib */; };
 		51681FFA1AECDA4800F21320 /* SettingLanguageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51681FF91AECDA4800F21320 /* SettingLanguageView.xib */; };
 		5169ED5F1AF62872001EFBA3 /* ScaleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5169ED5E1AF62872001EFBA3 /* ScaleImageView.m */; };
@@ -132,6 +133,8 @@
 		5166468E1A621FF700E36F26 /* CardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardModel.m; sourceTree = "<group>"; };
 		516646911A6228B700E36F26 /* RealmGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmGenerator.h; sourceTree = "<group>"; };
 		516646921A6228B700E36F26 /* RealmGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmGenerator.m; sourceTree = "<group>"; };
+		5166CDC01B2ADF0100C1819E /* GameString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameString.h; path = ../Utility/GameString.h; sourceTree = "<group>"; };
+		5166CDC11B2ADF0100C1819E /* GameString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameString.m; path = ../Utility/GameString.m; sourceTree = "<group>"; };
 		51681FF71AECD34100F21320 /* ImportWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImportWindow.xib; sourceTree = "<group>"; };
 		51681FF91AECDA4800F21320 /* SettingLanguageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingLanguageView.xib; sourceTree = "<group>"; };
 		5169ED5D1AF62872001EFBA3 /* ScaleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleImageView.h; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 		516646881A620C4200E36F26 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5166CDC01B2ADF0100C1819E /* GameString.h */,
+				5166CDC11B2ADF0100C1819E /* GameString.m */,
 				5166468D1A621FF700E36F26 /* CardModel.h */,
 				5166468E1A621FF700E36F26 /* CardModel.m */,
 				51022A411AFE3F1F00C6E78A /* DeckModel.h */,
@@ -544,7 +549,7 @@
 		5132FAAC1A5FC10200A43A59 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = rainy;
 				TargetAttributes = {
 					5132FAB31A5FC10200A43A59 = {
@@ -665,6 +670,7 @@
 				51022A431AFE3F1F00C6E78A /* DeckModel.m in Sources */,
 				516646931A6228B700E36F26 /* RealmGenerator.m in Sources */,
 				5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */,
+				5166CDC21B2ADF0100C1819E /* GameString.m in Sources */,
 				51637FA91B214DCE002256D7 /* Photo.m in Sources */,
 				51846C741A682571004ED043 /* ImportWindowController.m in Sources */,
 				51637F9C1B214260002256D7 /* CTGradient_AMButtonBar.m in Sources */,
@@ -702,6 +708,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -716,7 +723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -752,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -770,6 +777,7 @@
 				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rainy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -786,6 +794,7 @@
 				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rainy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

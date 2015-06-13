@@ -1,0 +1,85 @@
+﻿TAG	TEXT	COMMENT
+11*Description	Rozegraj pojedynek.	
+11*Name	Pierwsza krew	
+12*Description	Rozegraj 3 pojedynki.	
+12*Name	Miłośnik pojedynków	
+31*Description	Awansuj dowolną klasę do poziomu 10.	
+31*Name	Awans!	
+32*Description	Wygraj 2 pojedynki druidem lub łowcą.	
+32*Name	Zwycięstwo druida lub łowcy	
+33*Description	Wygraj 2 pojedynki druidem lub łotrem.	
+33*Name	Zwycięstwo druida lub łotra	
+34*Description	Wygraj 2 pojedynki łowcą lub magiem.	
+34*Name	Zwycięstwo łowcy lub maga	
+35*Description	Wygraj 2 pojedynki magiem lub szamanem.	
+35*Name	Zwycięstwo maga lub szamana	
+36*Description	Wygraj 2 pojedynki paladynem lub kapłanem.	
+36*Name	Zwycięstwo paladyna lub kapłana	
+37*Description	Wygraj 2 pojedynki paladynem lub wojownikiem.	
+37*Name	Zwycięstwo paladyna lub wojownika	
+38*Description	Wygraj 2 pojedynki kapłanem lub czarnoksiężnikiem.	
+38*Name	Zwycięstwo kapłana lub czarnoksiężnika	
+39*Description	Wygraj 2 pojedynki łotrem lub wojownikiem.	
+39*Name	Zwycięstwo łotra lub wojownika	
+40*Description	Wygraj 2 pojedynki szamanem lub czarnoksiężnikiem.	
+40*Name	Zwycięstwo szamana lub czarnoksiężnika	
+41*Description	Wygraj 5 pojedynków druidem lub łowcą.	
+41*Name	Dominacja druida lub łowcy	
+42*Description	Wygraj 5 pojedynków druidem lub łotrem.	
+42*Name	Dominacja druida lub łotra	
+43*Description	Wygraj 5 pojedynków łowcą lub magiem.	
+43*Name	Dominacja łowcy lub maga	
+44*Description	Wygraj 5 pojedynków magiem lub szamanem.	
+44*Name	Dominacja maga lub szamana	
+45*Description	Wygraj 5 pojedynków paladynem lub kapłanem.	
+45*Name	Dominacja paladyna lub kapłana	
+46*Description	Wygraj 5 pojedynków paladynem lub wojownikiem.	
+46*Name	Dominacja paladyna lub wojownika	
+47*Description	Wygraj 5 pojedynków kapłanem lub czarnoksiężnikiem.	
+47*Name	Dominacja kapłana lub czarnoksiężnika	
+48*Description	Wygraj 5 pojedynków łotrem lub wojownikiem.	
+48*Name	Dominacja łotra lub wojownika	
+49*Description	Wygraj 5 pojedynków szamanem lub czarnoksiężnikiem.	
+49*Name	Dominacja szamana lub czarnoksiężnika	
+50*Description	Zniszcz 40 stronników.	
+50*Name	Totalne zniszczenie	
+51*Description	Zagraj 20 stronników kosztujących 5 lub więcej.	
+51*Name	Siłacze do boju!	
+52*Description	Zagraj 40 stronników kosztujących 2 lub mniej.	
+52*Name	Błogosławieni słabi	
+53*Description	Rzuć 40 zaklęć.	
+53*Name	Mistrz zaklęć	
+54*Description	Zadaj 100 pkt. obrażeń wrogim bohaterom.	
+54*Name	Niezłe manto	
+55*Description	Odczaruj kartę.	
+55*Name	Cech rzemiosł różnych	
+56*Description	Wejdź na Arenę.	
+56*Name	Wejdź na Arenę	
+58*Description	Zdobądź wszystkich piratów.	
+58*Name	Harrrr!	
+59*Description	Zdobądź wszystkich złotych piratów.	
+59*Name	Złote harrrrr!!!!	
+60*Description	Zdobądź wszystkie murloki.	
+60*Name	Mrglglglgl!	
+61*Description	Zdobądź wszystkie złote murloki.	
+61*Name	Złote mrglglglgl!	
+62*Description	Wygraj 100 partii w dowolnym trybie.	
+62*Name	Pierwsza seta!	
+63*Description	Wygraj 1000 partii w dowolnym trybie.	
+63*Name	Wielki zwycięzca	
+64*Description	Wygraj 7 partii w dowolnym trybie.	
+64*Name	Pełna dominacja	
+69*Description	Wygraj 3 pojedynki dowolną klasą.	
+69*Name	3 wygrane!	
+79*Description	Odblokuj każdego bohatera.	
+79*Name	No to gramy!	
+89*Description	Pokonaj każdego eksperckiego bohatera SI.	
+89*Name	Wszyscy zmiażdżeni!	
+90*Description	Zbierz wszystkie karty z zestawu podstawowego.	
+90*Name	Podstawy opanowane!	
+91*Description	Zbierz wszystkie karty z zestawu eksperckiego.	
+91*Name	Wszystko na miejscu!	
+95*Description	Dziękujemy za pomoc w testach naszego sklepu!	
+95*Name	Bohater Bety!	
+96*Description	Dziękujemy za udział w BlizzConie 2013!	
+96*Name	Czas na metal!	

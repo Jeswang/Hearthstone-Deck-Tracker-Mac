@@ -17,24 +17,24 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Deck Manager" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="Pzw-RR-XbZ">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="131" y="158" width="797" height="396"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES"/>
+            <rect key="contentRect" x="50" y="72" width="797" height="800"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="AUr-Gn-WFy">
-                <rect key="frame" x="0.0" y="0.0" width="797" height="396"/>
+                <rect key="frame" x="0.0" y="0.0" width="797" height="800"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="Edi-4m-na2">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="396"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="800"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="200" id="7gf-lD-mil"/>
                         </constraints>
                     </customView>
                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="0Md-gg-KxL">
-                        <rect key="frame" x="420" y="0.0" width="377" height="396"/>
+                        <rect key="frame" x="420" y="0.0" width="377" height="800"/>
                     </customView>
                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-8F-l1C">
-                        <rect key="frame" x="200" y="0.0" width="220" height="396"/>
+                        <rect key="frame" x="200" y="0.0" width="220" height="800"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="220" id="Hjz-xP-PWy"/>
                         </constraints>
