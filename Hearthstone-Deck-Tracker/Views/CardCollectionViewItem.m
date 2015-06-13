@@ -19,7 +19,7 @@
 @implementation CardCollectionViewItem
 
 - (void)setCardImageWithId:(NSString *)cardId {
-    NSString *country = @"cn";
+    NSString *country = @"en";
     NSString *imagePath = [NSString stringWithFormat:@"%@/%@/%@.png", IMAGE, country, cardId];
     NSImage *image = [[NSImage alloc] initWithContentsOfFile:imagePath];
     self.cardImage = image;
