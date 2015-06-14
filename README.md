@@ -1,13 +1,20 @@
 Hearthstone-Deck-Tracker-Mac 
 ===========
 A deck tracker for Mac OS X
-![image](https://cloud.githubusercontent.com/assets/553783/5791437/0cbdc62e-9f11-11e4-9b8e-24ba2e874fca.png)
+
+![Deck Manager](https://cloud.githubusercontent.com/assets/553783/8147438/d67db95c-129c-11e5-977b-fa467669bb83.png)
+
+![Deck Tracker](https://cloud.githubusercontent.com/assets/553783/5791437/0cbdc62e-9f11-11e4-9b8e-24ba2e874fca.png)
 
 Features
 =========
-- **Tracks** cards left in your deck
-- **Import** cards from [http://www.hearthstone.com.cn/cards/builder/](http://www.hearthstone.com.cn/cards/builder/)
-- **Import** cards from [http://www.hearthpwn.com/](http://www.hearthpwn.com/)
+- Manage your deck 
+- **Tracks** cards left
+
+TODO
+=========
+- **Import** deck into deck manager from [http://www.hearthstone.com.cn/cards/builder/](http://www.hearthstone.com.cn/cards/builder/) and [http://www.hearthpwn.com/](http://www.hearthpwn.com/)
+- Download card images for different languages.
 
 How to use
 ===========
@@ -15,8 +22,8 @@ How to use
 1) Download latest release [here](https://github.com/Jeswang/Hearthstone-Deck-Tracker-Mac/releases)   
 2) Extract file   
 3) Run "Deck Tracker.app"   
-4) Create or copy your decks in [http://www.hearthstone.com.cn/cards/builder/](http://www.hearthstone.com.cn/cards/builder/) or [http://www.hearthpwn.com/](http://www.hearthpwn.com/)
-5) Update the deck using your builder id   
+4) Create your deck in deck manager 
+5) Select the deck manager and the tracker will just show the cards in selected deck   
 6) Play!
 
 How it works
@@ -31,7 +38,7 @@ Is Blizzard okay with this?
 
 Requirements
 =============
-- OS X Yosemite
+- OS X 10.9
 
 Special thanks
 =========

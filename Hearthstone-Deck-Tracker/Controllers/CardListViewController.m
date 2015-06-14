@@ -57,10 +57,8 @@
                name:kFadeCardsChanged
              object:nil];
     
-    if (self.isManager) {
-        [NC addObserver:self selector:@selector(updateDeck:) name:@"UpdateDeck" object:nil];
-    }
-
+    [NC addObserver:self selector:@selector(updateDeck:) name:@"UpdateDeck" object:nil];
+    
     [NC addObserver:self selector:@selector(selectDeck:) name:@"SelectDeck" object:nil];
 
 }
@@ -92,12 +90,13 @@
 - (IBAction)columnChangeSelected:(id)sender
 {
     NSInteger selectedRow = [self.tableView selectedRow];
-    
-    if (selectedRow != -1) {
-        NSLog(@"Do something with selectedRow! %ld", selectedRow);
-        CardModel *card = [self.showingCards objectAtIndex:selectedRow];
-        [self.tableView deselectRow:selectedRow];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"RemoveCard" object:card.cardId];
+    if (self.isManager) {
+        if (selectedRow != -1) {
+            //NSLog(@"Do something with selectedRow! %ld", selectedRow);
+            CardModel *card = [self.showingCards objectAtIndex:selectedRow];
+            [self.tableView deselectRow:selectedRow];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"RemoveCard" object:card.cardId];
+        }
     }
 }
 

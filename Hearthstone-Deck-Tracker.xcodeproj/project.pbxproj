@@ -776,7 +776,7 @@
 				GCC_PREFIX_HEADER = "Hearthstone-Deck-Tracker/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -793,7 +793,7 @@
 				GCC_PREFIX_HEADER = "Hearthstone-Deck-Tracker/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "Hearthstone-Deck-Tracker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainy.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
