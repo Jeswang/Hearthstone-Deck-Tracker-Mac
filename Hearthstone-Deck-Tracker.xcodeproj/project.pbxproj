@@ -11,6 +11,8 @@
 		43BAAA351A6BD54E00579756 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA341A6BD54E00579756 /* Configuration.m */; };
 		51022A431AFE3F1F00C6E78A /* DeckModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51022A421AFE3F1F00C6E78A /* DeckModel.m */; };
 		511B434E1AF66D3300FB7A61 /* CardCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 511B434C1AF66D3300FB7A61 /* CardCollectionViewItem.m */; };
+		512B0CEB1B2D6517002C87E3 /* GameString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166CDC11B2ADF0100C1819E /* GameString.m */; };
+		512B0CEC1B2D651D002C87E3 /* DeckModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51022A421AFE3F1F00C6E78A /* DeckModel.m */; };
 		5132FABB1A5FC10300A43A59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABA1A5FC10300A43A59 /* AppDelegate.m */; };
 		5132FABD1A5FC10300A43A59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5132FABC1A5FC10300A43A59 /* main.m */; };
 		5132FAC21A5FC10300A43A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5132FAC11A5FC10300A43A59 /* Images.xcassets */; };
@@ -66,10 +68,28 @@
 		51C72D881A619218004C374E /* DeckManangerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C72D871A619218004C374E /* DeckManangerWindowController.m */; };
 		51CD88431AECAF4A00BF6742 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51CD88421AECAF4A00BF6742 /* MainMenu.xib */; };
 		51D1051B1A6A6C8D0074B86A /* CardPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D1051A1A6A6C8D0074B86A /* CardPreviewController.m */; };
+		51DB236C1B2D5F3900372323 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DB236B1B2D5F3900372323 /* main.m */; };
+		51DB23701B2D623D00372323 /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5166468E1A621FF700E36F26 /* CardModel.m */; };
+		51DB23711B2D624800372323 /* RLMObject+Copying.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D17B1A62A5B500B239C5 /* RLMObject+Copying.m */; };
+		51DB23721B2D625400372323 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BAAA341A6BD54E00579756 /* Configuration.m */; };
+		51DB23731B2D629000372323 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5192D1821A62B10800B239C5 /* SystemHelper.m */; };
 		51F7DAD11A625E7000E69120 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F7DAD01A625E7000E69120 /* CoreGraphics.framework */; };
+		9882387BEE8396EC8502EB2C /* libPods-remove-uncollectible-card-images.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8801966DCE07090B197275D /* libPods-remove-uncollectible-card-images.a */; };
 		9A3A265DA881CFFFFF4DBA86 /* HoverTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A2885AAB381BE68B3572F /* HoverTableCellView.m */; };
 		D3D6FC08335C98DCC2E9265C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0D96C4241DA85CCE2EA371 /* libPods.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51DB23671B2D5F3900372323 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1FBA87E4F9AB86CE995F70A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +97,8 @@
 		43BAAA301A6BC49900579756 /* SettingGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingGeneralViewController.m; sourceTree = "<group>"; };
 		43BAAA331A6BD54E00579756 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		43BAAA341A6BD54E00579756 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		440C56BC74E3A6F6178843F1 /* Pods-remove-uncollectible-card-images.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remove-uncollectible-card-images.release.xcconfig"; path = "Pods/Target Support Files/Pods-remove-uncollectible-card-images/Pods-remove-uncollectible-card-images.release.xcconfig"; sourceTree = "<group>"; };
+		4C3A1229657FA9D81BFF1606 /* Pods-remove-uncollectible-card-images.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remove-uncollectible-card-images.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remove-uncollectible-card-images/Pods-remove-uncollectible-card-images.debug.xcconfig"; sourceTree = "<group>"; };
 		51022A411AFE3F1F00C6E78A /* DeckModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckModel.h; sourceTree = "<group>"; };
 		51022A421AFE3F1F00C6E78A /* DeckModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckModel.m; sourceTree = "<group>"; };
 		511B434B1AF66D3300FB7A61 /* CardCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewItem.h; sourceTree = "<group>"; };
@@ -179,11 +201,15 @@
 		51CD88421AECAF4A00BF6742 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		51D105191A6A6C8D0074B86A /* CardPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPreviewController.h; sourceTree = "<group>"; };
 		51D1051A1A6A6C8D0074B86A /* CardPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPreviewController.m; sourceTree = "<group>"; };
+		51DB23691B2D5F3900372323 /* remove-uncollectible-card-images */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "remove-uncollectible-card-images"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DB236B1B2D5F3900372323 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		51DB23741B2D62EF00372323 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		51E69D2C1B22F67200A18357 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		51F7DAD01A625E7000E69120 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		774564573B6A33F52AC6E9AA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A3A26DA11AD707583B09BD5 /* HoverTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoverTableCellView.h; sourceTree = "<group>"; };
 		9A3A2885AAB381BE68B3572F /* HoverTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoverTableCellView.m; sourceTree = "<group>"; };
+		C8801966DCE07090B197275D /* libPods-remove-uncollectible-card-images.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-remove-uncollectible-card-images.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0D96C4241DA85CCE2EA371 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +221,14 @@
 				5194F5581A6617E8005BBD08 /* libsqlite3.0.dylib in Frameworks */,
 				51F7DAD11A625E7000E69120 /* CoreGraphics.framework in Frameworks */,
 				D3D6FC08335C98DCC2E9265C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51DB23661B2D5F3900372323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9882387BEE8396EC8502EB2C /* libPods-remove-uncollectible-card-images.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +249,7 @@
 			children = (
 				5132FAB61A5FC10200A43A59 /* Hearthstone-Deck-Tracker */,
 				5132FACD1A5FC10300A43A59 /* Hearthstone-Deck-TrackerTests */,
+				51DB236A1B2D5F3900372323 /* remove-uncollectible-card-images */,
 				5132FAB51A5FC10200A43A59 /* Products */,
 				ADED6EFEDB7C24AD291EA6FA /* Pods */,
 				F5ED1B09858E5D10239A9FBC /* Frameworks */,
@@ -225,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				5132FAB41A5FC10200A43A59 /* Deck Tracker.app */,
+				51DB23691B2D5F3900372323 /* remove-uncollectible-card-images */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -492,6 +528,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		51DB236A1B2D5F3900372323 /* remove-uncollectible-card-images */ = {
+			isa = PBXGroup;
+			children = (
+				51DB23741B2D62EF00372323 /* PrefixHeader.pch */,
+				51DB236B1B2D5F3900372323 /* main.m */,
+			);
+			path = "remove-uncollectible-card-images";
+			sourceTree = "<group>";
+		};
 		9A3A2F0245B1234C8E3A62F2 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +552,8 @@
 			children = (
 				1FBA87E4F9AB86CE995F70A4 /* Pods.debug.xcconfig */,
 				774564573B6A33F52AC6E9AA /* Pods.release.xcconfig */,
+				4C3A1229657FA9D81BFF1606 /* Pods-remove-uncollectible-card-images.debug.xcconfig */,
+				440C56BC74E3A6F6178843F1 /* Pods-remove-uncollectible-card-images.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -517,6 +564,7 @@
 				5194F5571A6617E8005BBD08 /* libsqlite3.0.dylib */,
 				51F7DAD01A625E7000E69120 /* CoreGraphics.framework */,
 				CB0D96C4241DA85CCE2EA371 /* libPods.a */,
+				C8801966DCE07090B197275D /* libPods-remove-uncollectible-card-images.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -543,6 +591,25 @@
 			productReference = 5132FAB41A5FC10200A43A59 /* Deck Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		51DB23681B2D5F3900372323 /* remove-uncollectible-card-images */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51DB236F1B2D5F3900372323 /* Build configuration list for PBXNativeTarget "remove-uncollectible-card-images" */;
+			buildPhases = (
+				F3EFDE0E0B81CDB7D5449FF4 /* Check Pods Manifest.lock */,
+				51DB23651B2D5F3900372323 /* Sources */,
+				51DB23661B2D5F3900372323 /* Frameworks */,
+				51DB23671B2D5F3900372323 /* CopyFiles */,
+				CFBB07639DC68E86BD69FD4E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "remove-uncollectible-card-images";
+			productName = "remove-uncollectible-card-images";
+			productReference = 51DB23691B2D5F3900372323 /* remove-uncollectible-card-images */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -555,6 +622,9 @@
 					5132FAB31A5FC10200A43A59 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = C298KBMBC2;
+					};
+					51DB23681B2D5F3900372323 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -572,6 +642,7 @@
 			projectRoot = "";
 			targets = (
 				5132FAB31A5FC10200A43A59 /* Deck Tracker */,
+				51DB23681B2D5F3900372323 /* remove-uncollectible-card-images */,
 			);
 		};
 /* End PBXProject section */
@@ -617,7 +688,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CFBB07639DC68E86BD69FD4E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-remove-uncollectible-card-images/Pods-remove-uncollectible-card-images-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DCFD997D0199FDD9A8D581C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3EFDE0E0B81CDB7D5449FF4 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -683,6 +784,20 @@
 				518F4A261A6BDFCD00B0C7D0 /* Hearthstone.m in Sources */,
 				5169ED8D1AF63C86001EFBA3 /* NSImage+Trim.m in Sources */,
 				9A3A265DA881CFFFFF4DBA86 /* HoverTableCellView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51DB23651B2D5F3900372323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512B0CEC1B2D651D002C87E3 /* DeckModel.m in Sources */,
+				512B0CEB1B2D6517002C87E3 /* GameString.m in Sources */,
+				51DB23731B2D629000372323 /* SystemHelper.m in Sources */,
+				51DB23721B2D625400372323 /* Configuration.m in Sources */,
+				51DB23711B2D624800372323 /* RLMObject+Copying.m in Sources */,
+				51DB23701B2D623D00372323 /* CardModel.m in Sources */,
+				51DB236C1B2D5F3900372323 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,6 +915,36 @@
 			};
 			name = Release;
 		};
+		51DB236D1B2D5F3900372323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C3A1229657FA9D81BFF1606 /* Pods-remove-uncollectible-card-images.debug.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "remove-uncollectible-card-images/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		51DB236E1B2D5F3900372323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440C56BC74E3A6F6178843F1 /* Pods-remove-uncollectible-card-images.release.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "remove-uncollectible-card-images/PrefixHeader.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -817,6 +962,15 @@
 			buildConfigurations = (
 				5132FAD51A5FC10300A43A59 /* Debug */,
 				5132FAD61A5FC10300A43A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51DB236F1B2D5F3900372323 /* Build configuration list for PBXNativeTarget "remove-uncollectible-card-images" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51DB236D1B2D5F3900372323 /* Debug */,
+				51DB236E1B2D5F3900372323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

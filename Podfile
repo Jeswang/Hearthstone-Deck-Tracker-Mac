@@ -17,3 +17,8 @@ pod 'PXSourceList', '~> 2.0'
 pod 'Sparkle'
 pod 'BlocksKit'
 pod 'libextobjc'
+
+target :'remove-uncollectible-card-images' do
+  pod 'Realm'
+end
+
