@@ -22,7 +22,7 @@
 #define CARD_REALM [RLMRealm realmWithPath:CARD_REALM_PATH]
 #define REALM [RLMRealm defaultRealm]
 #define COUNTRY [Configuration instance].countryLanguage
-#define CARD_COUNTRY @"en"
+#define CARD_COUNTRY @"cn"
 
 #define FADE_CARDS [Configuration instance].fadeCards
 
