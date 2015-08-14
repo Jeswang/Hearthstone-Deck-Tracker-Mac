@@ -1,0 +1,1 @@
+PODS_REMOVE_UNCOLLECTIBLE_CARD_IMAGES_MASONRY_OTHER_LDFLAGS = -framework "AppKit" -framework "Foundation"

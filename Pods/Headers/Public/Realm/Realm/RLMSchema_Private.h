@@ -1,0 +1,1 @@
+../../../../Realm/include-osx/Realm/RLMSchema_Private.h

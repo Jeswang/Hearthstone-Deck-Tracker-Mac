@@ -1,0 +1,236 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking 5
+#define COCOAPODS_VERSION_PATCH_AFNetworking 0
+
+// AFNetworking/NSURLConnection
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLConnection
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLConnection 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLConnection 5
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLConnection 0
+
+// AFNetworking/NSURLSession
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_NSURLSession
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_NSURLSession 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_NSURLSession 5
+#define COCOAPODS_VERSION_PATCH_AFNetworking_NSURLSession 0
+
+// AFNetworking/Reachability
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Reachability
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Reachability 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Reachability 5
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Reachability 0
+
+// AFNetworking/Security
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Security
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Security 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Security 5
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Security 0
+
+// AFNetworking/Serialization
+#define COCOAPODS_POD_AVAILABLE_AFNetworking_Serialization
+#define COCOAPODS_VERSION_MAJOR_AFNetworking_Serialization 2
+#define COCOAPODS_VERSION_MINOR_AFNetworking_Serialization 5
+#define COCOAPODS_VERSION_PATCH_AFNetworking_Serialization 0
+
+// BlocksKit
+#define COCOAPODS_POD_AVAILABLE_BlocksKit
+#define COCOAPODS_VERSION_MAJOR_BlocksKit 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit 5
+
+// BlocksKit/All
+#define COCOAPODS_POD_AVAILABLE_BlocksKit_All
+#define COCOAPODS_VERSION_MAJOR_BlocksKit_All 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit_All 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit_All 5
+
+// BlocksKit/Core
+#define COCOAPODS_POD_AVAILABLE_BlocksKit_Core
+#define COCOAPODS_VERSION_MAJOR_BlocksKit_Core 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit_Core 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit_Core 5
+
+// BlocksKit/DynamicDelegate
+#define COCOAPODS_POD_AVAILABLE_BlocksKit_DynamicDelegate
+#define COCOAPODS_VERSION_MAJOR_BlocksKit_DynamicDelegate 2
+#define COCOAPODS_VERSION_MINOR_BlocksKit_DynamicDelegate 2
+#define COCOAPODS_VERSION_PATCH_BlocksKit_DynamicDelegate 5
+
+// MASPreferences
+#define COCOAPODS_POD_AVAILABLE_MASPreferences
+#define COCOAPODS_VERSION_MAJOR_MASPreferences 1
+#define COCOAPODS_VERSION_MINOR_MASPreferences 1
+#define COCOAPODS_VERSION_PATCH_MASPreferences 2
+
+// Masonry
+#define COCOAPODS_POD_AVAILABLE_Masonry
+#define COCOAPODS_VERSION_MAJOR_Masonry 0
+#define COCOAPODS_VERSION_MINOR_Masonry 6
+#define COCOAPODS_VERSION_PATCH_Masonry 1
+
+// OTWebImage
+#define COCOAPODS_POD_AVAILABLE_OTWebImage
+#define COCOAPODS_VERSION_MAJOR_OTWebImage 1
+#define COCOAPODS_VERSION_MINOR_OTWebImage 0
+#define COCOAPODS_VERSION_PATCH_OTWebImage 0
+
+// PXListView
+#define COCOAPODS_POD_AVAILABLE_PXListView
+#define COCOAPODS_VERSION_MAJOR_PXListView 0
+#define COCOAPODS_VERSION_MINOR_PXListView 0
+#define COCOAPODS_VERSION_PATCH_PXListView 1
+
+// PXSourceList
+#define COCOAPODS_POD_AVAILABLE_PXSourceList
+#define COCOAPODS_VERSION_MAJOR_PXSourceList 2
+#define COCOAPODS_VERSION_MINOR_PXSourceList 0
+#define COCOAPODS_VERSION_PATCH_PXSourceList 7
+
+// ReactiveCocoa
+#define COCOAPODS_POD_AVAILABLE_ReactiveCocoa
+#define COCOAPODS_VERSION_MAJOR_ReactiveCocoa 2
+#define COCOAPODS_VERSION_MINOR_ReactiveCocoa 4
+#define COCOAPODS_VERSION_PATCH_ReactiveCocoa 2
+
+// ReactiveCocoa/Core
+#define COCOAPODS_POD_AVAILABLE_ReactiveCocoa_Core
+#define COCOAPODS_VERSION_MAJOR_ReactiveCocoa_Core 2
+#define COCOAPODS_VERSION_MINOR_ReactiveCocoa_Core 4
+#define COCOAPODS_VERSION_PATCH_ReactiveCocoa_Core 2
+
+// ReactiveCocoa/UI
+#define COCOAPODS_POD_AVAILABLE_ReactiveCocoa_UI
+#define COCOAPODS_VERSION_MAJOR_ReactiveCocoa_UI 2
+#define COCOAPODS_VERSION_MINOR_ReactiveCocoa_UI 4
+#define COCOAPODS_VERSION_PATCH_ReactiveCocoa_UI 2
+
+// ReactiveCocoa/no-arc
+#define COCOAPODS_POD_AVAILABLE_ReactiveCocoa_no_arc
+#define COCOAPODS_VERSION_MAJOR_ReactiveCocoa_no_arc 2
+#define COCOAPODS_VERSION_MINOR_ReactiveCocoa_no_arc 4
+#define COCOAPODS_VERSION_PATCH_ReactiveCocoa_no_arc 2
+
+// Realm
+#define COCOAPODS_POD_AVAILABLE_Realm
+#define COCOAPODS_VERSION_MAJOR_Realm 0
+#define COCOAPODS_VERSION_MINOR_Realm 89
+#define COCOAPODS_VERSION_PATCH_Realm 1
+
+// Realm/Headers
+#define COCOAPODS_POD_AVAILABLE_Realm_Headers
+#define COCOAPODS_VERSION_MAJOR_Realm_Headers 0
+#define COCOAPODS_VERSION_MINOR_Realm_Headers 89
+#define COCOAPODS_VERSION_PATCH_Realm_Headers 1
+
+// RegExCategories
+#define COCOAPODS_POD_AVAILABLE_RegExCategories
+#define COCOAPODS_VERSION_MAJOR_RegExCategories 1
+#define COCOAPODS_VERSION_MINOR_RegExCategories 0
+#define COCOAPODS_VERSION_PATCH_RegExCategories 0
+
+// SBJson
+#define COCOAPODS_POD_AVAILABLE_SBJson
+#define COCOAPODS_VERSION_MAJOR_SBJson 4
+#define COCOAPODS_VERSION_MINOR_SBJson 0
+#define COCOAPODS_VERSION_PATCH_SBJson 1
+
+// Sparkle
+#define COCOAPODS_POD_AVAILABLE_Sparkle
+#define COCOAPODS_VERSION_MAJOR_Sparkle 1
+#define COCOAPODS_VERSION_MINOR_Sparkle 9
+#define COCOAPODS_VERSION_PATCH_Sparkle 0
+
+// hpple
+#define COCOAPODS_POD_AVAILABLE_hpple
+#define COCOAPODS_VERSION_MAJOR_hpple 0
+#define COCOAPODS_VERSION_MINOR_hpple 2
+#define COCOAPODS_VERSION_PATCH_hpple 0
+
+// libextobjc
+#define COCOAPODS_POD_AVAILABLE_libextobjc
+#define COCOAPODS_VERSION_MAJOR_libextobjc 0
+#define COCOAPODS_VERSION_MINOR_libextobjc 4
+#define COCOAPODS_VERSION_PATCH_libextobjc 1
+
+// libextobjc/EXTADT
+#define COCOAPODS_POD_AVAILABLE_libextobjc_EXTADT
+#define COCOAPODS_VERSION_MAJOR_libextobjc_EXTADT 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_EXTADT 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_EXTADT 1
+
+// libextobjc/EXTConcreteProtocol
+#define COCOAPODS_POD_AVAILABLE_libextobjc_EXTConcreteProtocol
+#define COCOAPODS_VERSION_MAJOR_libextobjc_EXTConcreteProtocol 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_EXTConcreteProtocol 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_EXTConcreteProtocol 1
+
+// libextobjc/EXTKeyPathCoding
+#define COCOAPODS_POD_AVAILABLE_libextobjc_EXTKeyPathCoding
+#define COCOAPODS_VERSION_MAJOR_libextobjc_EXTKeyPathCoding 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_EXTKeyPathCoding 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_EXTKeyPathCoding 1
+
+// libextobjc/EXTNil
+#define COCOAPODS_POD_AVAILABLE_libextobjc_EXTNil
+#define COCOAPODS_VERSION_MAJOR_libextobjc_EXTNil 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_EXTNil 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_EXTNil 1
+
+// libextobjc/EXTSafeCategory
+#define COCOAPODS_POD_AVAILABLE_libextobjc_EXTSafeCategory
+#define COCOAPODS_VERSION_MAJOR_libextobjc_EXTSafeCategory 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_EXTSafeCategory 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_EXTSafeCategory 1
+
+// libextobjc/EXTScope
+#define COCOAPODS_POD_AVAILABLE_libextobjc_EXTScope
+#define COCOAPODS_VERSION_MAJOR_libextobjc_EXTScope 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_EXTScope 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_EXTScope 1
+
+// libextobjc/EXTSelectorChecking
+#define COCOAPODS_POD_AVAILABLE_libextobjc_EXTSelectorChecking
+#define COCOAPODS_VERSION_MAJOR_libextobjc_EXTSelectorChecking 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_EXTSelectorChecking 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_EXTSelectorChecking 1
+
+// libextobjc/EXTSynthesize
+#define COCOAPODS_POD_AVAILABLE_libextobjc_EXTSynthesize
+#define COCOAPODS_VERSION_MAJOR_libextobjc_EXTSynthesize 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_EXTSynthesize 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_EXTSynthesize 1
+
+// libextobjc/NSInvocation+EXT
+#define COCOAPODS_POD_AVAILABLE_libextobjc_NSInvocation_EXT
+#define COCOAPODS_VERSION_MAJOR_libextobjc_NSInvocation_EXT 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_NSInvocation_EXT 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_NSInvocation_EXT 1
+
+// libextobjc/NSMethodSignature+EXT
+#define COCOAPODS_POD_AVAILABLE_libextobjc_NSMethodSignature_EXT
+#define COCOAPODS_VERSION_MAJOR_libextobjc_NSMethodSignature_EXT 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_NSMethodSignature_EXT 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_NSMethodSignature_EXT 1
+
+// libextobjc/RuntimeExtensions
+#define COCOAPODS_POD_AVAILABLE_libextobjc_RuntimeExtensions
+#define COCOAPODS_VERSION_MAJOR_libextobjc_RuntimeExtensions 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_RuntimeExtensions 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_RuntimeExtensions 1
+
+// libextobjc/UmbrellaHeader
+#define COCOAPODS_POD_AVAILABLE_libextobjc_UmbrellaHeader
+#define COCOAPODS_VERSION_MAJOR_libextobjc_UmbrellaHeader 0
+#define COCOAPODS_VERSION_MINOR_libextobjc_UmbrellaHeader 4
+#define COCOAPODS_VERSION_PATCH_libextobjc_UmbrellaHeader 1
+

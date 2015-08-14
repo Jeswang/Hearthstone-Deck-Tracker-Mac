@@ -1,0 +1,25 @@
+{
+  "name": "OTWebImage",
+  "version": "1.0.0",
+  "summary": "Asynchronous image downloader with cache support with an NSImageView category",
+  "homepage": "https://github.com/OpenFibers/OTWebImage",
+  "license": {
+    "type": "MIT"
+  },
+  "authors": {
+    "Open Thread": "openfibers@gmail.com"
+  },
+  "platforms": {
+    "osx": "10.9"
+  },
+  "source": {
+    "git": "https://github.com/mblsha/OTWebImage"
+  },
+  "source_files": [
+    "OTWebImage/*",
+    "OTWebImage/OTFileCacheManager/*",
+    "OTWebImage/OTHTTPRequest/*"
+  ],
+  "public_header_files": "OTWebImage/NSImageView+WebCache.h",
+  "requires_arc": true
+}

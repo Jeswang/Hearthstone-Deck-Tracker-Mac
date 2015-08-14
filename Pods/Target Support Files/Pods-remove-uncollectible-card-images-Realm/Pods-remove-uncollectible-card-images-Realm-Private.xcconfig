@@ -1,0 +1,9 @@
+#include "Pods-remove-uncollectible-card-images-Realm.xcconfig"
+CLANG_CXX_LANGUAGE_STANDARD = ${PODS_REMOVE_UNCOLLECTIBLE_CARD_IMAGES_REALM_CLANG_CXX_LANGUAGE_STANDARD}
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Realm" "${PODS_ROOT}/Headers/Private/Realm/Realm" "${PODS_ROOT}/Headers/Private/Realm/tightdb" "${PODS_ROOT}/Headers/Private/Realm/tightdb/impl" "${PODS_ROOT}/Headers/Private/Realm/tightdb/util" "${PODS_ROOT}/Headers/Private/core/include" "${PODS_ROOT}/Headers/Private/core/include/tightdb" "${PODS_ROOT}/Headers/Private/core/include/tightdb/impl" "${PODS_ROOT}/Headers/Private/core/include/tightdb/util" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/BlocksKit" "${PODS_ROOT}/Headers/Public/MASPreferences" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/OTWebImage" "${PODS_ROOT}/Headers/Public/PXListView" "${PODS_ROOT}/Headers/Public/PXSourceList" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/Realm" "${PODS_ROOT}/Headers/Public/Realm/Realm" "${PODS_ROOT}/Headers/Public/Realm/tightdb" "${PODS_ROOT}/Headers/Public/Realm/tightdb/util" "${PODS_ROOT}/Headers/Public/RegExCategories" "${PODS_ROOT}/Headers/Public/SBJson" "${PODS_ROOT}/Headers/Public/Sparkle" "${PODS_ROOT}/Headers/Public/core/include" "${PODS_ROOT}/Headers/Public/core/include/tightdb" "${PODS_ROOT}/Headers/Public/core/include/tightdb/impl" "${PODS_ROOT}/Headers/Public/core/include/tightdb/util" "${PODS_ROOT}/Headers/Public/hpple" "${PODS_ROOT}/Headers/Public/libextobjc"
+LIBRARY_SEARCH_PATHS = ${PODS_REMOVE_UNCOLLECTIBLE_CARD_IMAGES_REALM_LIBRARY_SEARCH_PATHS}
+OTHER_CPLUSPLUSFLAGS = ${PODS_REMOVE_UNCOLLECTIBLE_CARD_IMAGES_REALM_OTHER_CPLUSPLUSFLAGS}
+OTHER_LDFLAGS = ${PODS_REMOVE_UNCOLLECTIBLE_CARD_IMAGES_REALM_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

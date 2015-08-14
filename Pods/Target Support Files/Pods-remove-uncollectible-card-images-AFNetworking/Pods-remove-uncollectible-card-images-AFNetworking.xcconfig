@@ -1,0 +1,1 @@
+PODS_REMOVE_UNCOLLECTIBLE_CARD_IMAGES_AFNETWORKING_OTHER_LDFLAGS = -framework "CoreServices" -framework "Security" -framework "SystemConfiguration"
