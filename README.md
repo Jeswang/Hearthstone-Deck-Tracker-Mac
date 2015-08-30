@@ -21,8 +21,8 @@ How to use
 
 1) Download latest release [here](https://github.com/Jeswang/Hearthstone-Deck-Tracker-Mac/releases)   
 2) Extract file   
-3) Run "Deck Tracker.app"   
-4) Create your deck in deck manager 
+3) Run "Deck Tracker.app" or Move into '~/Applications' folder   
+4) Create your deck in deck manager   
 5) Select the deck manager and the tracker will just show the cards in selected deck   
 6) Play!
 
