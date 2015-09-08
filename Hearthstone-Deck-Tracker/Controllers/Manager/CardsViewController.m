@@ -155,7 +155,6 @@
     
     [mgScopeBar reloadData];
     
-    
     @weakify(self)
     [searchField.rac_textSignal subscribeNext:^(id x) {
         @strongify(self)
