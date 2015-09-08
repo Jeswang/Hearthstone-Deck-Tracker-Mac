@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
         }
         
         NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *bundleURL = [NSURL URLWithString:IMAGE_EN];
+        NSURL *bundleURL = [NSURL URLWithString:IMAGE];
         NSArray *contents = [fileManager contentsOfDirectoryAtURL:bundleURL
                                        includingPropertiesForKeys:@[]
                                                           options:NSDirectoryEnumerationSkipsHiddenFiles

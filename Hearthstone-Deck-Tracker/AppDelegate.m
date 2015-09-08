@@ -44,7 +44,7 @@
     [RLMRealm setSchemaVersion:4 withMigrationBlock:^(RLMMigration *migration, NSUInteger oldSchemaVersion) {
         
     }];
-    //[RealmGenerator generateCardRealm];
+    //[RealmGenerator generateCardRealmFromAllSet];
 
     
     if (self.cardListController == nil)

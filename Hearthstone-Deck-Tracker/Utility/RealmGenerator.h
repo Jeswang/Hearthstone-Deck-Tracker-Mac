@@ -11,5 +11,5 @@
 @interface RealmGenerator : NSObject
 
 + (void)generateCardRealm;
-
++ (void)generateCardRealmFromAllSet;
 @end
