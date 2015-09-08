@@ -1,0 +1,125 @@
+PODS:
+  - AFNetworking (2.5.0):
+    - AFNetworking/NSURLConnection (= 2.5.0)
+    - AFNetworking/NSURLSession (= 2.5.0)
+    - AFNetworking/Reachability (= 2.5.0)
+    - AFNetworking/Security (= 2.5.0)
+    - AFNetworking/Serialization (= 2.5.0)
+    - AFNetworking/UIKit (= 2.5.0)
+  - AFNetworking/NSURLConnection (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.0)
+  - AFNetworking/Security (2.5.0)
+  - AFNetworking/Serialization (2.5.0)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - hpple (0.2.0)
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - Masonry (0.6.1)
+  - MASPreferences (1.1.2)
+  - OTWebImage (1.0.0)
+  - PXListView (0.0.1)
+  - PXSourceList (2.0.7)
+  - ReactiveCocoa (2.4.2):
+    - ReactiveCocoa/UI (= 2.4.2)
+  - ReactiveCocoa/Core (2.4.2):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.2)
+  - ReactiveCocoa/UI (2.4.2):
+    - ReactiveCocoa/Core
+  - Realm (0.89.1):
+    - Realm/Headers (= 0.89.1)
+  - Realm/Headers (0.89.1)
+  - RegExCategories (1.0)
+  - SBJson (4.0.1)
+  - Sparkle (1.9.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BlocksKit
+  - hpple
+  - libextobjc
+  - Masonry
+  - MASPreferences
+  - OTWebImage (from `https://github.com/OpenFibers/OTWebImage.git`)
+  - PXListView
+  - PXSourceList (~> 2.0)
+  - ReactiveCocoa
+  - Realm
+  - RegExCategories (~> 1.0)
+  - SBJson
+  - Sparkle
+
+EXTERNAL SOURCES:
+  OTWebImage:
+    :git: https://github.com/OpenFibers/OTWebImage.git
+
+CHECKOUT OPTIONS:
+  OTWebImage:
+    :commit: cdfa36f37ee4578ec4d2f277911af60a46db14f3
+    :git: https://github.com/OpenFibers/OTWebImage.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 96ac9bf3eda33582701cb1fcc5b896aa1e20311e
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  MASPreferences: 32d8a2c5ef1d60b63240f5676b011ff72e194cb1
+  OTWebImage: 2dfb945d3b7db6f436de9fa99159284765656b04
+  PXListView: 07b11b35c07629cdb17cd817da643bbbbf89c943
+  PXSourceList: 8e37978a5db6c8d8d255f8913603bcea322c6445
+  ReactiveCocoa: fdf629a7321cc7504936fa86243d8c616faad302
+  Realm: 9b7bebb86336e17789d7ac21b22f67a69808cb56
+  RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
+  SBJson: 68f16f446bd6047dc3dd1ec4919a468c2cd7fedd
+  Sparkle: 75bbbc5ab2d666f7f77c241afe7fd28364a8f9f7
+
+COCOAPODS: 0.37.2
