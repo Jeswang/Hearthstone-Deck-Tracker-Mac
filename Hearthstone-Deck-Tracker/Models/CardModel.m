@@ -34,7 +34,7 @@
     NSString *trueKey = [[self.selectedKey componentsSeparatedByString:@" "] lastObject];
     
     if ([self.name isEqualTo:@"name"]) {
-        return [input objectsWhere:@"%K CONTAINS %@", self.name, trueKey];
+        return [input objectsWhere:@"%K CONTAINS[c] %@", self.name, trueKey];
     }
     
     if ([self.name isEqualTo:@"cost"]) {
