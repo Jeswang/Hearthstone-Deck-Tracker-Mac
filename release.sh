@@ -22,3 +22,13 @@ rm -rf build/en/Deck\ Tracker.app/Contents/Resources/Images/cn
 
 mv build/en/Deck\ Tracker.app/Contents/Resources/Images/en \
 build/en/Deck\ Tracker.app/Contents/Resources/Images/cn
+
+
+# ../create-dmg/create-dmg \
+# --window-size 500 300 \
+# --icon-size 96 \
+# --volname "Deck Tracker" \
+# --app-drop-link 380 205 \
+# --icon "Deck Tracker" 110 205 \
+# "Deck Tracker.dmg" \
+# build/en/
