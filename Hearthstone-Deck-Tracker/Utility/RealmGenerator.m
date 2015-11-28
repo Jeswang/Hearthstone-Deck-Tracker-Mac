@@ -22,8 +22,6 @@ static NSString *cardPathTemplate = @"/Users/jeswang/Documents/App/Hearthstone-D
 static NSString *stringFileTemplate = @"/Applications/Hearthstone/Strings/%@/GLOBAL.txt";
 
 
-
-
 + (void)generateCardRealmFromAllSet {
      NSArray *langs = @[@"deDE",
                               @"enGB",
@@ -57,7 +55,8 @@ static NSString *stringFileTemplate = @"/Applications/Hearthstone/Strings/%@/GLO
                                    @"Curse of Naxxramas",
                                    @"Goblins vs Gnomes",
                                    @"Blackrock Mountain",
-                                   @"The Grand Tournament"
+                                   @"The Grand Tournament",
+                                   @"League of Explorers"
                                    ];
         NSDictionary * dict = (NSDictionary *)item;
         

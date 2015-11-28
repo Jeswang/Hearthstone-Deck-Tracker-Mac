@@ -44,9 +44,10 @@
     [RLMRealm setSchemaVersion:4 withMigrationBlock:^(RLMMigration *migration, NSUInteger oldSchemaVersion) {
         
     }];
-    //[RealmGenerator generateCardRealmFromAllSet];
-
     
+//    [RealmGenerator generateCardRealmFromAllSet];
+//    return;
+
     if (self.cardListController == nil)
     {
         self.cardListController = [[CardListWindowController alloc] initWithWindowNibName:@"CardListWindow"];

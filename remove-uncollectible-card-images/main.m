@@ -10,6 +10,10 @@
 #import <Realm/Realm.h>
 #import "CardModel.h"
 
+#define IMAGE @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/Images/cn"
+#define IMAGE_EN @"/Users/jeswang/Documents/App/Hearthstone-Deck-Tracker/Hearthstone-Deck-Tracker-Mac/Hearthstone-Deck-Tracker/Images/en"
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -28,7 +32,7 @@ int main(int argc, const char * argv[]) {
         }
         
         NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *bundleURL = [NSURL URLWithString:IMAGE];
+        NSURL *bundleURL = [NSURL URLWithString:IMAGE_EN];
         NSArray *contents = [fileManager contentsOfDirectoryAtURL:bundleURL
                                        includingPropertiesForKeys:@[]
                                                           options:NSDirectoryEnumerationSkipsHiddenFiles
