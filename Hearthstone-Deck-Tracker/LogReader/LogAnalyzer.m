@@ -8,6 +8,11 @@
 
 #import "LogAnalyzer.h"
 
+NSString *const CARD_ACTIONS_PATTERN = @"ProcessChanges.*cardId=(\\w+).*zone from (.*) -> (.*)";
+NSString *const GOT_COIN_PATTERN = @"ProcessChanges.*zonePos=5.*zone from  -> (.*)";
+NSString *const HERO_PATTERN = @"ProcessChanges.*TRANSITIONING card \\[name=(.*).*zone=PLAY.*cardId=(.*).*player=(\\d)\\] to (.*) \\(Hero\\)";
+NSString *const GAME_START_PATTERN = @"GameState\\.DebugPrintPower\\(\\) - CREATE_GAME";
+
 @interface NSRegularExpression (StringAtIndex)
 - (NSString *)matchWithString:(NSString *)string atIndex:(int)idx;
 @end
@@ -50,9 +55,8 @@
         return;
     }
     
-    static NSString *pattern = @"ProcessChanges.*cardId=(\\w+).*zone from (.*) -> (.*)";
     NSError *error = nil;
-    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
+    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:CARD_ACTIONS_PATTERN options:NSRegularExpressionCaseInsensitive error:&error];
     if (error) {
         NSLog(@"%@", [error localizedDescription]);
         return;
@@ -93,6 +97,19 @@
 }
 
 - (void)analyzeForGameState:(NSString *)line {
+    NSError *error = nil;
+    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:GAME_START_PATTERN options:NSRegularExpressionCaseInsensitive error:&error];
+    if (error) {
+        NSLog(@"%@", [error localizedDescription]);
+        return;
+    }
+    
+    if ([regexp numberOfMatchesInString:line options:0 range:NSMakeRange(0, line.length)] != 0) {
+        _gameDidStart(PlayerMe);
+    }
+}
+
+- (void)analyzeForPlayerName:(NSString *)line {
     if ([line hasPrefix:@"[Asset]"]) {
         if ([[line lowercaseString] contains:@"victory_screen_start"]) {
             NSLog(@"Victory!");
@@ -106,9 +123,8 @@
 }
 
 - (void)analyzeForCoin:(NSString *)line {
-    static NSString *pattern = @"ProcessChanges.*zonePos=5.*zone from  -> (.*)";
     NSError *error = nil;
-    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
+    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:GOT_COIN_PATTERN options:NSRegularExpressionCaseInsensitive error:&error];
     if (error) {
         NSLog(@"%@", [error localizedDescription]);
         return;
@@ -123,10 +139,10 @@
         }
     }
 }
+
 - (void)analyzeForHero:(NSString *)line {
-    static NSString *pattern = @"ProcessChanges.*TRANSITIONING card \\[name=(.*).*zone=PLAY.*cardId=(.*).*player=(\\d)\\] to (.*) \\(Hero\\)";
     NSError *error = nil;
-    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
+    NSRegularExpression *regexp = [NSRegularExpression regularExpressionWithPattern:HERO_PATTERN options:NSRegularExpressionCaseInsensitive error:&error];
     if (error) {
         NSLog(@"%@", [error localizedDescription]);
         return;
