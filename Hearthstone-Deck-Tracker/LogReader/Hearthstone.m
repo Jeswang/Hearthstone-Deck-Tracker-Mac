@@ -126,13 +126,16 @@
     _logObserver = [LogObserver new];
     _logAnalyzer = [LogAnalyzer new];
     
-    [_logAnalyzer setPlayerHero:^(Player player, NSString *heroId) {
+    [_logAnalyzer setGameDidStart:^(Player player) {
         if (player == PlayerMe) {
             NSLog(@"----- Game Started -----");
             for (NSObject<CardListDelegate>* list in ws.updateList) {
                 [list resetCards];
             }
         }
+    }];
+    
+    [_logAnalyzer setPlayerHero:^(Player player, NSString *heroId) {
         NSLog(@"Player %u picked %@", player, heroId);
     }];
     

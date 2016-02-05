@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Hearthstone.h"
 
+extern NSString *const CARD_ACTIONS_PATTERN;
+extern NSString *const GOT_COIN_PATTERN;
+extern NSString *const HERO_PATTERN;
+extern NSString *const GAME_START_PATTERN;
+
 @interface LogAnalyzer : NSObject
 
 - (void)analyzeLine:(NSString *)line;
@@ -19,6 +24,7 @@
 @property (nonatomic, copy) void(^playerDidPlayCard)(Player player, NSString *cardID);
 @property (nonatomic, copy) void(^playerDidReturnHandCard)(Player player, NSString *cardID);
 
+@property (nonatomic, copy) void(^gameDidStart)(Player player);
 @property (nonatomic, copy) void(^playerDidDie)(Player player);
 @property (nonatomic, copy) void(^playerGotCoin)(Player player);
 @property (nonatomic, copy) void(^playerHero)(Player player, NSString *heroId);
